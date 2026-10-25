@@ -1,0 +1,305 @@
+\begin{frame}{The $K$ approximation and its random-allocation target}
+\small
+
+For neighborhood populations $n_i$, total population $N=\sum_i n_i$, and social affinities $f(i\to j)$,
+\[
+ P_{ij}=\frac{f(i\to j)n_j}{\sum_\ell f(i\to\ell)n_\ell},\qquad
+ A=P\operatorname{diag}(r),\qquad \Lambda=\rho(A).
+\]
+Fix $M$ group labels and assign them uniformly to the $N$ resident slots.
+Write $K=M/N$ and $r_i=B_i/n_i$ after assignment.
+\[
+ m_0(P,K)=\mathbb E_0[\Lambda],\qquad
+ \mathbb E_0[r_i]=K,\qquad \rho(P\operatorname{diag}(\mathbb E_0r))=K.
+\]
+\begin{block}{The question}
+Does $m_0(P,K)\approx K$? The spectral radius is nonlinear, so taking the expectation inside it is not generally valid.
+\end{block}
+This section uses the project's global PSSI spectral radius, not the component-averaged Fryer SSI.
+
+\end{frame}
+
+\begin{frame}{Equal-strength complete mixing gives $m_0=K$ exactly}
+\small
+
+Assume every ordered pair has the same positive affinity, including co-location:
+$f(i\to j)=c>0$. Then $P=\mathbf1w^T$, where $w_j=n_j/N$.
+\[
+ A=\mathbf1(w\odot r)^T,\qquad
+ \rho(A)=(w\odot r)^T\mathbf1
+       =\sum_j\frac{n_j}{N}\frac{B_j}{n_j}
+       =\frac MN=K.
+\]
+\begin{block}{Exact result}
+Every fixed-count assignment gives $\Lambda=K$. Therefore
+$\mathbb E_0[\Lambda]=K$ and $\operatorname{Var}_0(\Lambda)=0$.
+\end{block}
+\textbf{Scope:} complete connectivity alone is insufficient; the affinities must give uniform mixing over people. This uses the original model's self-draw convention.
+\medskip
+
+\footnotesize If self-draws are excluded at the individual level, the complete equal-weight graph instead gives $(M-1)/(N-1)$ for $M\geq1$ (and zero when $M=0$).
+
+\end{frame}
+
+\begin{frame}{Two toy social graphs}
+\small
+
+Four neighborhoods, five residents each: $N=20$. Each matrix entry is $f(i\to j)$; diagonal entries include co-location.
+\begin{columns}[T]
+\begin{column}{.48\textwidth}
+\textbf{Graph A: complete mixing}
+\[
+ F_A=\begin{pmatrix}1&1&1&1\\1&1&1&1\\1&1&1&1\\1&1&1&1\end{pmatrix},\qquad P_A=F_A/4.
+\]
+Every resident is equally likely to be contacted.
+\end{column}
+\begin{column}{.48\textwidth}
+\textbf{Graph B: two communities}
+\[
+ F_B=\begin{pmatrix}1&1&.02&.02\\1&1&.02&.02\\.02&.02&1&1\\.02&.02&1&1\end{pmatrix},\quad P_B=F_B/2.04.
+\]
+Interactions within $\{1,2\}$ or $\{3,4\}$ are 50 times stronger than across communities.
+\end{column}
+\end{columns}
+\medskip
+Both graphs are fully connected. Their different weights isolate the effect of social structure.
+\begin{block}{Experiment}
+For each $M=1,\ldots,19$, draw 10,000 independent assignments; compute $\rho(P\operatorname{diag}(B_i/5))$. Also enumerate all feasible count vectors with exact hypergeometric probabilities.
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Toy graphs: $K$ versus the random-assignment mean}
+\small
+\begin{center}\begin{tikzpicture}\begin{axis}[width=12.6cm,height=5.05cm,grid=major,grid style={gray!15},tick label style={font=\scriptsize},label style={font=\small},legend style={font=\scriptsize,draw=none,fill=white},legend pos=north west,xlabel={Group fraction $K$},ylabel={Mean PSSI},xmin=0,xmax=1,ymin=0,ymax=1]
+\addplot[black,dashed] coordinates {(0,0) (1,1)};
+\addlegendentry{Reference $K$}
+\addplot[MyNavy,only marks,mark=o] coordinates {(0.05,0.05) (0.1,0.1) (0.15,0.15) (0.2,0.2) (0.25,0.25) (0.3,0.3) (0.35,0.35) (0.4,0.4) (0.45,0.45) (0.5,0.5) (0.55,0.55) (0.6,0.6) (0.65,0.65) (0.7,0.7) (0.75,0.75) (0.8,0.8) (0.85,0.85) (0.9,0.9) (0.95,0.95)};
+\addlegendentry{Graph A: simulation}
+\addplot[MyTeal,thick] coordinates {(0.05,0.0980392157) (0.1,0.145510836) (0.15,0.216780136) (0.2,0.263308435) (0.25,0.327228) (0.3,0.372874642) (0.35,0.432719465) (0.4,0.477434685) (0.45,0.534413785) (0.5,0.578069054) (0.55,0.632739811) (0.6,0.675105284) (0.65,0.727713784) (0.7,0.768379448) (0.75,0.81894687) (0.8,0.857090756) (0.85,0.905353174) (0.9,0.938817678) (0.95,0.98380291)};
+\addlegendentry{Graph B: exact mean}
+\addplot[MyTeal,only marks,mark=*] coordinates {(0.05,0.0980392157) (0.1,0.145166471) (0.15,0.216464084) (0.2,0.261634305) (0.25,0.327099209) (0.3,0.372902793) (0.35,0.432884705) (0.4,0.477117304) (0.45,0.534167705) (0.5,0.578091759) (0.55,0.633477555) (0.6,0.675089967) (0.65,0.727566128) (0.7,0.769120919) (0.75,0.818798532) (0.8,0.856985176) (0.85,0.904725311) (0.9,0.938196164) (0.95,0.98380291)};
+\addlegendentry{Graph B: simulation}
+\end{axis}\end{tikzpicture}\end{center}\footnotesize Points: 10,000 assignments at each $K$. Solid curve: exact enumeration. At $K=0.5$, Graph B has exact mean $0.578069$, versus $0.500000$ for Graph A.
+\end{frame}
+
+\begin{frame}{Toy graphs: the expected bias after $K$ normalization}
+\small
+\begin{center}\begin{tikzpicture}\begin{axis}[width=12.6cm,height=5.05cm,grid=major,grid style={gray!15},tick label style={font=\scriptsize},label style={font=\small},legend style={font=\scriptsize,draw=none,fill=white},legend pos=north west,xlabel={Group fraction $K$},ylabel={$(m_0-K)/(1-K)$},xmin=0,xmax=1,legend pos=north west]
+\addplot[black,dashed] coordinates {(0.05,0) (0.95,0)};
+\addlegendentry{Zero bias}
+\addplot[MyTeal,thick] coordinates {(0.05,0.0505675955) (0.1,0.0505675955) (0.15,0.0785648662) (0.2,0.0791355442) (0.25,0.102970667) (0.3,0.104106632) (0.35,0.127260716) (0.4,0.129057808) (0.45,0.153479608) (0.5,0.156138108) (0.55,0.183866248) (0.6,0.18776321) (0.65,0.222039383) (0.7,0.227931492) (0.75,0.275787479) (0.8,0.285453781) (0.85,0.369021162) (0.9,0.388176784) (0.95,0.676058193)};
+\addlegendentry{Graph B: exact bias}
+\addplot[MyNavy,only marks,mark=*,error bars/.cd,y dir=both,y explicit] coordinates {(0.05,0.0505675955) +- (0,5.72669984e-19) (0.1,0.0501849673) +- (0,0.0010443673) (0.15,0.0781930396) +- (0,0.000915725848) (0.2,0.0770428814) +- (0,0.00145431188) (0.25,0.102798945) +- (0,0.00136189404) (0.3,0.104146848) +- (0,0.00187113617) (0.35,0.127514931) +- (0,0.00180465946) (0.4,0.128528839) +- (0,0.00227984863) (0.45,0.153032192) +- (0,0.00222656766) (0.5,0.156183517) +- (0,0.0027866002) (0.55,0.185505677) +- (0,0.0027301795) (0.6,0.187724917) +- (0,0.00336306938) (0.65,0.221617508) +- (0,0.00330004311) (0.7,0.230403063) +- (0,0.0042090254) (0.75,0.275194127) +- (0,0.00404290792) (0.8,0.284925878) +- (0,0.00542264662) (0.85,0.364835407) +- (0,0.00506588175) (0.9,0.381961642) +- (0,0.00801286725) (0.95,0.676058193) +- (0,1.61193521e-16)};\addlegendentry{Simulation with 95\% MC CI}\end{axis}\end{tikzpicture}\end{center}\footnotesize Graph A has zero bias at every $K$. Graph B has bias $0.15614$ at $K=0.5$. Error bars quantify uncertainty in the estimated mean, not the spread of individual assignments.
+\end{frame}
+
+\begin{frame}{Largest saved PSSI matrix: Los Angeles}
+\small
+
+\begin{itemize}
+\item $1{,}114\times1{,}114$ population-weighted transition matrix; $N=3{,}898{,}747$ residents. Largest among the 11 primary multicity PSSI matrices (NYC's PSSI matrix has 70 sections).
+\item Use the saved primary walking/transit cost model, including its documented distance-only completion for missing travel pairs. These are modeled affinities, not observed contacts.
+\item Hold this $P$ and all $n_i$ fixed. At each target $K\in\{.1,.3,.5,.7,.9\}$, assign $M=\operatorname{round}(KN)$ labels and use the actual fraction $M/N$.
+\item 400 independent allocations per $K$; same raw PSSI definition as in the deck. Seed: 20261024.
+\end{itemize}
+\medskip
+\textbf{Scope of ``largest'':} largest saved PSSI matrix; the repository also contains larger sparse geographic and Fryer graphs with different statistics.
+\medskip
+\footnotesize Source: \texttt{outputs/multicity/los\_angeles/analysis/analysis\_matrices.npz}. The graph is fixed here; only resident labels are randomized.
+
+\end{frame}
+
+\begin{frame}{An exponential random-matrix model: explicit assumptions}
+\small
+
+\textbf{Alternative ensemble:} draw $F_{ij}\overset{\mathrm{iid}}\sim\operatorname{Exp}(1)$ for all ordered pairs, independently of labels. Keep the actual $n_j$, and set
+\[
+ P^{(F)}_{ij}=\frac{F_{ij}n_j}{\sum_\ell F_{i\ell}n_\ell}.
+\]
+\begin{itemize}
+\item Directed independent edges; no geography, community effects, reciprocity or special diagonal. All moments are finite; every edge is positive.
+\item The exponential rate cancels under row normalization. This is an assumption about raw $f$, not about normalized probabilities $P_{ij}$.
+\item For equal $n_j$, rows are Dirichlet$(1,\ldots,1)$; the scaled eigenvalue bulk follows the random-Markov circular law asymptotically.
+\item Unequal populations break this exact Dirichlet model. The Perron root of $P$ is always 1; the bulk law alone does not determine $\rho(P\operatorname{diag}(r))$.
+\end{itemize}
+\footnotesize Bordenave, Caputo \& Chafa\"i (2012), \href{https://arxiv.org/abs/0808.1502}{Circular Law Theorem for Random Markov Matrices}. We use finite-size simulation for the unequal-population ensemble.
+
+\end{frame}
+
+\begin{frame}{Exponential weights are a benchmark, not an empirical fit}
+\small
+
+Saved Los Angeles off-diagonal affinities, divided by their mean:
+\begin{center}\begin{tabular}{lrr}
+ & Saved affinities & Exponential(1)\\\hline
+Coefficient of variation & 1.165 & 1.000\\
+10th percentile & 0.021 & 0.105\\
+Median & 0.613 & 0.693\\
+90th percentile & 2.376 & 2.303\\
+99th percentile & 5.762 & 4.605\\
+\end{tabular}\end{center}
+\medskip
+Reciprocity correlation $\operatorname{Corr}(F_{ij},F_{ji})=0.996$ over ordered entries, inconsistent with independent directed affinities.
+\medskip
+The saved model uses $f=\exp(-\beta C)$ with bounded, geography-dependent affinities. Exponentiating a cost is not the same as sampling an exponential random variable.
+\begin{block}{Implication}
+An iid exponential ensemble can illustrate dense random mixing, but its distribution must not be substituted for the fixed Los Angeles graph's null distribution.
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Random-matrix perturbation on the actual graph}
+\small
+
+Write $r=K\mathbf1+\varepsilon$, so the random matrix is
+$A=KP+P\operatorname{diag}(\varepsilon)$. Let
+\[
+ \pi^TP=\pi^T,\quad\pi^T\mathbf1=1,\qquad
+ \Pi=\mathbf1\pi^T,\quad
+ H=(I-P+\Pi)^{-1}(P-\Pi).
+\]
+Perturbing the simple Perron eigenvalue of $KP$ gives
+\[
+ \boxed{\Lambda\approx K+\pi^T\varepsilon+
+ \frac1K\pi^T\operatorname{diag}(\varepsilon)H\varepsilon.}
+\]
+\textbf{Assumptions:} $K>0$; irreducible $P$; perturbations sufficiently small relative to the reduced resolvent scale. A simple eigenvalue is required, and non-normality can amplify perturbations.
+\medskip
+A Gaussian description additionally requires a finite-population CLT for the weighted counts (no dominant resident contribution). Tiny neighborhoods can violate a uniform small-noise assumption; numerical validation is essential.
+
+\end{frame}
+
+\begin{frame}{Mean and variance from the assignment covariance}
+\small
+
+The fixed-count multivariate hypergeometric model gives exactly
+\[
+ C=\operatorname{Cov}(\varepsilon)
+ =\frac{K(1-K)}{N-1}\left[N\operatorname{diag}(1/n_i)-\mathbf1\mathbf1^T\right].
+\]
+Taking expectations in the expansion,
+\[
+ \boxed{m_0\approx K+\frac1K\sum_{i,j}\pi_iH_{ij}C_{ij}},\qquad
+ \boxed{\operatorname{Var}(\Lambda)\approx\pi^TC\pi.}
+\]
+The variance formula is first order; the mean correction is second order.
+\medskip
+If the linear term dominates and its CLT applies,
+\[
+ \Lambda\ \dot\sim\ \mathcal N\!\left(K+\frac1K\sum_{i,j}\pi_iH_{ij}C_{ij},\;\pi^TC\pi\right).
+\]
+\footnotesize The normal law is an approximation, not an exact finite-sample distribution. If $\pi=n/N$, the linear variance vanishes under fixed totals; quadratic terms then matter. For complete mixing $H=0$, recovering the exact point mass at $K$.
+
+\end{frame}
+
+\begin{frame}{Los Angeles: predicted mean and fluctuation scale}
+\small
+
+The saved graph gives $|\lambda_2(P)|=0.6304$. Substituting its stationary weights and resolvent into the formulas yields
+\[
+ \boxed{m_0\approx K+(1-K)\,2.9410\times10^{-6}},
+\]
+\[
+ \boxed{\operatorname{SD}(\Lambda)\approx
+ \sqrt{K(1-K)\,4.2756\times10^{-8}}.}
+\]
+At $K\approx0.5$: predicted mean $0.50000160$, predicted SD $0.00010339$.
+\medskip
+The predicted expected normalized bias is $2.9410\times10^{-6}$ throughout this interior-$K$ approximation.
+\begin{block}{Numerical check}
+Across the five $K$ values, the second-order formula reproduces individual simulated Perron roots with RMSE between $1.2\times10^{-10}$ and $8.6\times10^{-9}$.
+\end{block}
+\footnotesize This supports the expansion for these tested allocations. It does not establish a uniform error bound over every allocation or near $K=0$.
+
+\end{frame}
+
+\begin{frame}{Los Angeles: deviations of the mean from $K$}
+\small
+\begin{center}\begin{tikzpicture}\begin{axis}[width=12.6cm,height=5.05cm,grid=major,grid style={gray!15},tick label style={font=\scriptsize},label style={font=\small},legend style={font=\scriptsize,draw=none,fill=white},legend pos=north west,xlabel={Group fraction $K$},ylabel={$10^6(\widehat m_0-K)$},xmin=.05,xmax=.95,legend pos=south west]
+\addplot[MyTeal,thick,mark=square*] coordinates {(0.100000077,2.64689806) (0.299999974,2.05869874) (0.500000128,1.47049867) (0.700000026,0.882299354) (0.899999923,0.294100036)};
+\addlegendentry{Second-order prediction}
+\addplot[black,dashed] coordinates {(0.1,0) (0.9,0)};
+\addlegendentry{Reference $K$}
+\addplot[MyNavy,only marks,mark=*,error bars/.cd,y dir=both,y explicit] coordinates {(0.100000077,0.798941744) +- (0,6.06738416) (0.299999974,5.79992798) +- (0,9.20807049) (0.500000128,8.99042569) +- (0,10.2388343) (0.700000026,5.49806539) +- (0,8.98486316) (0.899999923,-2.04294355) +- (0,6.23297845)};\addlegendentry{400 assignments: 95\% MC CI}\end{axis}\end{tikzpicture}\end{center}\footnotesize A residual plot resolves differences hidden on a 0--1 scale. Every interval contains $K$ and the second-order prediction; 400 draws do not resolve a bias of only a few parts per million.
+\end{frame}
+
+\begin{frame}{Los Angeles: distribution at a 50\% group share}
+\small
+\begin{center}\begin{tikzpicture}\begin{axis}[width=12.6cm,height=5.05cm,grid=major,grid style={gray!15},tick label style={font=\scriptsize},label style={font=\small},legend style={font=\scriptsize,draw=none,fill=white},legend pos=north west,xlabel={$(\Lambda-m_{\mathrm{pred}})/s_{\mathrm{pred}}$},ylabel={Density},xmin=-3.5,xmax=3.5,legend pos=north east]
+\addplot[MyNavy,ybar,bar width=6pt,fill=MyNavy!35] coordinates {(-3.29411765,0) (-2.88235294,0) (-2.47058824,0.0243465807) (-2.05882353,0.0547798067) (-1.64705882,0.0791263874) (-1.23529412,0.170426065) (-0.823529412,0.225205872) (-0.411764706,0.359112066) (-2.22044605e-16,0.462585034) (0.411764706,0.346938776) (0.823529412,0.261725743) (1.23529412,0.261725743) (1.64705882,0.0852130326) (2.05882353,0.066953097) (2.47058824,0.0182599356) (2.88235294,0.00608664518) (3.29411765,0.00608664518)};
+\addlegendentry{400 assignments}
+\addplot[MyTeal,thick,no marks] coordinates {(-3.5,0.000872682695) (-3.43,0.00111222971) (-3.36,0.00141060226) (-3.29,0.00178027304) (-3.22,0.00223583944) (-3.15,0.00279425841) (-3.08,0.00347507738) (-3.01,0.00430065246) (-2.94,0.00529634387) (-2.87,0.00649067639) (-2.8,0.00791545158) (-2.73,0.00960579676) (-2.66,0.0116001351) (-2.59,0.0139400605) (-2.52,0.0166701008) (-2.45,0.0198373544) (-2.38,0.0234909854) (-2.31,0.0276815671) (-2.24,0.0324602656) (-2.17,0.037877859) (-2.1,0.043983596) (-2.03,0.0508239015) (-1.96,0.0584409443) (-1.89,0.0668710906) (-1.82,0.0761432737) (-1.75,0.0862773188) (-1.68,0.0972822693) (-1.61,0.109154766) (-1.54,0.121877537) (-1.47,0.135418062) (-1.4,0.149727466) (-1.33,0.164739715) (-1.26,0.180371163) (-1.19,0.196520499) (-1.12,0.213069147) (-1.05,0.229882141) (-0.98,0.246809491) (-0.91,0.263688042) (-0.84,0.280343811) (-0.77,0.296594755) (-0.7,0.312253933) (-0.63,0.327132977) (-0.56,0.341045789) (-0.49,0.35381237) (-0.42,0.365262673) (-0.35,0.375240347) (-0.28,0.383606292) (-0.21,0.390241878) (-0.14,0.395051741) (-0.07,0.397966068) (4.4408921e-16,0.39894228) (0.07,0.397966068) (0.14,0.395051741) (0.21,0.390241878) (0.28,0.383606292) (0.35,0.375240347) (0.42,0.365262673) (0.49,0.35381237) (0.56,0.341045789) (0.63,0.327132977) (0.7,0.312253933) (0.77,0.296594755) (0.84,0.280343811) (0.91,0.263688042) (0.98,0.246809491) (1.05,0.229882141) (1.12,0.213069147) (1.19,0.196520499) (1.26,0.180371163) (1.33,0.164739715) (1.4,0.149727466) (1.47,0.135418062) (1.54,0.121877537) (1.61,0.109154766) (1.68,0.0972822693) (1.75,0.0862773188) (1.82,0.0761432737) (1.89,0.0668710906) (1.96,0.0584409443) (2.03,0.0508239015) (2.1,0.043983596) (2.17,0.037877859) (2.24,0.0324602656) (2.31,0.0276815671) (2.38,0.0234909854) (2.45,0.0198373544) (2.52,0.0166701008) (2.59,0.0139400605) (2.66,0.0116001351) (2.73,0.00960579676) (2.8,0.00791545158) (2.87,0.00649067639) (2.94,0.00529634387) (3.01,0.00430065246) (3.08,0.00347507738) (3.15,0.00279425841) (3.22,0.00223583944) (3.29,0.00178027304) (3.36,0.00141060226) (3.43,0.00111222971) (3.5,0.000872682695)};
+\addlegendentry{Predicted normal density}
+\end{axis}\end{tikzpicture}\end{center}\footnotesize Observed SD $0.00010448$ versus predicted $0.00010339$. Empirical central 95\% interval: $[0.499790,\,0.500209]$. This interval describes assignment variability, not uncertainty in the mean.
+\end{frame}
+
+\begin{frame}{Exponential ensemble versus the actual graph}
+\small
+
+At target $K=0.5$, retain the same 1,114 neighborhood populations.
+For the exponential ensemble, independently redraw both the entire affinity matrix and the assignment in each of 300 replicates.
+\begin{center}\begin{tabular}{lcc}
+ & Actual fixed graph & iid exponential graph\\\hline
+Replicates & 400 & 300\\
+Mean PSSI & 0.50000912 & 0.50000046\\
+Monte Carlo SE & 0.00000522 & 0.00000048\\
+Assignment/ensemble SD & 0.00010448 & 0.00000832\\
+\end{tabular}\end{center}
+\begin{block}{Finding}
+Both means are close to $K$, but the exponential ensemble has about 12.6 times less standard deviation. It misses substantial fluctuation structure of the actual graph.
+\end{block}
+\footnotesize Actual $K=1{,}949{,}374/3{,}898{,}747=0.5000001282$. The exponential column averages over graph uncertainty as well as resident assignments; it is a different null model.
+
+\end{frame}
+
+\begin{frame}{When is the $K$ approximation adequate?}
+\small
+
+\begin{itemize}
+\item \textbf{Equal-strength complete mixing:} $m_0=K$ exactly, including unequal neighborhood populations under the stated self-draw convention.
+\item \textbf{Toy communities:} exact $m_0=0.578069$ at $K=0.5$. Connectivity does not ensure exact centering; expected normalized bias is $0.15614$.
+\item \textbf{Saved Los Angeles PSSI:} $K$ is practically accurate under uniform resident reassignment at the five tested shares. All 90\% Monte Carlo CIs for normalized bias lie inside the illustrative tolerance $[-0.02,0.02]$.
+\item \textbf{Distribution:} graph-specific perturbation predicts the observed scale well. An iid exponential benchmark is substantially too concentrated and does not match the observed dependencies.
+\end{itemize}
+\medskip
+The conclusion concerns this fixed graph and this resident-level null. Permuting neighborhood shares, assigning one label per neighborhood, or using component-averaged SSI would define different experiments.
+
+\end{frame}
+
+\begin{frame}{Derivation of the second-order correction}
+\small
+
+Put $D=\operatorname{diag}(\varepsilon)$ and consider $A(t)=KP+tPD$.
+Write $v(t)=\mathbf1+t u+O(t^2)$ with $\pi^Tu=0$, and
+$\lambda(t)=K+t a+t^2 b+O(t^3)$.
+\[
+ K(I-P)u=P\varepsilon-a\mathbf1,\qquad a=\pi^T\varepsilon.
+\]
+The normalized solution is $u=H\varepsilon/K$. At second order, multiply the eigenvector equation by $\pi^T$:
+\[
+ b=\pi^TPD u=\pi^TDu
+   =\frac1K\pi^T\operatorname{diag}(\varepsilon)H\varepsilon.
+\]
+Since $\mathbb E\varepsilon=0$ and $\mathbb E[\varepsilon_i\varepsilon_j]=C_{ij}$,
+\[
+ \mathbb E b=\frac1K\sum_{i,j}\pi_iH_{ij}C_{ij}.
+\]
+\footnotesize This is a local Taylor expansion about $t=0$ evaluated at $t=1$; finite-sample accuracy is checked against the computed eigenvalues rather than assumed from the matrix dimension.
+
+\end{frame}
+
+\begin{frame}{Reproducibility and sources}
+\small
+
+\textbf{Simulation:} \texttt{scripts/analyze\_k\_approximation.py}. Seed 20261024. Hypergeometric sampling preserves every neighborhood's population and the total number of group labels. Toy means are checked against exact count-vector enumeration.
+\medskip
+
+\textbf{Numerics:} dense eigenvalues for the toy matrices; ARPACK dominant eigenpairs for the large matrices, with residual checks below $10^{-8}$. Theory uses the saved $P$, its stationary vector and reduced resolvent.
+\medskip
+
+\textbf{Outputs:} \texttt{outputs/k\_approximation/} contains the mean/SD/interval tables, individual large-matrix draws, matrix inventory, source hash and assumptions in the accompanying README. Plots are editable PGFPlots coordinates embedded in the source.
+\medskip
+
+\textbf{Random-matrix reference:} Bordenave, Caputo and Chafa\"i, \emph{Circular Law Theorem for Random Markov Matrices}, PTRF 152 (2012), 751--779. \href{https://arxiv.org/abs/0808.1502}{arXiv:0808.1502}. The circular law concerns the bulk spectrum; the PSSI mean formulas here are the displayed perturbation derivation.
+
+\end{frame}

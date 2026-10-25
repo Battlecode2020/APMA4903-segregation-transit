@@ -1,0 +1,34 @@
+{
+  "city_id": "san_francisco",
+  "city": "San Francisco",
+  "node_scale": "tract",
+  "node_count": 241,
+  "zero_population_nodes_excluded": 0,
+  "city_population": 873965,
+  "source": "outputs/multicity/san_francisco/demographics/nodes.csv",
+  "source_sha256": "9b6bf3bd9e9f2c150de0bf9420ea83746b23745424f3b3baa2271d6d5648ef82",
+  "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+  "graphs": [
+    {
+      "radius_km": 0.5,
+      "undirected_edges": 235,
+      "all_degree_zero_node_count": 83,
+      "all_degree_zero_population": 344695,
+      "mean_all_neighbor_count": 1.950207468879668
+    },
+    {
+      "radius_km": 1.0,
+      "undirected_edges": 1076,
+      "all_degree_zero_node_count": 4,
+      "all_degree_zero_population": 10010,
+      "mean_all_neighbor_count": 8.929460580912863
+    },
+    {
+      "radius_km": 1.5,
+      "undirected_edges": 2309,
+      "all_degree_zero_node_count": 1,
+      "all_degree_zero_population": 2747,
+      "mean_all_neighbor_count": 19.16182572614108
+    }
+  ]
+}

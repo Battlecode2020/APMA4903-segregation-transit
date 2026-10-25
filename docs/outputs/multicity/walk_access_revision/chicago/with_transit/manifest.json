@@ -1,0 +1,51 @@
+{
+  "city_id": "chicago",
+  "city": "Chicago",
+  "node_scale": "populated city-limit tract portions",
+  "scenario": "with_transit",
+  "parameters": {
+    "beta_per_usd": 0.1,
+    "omega_usd_per_hour": 15.0,
+    "c0_usd": 1.25,
+    "standardized_transit_fare_usd": 3.0
+  },
+  "access_policy": "uncapped distance, barrier-screened access and egress; every walking leg charged",
+  "walking_transfers": "Automatic transfer links within 400m; explicit GTFS links, transfer restrictions and chained walks retained.",
+  "no_transit_proxy": true,
+  "diagnostics": {
+    "city_id": "chicago",
+    "city": "Chicago",
+    "scenario": "with_transit",
+    "node_count": 794,
+    "population": 2746388,
+    "transit_selected_pairs": 601076,
+    "nonlocal_pairs": 629642,
+    "transit_selected_percent": 95.46313619485359,
+    "nodes_without_boarding_access": 0,
+    "old_nodes_without_boarding_access": 0,
+    "barrier_flagged_direct_walking_pairs": 2879,
+    "population_weighted_flagged_walking_mass_percent": 1.1115852682833571,
+    "service_dates": [
+      "2026-10-20"
+    ],
+    "bus_routes": 123,
+    "rail_routes": 19,
+    "max_pssi_eigenpair_residual": 1.7770388025667438e-13,
+    "transit_access_seconds_selected_median_minutes": 7.005375657933982,
+    "transit_access_seconds_selected_max_minutes": 52.99453306125509,
+    "transit_egress_seconds_selected_median_minutes": 6.868746231431229,
+    "transit_egress_seconds_selected_max_minutes": 52.99453306125509,
+    "transit_selected_pairs_beyond_old_access_radius": 12950,
+    "transit_selected_pairs_beyond_old_egress_radius": 13637,
+    "transit_selected_pairs_beyond_either_old_radius": 26095,
+    "nodes_without_boarding_access_reason": "No boarding stop passes the retained geometric water/land screen; no access distance cutoff remains."
+  },
+  "source_sha256": {
+    "outputs/multicity/walk_access_revision/chicago/nodes.csv": "10895acca4bb5b2268bdd5e71e7cf565ea678ee4e3a44a402d07ad34c9d07c4d",
+    "outputs/multicity/walk_access_revision/chicago/travel/modes.npz": "1dc9c69e38e0d1f201ca10d43041112a24d0ec773ba14708de44559214bb837b",
+    "outputs/multicity/walk_access_revision/chicago/travel/manifest.json": "ed5f5abebdd5a3d77ac3b569f3ae06bb862bd0113f08ff96a3359b4a5d42ff76"
+  },
+  "nyc_scope": null,
+  "normalization": "Raw PSSI=lambda; normalized PSSI=(lambda-K)/(1-K). K=all city group residents/all city residents. Per-node right eigenvector sum 1; n*v mean 1. Distance Fryer is a separate geography-only model.",
+  "routes_api_calls": 0
+}

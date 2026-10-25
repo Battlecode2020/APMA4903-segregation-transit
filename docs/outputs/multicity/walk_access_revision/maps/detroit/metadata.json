@@ -1,0 +1,376 @@
+{
+  "created_utc": "2026-10-25T16:29:03.203615+00:00",
+  "city_id": "detroit",
+  "city": "Detroit",
+  "section_count": 269,
+  "population": 639111,
+  "geography": "269 city-limit tract portions",
+  "map_value": "n times the saved right Perron eigenvector component; vector sums to one, arithmetic mean of mapped values is one",
+  "color_scale": {
+    "shared_across_all_cities_and_categories": true,
+    "transform": "log",
+    "minimum": 0.25,
+    "maximum": 4.0,
+    "neutral_value": 1,
+    "out_of_range": "Explicitly saturated with colorbar extension triangles and counts/ranges on every panel; exact values remain in CSV",
+    "zeros": "Below-scale color; counted separately, not dropped"
+  },
+  "category_diagnostics": {
+    "white_alone": {
+      "eigenvalue": 0.13634795027821553,
+      "vector_sum": 1.0,
+      "relative_score_mean": 1.0,
+      "minimum": 0.6047834200353976,
+      "maximum": 1.9472648182179972,
+      "below_color_scale": 0,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 5.4420660686171907e-14
+    },
+    "black_alone": {
+      "eigenvalue": 0.8059135674300126,
+      "vector_sum": 1.0,
+      "relative_score_mean": 1.0,
+      "minimum": 0.703631383367283,
+      "maximum": 1.1188448409983878,
+      "below_color_scale": 0,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 3.012919774780798e-13
+    },
+    "hispanic_latino_any_race": {
+      "eigenvalue": 0.2024725074342537,
+      "vector_sum": 1.0,
+      "relative_score_mean": 1.0,
+      "minimum": 0.4429245617011131,
+      "maximum": 4.520124597444175,
+      "below_color_scale": 0,
+      "above_color_scale": 5,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 6.104231703440988e-14
+    },
+    "asian_alone": {
+      "eigenvalue": 0.05091550052361603,
+      "vector_sum": 0.9999999999999999,
+      "relative_score_mean": 1.0,
+      "minimum": 0.48248615683979174,
+      "maximum": 5.563722804916723,
+      "below_color_scale": 0,
+      "above_color_scale": 3,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 4.832289082767893e-15
+    }
+  },
+  "display_projection": "+proj=laea +lat_0=42.38612955167286 +lon_0=-83.10677772156134 +datum=WGS84 +units=m +type=crs",
+  "display_geometry": "Saved city-limit tract portions minus saved Census mapped-water polygons for display only; statistical assignments unchanged.",
+  "sections_without_land_display_geometry": [],
+  "checks": [
+    "Exact node/geometry/eigenvector ID ordering",
+    "Counts and population match saved nodes",
+    "P rows and eigenvectors normalized",
+    "A=P diag(p)",
+    "A v=lambda v within 1e-9"
+  ],
+  "sources": [
+    {
+      "path": "outputs/multicity/walk_access_revision/detroit/nodes.csv",
+      "sha256": "d4da8e38a5be7c51b180e4a255b7867515a0b03d2085a5bb90e1e1a667b208e1"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/detroit/with_transit/analysis_matrices.npz",
+      "sha256": "8dd24726193f612505d6f21083d6f39e3875e5e4d1f611496683fa2d39a3ac75"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/detroit/travel/manifest.json",
+      "sha256": "f8d10065154e389cff82a0bdef771cea16a914e9ffb5437d103774ccb27ed5ef"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/detroit/with_transit/manifest.json",
+      "sha256": "b1b737795ff6ed73c00c94e48babf5f1dfb5112de3e8095ff0f19adaabcdc43f"
+    },
+    {
+      "path": "outputs/multicity/detroit/demographics/nodes.geojson",
+      "sha256": "e7dbab96cb54a99784a5f5f7d71dcd5a5abd15598b3bc593b7d5529d9f9e83e3"
+    },
+    {
+      "path": "outputs/multicity/detroit/demographics/water.geojson",
+      "sha256": "5809f1a1fbab2c2f9b2d0da8b3a7289fd1f55fe5a3558ee16d6017781f688b76"
+    }
+  ],
+  "model_manifests": {
+    "travel": {
+      "model": "GTFS pattern graph with mean-headway waiting",
+      "input_fingerprint": {
+        "nodes_sha256": "cdc1efe2327f6eaf63de095075e40f4bab73d260a850b08a83859dd335efeb86",
+        "parameters": {
+          "reference_date": "2026-10-20",
+          "window_start": "07:00:00",
+          "window_end": "10:00:00",
+          "walking_speed_kmh": 4.8,
+          "walking_detour": 1.3,
+          "bus_access_km": 1.0,
+          "rail_access_km": 3.0,
+          "transfer_walk_km": 0.4,
+          "entrance_seconds": 60.0,
+          "transfer_buffer_seconds": 60.0,
+          "dijkstra_batch_size": 16,
+          "access_policy": "uncapped",
+          "pedestrian_barrier_policy": "reject"
+        },
+        "feeds": [
+          "1a8015e7c4ec4394abee417a7d3648ce443a0d2a5138b11120c03666f4b9fddf",
+          "cb15d76446ac468a121eb1830f5ea1c41c3c112d904942d33a65d131555834f6",
+          "10b9b6c2d3a144afafa46103c7db8f5dbfd5a8d554a6d0363b82e650a23f7e8c",
+          "57355ad50a298cc0b709d0bcbc44908e3496b61fb36d7a3ddf0c126e2857041d"
+        ],
+        "land_sha256": null,
+        "water_sha256": "fb2d091f1d39af6deb306d09ba2743b917bb8b7819d382d9c509a9c3cfa942a6",
+        "model_version": 4
+      },
+      "parameters": {
+        "reference_date": "2026-10-20",
+        "window_start": "07:00:00",
+        "window_end": "10:00:00",
+        "walking_speed_kmh": 4.8,
+        "walking_detour": 1.3,
+        "bus_access_km": 1.0,
+        "rail_access_km": 3.0,
+        "transfer_walk_km": 0.4,
+        "entrance_seconds": 60.0,
+        "transfer_buffer_seconds": 60.0,
+        "dijkstra_batch_size": 16,
+        "access_policy": "uncapped",
+        "pedestrian_barrier_policy": "reject"
+      },
+      "feeds": [
+        {
+          "path": "data/multicity/transit/ddot.zip",
+          "sha256": "1a8015e7c4ec4394abee417a7d3648ce443a0d2a5138b11120c03666f4b9fddf",
+          "service_date": "2026-10-20",
+          "patterns": 77,
+          "route_modes": [
+            "bus"
+          ],
+          "used_routes_by_mode": {
+            "bus": 37,
+            "rail": 0
+          },
+          "published_feed_info": [
+            {
+              "feed_publisher_name": "Detroit Department of Transportation",
+              "feed_publisher_url": "https://DetroitMI.gov/DDOT",
+              "feed_lang": "en",
+              "feed_start_date": "20260907",
+              "feed_end_date": "20270207",
+              "feed_version": "S1000182"
+            }
+          ],
+          "agency_timezones": [
+            "America/Detroit"
+          ],
+          "diagnostics": {
+            "scheduled_trip_samples": 600
+          }
+        },
+        {
+          "path": "data/multicity/transit/qline.zip",
+          "sha256": "cb15d76446ac468a121eb1830f5ea1c41c3c112d904942d33a65d131555834f6",
+          "service_date": "2026-10-20",
+          "patterns": 2,
+          "route_modes": [
+            "rail"
+          ],
+          "used_routes_by_mode": {
+            "bus": 0,
+            "rail": 1
+          },
+          "published_feed_info": [
+            {
+              "feed_publisher_name": "ETA Transit Systems",
+              "feed_publisher_url": "https://etatransit.com",
+              "feed_lang": "en",
+              "feed_start_date": "20250911",
+              "feed_end_date": "20261223",
+              "feed_version": "22"
+            }
+          ],
+          "agency_timezones": [
+            "America/New_York"
+          ],
+          "diagnostics": {
+            "scheduled_trip_samples": 18
+          }
+        },
+        {
+          "path": "data/multicity/transit/dpm_current.zip",
+          "sha256": "10b9b6c2d3a144afafa46103c7db8f5dbfd5a8d554a6d0363b82e650a23f7e8c",
+          "service_date": "2026-10-20",
+          "patterns": 1,
+          "route_modes": [
+            "rail"
+          ],
+          "used_routes_by_mode": {
+            "bus": 0,
+            "rail": 1
+          },
+          "published_feed_info": [
+            {
+              "feed_publisher_name": "Detroit People Mover",
+              "feed_id": "",
+              "feed_publisher_url": "http://www.thepeoplemover.com/",
+              "feed_lang": "en",
+              "feed_start_date": "20241031",
+              "feed_end_date": "20271231",
+              "feed_version": "1",
+              "default_lang": "",
+              "feed_contact_email": "jaho@thepeoplemover.com",
+              "feed_contact_url": ""
+            }
+          ],
+          "agency_timezones": [
+            "America/Detroit"
+          ],
+          "diagnostics": {
+            "scheduled_trip_samples": 51
+          }
+        },
+        {
+          "path": "data/multicity/transit/smart.zip",
+          "sha256": "57355ad50a298cc0b709d0bcbc44908e3496b61fb36d7a3ddf0c126e2857041d",
+          "service_date": "2026-10-20",
+          "patterns": 95,
+          "route_modes": [
+            "bus"
+          ],
+          "used_routes_by_mode": {
+            "bus": 45,
+            "rail": 0
+          },
+          "published_feed_info": [
+            {
+              "feed_publisher_name": "SMART",
+              "feed_publisher_url": "https://smartbus.org",
+              "feed_contact_email": "crowe@smartbus.org",
+              "feed_contact_url": "https://smartbus.org/about/contact",
+              "feed_lang": "en",
+              "feed_start_date": "20260907",
+              "feed_end_date": "20270103",
+              "feed_version": "S1000147"
+            }
+          ],
+          "agency_timezones": [
+            "America/Detroit"
+          ],
+          "diagnostics": {
+            "scheduled_trip_samples": 394
+          }
+        }
+      ],
+      "nodes": 269,
+      "graph_nodes": 36810,
+      "graph_edges": 107403,
+      "service_patterns": 175,
+      "served_physical_stops": 10264,
+      "pedestrian_transfer_pairs": 27778,
+      "explicit_transfer_rules_applied": 0,
+      "transfer_rule_diagnostics": {},
+      "access_policy": "uncapped",
+      "pedestrian_barrier_policy": "reject",
+      "walking_access_interpretation": "No maximum walking distance for initial access or final egress; every accepted walking second is charged.",
+      "transfer_walking_interpretation": "Automatic inter-stop links use a 0.4km approximate walking radius and geometry checks; explicit GTFS transfer links and chained walks remain. This is not a total interchange-walk cap.",
+      "routing_diagnostics": {
+        "routing_algorithm": "batched temporary origins plus chunked min-plus egress",
+        "base_graph_nodes": 36794,
+        "base_graph_edges": 107403,
+        "maximum_temporary_access_edges": 187238,
+        "maximum_temporary_origins": 16,
+        "finite_journeys_with_access_beyond_legacy_radius": 18699,
+        "finite_journeys_with_egress_beyond_legacy_radius": 18059
+      },
+      "mode_array_definitions": {
+        "transit_seconds": "Minimum modeled walk-access + boarding wait + actual GTFS ride(s), dwell/transfers + walk-egress. At least one ride required; diagonal and absent candidates are infinity.",
+        "transit_access_seconds": "For uncapped output: selected initial walking time plus entrance_seconds, fully included in transit_seconds.",
+        "transit_egress_seconds": "For uncapped output: selected final walking time plus entrance_seconds exit buffer, fully included in transit_seconds.",
+        "transit_first_boarding_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+        "transit_last_alighting_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+        "transit_access_barrier_flag": "For uncapped flag_only output: selected access chord fails supplied land/water screen; false under reject policy because such legs are excluded. False is not validation against streets or barriers outside supplied geometry.",
+        "transit_egress_barrier_flag": "Same as transit_access_barrier_flag, for selected egress chord.",
+        "transit_access_exceeds_legacy_radius": "For uncapped output: selected initial walking distance exceeds old mode-specific bus_access_km/rail_access_km radius. Exit/entrance buffer is excluded from this distance comparison.",
+        "transit_egress_exceeds_legacy_radius": "Same as transit_access_exceeds_legacy_radius, for final walking leg."
+      },
+      "common_service_date": true,
+      "nonlocal_pairs": 72092,
+      "transit_reachable_nonlocal_pairs": 72092,
+      "tracts_without_access_stops": 0,
+      "walk_land_check_available": false,
+      "walk_water_check_available": true,
+      "walk_barrier_check_available": true,
+      "barrier_clear_nonlocal_walk_pairs": 68820,
+      "limitations": [
+        "Expected-time graph, not exact departure-time or real-time routing; median rides and half mean headway are approximations.",
+        "Exact stop-sequence patterns are separate: splitting service patterns can overestimate waiting when several patterns serve the same journey.",
+        "Walking is great-circle distance times a detour factor, not a street/bridge/pedestrian-access route.",
+        "walk_seconds is the complete distance approximation, including potentially impossible pedestrian water crossings; use walk_barrier_checked_seconds for conservative barrier filtering.",
+        "Without supplied land/water geometry, pedestrian legs have not been checked for water barriers. Supplied water coverage is limited to downloaded counties.",
+        "When supplied, land-chord checks are conservative: they may reject genuine bridge or indirect land paths.",
+        "Pickup/drop-off types 1, 2 and 3 are unavailable to unrestricted riders in this model.",
+        "Interlining, timed transfers, schedule correlations, crowding, service reliability, and accessibility are not modeled.",
+        "GTFS minimum-transfer rules conservatively delay all onward transfers from affected arrival states; prohibitions disable all onward transfers there. This prevents walking via a third stop from bypassing a rule, but can overestimate journeys unaffected by the original rule.",
+        "Transit requires at least one actual GTFS ride edge; absent service stays infinite; no invented transit fallback."
+      ]
+    },
+    "analysis": {
+      "city_id": "detroit",
+      "city": "Detroit",
+      "node_scale": "populated city-limit tract portions",
+      "scenario": "with_transit",
+      "parameters": {
+        "beta_per_usd": 0.1,
+        "omega_usd_per_hour": 15.0,
+        "c0_usd": 1.25,
+        "standardized_transit_fare_usd": 3.0
+      },
+      "access_policy": "uncapped distance, barrier-screened access and egress; every walking leg charged",
+      "walking_transfers": "Automatic transfer links within 400m; explicit GTFS links, transfer restrictions and chained walks retained.",
+      "no_transit_proxy": true,
+      "diagnostics": {
+        "city_id": "detroit",
+        "city": "Detroit",
+        "scenario": "with_transit",
+        "node_count": 269,
+        "population": 639111,
+        "transit_selected_pairs": 65136,
+        "nonlocal_pairs": 72092,
+        "transit_selected_percent": 90.3512178882539,
+        "nodes_without_boarding_access": 0,
+        "old_nodes_without_boarding_access": 0,
+        "barrier_flagged_direct_walking_pairs": 48,
+        "population_weighted_flagged_walking_mass_percent": 0.13363990691692096,
+        "service_dates": [
+          "2026-10-20"
+        ],
+        "bus_routes": 82,
+        "rail_routes": 2,
+        "max_pssi_eigenpair_residual": 3.012919774780798e-13,
+        "transit_access_seconds_selected_median_minutes": 9.18542564804236,
+        "transit_access_seconds_selected_max_minutes": 48.35653929236436,
+        "transit_egress_seconds_selected_median_minutes": 9.012143585000326,
+        "transit_egress_seconds_selected_max_minutes": 47.91944957988225,
+        "transit_selected_pairs_beyond_old_access_radius": 16608,
+        "transit_selected_pairs_beyond_old_egress_radius": 15984,
+        "transit_selected_pairs_beyond_either_old_radius": 28696,
+        "nodes_without_boarding_access_reason": "No boarding stop passes the retained geometric water/land screen; no access distance cutoff remains."
+      },
+      "source_sha256": {
+        "outputs/multicity/walk_access_revision/detroit/nodes.csv": "d4da8e38a5be7c51b180e4a255b7867515a0b03d2085a5bb90e1e1a667b208e1",
+        "outputs/multicity/walk_access_revision/detroit/travel/modes.npz": "9272a38b40f079f05806114027d2edd2954981a7862e3421176e4fc2c2c1b090",
+        "outputs/multicity/walk_access_revision/detroit/travel/manifest.json": "f8d10065154e389cff82a0bdef771cea16a914e9ffb5437d103774ccb27ed5ef"
+      },
+      "nyc_scope": null,
+      "normalization": "Raw PSSI=lambda; normalized PSSI=(lambda-K)/(1-K). K=all city group residents/all city residents. Per-node right eigenvector sum 1; n*v mean 1. Distance Fryer is a separate geography-only model.",
+      "routes_api_calls": 0
+    }
+  },
+  "network_requests": 0,
+  "routes_api_calls": 0
+}

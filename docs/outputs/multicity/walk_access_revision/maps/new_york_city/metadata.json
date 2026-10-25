@@ -1,0 +1,287 @@
+{
+  "created_utc": "2026-10-25T16:33:57.549671+00:00",
+  "city_id": "new_york_city",
+  "city": "New York City",
+  "section_count": 70,
+  "population": 8804190,
+  "geography": "70 city sections",
+  "map_value": "n times the saved right Perron eigenvector component; vector sums to one, arithmetic mean of mapped values is one",
+  "color_scale": {
+    "shared_across_all_cities_and_categories": true,
+    "transform": "log",
+    "minimum": 0.25,
+    "maximum": 4.0,
+    "neutral_value": 1,
+    "out_of_range": "Explicitly saturated with colorbar extension triangles and counts/ranges on every panel; exact values remain in CSV",
+    "zeros": "Below-scale color; counted separately, not dropped"
+  },
+  "category_diagnostics": {
+    "white_alone": {
+      "eigenvalue": 0.6836678557625744,
+      "vector_sum": 1.0,
+      "relative_score_mean": 1.0,
+      "minimum": 0.0033150592471565946,
+      "maximum": 34.346629390353364,
+      "below_color_scale": 66,
+      "above_color_scale": 4,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 3.230193890146893e-13
+    },
+    "black_alone": {
+      "eigenvalue": 0.2728917881749918,
+      "vector_sum": 0.9999999999999999,
+      "relative_score_mean": 1.0000000000000002,
+      "minimum": 0.008599897456715334,
+      "maximum": 8.563432078412271,
+      "below_color_scale": 4,
+      "above_color_scale": 1,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 2.0872192862952943e-13
+    },
+    "hispanic_latino_any_race": {
+      "eigenvalue": 0.3331848532804903,
+      "vector_sum": 1.0,
+      "relative_score_mean": 0.9999999999999998,
+      "minimum": 0.022814315536241594,
+      "maximum": 1.6883953770401052,
+      "below_color_scale": 4,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 1.6184785716494288e-13
+    },
+    "asian_alone": {
+      "eigenvalue": 0.20694554760318687,
+      "vector_sum": 1.0,
+      "relative_score_mean": 0.9999999999999996,
+      "minimum": 0.05587696339154167,
+      "maximum": 12.694103434767943,
+      "below_color_scale": 3,
+      "above_color_scale": 2,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 1.6602691443878825e-13
+    }
+  },
+  "display_projection": "+proj=laea +lat_0=40.72372583142857 +lon_0=-73.92271745714287 +datum=WGS84 +units=m +type=crs",
+  "display_geometry": "Saved NYC sections intersected with union of saved Census blocks with positive land area; no statistical assignments changed.",
+  "sections_without_land_display_geometry": [],
+  "checks": [
+    "Exact node/geometry/eigenvector ID ordering",
+    "Counts and population match saved nodes",
+    "P rows and eigenvectors normalized",
+    "A=P diag(p)",
+    "A v=lambda v within 1e-9"
+  ],
+  "sources": [
+    {
+      "path": "outputs/multicity/walk_access_revision/new_york_city/nodes.csv",
+      "sha256": "20f8e11effb29af43abb0a6b99c8063901db8fcf9a4cfdb09ba9dfd288ac65f7"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/new_york_city/with_transit/analysis_matrices.npz",
+      "sha256": "bb80e42a5fa755c3c48a0103c1212d6c74b8d495a0774205373a993459026200"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/new_york_city/travel/manifest.json",
+      "sha256": "6ba9c292291c1bb50e65eaceaa62ebd40b4129a86cd470c9494d4f33275bd64c"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/new_york_city/with_transit/manifest.json",
+      "sha256": "31e890b884e7d7bec3d119e4c872d8d914fe7880c118c52b46dd72974f11e4d2"
+    },
+    {
+      "path": "outputs/nyc_routes/zones.geojson",
+      "sha256": "a87029a61c39c212595adf727e1ee8a275bba6aa73cfd0d2df73c258ba983ac3"
+    },
+    {
+      "path": "data/raw/tl_2020_36_tabblock20.shp",
+      "sha256": "07baa5486be6c5ca062df19930d91173143ef7b900e48c8ba407a7360600460a"
+    },
+    {
+      "path": "data/raw/tl_2020_36_tabblock20.dbf",
+      "sha256": "40404e7e34d1e2e6e5413ae669adb463dc75e6a57ff782911bf6b54aadbd0872"
+    }
+  ],
+  "model_manifests": {
+    "travel": {
+      "model": "GTFS pattern graph with mean-headway waiting",
+      "input_fingerprint": {
+        "nodes_sha256": "e458be4582980f261a675dda9a9bde0fa8930f84cc2b66d33c07da8024063490",
+        "parameters": {
+          "reference_date": "2026-10-20",
+          "window_start": "07:00:00",
+          "window_end": "10:00:00",
+          "walking_speed_kmh": 4.8,
+          "walking_detour": 1.3,
+          "bus_access_km": 1.0,
+          "rail_access_km": 3.0,
+          "transfer_walk_km": 0.4,
+          "entrance_seconds": 60.0,
+          "transfer_buffer_seconds": 60.0,
+          "dijkstra_batch_size": 16,
+          "access_policy": "uncapped",
+          "pedestrian_barrier_policy": "reject"
+        },
+        "feeds": [
+          "2c9e69b82ac596a2fe660b56656509570cfba3c2e4c50be75eaf624eee1bc6f8"
+        ],
+        "land_sha256": "7536f323f47d83bd8464d336cba3f45b645dbba1f41a5a1fe717f7235b7840d6",
+        "water_sha256": null,
+        "model_version": 4
+      },
+      "parameters": {
+        "reference_date": "2026-10-20",
+        "window_start": "07:00:00",
+        "window_end": "10:00:00",
+        "walking_speed_kmh": 4.8,
+        "walking_detour": 1.3,
+        "bus_access_km": 1.0,
+        "rail_access_km": 3.0,
+        "transfer_walk_km": 0.4,
+        "entrance_seconds": 60.0,
+        "transfer_buffer_seconds": 60.0,
+        "dijkstra_batch_size": 16,
+        "access_policy": "uncapped",
+        "pedestrian_barrier_policy": "reject"
+      },
+      "feeds": [
+        {
+          "path": "data/transit/gtfs_subway.zip",
+          "sha256": "2c9e69b82ac596a2fe660b56656509570cfba3c2e4c50be75eaf624eee1bc6f8",
+          "service_date": "2026-10-20",
+          "patterns": 133,
+          "route_modes": [
+            "rail"
+          ],
+          "used_routes_by_mode": {
+            "bus": 0,
+            "rail": 29
+          },
+          "published_feed_info": [
+            {
+              "feed_publisher_name": "MTA New York City Transit",
+              "feed_publisher_url": "https://www.mta.info/",
+              "feed_lang": "EN",
+              "feed_start_date": "20260526",
+              "feed_end_date": "20261031",
+              "feed_version": "20260826-X-long-term-supplement-trip-ids",
+              "feed_contact_url": "https://groups.google.com/forum/#!forum/mtadeveloperresources"
+            }
+          ],
+          "agency_timezones": [
+            "America/New_York"
+          ],
+          "diagnostics": {
+            "scheduled_trip_samples": 1892
+          }
+        }
+      ],
+      "nodes": 70,
+      "graph_nodes": 8545,
+      "graph_edges": 16354,
+      "service_patterns": 133,
+      "served_physical_stops": 989,
+      "pedestrian_transfer_pairs": 1065,
+      "explicit_transfer_rules_applied": 2446,
+      "transfer_rule_diagnostics": {
+        "minimums_conservatively_applied_to_all_onward_transfers": 1224
+      },
+      "access_policy": "uncapped",
+      "pedestrian_barrier_policy": "reject",
+      "walking_access_interpretation": "No maximum walking distance for initial access or final egress; every accepted walking second is charged.",
+      "transfer_walking_interpretation": "Automatic inter-stop links use a 0.4km approximate walking radius and geometry checks; explicit GTFS transfer links and chained walks remain. This is not a total interchange-walk cap.",
+      "routing_diagnostics": {
+        "routing_algorithm": "batched temporary origins plus chunked min-plus egress",
+        "base_graph_nodes": 8529,
+        "base_graph_edges": 16354,
+        "maximum_temporary_access_edges": 22129,
+        "maximum_temporary_origins": 16,
+        "finite_journeys_with_access_beyond_legacy_radius": 437,
+        "finite_journeys_with_egress_beyond_legacy_radius": 434
+      },
+      "mode_array_definitions": {
+        "transit_seconds": "Minimum modeled walk-access + boarding wait + actual GTFS ride(s), dwell/transfers + walk-egress. At least one ride required; diagonal and absent candidates are infinity.",
+        "transit_access_seconds": "For uncapped output: selected initial walking time plus entrance_seconds, fully included in transit_seconds.",
+        "transit_egress_seconds": "For uncapped output: selected final walking time plus entrance_seconds exit buffer, fully included in transit_seconds.",
+        "transit_first_boarding_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+        "transit_last_alighting_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+        "transit_access_barrier_flag": "For uncapped flag_only output: selected access chord fails supplied land/water screen; false under reject policy because such legs are excluded. False is not validation against streets or barriers outside supplied geometry.",
+        "transit_egress_barrier_flag": "Same as transit_access_barrier_flag, for selected egress chord.",
+        "transit_access_exceeds_legacy_radius": "For uncapped output: selected initial walking distance exceeds old mode-specific bus_access_km/rail_access_km radius. Exit/entrance buffer is excluded from this distance comparison.",
+        "transit_egress_exceeds_legacy_radius": "Same as transit_access_exceeds_legacy_radius, for final walking leg."
+      },
+      "common_service_date": true,
+      "nonlocal_pairs": 4830,
+      "transit_reachable_nonlocal_pairs": 4302,
+      "tracts_without_access_stops": 0,
+      "walk_land_check_available": true,
+      "walk_water_check_available": false,
+      "walk_barrier_check_available": true,
+      "barrier_clear_nonlocal_walk_pairs": 1762,
+      "limitations": [
+        "Expected-time graph, not exact departure-time or real-time routing; median rides and half mean headway are approximations.",
+        "Exact stop-sequence patterns are separate: splitting service patterns can overestimate waiting when several patterns serve the same journey.",
+        "Walking is great-circle distance times a detour factor, not a street/bridge/pedestrian-access route.",
+        "walk_seconds is the complete distance approximation, including potentially impossible pedestrian water crossings; use walk_barrier_checked_seconds for conservative barrier filtering.",
+        "Without supplied land/water geometry, pedestrian legs have not been checked for water barriers. Supplied water coverage is limited to downloaded counties.",
+        "When supplied, land-chord checks are conservative: they may reject genuine bridge or indirect land paths.",
+        "Pickup/drop-off types 1, 2 and 3 are unavailable to unrestricted riders in this model.",
+        "Interlining, timed transfers, schedule correlations, crowding, service reliability, and accessibility are not modeled.",
+        "GTFS minimum-transfer rules conservatively delay all onward transfers from affected arrival states; prohibitions disable all onward transfers there. This prevents walking via a third stop from bypassing a rule, but can overestimate journeys unaffected by the original rule.",
+        "Transit requires at least one actual GTFS ride edge; absent service stays infinite; no invented transit fallback."
+      ]
+    },
+    "analysis": {
+      "city_id": "new_york_city",
+      "city": "New York City",
+      "node_scale": "70 custom sections",
+      "scenario": "with_transit",
+      "parameters": {
+        "beta_per_usd": 0.1,
+        "omega_usd_per_hour": 15.0,
+        "c0_usd": 1.25,
+        "standardized_transit_fare_usd": 3.0
+      },
+      "access_policy": "uncapped distance, barrier-screened access and egress; every walking leg charged",
+      "walking_transfers": "Automatic transfer links within 400m; explicit GTFS links, transfer restrictions and chained walks retained.",
+      "no_transit_proxy": true,
+      "diagnostics": {
+        "city_id": "new_york_city",
+        "city": "New York City",
+        "scenario": "with_transit",
+        "node_count": 70,
+        "population": 8804190,
+        "transit_selected_pairs": 4033,
+        "nonlocal_pairs": 4830,
+        "transit_selected_percent": 83.49896480331263,
+        "nodes_without_boarding_access": 0,
+        "old_nodes_without_boarding_access": null,
+        "barrier_flagged_direct_walking_pairs": 558,
+        "population_weighted_flagged_walking_mass_percent": 1.5963871796390323,
+        "service_dates": [
+          "2026-10-20"
+        ],
+        "bus_routes": 0,
+        "rail_routes": 29,
+        "max_pssi_eigenpair_residual": 3.230193890146893e-13,
+        "transit_access_seconds_selected_median_minutes": 8.45775597567826,
+        "transit_access_seconds_selected_max_minutes": 93.88825576509413,
+        "transit_egress_seconds_selected_median_minutes": 8.45775597567826,
+        "transit_egress_seconds_selected_max_minutes": 95.30455492498189,
+        "transit_selected_pairs_beyond_old_access_radius": 375,
+        "transit_selected_pairs_beyond_old_egress_radius": 372,
+        "transit_selected_pairs_beyond_either_old_radius": 729,
+        "nodes_without_boarding_access_reason": "No boarding stop passes the retained geometric water/land screen; no access distance cutoff remains."
+      },
+      "source_sha256": {
+        "outputs/multicity/walk_access_revision/new_york_city/nodes.csv": "20f8e11effb29af43abb0a6b99c8063901db8fcf9a4cfdb09ba9dfd288ac65f7",
+        "outputs/multicity/walk_access_revision/new_york_city/travel/modes.npz": "decae5c2ff887eccfcfa8cc5643a38d222dc62637696bc970fabee80576528f7",
+        "outputs/multicity/walk_access_revision/new_york_city/travel/manifest.json": "6ba9c292291c1bb50e65eaceaa62ebd40b4129a86cd470c9494d4f33275bd64c"
+      },
+      "nyc_scope": "NYC uses cached subway/SIR only; no actual bus, PATH, commuter rail, AirTrain or ferry service. Earlier hypothetical NYC transit replacements are removed.",
+      "normalization": "Raw PSSI=lambda; normalized PSSI=(lambda-K)/(1-K). K=all city group residents/all city residents. Per-node right eigenvector sum 1; n*v mean 1. Distance Fryer is a separate geography-only model.",
+      "routes_api_calls": 0
+    }
+  },
+  "network_requests": 0,
+  "routes_api_calls": 0
+}

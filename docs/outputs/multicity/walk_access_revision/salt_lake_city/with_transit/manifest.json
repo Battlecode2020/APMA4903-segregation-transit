@@ -1,0 +1,51 @@
+{
+  "city_id": "salt_lake_city",
+  "city": "Salt Lake City",
+  "node_scale": "populated city-limit tract portions",
+  "scenario": "with_transit",
+  "parameters": {
+    "beta_per_usd": 0.1,
+    "omega_usd_per_hour": 15.0,
+    "c0_usd": 1.25,
+    "standardized_transit_fare_usd": 3.0
+  },
+  "access_policy": "uncapped distance, barrier-screened access and egress; every walking leg charged",
+  "walking_transfers": "Automatic transfer links within 400m; explicit GTFS links, transfer restrictions and chained walks retained.",
+  "no_transit_proxy": true,
+  "diagnostics": {
+    "city_id": "salt_lake_city",
+    "city": "Salt Lake City",
+    "scenario": "with_transit",
+    "node_count": 59,
+    "population": 199723,
+    "transit_selected_pairs": 2399,
+    "nonlocal_pairs": 3422,
+    "transit_selected_percent": 70.1052016364699,
+    "nodes_without_boarding_access": 0,
+    "old_nodes_without_boarding_access": 4,
+    "barrier_flagged_direct_walking_pairs": 0,
+    "population_weighted_flagged_walking_mass_percent": 0.0,
+    "service_dates": [
+      "2026-10-20"
+    ],
+    "bus_routes": 80,
+    "rail_routes": 5,
+    "max_pssi_eigenpair_residual": 1.2526438220028524e-13,
+    "transit_access_seconds_selected_median_minutes": 9.135487830195514,
+    "transit_access_seconds_selected_max_minutes": 75.48494736017793,
+    "transit_egress_seconds_selected_median_minutes": 8.9919614522618,
+    "transit_egress_seconds_selected_max_minutes": 69.14091456372476,
+    "transit_selected_pairs_beyond_old_access_radius": 702,
+    "transit_selected_pairs_beyond_old_egress_radius": 613,
+    "transit_selected_pairs_beyond_either_old_radius": 1136,
+    "nodes_without_boarding_access_reason": "No boarding stop passes the retained geometric water/land screen; no access distance cutoff remains."
+  },
+  "source_sha256": {
+    "outputs/multicity/walk_access_revision/salt_lake_city/nodes.csv": "b61bf49fac820793d769ad36ee5070cb8b54067c39dcceb2b4f524cf17f9ba22",
+    "outputs/multicity/walk_access_revision/salt_lake_city/travel/modes.npz": "48e173507261c2c47cb3ce8550a5624fea23ec8a5c0b876791f5793f1d75b5d8",
+    "outputs/multicity/walk_access_revision/salt_lake_city/travel/manifest.json": "ba5b22e49c5e224bfbd46438b74ca3607808db10b65156b7b2484ad9c816c56d"
+  },
+  "nyc_scope": null,
+  "normalization": "Raw PSSI=lambda; normalized PSSI=(lambda-K)/(1-K). K=all city group residents/all city residents. Per-node right eigenvector sum 1; n*v mean 1. Distance Fryer is a separate geography-only model.",
+  "routes_api_calls": 0
+}

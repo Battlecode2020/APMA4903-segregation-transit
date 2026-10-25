@@ -1,0 +1,26 @@
+{
+  "cities_completed": [
+    "new_york_city",
+    "philadelphia",
+    "miami",
+    "los_angeles",
+    "salt_lake_city",
+    "san_francisco",
+    "washington_dc",
+    "houston",
+    "detroit",
+    "chicago",
+    "phoenix",
+    "atlanta"
+  ],
+  "city_count": 12,
+  "png_count": 60,
+  "color_scale": {
+    "min": 0.25,
+    "max": 4.0,
+    "transform": "log",
+    "common_across_cities": true,
+    "explicit_saturation": true
+  },
+  "routes_api_calls": 0
+}

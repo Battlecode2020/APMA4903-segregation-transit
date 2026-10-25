@@ -1,0 +1,51 @@
+{
+  "city_id": "detroit",
+  "city": "Detroit",
+  "node_scale": "populated city-limit tract portions",
+  "scenario": "with_transit",
+  "parameters": {
+    "beta_per_usd": 0.1,
+    "omega_usd_per_hour": 15.0,
+    "c0_usd": 1.25,
+    "standardized_transit_fare_usd": 3.0
+  },
+  "access_policy": "uncapped distance, barrier-screened access and egress; every walking leg charged",
+  "walking_transfers": "Automatic transfer links within 400m; explicit GTFS links, transfer restrictions and chained walks retained.",
+  "no_transit_proxy": true,
+  "diagnostics": {
+    "city_id": "detroit",
+    "city": "Detroit",
+    "scenario": "with_transit",
+    "node_count": 269,
+    "population": 639111,
+    "transit_selected_pairs": 65136,
+    "nonlocal_pairs": 72092,
+    "transit_selected_percent": 90.3512178882539,
+    "nodes_without_boarding_access": 0,
+    "old_nodes_without_boarding_access": 0,
+    "barrier_flagged_direct_walking_pairs": 48,
+    "population_weighted_flagged_walking_mass_percent": 0.13363990691692096,
+    "service_dates": [
+      "2026-10-20"
+    ],
+    "bus_routes": 82,
+    "rail_routes": 2,
+    "max_pssi_eigenpair_residual": 3.012919774780798e-13,
+    "transit_access_seconds_selected_median_minutes": 9.18542564804236,
+    "transit_access_seconds_selected_max_minutes": 48.35653929236436,
+    "transit_egress_seconds_selected_median_minutes": 9.012143585000326,
+    "transit_egress_seconds_selected_max_minutes": 47.91944957988225,
+    "transit_selected_pairs_beyond_old_access_radius": 16608,
+    "transit_selected_pairs_beyond_old_egress_radius": 15984,
+    "transit_selected_pairs_beyond_either_old_radius": 28696,
+    "nodes_without_boarding_access_reason": "No boarding stop passes the retained geometric water/land screen; no access distance cutoff remains."
+  },
+  "source_sha256": {
+    "outputs/multicity/walk_access_revision/detroit/nodes.csv": "d4da8e38a5be7c51b180e4a255b7867515a0b03d2085a5bb90e1e1a667b208e1",
+    "outputs/multicity/walk_access_revision/detroit/travel/modes.npz": "9272a38b40f079f05806114027d2edd2954981a7862e3421176e4fc2c2c1b090",
+    "outputs/multicity/walk_access_revision/detroit/travel/manifest.json": "f8d10065154e389cff82a0bdef771cea16a914e9ffb5437d103774ccb27ed5ef"
+  },
+  "nyc_scope": null,
+  "normalization": "Raw PSSI=lambda; normalized PSSI=(lambda-K)/(1-K). K=all city group residents/all city residents. Per-node right eigenvector sum 1; n*v mean 1. Distance Fryer is a separate geography-only model.",
+  "routes_api_calls": 0
+}

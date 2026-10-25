@@ -1,0 +1,5 @@
+scenario,city_id,city,node_scale,group,fryer_majority_ssi,fryer_majority_ssi_minus_K,fryer_majority_ssi_normalized,majority_zone_count,majority_component_count,fryer_status
+with_transit,washington_dc,"Washington, DC",populated city-limit tract portions,white_alone,0.5216562951730563,0.12546170308697058,0.20778499404373985,90,1,ok
+with_transit,washington_dc,"Washington, DC",populated city-limit tract portions,black_alone,0.41992902199662535,0.0054383071049213805,0.009288165436890568,77,1,ok
+with_transit,washington_dc,"Washington, DC",populated city-limit tract portions,hispanic_latino_any_race,0.0,-0.11261338998905075,-0.1269045404997279,0,0,no_majority_zones_zero_by_convention
+with_transit,washington_dc,"Washington, DC",populated city-limit tract portions,asian_alone,0.0,-0.04864802152143805,-0.05113567073170732,0,0,no_majority_zones_zero_by_convention

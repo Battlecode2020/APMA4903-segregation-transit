@@ -1,0 +1,51 @@
+{
+  "city_id": "houston",
+  "city": "Houston",
+  "node_scale": "populated city-limit tract portions",
+  "scenario": "with_transit",
+  "parameters": {
+    "beta_per_usd": 0.1,
+    "omega_usd_per_hour": 15.0,
+    "c0_usd": 1.25,
+    "standardized_transit_fare_usd": 3.0
+  },
+  "access_policy": "uncapped distance, barrier-screened access and egress; every walking leg charged",
+  "walking_transfers": "Automatic transfer links within 400m; explicit GTFS links, transfer restrictions and chained walks retained.",
+  "no_transit_proxy": true,
+  "diagnostics": {
+    "city_id": "houston",
+    "city": "Houston",
+    "scenario": "with_transit",
+    "node_count": 943,
+    "population": 2304580,
+    "transit_selected_pairs": 800482,
+    "nonlocal_pairs": 888306,
+    "transit_selected_percent": 90.11331680749652,
+    "nodes_without_boarding_access": 24,
+    "old_nodes_without_boarding_access": 297,
+    "barrier_flagged_direct_walking_pairs": 67372,
+    "population_weighted_flagged_walking_mass_percent": 3.9452492065017686,
+    "service_dates": [
+      "2026-10-20"
+    ],
+    "bus_routes": 106,
+    "rail_routes": 3,
+    "max_pssi_eigenpair_residual": 3.608611890207336e-13,
+    "transit_access_seconds_selected_median_minutes": 12.223743614255055,
+    "transit_access_seconds_selected_max_minutes": 475.4640817121641,
+    "transit_egress_seconds_selected_median_minutes": 11.984128232920199,
+    "transit_egress_seconds_selected_max_minutes": 465.13837067183334,
+    "transit_selected_pairs_beyond_old_access_radius": 353124,
+    "transit_selected_pairs_beyond_old_egress_radius": 344126,
+    "transit_selected_pairs_beyond_either_old_radius": 549074,
+    "nodes_without_boarding_access_reason": "No boarding stop passes the retained geometric water/land screen; no access distance cutoff remains."
+  },
+  "source_sha256": {
+    "outputs/multicity/walk_access_revision/houston/nodes.csv": "b588de306d5e750eca56404e770c3d27f704c411141e057723c9fdf0786a6398",
+    "outputs/multicity/walk_access_revision/houston/travel/modes.npz": "5611c059e6fe538074d87b9fe3a833f13f28c10b1493493ed5526f659ca7a0bd",
+    "outputs/multicity/walk_access_revision/houston/travel/manifest.json": "73ad8e13869a3628ef0318e4e90a72531804ea4521dcefcd71f6af71b8541d6a"
+  },
+  "nyc_scope": null,
+  "normalization": "Raw PSSI=lambda; normalized PSSI=(lambda-K)/(1-K). K=all city group residents/all city residents. Per-node right eigenvector sum 1; n*v mean 1. Distance Fryer is a separate geography-only model.",
+  "routes_api_calls": 0
+}

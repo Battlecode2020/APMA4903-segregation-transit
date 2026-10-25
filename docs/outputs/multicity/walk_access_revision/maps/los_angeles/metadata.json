@@ -1,0 +1,348 @@
+{
+  "created_utc": "2026-10-25T16:27:15.516513+00:00",
+  "city_id": "los_angeles",
+  "city": "Los Angeles",
+  "section_count": 1114,
+  "population": 3898747,
+  "geography": "1,114 city-limit tract portions",
+  "map_value": "n times the saved right Perron eigenvector component; vector sums to one, arithmetic mean of mapped values is one",
+  "color_scale": {
+    "shared_across_all_cities_and_categories": true,
+    "transform": "log",
+    "minimum": 0.25,
+    "maximum": 4.0,
+    "neutral_value": 1,
+    "out_of_range": "Explicitly saturated with colorbar extension triangles and counts/ranges on every panel; exact values remain in CSV",
+    "zeros": "Below-scale color; counted separately, not dropped"
+  },
+  "category_diagnostics": {
+    "white_alone": {
+      "eigenvalue": 0.3543081237171569,
+      "vector_sum": 1.0,
+      "relative_score_mean": 1.0,
+      "minimum": 0.36336196865984843,
+      "maximum": 1.9674316581007052,
+      "below_color_scale": 0,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 2.0852991642478225e-13
+    },
+    "black_alone": {
+      "eigenvalue": 0.1351098223528872,
+      "vector_sum": 0.9999999999999999,
+      "relative_score_mean": 1.0,
+      "minimum": 0.21739047378709297,
+      "maximum": 2.554232485992378,
+      "below_color_scale": 6,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 2.3059787586376945e-14
+    },
+    "hispanic_latino_any_race": {
+      "eigenvalue": 0.5152992879947684,
+      "vector_sum": 0.9999999999999999,
+      "relative_score_mean": 1.0,
+      "minimum": 0.30981225596335726,
+      "maximum": 2.0650540934101094,
+      "below_color_scale": 0,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 3.43740986195884e-13
+    },
+    "asian_alone": {
+      "eigenvalue": 0.13415505860988042,
+      "vector_sum": 1.0,
+      "relative_score_mean": 1.0,
+      "minimum": 0.3213085693558918,
+      "maximum": 1.85135444221715,
+      "below_color_scale": 0,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 6.711151816565786e-14
+    }
+  },
+  "display_projection": "+proj=laea +lat_0=34.09087215754039 +lon_0=-118.36922565008977 +datum=WGS84 +units=m +type=crs",
+  "display_geometry": "Saved city-limit tract portions minus saved Census mapped-water polygons for display only; statistical assignments unchanged.",
+  "sections_without_land_display_geometry": [],
+  "checks": [
+    "Exact node/geometry/eigenvector ID ordering",
+    "Counts and population match saved nodes",
+    "P rows and eigenvectors normalized",
+    "A=P diag(p)",
+    "A v=lambda v within 1e-9"
+  ],
+  "sources": [
+    {
+      "path": "outputs/multicity/walk_access_revision/los_angeles/nodes.csv",
+      "sha256": "8543462e697444390041ae809b0258973b42408ff6fa4c83eeceb925eff9f3d7"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/los_angeles/with_transit/analysis_matrices.npz",
+      "sha256": "95ad52bf810438274d0259671c35cee57795c61d953de4d583c1fefddfb0bea5"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/los_angeles/travel/manifest.json",
+      "sha256": "438548de53eae9945a1f5ba9b52ac3eafbcfdfe0d0877277bf609026aa30fc0b"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/los_angeles/with_transit/manifest.json",
+      "sha256": "71974c94314ca22aaf0a3414d4640fb057f0d8cdd9921dc82f81574d34c5ff09"
+    },
+    {
+      "path": "outputs/multicity/los_angeles/demographics/nodes.geojson",
+      "sha256": "1b58c8309d56bb89ff9afd81b5aa48d68270345fd039d81636fc5f8503c10a93"
+    },
+    {
+      "path": "outputs/multicity/los_angeles/demographics/water.geojson",
+      "sha256": "b66ed14b22cfbf84c27fb48989003869306365e7ebec9520b147a502c158c3fc"
+    }
+  ],
+  "model_manifests": {
+    "travel": {
+      "model": "GTFS pattern graph with mean-headway waiting",
+      "input_fingerprint": {
+        "nodes_sha256": "007a708ab41ee9860cb8c5dd02dd26735f3f5dce7f5fff6e422b219b52681e63",
+        "parameters": {
+          "reference_date": "2026-10-20",
+          "window_start": "07:00:00",
+          "window_end": "10:00:00",
+          "walking_speed_kmh": 4.8,
+          "walking_detour": 1.3,
+          "bus_access_km": 1.0,
+          "rail_access_km": 3.0,
+          "transfer_walk_km": 0.4,
+          "entrance_seconds": 60.0,
+          "transfer_buffer_seconds": 60.0,
+          "dijkstra_batch_size": 16,
+          "access_policy": "uncapped",
+          "pedestrian_barrier_policy": "reject"
+        },
+        "feeds": [
+          "cb1a2283abecc0af1619365ea0626262bc3d93d5e6bdd0df03288cd6120f6058",
+          "cc21c649b3ff74cfd3481255245a70ca91e42b650d0d2aadbf468be423fd297d",
+          "c3edea6a5595add0b50f5580c0997bc1d90e7ba0f1d94df3d7f47433d593df19"
+        ],
+        "land_sha256": null,
+        "water_sha256": "2907f4226c188031a91ff37327cb4857696fbd4844d274d2cd259b8fd5ac8c42",
+        "model_version": 4
+      },
+      "parameters": {
+        "reference_date": "2026-10-20",
+        "window_start": "07:00:00",
+        "window_end": "10:00:00",
+        "walking_speed_kmh": 4.8,
+        "walking_detour": 1.3,
+        "bus_access_km": 1.0,
+        "rail_access_km": 3.0,
+        "transfer_walk_km": 0.4,
+        "entrance_seconds": 60.0,
+        "transfer_buffer_seconds": 60.0,
+        "dijkstra_batch_size": 16,
+        "access_policy": "uncapped",
+        "pedestrian_barrier_policy": "reject"
+      },
+      "feeds": [
+        {
+          "path": "data/multicity/transit/la_metro_bus.zip",
+          "sha256": "cb1a2283abecc0af1619365ea0626262bc3d93d5e6bdd0df03288cd6120f6058",
+          "service_date": "2026-10-20",
+          "patterns": 366,
+          "route_modes": [
+            "bus"
+          ],
+          "used_routes_by_mode": {
+            "bus": 108,
+            "rail": 0
+          },
+          "published_feed_info": [
+            {
+              "feed_id": "us_ca_lacmta_bus",
+              "feed_publisher_name": "Los Angeles County Metropolitan Transportation Authority",
+              "feed_publisher_url": "https://www.metro.net",
+              "feed_lang": "en",
+              "feed_version": "",
+              "feed_license": "",
+              "feed_contact_email": "",
+              "feed_contact_url": "https://developer.metro.net",
+              "feed_start_date": "20260607",
+              "feed_end_date": "20261212"
+            }
+          ],
+          "agency_timezones": [
+            "America/Los_Angeles"
+          ],
+          "diagnostics": {
+            "scheduled_trip_samples": 3559
+          }
+        },
+        {
+          "path": "data/multicity/transit/la_metro_rail.zip",
+          "sha256": "cc21c649b3ff74cfd3481255245a70ca91e42b650d0d2aadbf468be423fd297d",
+          "service_date": "2026-10-20",
+          "patterns": 14,
+          "route_modes": [
+            "rail"
+          ],
+          "used_routes_by_mode": {
+            "bus": 0,
+            "rail": 6
+          },
+          "published_feed_info": [
+            {
+              "feed_id": "us_ca_lacmta_rail",
+              "feed_publisher_name": "Los Angeles County Metropolitan Transportation Authority",
+              "feed_publisher_url": "https://www.metro.net",
+              "feed_lang": "en",
+              "feed_version": "",
+              "feed_license": "",
+              "feed_contact_email": "",
+              "feed_contact_url": "http://developer.metro.net",
+              "feed_start_date": "",
+              "feed_end_date": ""
+            }
+          ],
+          "agency_timezones": [
+            "America/Los_Angeles"
+          ],
+          "diagnostics": {
+            "scheduled_trip_samples": 287
+          }
+        },
+        {
+          "path": "data/multicity/transit/metrolink.zip",
+          "sha256": "c3edea6a5595add0b50f5580c0997bc1d90e7ba0f1d94df3d7f47433d593df19",
+          "service_date": "2026-10-20",
+          "patterns": 23,
+          "route_modes": [
+            "rail"
+          ],
+          "used_routes_by_mode": {
+            "bus": 0,
+            "rail": 7
+          },
+          "published_feed_info": [
+            {
+              "feed_publisher_name": "Metrolink Trains",
+              "feed_publisher_url": "http://www.metrolinktrains.com",
+              "feed_lang": "en",
+              "feed_start_date": "20260505",
+              "feed_end_date": "20360501",
+              "feed_version": "20260505"
+            }
+          ],
+          "agency_timezones": [
+            "America/Los_Angeles"
+          ],
+          "diagnostics": {
+            "scheduled_trip_samples": 50
+          }
+        }
+      ],
+      "nodes": 1114,
+      "graph_nodes": 60649,
+      "graph_edges": 141200,
+      "service_patterns": 403,
+      "served_physical_stops": 11997,
+      "pedestrian_transfer_pairs": 23668,
+      "explicit_transfer_rules_applied": 0,
+      "transfer_rule_diagnostics": {},
+      "access_policy": "uncapped",
+      "pedestrian_barrier_policy": "reject",
+      "walking_access_interpretation": "No maximum walking distance for initial access or final egress; every accepted walking second is charged.",
+      "transfer_walking_interpretation": "Automatic inter-stop links use a 0.4km approximate walking radius and geometry checks; explicit GTFS transfer links and chained walks remain. This is not a total interchange-walk cap.",
+      "routing_diagnostics": {
+        "routing_algorithm": "batched temporary origins plus chunked min-plus egress",
+        "base_graph_nodes": 60633,
+        "base_graph_edges": 141200,
+        "maximum_temporary_access_edges": 190179,
+        "maximum_temporary_origins": 16,
+        "finite_journeys_with_access_beyond_legacy_radius": 267906,
+        "finite_journeys_with_egress_beyond_legacy_radius": 272358
+      },
+      "mode_array_definitions": {
+        "transit_seconds": "Minimum modeled walk-access + boarding wait + actual GTFS ride(s), dwell/transfers + walk-egress. At least one ride required; diagonal and absent candidates are infinity.",
+        "transit_access_seconds": "For uncapped output: selected initial walking time plus entrance_seconds, fully included in transit_seconds.",
+        "transit_egress_seconds": "For uncapped output: selected final walking time plus entrance_seconds exit buffer, fully included in transit_seconds.",
+        "transit_first_boarding_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+        "transit_last_alighting_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+        "transit_access_barrier_flag": "For uncapped flag_only output: selected access chord fails supplied land/water screen; false under reject policy because such legs are excluded. False is not validation against streets or barriers outside supplied geometry.",
+        "transit_egress_barrier_flag": "Same as transit_access_barrier_flag, for selected egress chord.",
+        "transit_access_exceeds_legacy_radius": "For uncapped output: selected initial walking distance exceeds old mode-specific bus_access_km/rail_access_km radius. Exit/entrance buffer is excluded from this distance comparison.",
+        "transit_egress_exceeds_legacy_radius": "Same as transit_access_exceeds_legacy_radius, for final walking leg."
+      },
+      "common_service_date": true,
+      "nonlocal_pairs": 1239882,
+      "transit_reachable_nonlocal_pairs": 1233210,
+      "tracts_without_access_stops": 3,
+      "walk_land_check_available": false,
+      "walk_water_check_available": true,
+      "walk_barrier_check_available": true,
+      "barrier_clear_nonlocal_walk_pairs": 301636,
+      "limitations": [
+        "Expected-time graph, not exact departure-time or real-time routing; median rides and half mean headway are approximations.",
+        "Exact stop-sequence patterns are separate: splitting service patterns can overestimate waiting when several patterns serve the same journey.",
+        "Walking is great-circle distance times a detour factor, not a street/bridge/pedestrian-access route.",
+        "walk_seconds is the complete distance approximation, including potentially impossible pedestrian water crossings; use walk_barrier_checked_seconds for conservative barrier filtering.",
+        "Without supplied land/water geometry, pedestrian legs have not been checked for water barriers. Supplied water coverage is limited to downloaded counties.",
+        "When supplied, land-chord checks are conservative: they may reject genuine bridge or indirect land paths.",
+        "Pickup/drop-off types 1, 2 and 3 are unavailable to unrestricted riders in this model.",
+        "Interlining, timed transfers, schedule correlations, crowding, service reliability, and accessibility are not modeled.",
+        "GTFS minimum-transfer rules conservatively delay all onward transfers from affected arrival states; prohibitions disable all onward transfers there. This prevents walking via a third stop from bypassing a rule, but can overestimate journeys unaffected by the original rule.",
+        "Transit requires at least one actual GTFS ride edge; absent service stays infinite; no invented transit fallback."
+      ]
+    },
+    "analysis": {
+      "city_id": "los_angeles",
+      "city": "Los Angeles",
+      "node_scale": "populated city-limit tract portions",
+      "scenario": "with_transit",
+      "parameters": {
+        "beta_per_usd": 0.1,
+        "omega_usd_per_hour": 15.0,
+        "c0_usd": 1.25,
+        "standardized_transit_fare_usd": 3.0
+      },
+      "access_policy": "uncapped distance, barrier-screened access and egress; every walking leg charged",
+      "walking_transfers": "Automatic transfer links within 400m; explicit GTFS links, transfer restrictions and chained walks retained.",
+      "no_transit_proxy": true,
+      "diagnostics": {
+        "city_id": "los_angeles",
+        "city": "Los Angeles",
+        "scenario": "with_transit",
+        "node_count": 1114,
+        "population": 3898747,
+        "transit_selected_pairs": 1183295,
+        "nonlocal_pairs": 1239882,
+        "transit_selected_percent": 95.43609795125666,
+        "nodes_without_boarding_access": 3,
+        "old_nodes_without_boarding_access": 76,
+        "barrier_flagged_direct_walking_pairs": 16701,
+        "population_weighted_flagged_walking_mass_percent": 3.3049292642243446,
+        "service_dates": [
+          "2026-10-20"
+        ],
+        "bus_routes": 108,
+        "rail_routes": 13,
+        "max_pssi_eigenpair_residual": 3.43740986195884e-13,
+        "transit_access_seconds_selected_median_minutes": 9.812768927907536,
+        "transit_access_seconds_selected_max_minutes": 158.49159354225773,
+        "transit_egress_seconds_selected_median_minutes": 9.667186721196998,
+        "transit_egress_seconds_selected_max_minutes": 182.85454004860156,
+        "transit_selected_pairs_beyond_old_access_radius": 256384,
+        "transit_selected_pairs_beyond_old_egress_radius": 260735,
+        "transit_selected_pairs_beyond_either_old_radius": 460488,
+        "nodes_without_boarding_access_reason": "No boarding stop passes the retained geometric water/land screen; no access distance cutoff remains."
+      },
+      "source_sha256": {
+        "outputs/multicity/walk_access_revision/los_angeles/nodes.csv": "8543462e697444390041ae809b0258973b42408ff6fa4c83eeceb925eff9f3d7",
+        "outputs/multicity/walk_access_revision/los_angeles/travel/modes.npz": "4e362f655987a6cf8841642c0ab78225bbd085697c700adc87a12efe85949ea2",
+        "outputs/multicity/walk_access_revision/los_angeles/travel/manifest.json": "438548de53eae9945a1f5ba9b52ac3eafbcfdfe0d0877277bf609026aa30fc0b"
+      },
+      "nyc_scope": null,
+      "normalization": "Raw PSSI=lambda; normalized PSSI=(lambda-K)/(1-K). K=all city group residents/all city residents. Per-node right eigenvector sum 1; n*v mean 1. Distance Fryer is a separate geography-only model.",
+      "routes_api_calls": 0
+    }
+  },
+  "network_requests": 0,
+  "routes_api_calls": 0
+}

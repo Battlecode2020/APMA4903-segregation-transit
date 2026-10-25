@@ -1,0 +1,137 @@
+% Paste these three frames immediately after "Our Modified Segregation Metric".
+% Uses only packages and colors already present in your supplied preamble.
+% Hypothetical populations, not empirical data. Each bar reports a neighborhood
+% proportion; positions within bars do not represent household locations.
+
+\begin{frame}{Two Cities with Different Population Shares}
+\small
+Each city has 10 neighborhoods with 100 residents each.
+We study the same racial group $r$ in both cities.
+\vspace{0.2cm}
+
+\begin{columns}[T]
+\begin{column}{0.49\textwidth}
+\centering
+\textbf{City H: large group, evenly spread}\\[3pt]
+800 of 1,000 residents belong to $r$.
+\par\vspace{0.15cm}
+\begin{tikzpicture}[x=0.88cm,y=0.75cm]
+  \foreach \x in {0,...,4} {
+    \foreach \y in {0,1} {
+      \fill[gray!20] (\x,\y) rectangle +(0.9,0.82);
+      \fill[MyTeal] (\x,\y) rectangle +(0.72,0.82);
+      \draw[MyNavy] (\x,\y) rectangle +(0.9,0.82);
+      \node[font=\scriptsize,text=white] at (\x+0.40,\y+0.41) {80\%};
+    }
+  }
+\end{tikzpicture}
+\par\vspace{0.1cm}
+Every neighborhood has the same\\racial composition as the city.
+\end{column}
+\begin{column}{0.49\textwidth}
+\centering
+\textbf{City L: small group, concentrated}\\[3pt]
+100 of 1,000 residents belong to $r$.
+\par\vspace{0.15cm}
+\begin{tikzpicture}[x=0.88cm,y=0.75cm]
+  \foreach \x in {0,...,4} {
+    \foreach \y in {0,1} {
+      \fill[gray!20] (\x,\y) rectangle +(0.9,0.82);
+      \draw[MyNavy] (\x,\y) rectangle +(0.9,0.82);
+      \node[font=\scriptsize] at (\x+0.45,\y+0.41) {0\%};
+    }
+  }
+  \fill[MyTeal] (0,1) rectangle +(0.9,0.82);
+  \draw[MyNavy] (0,1) rectangle +(0.9,0.82);
+  \node[font=\scriptsize,text=white] at (0.45,1.41) {100\%};
+\end{tikzpicture}
+\par\vspace{0.1cm}
+All members of $r$ live in one\\neighborhood, with no other group.
+\end{column}
+\end{columns}
+\vspace{0.15cm}
+{\footnotesize Each rectangle is a neighborhood. Teal area shows its share of $r$.}
+\begin{block}{The comparison}
+City L has complete residential separation, yet we will obtain
+\alert{$S_r^{L}=0.55 < S_r^{H}=0.80$}.
+\end{block}
+% SAY: Residential separation and repeated same-group encounters are distinct.
+% City L is completely separated at the neighborhood level, but residents can
+% still encounter people in other neighborhoods under the rule on the next slide.
+\end{frame}
+
+\begin{frame}{The Same Encounter Rule in Both Cities}
+\small
+With probability $1/2$, draw a resident from your own neighborhood.
+With probability $1/2$, draw a resident uniformly from the whole city.
+\[
+ P_{ij}=\tfrac12\mathbf{1}_{\{i=j\}}+\tfrac1{20},
+ \qquad
+ a_{ij}=P_{ij}\,\mathbb{P}_j(r),
+ \qquad S_r=\rho(A).
+\]
+Thus $P_{ii}=0.55$ and $P_{ij}=0.05$ for $i\ne j$.
+\vspace{0.1cm}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\begin{block}{City H: 80\% in every neighborhood}
+Since $P$ is stochastic, $\rho(P)=1$:
+\[
+ A_H=0.8P,\qquad \boxed{S_r^H=0.80.}
+\]
+Every encounter has an 80\% chance of staying within group $r$.
+\end{block}
+\end{column}
+\begin{column}{0.48\textwidth}
+\begin{block}{City L: 100\% in neighborhood 1}
+\[
+ A_L=P\,\operatorname{diag}(1,0,\ldots,0).
+\]
+Only column 1 is nonzero, so
+\[
+ \boxed{S_r^L=P_{11}=0.55.}
+\]
+An own-group encounter requires drawing someone in neighborhood 1.
+\end{block}
+\end{column}
+\end{columns}
+\vspace{0.1cm}
+{\footnotesize Fits our model: equal $D(j)$ and local weights 11 times every
+nonlocal weight give exactly this $P$.}
+% With the supplied exponential model, take C_ii=c_0 and
+% C_ij=c_0+log(11)/beta for i!=j, with beta>0.
+% Then f_ii/f_ij=11 and population-weighted row normalization gives P.
+% A_L = (P e_1)e_1^T has eigenvalues P_11 and nine zeros.
+% Restricting to V_r={1} gives the same nonzero eigenvalue.
+\end{frame}
+
+\begin{frame}{Why the Raw PSSI Ranking Reverses}
+\small
+If every neighborhood has group share $p$, then $A=pP$ and
+$S_r=p$. Even uniform racial composition can yield a large raw PSSI.
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{lcc}
+ & \textbf{City H} & \textbf{City L} \\
+\hline
+Citywide share of $r$ & $0.80$ & $0.10$ \\
+Residential pattern & Evenly spread & Fully separated \\
+\textbf{Raw PSSI} & $\mathbf{0.80}$ & $\mathbf{0.55}$ \\
+Uniform-composition reference & $0.80$ & $0.10$ \\
+Excess above that reference & $0.00$ & $0.45$ \\
+\hline
+\end{tabular}
+\end{center}
+\begin{block}{Motivation for normalization}
+Raw PSSI reflects opportunities for repeated own-group encounters.
+Comparing segregation across cities also requires accounting for
+the group's population share and a specified mixing baseline.
+\end{block}
+{\footnotesize The uniform-composition reference is illustrative.
+A random-allocation baseline $\mathbb{E}_0[\rho(A)]$ need not equal the
+citywide share.}
+% SAY: The raw index is answering its encounter question correctly.
+% The example motivates calibration when our question is excess segregation
+% relative to a city's mixing baseline. It does not prove a general ordering
+% theorem, or identify population share with an expected random spectral radius.
+\end{frame}

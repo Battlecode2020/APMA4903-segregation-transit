@@ -1,0 +1,3258 @@
+{
+  "snapshot": "2026-10-25",
+  "files": [
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/block/B_1km_asian_alone.npz",
+      "bytes": 1221,
+      "sha256": "c761beb698c1c99e10d81059ebc364187483f8740df96b59119a84c43e5da0ad"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/block/B_1km_black_alone.npz",
+      "bytes": 62347,
+      "sha256": "f72fd81d814a8732173726947fcb9b8e099c6ad378add65d7f5b41b16ac5a7e3"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/block/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 2293,
+      "sha256": "789b806588117838b853ea2ea396eccd54357443702316a6a3244be03ad031c7"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/block/B_1km_white_alone.npz",
+      "bytes": 54346,
+      "sha256": "9e88b52d7f2ccdd8f35f80e9f78ed1307b07fa1eb926c97c53acf5b0f03d71a4"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/block/B_node_indices_asian_alone.npy",
+      "bytes": 400,
+      "sha256": "11efb00167cf882384e69864b6fe0f8b7f95a5f5562b43615357242960ea8ca7"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/block/B_node_indices_black_alone.npy",
+      "bytes": 19712,
+      "sha256": "b78d124e262c3da38dd1eb8e1cebffcd3c63f2514d1f0e25c79d22bb4b06d9a5"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/block/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 1240,
+      "sha256": "f250df37499f63f26605efff2430ce1226923c513e7de91f57b1cb70df6c2025"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/block/B_node_indices_white_alone.npy",
+      "bytes": 16808,
+      "sha256": "58c580e82eef3b6f438c2c91ead8ba834a126376f2cab613cee1ad68043cc414"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/block/adjacency_1km.npz",
+      "bytes": 108369,
+      "sha256": "c5d04e9de08621ecda30886ecdc7fbe94d2960a298474e2b99a6f416a25ea5f8"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/block/components_1km.csv",
+      "bytes": 3718,
+      "sha256": "e3af0621d003080623d45df6e4ed283d03b90bb7aca90ef95eaeab50c83afaf8"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/block/local_scores_1km.csv.gz",
+      "bytes": 404130,
+      "sha256": "487b669971e4bbc9a3cd182d66d7fbde368aecf406106a9d1fc54c716ad3b669"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/block/manifest.json",
+      "bytes": 1017,
+      "sha256": "3b6e612173c1605f1e1e6ad65fe76fd8bca918bdf17c10c3e406b95b19c5f27b"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/block/neighbor_weights_1km.npz",
+      "bytes": 134557,
+      "sha256": "03f3fc336b92689a9e86bdef59b542795d4083cbfe8d72df402f0ac6fe1a1944"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/block/nodes.csv",
+      "bytes": 324062,
+      "sha256": "a1c2124cc13a88c2bc0962cedb355983df0d8bbb471081304be5059c8b633ec3"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/block/scores_all_radii.csv",
+      "bytes": 3094,
+      "sha256": "f823355462753a7a129ef22f1e0271abcd46ccb8e6d8c9e1915774c1bba83f39"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/tract/B_1km_asian_alone.npz",
+      "bytes": 947,
+      "sha256": "2ec63b183ad3d38c4a1e770ae469cf29dbcf1e2e7e2607d2105a381fb1cdf813"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/tract/B_1km_black_alone.npz",
+      "bytes": 1279,
+      "sha256": "c3b0c3caab9dc7c03c09afe658a79a1ec337e93aac37d9e272ad4ebe1a14d7bf"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/tract/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 947,
+      "sha256": "2ec63b183ad3d38c4a1e770ae469cf29dbcf1e2e7e2607d2105a381fb1cdf813"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/tract/B_1km_white_alone.npz",
+      "bytes": 1397,
+      "sha256": "143582110e7213959b5768f1938216b755bfaa57601485749cf81a3fb2993343"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/tract/B_node_indices_asian_alone.npy",
+      "bytes": 136,
+      "sha256": "0be2231a3b7f713e607234d06e9dde4a8782ee12126dd72c84e1084e36e4a5ec"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/tract/B_node_indices_black_alone.npy",
+      "bytes": 536,
+      "sha256": "5ee3389cc28a824470435ed7fbb664f9cb9786d25031792220da6287ac4dfb62"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/tract/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 136,
+      "sha256": "81571fb37bfc0b8aa5e58f7cbba754e35c77957b3635d47c599103592371d7ba"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/tract/B_node_indices_white_alone.npy",
+      "bytes": 680,
+      "sha256": "050ef849c1d34798125a8a933b3a49b6f3823bb49797d8a138da5a5f4a16affc"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/tract/adjacency_1km.npz",
+      "bytes": 1623,
+      "sha256": "a41a563065f94ca86f88e8673e699ccafa50dc772d3d013790a7b724a3afaf8a"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/tract/components_1km.csv",
+      "bytes": 1521,
+      "sha256": "98c9aa82c7a8fb03dbd87e28dec1a2d6df7325ba831f567119c9511d78afc26f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/tract/local_scores_1km.csv.gz",
+      "bytes": 17602,
+      "sha256": "392a8cab60ece91493216d536ddc0ee6b1890ba923f1148668fe6964644f21ba"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/tract/manifest.json",
+      "bytes": 1047,
+      "sha256": "94bd566c19271b53e381193bc925b7471d5a19ec84635dbcd2895beb21797c15"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/tract/neighbor_weights_1km.npz",
+      "bytes": 1776,
+      "sha256": "735534e866ac27c8dc95e37839f3451fe2bdcb427a2a5bc8053b0dffb958d0ba"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/tract/nodes.csv",
+      "bytes": 13298,
+      "sha256": "3ba2d6ec4062aea8c05d28cb0beab83fa54a1cd00c4aef098c1dfefc66397b99"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/atlanta/tract/scores_all_radii.csv",
+      "bytes": 2803,
+      "sha256": "eeb89e440e5e2099a201e0eb41a4bfec25e645285c5e91a19322c4a927bdcc45"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/block_fryer_1km.png",
+      "bytes": 465492,
+      "sha256": "51597a0fd5f265c8c2c47d0a6854f851962bb8dea012f17c1c14bed245b0e336"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/block_scores_1km.csv",
+      "bytes": 11242,
+      "sha256": "b40125559ffb1e3eda9b01cb4cff77c05082230c7ac34f337a1e2e84f14efaf7"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/block/B_1km_asian_alone.npz",
+      "bytes": 21093,
+      "sha256": "b0ad217d932f58b456f5890cb8606c7b12da9d33ad5f9487e6f55f8f822ddf7c"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/block/B_1km_black_alone.npz",
+      "bytes": 593643,
+      "sha256": "63dc8e608582368c123e8b44e4cef02610a8225c5b1021ceac7465a2c545eed2"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/block/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 445905,
+      "sha256": "e55f1f97b47c0efaa84ab26af6c5e8c8eea7ac1716d21f5314e391cb2d17f0a2"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/block/B_1km_white_alone.npz",
+      "bytes": 527500,
+      "sha256": "566fdc1d0b290826b28d78d84dc15b6388f9ccf96db4cb8917c54611f0be49f3"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/block/B_node_indices_asian_alone.npy",
+      "bytes": 6608,
+      "sha256": "cc0a2c519c15298407b43613af7d62132f99ec8457a5b9553924c56e976a3604"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/block/B_node_indices_black_alone.npy",
+      "bytes": 94984,
+      "sha256": "6c5f945cf1f40328494b4a52704b664210bdbde928c10bf0a299df8a2a527ff0"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/block/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 78952,
+      "sha256": "5c2d8145d8dfb7c00628591ce06967634ff6319a92c543b7d3bfb8d61dad6e0c"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/block/B_node_indices_white_alone.npy",
+      "bytes": 90208,
+      "sha256": "c07c4290625c8aac3f97252c937ea7580fcf8d8bc24a1b3a7d02c795d1bb1913"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/block/adjacency_1km.npz",
+      "bytes": 1547069,
+      "sha256": "6868a966beafa76e1bfea596c5cd753a7cb3ef6d5863c299f8553a479083820b"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/block/components_1km.csv",
+      "bytes": 6601,
+      "sha256": "2ad60d20458982f71d21e978ce11ba0b4dedfe8a51c4e37259052e6e65e6a61d"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/block/local_scores_1km.csv.gz",
+      "bytes": 2887606,
+      "sha256": "370a5cf72a9afaa4802506115beee88b9a7bca734b68bf946dca13d2ffd4dec4"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/block/manifest.json",
+      "bytes": 1025,
+      "sha256": "83aa4b0d0fa1298ca27cc78754bb820914877e78d42cf4a231eeebf08f4e607c"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/block/neighbor_weights_1km.npz",
+      "bytes": 1894107,
+      "sha256": "483ecec656c20c9cbc89e10824a9e66ca7d884dadd4e185311b31c7ad66bee09"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/block/nodes.csv",
+      "bytes": 2474350,
+      "sha256": "234eb26d9a3d1a1663f57229d96f8a3c388265d01d0f86ab5aae8139fffe4a33"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/block/scores_all_radii.csv",
+      "bytes": 3161,
+      "sha256": "31d3dd855b64deb20a2d312ac172af5fe43032bc5e29d0052f8c07714f78d7ed"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/tract/B_1km_asian_alone.npz",
+      "bytes": 1047,
+      "sha256": "959ff2ac1ab4c7ae73e6ce8072d7ba0d120932cf94268de87e3820d5bbdc96d9"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/tract/B_1km_black_alone.npz",
+      "bytes": 3381,
+      "sha256": "7a7708a649b7861cf9c7990f9d14aeba5ec6b3932a7560ddef918d653a715c3f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/tract/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 2510,
+      "sha256": "7a7136d89ace439e104a6ed79bda9b251480450cab1afac4a7354d7696c382fa"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/tract/B_1km_white_alone.npz",
+      "bytes": 3850,
+      "sha256": "c0d677ba88065076ddfd97ca238c9f73a5234b75e2d9abe9efbee9cbe053d6e5"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/tract/B_node_indices_asian_alone.npy",
+      "bytes": 240,
+      "sha256": "4c1dfb96d7466005be834c6c3e2bc6e7ce3720a20f8fe2fc00053c399521dbf1"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/tract/B_node_indices_black_alone.npy",
+      "bytes": 2360,
+      "sha256": "de22a21c084e42011d094f62272500ca9f6012d8079b88a635626a3c2218cc18"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/tract/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 1600,
+      "sha256": "5c439a2bffcd3c0d4b216ac7dc25132d63d65ddce1e206c84c419f80f5800d41"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/tract/B_node_indices_white_alone.npy",
+      "bytes": 2464,
+      "sha256": "045783df9dc2895b673509c58c326b1e019550edc2143dc8014978467ba8baf7"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/tract/adjacency_1km.npz",
+      "bytes": 6952,
+      "sha256": "3693aeb83ddee792096472b4f00391e2d1c47ed30b0efe5ad5248720c9eb422f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/tract/components_1km.csv",
+      "bytes": 2792,
+      "sha256": "edc058136ce237fefc4f5a4169ab85661a12bb1a058c6037f800bd28b30b5282"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/tract/local_scores_1km.csv.gz",
+      "bytes": 92432,
+      "sha256": "4c941e6fb01f768c279983ebe74567ca7b6f8cb19e00de040dbc8d7c73dad4e7"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/tract/manifest.json",
+      "bytes": 1050,
+      "sha256": "a5d7e7df6a1fe46806193acd6ad6b397323ac5e76010dcbfde223c345928bfb7"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/tract/neighbor_weights_1km.npz",
+      "bytes": 8213,
+      "sha256": "f481488836285d1f940c3f74fd7d01f68f4eca37286ab6495984276330676353"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/tract/nodes.csv",
+      "bytes": 59160,
+      "sha256": "3afe25c47f58e6b528f2fa5d8107a12487b7b7e830d894ba9222d568434e79b8"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/chicago/tract/scores_all_radii.csv",
+      "bytes": 3063,
+      "sha256": "0a99f58127254000fa93f9c4fcc3aa8bc93e0f63f4c673e34d40a08b2c0e6c1d"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/column_dictionary.csv",
+      "bytes": 3143,
+      "sha256": "3fecdd8eef837325ac54298e1db7f007aca404dde9fdf73ec5399d9f2fcc653d"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/comparison_column_dictionary.csv",
+      "bytes": 4197,
+      "sha256": "209541e64b8539c067c92f7529c13409f0579d3ef821c4fa587c9e09a72e206a"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/block/B_1km_asian_alone.npz",
+      "bytes": 2313,
+      "sha256": "281c11d8579c0c1eb215e48f1872c08f54a65eaaafc14684e8e69ec4d85ab60b"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/block/B_1km_black_alone.npz",
+      "bytes": 363791,
+      "sha256": "39815735b6288f4be2abd36e19c792ffdb7b69e3dbc5a86319eb53ed4e873db4"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/block/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 18918,
+      "sha256": "65f2acb40e33cffd0ed3c3122ba77cc1a9ba30e29824942c8903cc92588f7946"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/block/B_1km_white_alone.npz",
+      "bytes": 10597,
+      "sha256": "1908d2780e1b40bcae7d00643fdd12a04ff568ed37149c15ae4103d183dc78c9"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/block/B_node_indices_asian_alone.npy",
+      "bytes": 776,
+      "sha256": "9f5d1c64f952f17909bb245cb359727e192fc103adc2b64d777650e96cbe833d"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/block/B_node_indices_black_alone.npy",
+      "bytes": 78824,
+      "sha256": "9e2684e4705925a2d5e432efd7f6cdca2315ed512fd8a29ffd45a29a9243c7f1"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/block/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 5832,
+      "sha256": "b1a2ab7fe9a7894c3f76815d937b97a4483285efd35c70f749f462a38b116f55"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/block/B_node_indices_white_alone.npy",
+      "bytes": 5008,
+      "sha256": "8e4f71e7929f9e934e4f422180ee6cdb9c38024ed0bd2557c555b94a0d200eb0"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/block/adjacency_1km.npz",
+      "bytes": 344252,
+      "sha256": "0b96869db3785ffabeeb2407c41ca58a4e1ffa7116923f30fc22eae6a8fd6485"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/block/components_1km.csv",
+      "bytes": 4736,
+      "sha256": "ce3a6470e8b1b60b895f48ba4cf2a10cd2171d02468ce84b025b55fb27220888"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/block/local_scores_1km.csv.gz",
+      "bytes": 862625,
+      "sha256": "0bd65f96c3dcd9e644ba6930003925e043983c30d18f5d7af2050e7dc9e603dc"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/block/manifest.json",
+      "bytes": 1019,
+      "sha256": "01124ea609f20308372f96135781b0ad14eeaa18a70ada8d8976c1151ad90bce"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/block/neighbor_weights_1km.npz",
+      "bytes": 424557,
+      "sha256": "6cabac2ae84a992f86851fc5142eaafe6540b7be7a2d5962c39aa13ff9de27f2"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/block/nodes.csv",
+      "bytes": 775951,
+      "sha256": "b22e34319c711ea31aa271f22893bcaef4d772d441dabdd28327ff5911614779"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/block/scores_all_radii.csv",
+      "bytes": 3081,
+      "sha256": "40083155db56410ac6da0117b2ab1702cb6fdcc02623c383beb7739da1b64f79"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/tract/B_1km_asian_alone.npz",
+      "bytes": 947,
+      "sha256": "2ec63b183ad3d38c4a1e770ae469cf29dbcf1e2e7e2607d2105a381fb1cdf813"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/tract/B_1km_black_alone.npz",
+      "bytes": 1935,
+      "sha256": "e5ef2d16811bb9b8fb564046845ef907d308d5af8bbf2cef901388bcacc6be13"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/tract/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 1068,
+      "sha256": "65054e7fae6e65b4723d612c4569c9c4a897b67bbe24dca7b2f9862e8ef87168"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/tract/B_1km_white_alone.npz",
+      "bytes": 1017,
+      "sha256": "d89fc9c6856bb94b4d1595f7783a95d6d425047e43a691bbec003391fef9267f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/tract/B_node_indices_asian_alone.npy",
+      "bytes": 136,
+      "sha256": "e1cbeda4985bbc125d681a2edca71603ad5b0186bbdb1f78d3742394c05a753e"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/tract/B_node_indices_black_alone.npy",
+      "bytes": 1648,
+      "sha256": "ecba9b314704dc45385a566cffbdaeda8feeb1a38fed32fcb0214db444d88110"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/tract/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 256,
+      "sha256": "3680f103d233932dd4b0bf0f367afc427ddeba83c102eca62acdb76c98712005"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/tract/B_node_indices_white_alone.npy",
+      "bytes": 216,
+      "sha256": "0db5bb517059cc6e127c0f256281c5137bf6660c420721ddb4aae07754f87c8a"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/tract/adjacency_1km.npz",
+      "bytes": 1957,
+      "sha256": "bc8fec4dbd268052bbc4983ceb293accc8ee5d2c9e9f17a39f626554097274e6"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/tract/components_1km.csv",
+      "bytes": 3154,
+      "sha256": "f517bc929b426d816ce8fc02c0d4d8b0c6d3a067fd27f08172836b77198b2b2e"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/tract/local_scores_1km.csv.gz",
+      "bytes": 26128,
+      "sha256": "cc344242f7880243645e389971fd91a46a5f11ba57bcb869aeb6f3b96d15e7b2"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/tract/manifest.json",
+      "bytes": 1047,
+      "sha256": "2f6c0ccf4eb7f4806c5956bcf0be93ab22fe2bec6840e46f857f8d0bf038bf59"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/tract/neighbor_weights_1km.npz",
+      "bytes": 2153,
+      "sha256": "6370261599bf1c5e2478653df0fd7016fb23e6ee86716ca8c7251c39c4959580"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/tract/nodes.csv",
+      "bytes": 18947,
+      "sha256": "ed412bf802db4e740fee356c3f501a58aa906ba267211d8c1bbe9557cbf324c3"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/detroit/tract/scores_all_radii.csv",
+      "bytes": 2865,
+      "sha256": "a9e71989873b693681d7495ca30aefdf3e11aa7e555ed8401cfadd2e5daf5a02"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/block/B_1km_asian_alone.npz",
+      "bytes": 4626,
+      "sha256": "bfcc59d81d9093a3cf562a140d13d71abd5428d53a30331573b5a25a013b9b1e"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/block/B_1km_black_alone.npz",
+      "bytes": 88655,
+      "sha256": "7379a50662991aab162c28fba903db3b3050a3922f43877bf0ff515c2874ece9"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/block/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 228176,
+      "sha256": "60104bf5f92fec5f41b0268df6086925838434155dee2df4ea076f1ef20bab0d"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/block/B_1km_white_alone.npz",
+      "bytes": 174069,
+      "sha256": "c3bfaf79160eb82a5f780007769f5f606606f2bb544425fd53e98c2443b5ab81"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/block/B_node_indices_asian_alone.npy",
+      "bytes": 2992,
+      "sha256": "0a07e3286fb946456ca7a4ac07c1ffedf737fe5b6941c98266a7acb687c707b8"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/block/B_node_indices_black_alone.npy",
+      "bytes": 31136,
+      "sha256": "b4228fabb0f374ce5c1b4448c94efa2303bc2a5d9be1ef3b73439e08008afb93"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/block/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 73368,
+      "sha256": "7f3595101568ddb0397c8980b45e00af2b447c6ddd5c728c633207725a295d9f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/block/B_node_indices_white_alone.npy",
+      "bytes": 50664,
+      "sha256": "71c2c6b87b1fbaacb806f6f761720db13af0bbdea9710ec2da076146301de7b7"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/block/adjacency_1km.npz",
+      "bytes": 486774,
+      "sha256": "89d3d101b2de0f0b847af1ed114d324b81ce3ce7301acc1544094e8f1cb38841"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/block/components_1km.csv",
+      "bytes": 25127,
+      "sha256": "dca79316a6cb867fa7b2aa2703b2322ca681cfcea6f1d28909533c94f7e45175"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/block/local_scores_1km.csv.gz",
+      "bytes": 1689843,
+      "sha256": "49831a432b742e2c54413debdcfa2f259d93308bc3b982b8136c7c726f48ef12"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/block/manifest.json",
+      "bytes": 1031,
+      "sha256": "9e624881c6ddc1ab7e1c56d8598657198f8cf6dfbfb68bf0a4e05f812b08e747"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/block/neighbor_weights_1km.npz",
+      "bytes": 610592,
+      "sha256": "dfcf34b5e2d57c049b897c6262e62f532129a963694f081b6e55211c950e8904"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/block/nodes.csv",
+      "bytes": 1497745,
+      "sha256": "427294dd651e5968d94abfb995b6c028f589fff263d29ed6aaa097c95bcab337"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/block/scores_all_radii.csv",
+      "bytes": 3212,
+      "sha256": "998b9a73570a6f49966ee1a9d7b52ffc5ec0184ed82f737386c43b6a0ea3f49a"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/tract/B_1km_asian_alone.npz",
+      "bytes": 1007,
+      "sha256": "ec351ffe1544f746e79eae61cd8aa64d877692f4559f6d3c74e43ec609932e69"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/tract/B_1km_black_alone.npz",
+      "bytes": 1427,
+      "sha256": "de9b1c16b73d5bf2c40f8c5ad7c84efdae57f9621bd6c9bc2eb1dbf862b77a6b"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/tract/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 2296,
+      "sha256": "2eb68f1d4249638e7d83549eb25228ef1ed9d9e8889919f9be9c51f659ce4b78"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/tract/B_1km_white_alone.npz",
+      "bytes": 1913,
+      "sha256": "ed4dfaec50a03027c808a2af80668b0c6c5b3cf1c8acbf0ae2a083566e006e57"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/tract/B_node_indices_asian_alone.npy",
+      "bytes": 256,
+      "sha256": "eef903295429c9c68b64eddedbc69fad42951db34c3ca7225862a40702c6436c"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/tract/B_node_indices_black_alone.npy",
+      "bytes": 1128,
+      "sha256": "dcaa1cc995a64bb6f7956fdbddd17eae6f03baf8e4619407a8bcdebc2e664e24"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/tract/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 2520,
+      "sha256": "a1a91522e54838d426e4982c8f85b4a4ac5072dfe6825098278340b31dec0a9a"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/tract/B_node_indices_white_alone.npy",
+      "bytes": 1648,
+      "sha256": "132b79bc1cc2b7ca45e400deffae9e4eb86efc6b7f4d8716033fc36149d806de"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/tract/adjacency_1km.npz",
+      "bytes": 3841,
+      "sha256": "ffc769d5959a5e463505d660f6a61d1cb65de7a87d4c7da5652e5591960943a1"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/tract/components_1km.csv",
+      "bytes": 13177,
+      "sha256": "e3408b670881f2a50efa1c62be741bfc044f4f362fc8df429942c13cbe63efd9"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/tract/local_scores_1km.csv.gz",
+      "bytes": 88151,
+      "sha256": "f40a082d116151361c013aa13c82cb671e4f7dbc528bb7c043b9b8856e2c3dc3"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/tract/manifest.json",
+      "bytes": 1056,
+      "sha256": "e03e5f567f7b9be4a0be0e0d8cc98dc2521db11f50b5130c5881e0a474679e76"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/tract/neighbor_weights_1km.npz",
+      "bytes": 4331,
+      "sha256": "68568f5b1f3e02d05468cf0fa6b45b816409d08b69deca1d235e0a3168649e9a"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/tract/nodes.csv",
+      "bytes": 71662,
+      "sha256": "4b790cc585eb80fc7f7b95d86de1ea51a00347d3b5e961b90bc5e831ab533dbd"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/houston/tract/scores_all_radii.csv",
+      "bytes": 3129,
+      "sha256": "4159ad9d9102f1e73d1689a5880ff5147600873033490254923da41cd7f4f657"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/index.html",
+      "bytes": 18120,
+      "sha256": "ec15f914f01b53432079f5415675ca320065ccfba62878377fcd5faf2ea182e0"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/inputs/new_york_city_blocks.csv.gz",
+      "bytes": 638173,
+      "sha256": "be357ec18b2d2ccbb529956e849b5b7f78d72bd6c83e0b3f3eaa7c439e950b86"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/local_column_dictionary.csv",
+      "bytes": 2445,
+      "sha256": "0a33cf968f9e523d994540210e37d4a2d7250deb381af208baddfd2ff3eeaa7e"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/block/B_1km_asian_alone.npz",
+      "bytes": 15415,
+      "sha256": "43eed0e8233655ab7c6ba139767d7d773e88344fbfdb2fc6f29390ba237cc074"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/block/B_1km_black_alone.npz",
+      "bytes": 28884,
+      "sha256": "c012746c69ee5731abe174c344049d65f81f9f79ad0af20ef7731022f97b5174"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/block/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 331953,
+      "sha256": "17784f59c2cb22b812f82f5a4da53885e7b7e6d309a10b5e8ff58254334b842c"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/block/B_1km_white_alone.npz",
+      "bytes": 309048,
+      "sha256": "01ca29c77706c95b0eb02b325c3370178e9a7808945fda2d0a199bfd7fe613ab"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/block/B_node_indices_asian_alone.npy",
+      "bytes": 7600,
+      "sha256": "1643f13099c86b14ecfb788d3253d4d0b1116ed8dc12b1d0ac213102deac08aa"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/block/B_node_indices_black_alone.npy",
+      "bytes": 9744,
+      "sha256": "2aae1a2a50c4326c1026433ea1cedf5289ece3ffc9cceddd61565de27bda5f67"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/block/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 87776,
+      "sha256": "cec2ed240198647b830d2074baed471dd8a7575adabc14aedc5e2f0ed7888e33"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/block/B_node_indices_white_alone.npy",
+      "bytes": 86000,
+      "sha256": "15d3c8eed90f49331d5df944388b9fd740fb0419af383839314e7c6bbc7364dd"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/block/adjacency_1km.npz",
+      "bytes": 670745,
+      "sha256": "106d0ebe435a1331fdd8aaaf12492fa64b3d1a20e5ede067c2d9f8a1748d97d4"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/block/components_1km.csv",
+      "bytes": 11317,
+      "sha256": "b6254719e0764881d304e482cf675039383ec0c74dec1e6a6e217a0e07594e5e"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/block/local_scores_1km.csv.gz",
+      "bytes": 2277498,
+      "sha256": "8ac0e54c683cd058b53c6ab4935f66c97b728fe99500024bebe26a1ba0bad04b"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/block/manifest.json",
+      "bytes": 1039,
+      "sha256": "bb00cdcb8fd0cddec383a774baa3770689901ed6d34da22bbdb0df5b29e31029"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/block/neighbor_weights_1km.npz",
+      "bytes": 829185,
+      "sha256": "7aa3476f4f9aadd89fcaf5eed4c3c5e663e75f09f5cf78bdfb5662ed4b1f8263"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/block/nodes.csv",
+      "bytes": 1848308,
+      "sha256": "d2a026c1cb25ccd4f38d61287212ebc22eb9837bfac5aa2bcb959b075cf42af3"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/block/scores_all_radii.csv",
+      "bytes": 3284,
+      "sha256": "49e83c3e7da748a83f15bafb469de1b27b8989da3803df0f42b90a98e610f0df"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/tract/B_1km_asian_alone.npz",
+      "bytes": 1321,
+      "sha256": "57607a37c876593ac09c6a80f94ac921b95c26686c7b28939df81768d7b6d2bc"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/tract/B_1km_black_alone.npz",
+      "bytes": 1194,
+      "sha256": "65ac2b4d8ef85b36544298a61718b6528152213570b8d2fa2a77adcc7eeb8f03"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/tract/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 5571,
+      "sha256": "1cc7e97314264d9cebdb5ae67e4bc23170131b572606f5b74407d4591a2e2c8b"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/tract/B_1km_white_alone.npz",
+      "bytes": 3472,
+      "sha256": "4c8fe828bca42a0ace13e068d19eb172c3878e26e80f1e8b5a5ba703ca44e7b3"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/tract/B_node_indices_asian_alone.npy",
+      "bytes": 432,
+      "sha256": "e16edff0654bfa6366a5828ec639e39a1e28c4b201e2e6f06f8c6d5c49bdb307"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/tract/B_node_indices_black_alone.npy",
+      "bytes": 368,
+      "sha256": "e5a0ef59919018f29f1b861d020fbbe7e445c738a8ffbb5c4ea5391f2173d90b"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/tract/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 4704,
+      "sha256": "7b0928985cdedaed1c0c59a994c3db3c3ba3843efc431804303cee3b73974fee"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/tract/B_node_indices_white_alone.npy",
+      "bytes": 3000,
+      "sha256": "18c18f9aec523b86100b73169597e3ec98c56e30669d0bb8e1f7ab96527c6838"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/tract/adjacency_1km.npz",
+      "bytes": 7719,
+      "sha256": "21efb9ecb2bd8fccdae1e798caf60d0ab2c09889de49905fbbe6273813082b46"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/tract/components_1km.csv",
+      "bytes": 6273,
+      "sha256": "9b808ca032ee98f1c75dcc6936912e0b2973d8331961056f14dc801aed50f573"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/tract/local_scores_1km.csv.gz",
+      "bytes": 126188,
+      "sha256": "a03cd7da11061eb9f3c5a841e860eb427f6c8da9e963d14f9741454a8b7c738f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/tract/manifest.json",
+      "bytes": 1065,
+      "sha256": "ddd23af5f28650222c0896cb64c689f31a6d775b4db461f035c0fc76dd672c71"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/tract/neighbor_weights_1km.npz",
+      "bytes": 9048,
+      "sha256": "6086b5371fe65a97109e5d78f9949d401340f0314166ddaae4bd1a61cba212bc"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/tract/nodes.csv",
+      "bytes": 89607,
+      "sha256": "d84f42d60a248431571a305f9c1c30653b2d716b240043e4acfc3ba6e9ad2eea"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/los_angeles/tract/scores_all_radii.csv",
+      "bytes": 3194,
+      "sha256": "2a4f3c6ba1ac64ccebbe3201e9e72d757babfb3c1c5024b9d9158a064c1be3bd"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/manifest.json",
+      "bytes": 31206,
+      "sha256": "5bf13e481b6c505a9d6815760b04fc261cab4fabfdfa0af6567822a0cacefd18"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/block/B_1km_asian_alone.npz",
+      "bytes": 947,
+      "sha256": "d4f1163d0639fc3f5ed01a5d70dfff48a290e89a2927c2a4a214593fa62977bb"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/block/B_1km_black_alone.npz",
+      "bytes": 23462,
+      "sha256": "4f36dd8c471c91aa8427107cc193c2003b842a5e2c182b9b63847bd94d036829"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/block/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 113078,
+      "sha256": "2c1d51276b345265122903e03dfb269a578e1f57b91c13804d6b1328d2e60029"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/block/B_1km_white_alone.npz",
+      "bytes": 7499,
+      "sha256": "0dbd6f7e2aa4e229d69360e95a35cc428cc86632c724a62902f427240a7da627"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/block/B_node_indices_asian_alone.npy",
+      "bytes": 144,
+      "sha256": "74e236e6e5d9c0be9fecf7af19cae1df9a2236c658bad1cf050a203730594fa3"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/block/B_node_indices_black_alone.npy",
+      "bytes": 5704,
+      "sha256": "6a23a5b7fa427d2bf3ad0d4e86f77688e19ad180c07315b51ac7f49393cee3ad"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/block/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 22424,
+      "sha256": "2ebbbe07b280bd0339ad4c9ea32ffd0e6eaf06c6e32977c4f75e2d0c1bf1319c"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/block/B_node_indices_white_alone.npy",
+      "bytes": 2872,
+      "sha256": "2dd04972f0af8946a2baadcfa7943ecc947677aab7f3ebd8afda503a4ab22916"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/block/adjacency_1km.npz",
+      "bytes": 134081,
+      "sha256": "68365f726d562bc937ca3a01c6e37d1bbcd03bdc6c3442eb110ff9c2fcd1a9b5"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/block/components_1km.csv",
+      "bytes": 949,
+      "sha256": "cd47f36ba77b70693822e02b9d79ef73b0886e9ab386ff01ee9e320c3cd62eb0"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/block/local_scores_1km.csv.gz",
+      "bytes": 336696,
+      "sha256": "c7fcedbf0aa8b9d66b1a5c0f75cb6edcb32f54792a842980167a20ce618a5f88"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/block/manifest.json",
+      "bytes": 1005,
+      "sha256": "6597f05e2af876600d6c34660343c82403a36103dae99be61ecae59cdb06aae8"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/block/neighbor_weights_1km.npz",
+      "bytes": 165341,
+      "sha256": "cc28616ee7f52e8766afcfc776de330ed27e3afdd54c731831d8d0470768bd44"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/block/nodes.csv",
+      "bytes": 300690,
+      "sha256": "9b23f7df3e64309f126062aca515668dc8be634afad1689e54d8ac453299834c"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/block/scores_all_radii.csv",
+      "bytes": 2867,
+      "sha256": "d709f0453fdfeba0fc86ea29492df32e1c9e0c3254d988b424a69caec9169f13"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/tract/B_1km_asian_alone.npz",
+      "bytes": 945,
+      "sha256": "a958cf6b14b261e8453c05f2f093cc947082737fed9d7d711f087737e49af7d7"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/tract/B_1km_black_alone.npz",
+      "bytes": 1110,
+      "sha256": "cd283f2bbedf1d7ae5dde43aefb84bba5195ede840f910ca3f1889f5e4fdfbb6"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/tract/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 1819,
+      "sha256": "b24554edc081effa8368c88e324797df51f2d1227eac9a110686907b90ea53c7"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/tract/B_1km_white_alone.npz",
+      "bytes": 1160,
+      "sha256": "e8d50124d1c0f8a529e55948c1db61953b06fb4682cac9ef29831bd705a43ab7"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/tract/B_node_indices_asian_alone.npy",
+      "bytes": 128,
+      "sha256": "e734dac55ea9fbbe782af2d8c02c3c5992131906228afb2aaaf137d6f3ed74db"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/tract/B_node_indices_black_alone.npy",
+      "bytes": 280,
+      "sha256": "ea430ec56b747cda553326b33356245923ea49a7cdd6f8d8f253f97a5ae8c733"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/tract/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 888,
+      "sha256": "1f529a508ba051f28526bdbbba95bd7147a9b73b2c19466335ca6ffe9e3fe0fd"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/tract/B_node_indices_white_alone.npy",
+      "bytes": 272,
+      "sha256": "108dc735595a60f7fd51e40ff81b8b6f373346dd938dfe3a4cc0bd6035fc3a2f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/tract/adjacency_1km.npz",
+      "bytes": 1900,
+      "sha256": "e3dcb6931f1897f7f6ae373b4a9b23381cf41f6bf0cc703f72e37ad235ab94b3"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/tract/components_1km.csv",
+      "bytes": 941,
+      "sha256": "6e33ea131c8dcd88cc84c7aa5ac80a331fa55fdf812a6ea7af58dfa85ecc9fbf"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/tract/local_scores_1km.csv.gz",
+      "bytes": 15267,
+      "sha256": "3b12988e20714437396dee0f96056c736b026d2e2a26c470e6c7d0edd1930c1e"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/tract/manifest.json",
+      "bytes": 1033,
+      "sha256": "9f9e7b8baef5202916f0db022685d4408244ecd448377f5b290b3f1e02999e06"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/tract/neighbor_weights_1km.npz",
+      "bytes": 2209,
+      "sha256": "323250ddb617651c635a222423359a28827931f03840f908ce7ceefb6c6b57a3"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/tract/nodes.csv",
+      "bytes": 11123,
+      "sha256": "fd5704d059ee8b01875072acb5aff8c466aaf23f9f04540f4eb6ee01436d3744"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/miami/tract/scores_all_radii.csv",
+      "bytes": 2791,
+      "sha256": "625ccaef20e45f0208b12495b9115e37d996a1445c41eb6bbbff094dcb77e4ab"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/block/B_1km_asian_alone.npz",
+      "bytes": 142095,
+      "sha256": "58d7073a963b0698b86bb2e23c8de384b590d033054c679b54c9f78dc5a208ca"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/block/B_1km_black_alone.npz",
+      "bytes": 264561,
+      "sha256": "230757bc7ceb1792fef0cdff40bd64fad0a83e968a647805d099b5574419a030"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/block/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 228184,
+      "sha256": "43e5914eb66a609d22f5d4036244a195a39157ee520dc3b5ba7b1d61a2fa0850"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/block/B_1km_white_alone.npz",
+      "bytes": 460101,
+      "sha256": "46a3c3183721f3ba2ca9e13b6b2d5ece8f43da0fab0c0a7fd07af5304b518f4e"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/block/B_node_indices_asian_alone.npy",
+      "bytes": 35656,
+      "sha256": "38aeb15f40233b1c1cf1882af95eeb417092cd9f7b922c96a96d3b3e778c6f41"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/block/B_node_indices_black_alone.npy",
+      "bytes": 52720,
+      "sha256": "68bde8377bad89cc512b916e4c27a62793d12d478da2f24c2eb4282964834468"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/block/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 54688,
+      "sha256": "e8f4385661069546e9eb469e2f1fcbdebd46924511f94c68adb57fe5646b2df6"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/block/B_node_indices_white_alone.npy",
+      "bytes": 102888,
+      "sha256": "9a202516a47fb855e99c1f01c84fc8e97214919f841834306747dff525c32f98"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/block/adjacency_1km.npz",
+      "bytes": 1193980,
+      "sha256": "b128191a4862ae89f29d1273f9bac3f9bf1d44af2100e57148c74f9a08149d00"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/block/components_1km.csv",
+      "bytes": 8310,
+      "sha256": "36cf7122f7717698c5dc834a6b9629668849bbdf0f6a3aa59da72c23e68b6951"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/block/local_scores_1km.csv.gz",
+      "bytes": 3175303,
+      "sha256": "ed5b14f531354e78473b56b1ef61d6be8e09452dafc386a973d4241edf4e9050"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/block/manifest.json",
+      "bytes": 1035,
+      "sha256": "75e56a8a24a0025538e71252f9b6496518eb0d63bc387e9dcee892acce025c6c"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/block/neighbor_weights_1km.npz",
+      "bytes": 1464973,
+      "sha256": "5bf4082081debc9c6b65de7645910e50f9936420d80992effbf6eff998638dbf"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/block/nodes.csv",
+      "bytes": 2286682,
+      "sha256": "d01b0a32ef4a979ac64a252d42f124d3c8b7fc064df3073612d30c4eb524ba0d"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/block/scores_all_radii.csv",
+      "bytes": 3321,
+      "sha256": "6f078c56c5105a6cc724f1d8888fe087ef312fe3fa877781805f16a37b0533a3"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/tract/B_1km_asian_alone.npz",
+      "bytes": 4059,
+      "sha256": "bf7a6236ad3101614b7ceaa8ab1b04b63dcf9e670e7281c88860f3a76a6d2e18"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/tract/B_1km_black_alone.npz",
+      "bytes": 7959,
+      "sha256": "92cb7eaa790e7a66b2d48d09396fa60b2fb1f8ecfe1184dfde23eba36f6d88f6"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/tract/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 7690,
+      "sha256": "f3d2e1c7c0156fef7a7371b8e9acab64688eef33aba470017c54b44c935bfc94"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/tract/B_1km_white_alone.npz",
+      "bytes": 10993,
+      "sha256": "4074631a1cd358a4bb47508299404d139c23846b48679628d0fd9140fcd3c66e"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/tract/B_node_indices_asian_alone.npy",
+      "bytes": 2384,
+      "sha256": "5eedb90bcd497fe4ef6cd3a25eea71a071471c42aa1d2bb3ef2fe464222f6018"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/tract/B_node_indices_black_alone.npy",
+      "bytes": 4592,
+      "sha256": "0989a5bb3a340c5da3116f900af752c6c5919bc120949aec5372b25cdd006659"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/tract/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 4528,
+      "sha256": "2f07401124d4b8a66f0486bc1f01ef06e36e300a8d38918741478b46a3544bda"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/tract/B_node_indices_white_alone.npy",
+      "bytes": 7072,
+      "sha256": "ea82da46aa1e99fa5eb57ef96dc110d0bba566a447967e0841e86ec7c7771f88"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/tract/adjacency_1km.npz",
+      "bytes": 27343,
+      "sha256": "5b9ac654dbf8f3cceaf5e7a89ff3a7409926cc409348bc7553d12b0b3b99608b"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/tract/components_1km.csv",
+      "bytes": 5878,
+      "sha256": "86a9e0afec852176774e77d16569e8743db8e974bcb312854ae3a59fa7812a3f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/tract/local_scores_1km.csv.gz",
+      "bytes": 273228,
+      "sha256": "21bccb7bd8297666417b0d8ebf96d33f4e61f1044de0771be97814d0c89605c0"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/tract/manifest.json",
+      "bytes": 989,
+      "sha256": "dce529252e05835a0a270f7b97b65eefd6c4d2e038ceef8275949ddf700f8523"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/tract/neighbor_weights_1km.npz",
+      "bytes": 32930,
+      "sha256": "763d9f05f0a17ac94421df6e079d09cbb9cfb3a3663c5afb1fb6a809bf105219"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/tract/nodes.csv",
+      "bytes": 173917,
+      "sha256": "255c63a60602f68660802709ae89ec72061362b5d1d413d5901d2cd27f412d54"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/new_york_city/tract/scores_all_radii.csv",
+      "bytes": 3228,
+      "sha256": "f1be6af02138dd31ba5fbe7ad42ffeb66183cf75082a77fe6ae6ffb5ccbd359e"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/block/B_1km_asian_alone.npz",
+      "bytes": 9482,
+      "sha256": "757481cb478755207c0a159bf72963247ddd14ab9982bfacf4a7f7f0773b75d1"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/block/B_1km_black_alone.npz",
+      "bytes": 282392,
+      "sha256": "733ad4dae9cbaa4128bfb108c63aa33ad0394cb28d9e3ab8a81adfc7a07d9e1f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/block/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 70225,
+      "sha256": "c600e99658d795a91ffb903ae5e0b7ea73a7e29069aaa5075309be67d8e32634"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/block/B_1km_white_alone.npz",
+      "bytes": 255629,
+      "sha256": "84b305eddba1894190a072ec98147d1f6cebd16dde3d4c8486575d829d3a4e7e"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/block/B_node_indices_asian_alone.npy",
+      "bytes": 3936,
+      "sha256": "0cade5acc4d13fbfefc59e410b2aee457219394a4a143793137880b5da398df5"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/block/B_node_indices_black_alone.npy",
+      "bytes": 50120,
+      "sha256": "3fa6809754ccca55a645d9c71c685a12319cee85af0784f328176b8871dc2e3f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/block/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 14984,
+      "sha256": "f1d8c8e3c6a09ea883af765dc191cc3d09bc5fdeef1ba65e0e699a12cf762a73"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/block/B_node_indices_white_alone.npy",
+      "bytes": 47816,
+      "sha256": "a98166b919de2bf71a6eb54e590be4475104c8d1b6c48165efe3fbaf56343e8f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/block/adjacency_1km.npz",
+      "bytes": 646771,
+      "sha256": "bf86fdb42949d3ee223cfaa5902b158dea3f6d6ecb6803502aa411e344555a79"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/block/components_1km.csv",
+      "bytes": 4109,
+      "sha256": "a5c51639ec2ef6c708b303769c0abe5cbedb651711992f46fb9b5fc3b45ddbfc"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/block/local_scores_1km.csv.gz",
+      "bytes": 1367516,
+      "sha256": "dd3b2f64e90cae77025431bc97c7d9b804dbd6208572fd98cfda4f77104cb5af"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/block/manifest.json",
+      "bytes": 1039,
+      "sha256": "7b8652341cafeaa9e4aa40fb3bfee15f68ef28a380346dbd6ee6f2a47a304927"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/block/neighbor_weights_1km.npz",
+      "bytes": 792084,
+      "sha256": "f22cbabb5e40800a98bd64b5d5973cad3ca2205b62dbc079c50dd58f4e36b7f3"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/block/nodes.csv",
+      "bytes": 1037140,
+      "sha256": "7f4d4b276c7d04ec0fda974a8f474c25e8517879f2037af559c6dd1b1f637192"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/block/scores_all_radii.csv",
+      "bytes": 3266,
+      "sha256": "46b544a70ec43ccef2a9916eb1eeccbf2d849e2338e1a8eceea5f9032b7f17ed"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/tract/B_1km_asian_alone.npz",
+      "bytes": 982,
+      "sha256": "33569b881c2aa436221e0cb4b140170f191a4221d5f2588e5ab86766eea1f3fa"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/tract/B_1km_black_alone.npz",
+      "bytes": 2306,
+      "sha256": "9db1e19a30e17eda2acb7bacba71814188ecea14502ac34aeab4072035504e26"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/tract/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 1201,
+      "sha256": "9577af77df9761eab55ac536e71d5de227cdebfd6df54479fd27857659b52e61"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/tract/B_1km_white_alone.npz",
+      "bytes": 2377,
+      "sha256": "ddaa160f959770684dea001f3bbd5a989a8859e47852ba44a379842fb9485a39"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/tract/B_node_indices_asian_alone.npy",
+      "bytes": 192,
+      "sha256": "0357f554740b9d600ad50cec112ca3a7af83e2592466bf1abe5127537df2eda4"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/tract/B_node_indices_black_alone.npy",
+      "bytes": 1488,
+      "sha256": "cba485cd2a1d66e8dfc4ceec50cccc5943a95d209270a37224fd8bb1b62fa225"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/tract/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 400,
+      "sha256": "6d07496d38a485666c1ea03082bcd17c4ac4b166ff775b28f8ea83e0161dee7f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/tract/B_node_indices_white_alone.npy",
+      "bytes": 1496,
+      "sha256": "af44acc12c85666f702d2ac7f0aeef39e15c6f4a97a4915ad56b963df70297c9"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/tract/adjacency_1km.npz",
+      "bytes": 3718,
+      "sha256": "1f41317d6ec4c212c395558ce3ff4617600c444519ef08178b422be6aaa6812f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/tract/components_1km.csv",
+      "bytes": 2610,
+      "sha256": "4a3fa9c9370a3121010e709ed11fa41d9355571def95cc80b7235a31d5f27856"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/tract/local_scores_1km.csv.gz",
+      "bytes": 46386,
+      "sha256": "bf4763b3247d8e99cdd7c0f4e5f05e98c782c707f3ee23ae9038cbdb894eda95"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/tract/manifest.json",
+      "bytes": 1063,
+      "sha256": "ee0a70711b8db22549592fea33b15c6580de03e10a51ed81d4fba76d99e414ae"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/tract/neighbor_weights_1km.npz",
+      "bytes": 4340,
+      "sha256": "76c4da340a2c3c449ae1f65b192b99fd005ead2b313c95ecb5b56439414c4d0f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/tract/nodes.csv",
+      "bytes": 29526,
+      "sha256": "a50004dda5e029dea98381bafbc831f6a1604b225e1651aaaa07223cca4083cc"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/philadelphia/tract/scores_all_radii.csv",
+      "bytes": 3162,
+      "sha256": "ffa266d89d819753d1a7197c96ce3036ac6fbbca7b9c21c8ad2ff8acfc580fa8"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/block/B_1km_asian_alone.npz",
+      "bytes": 1395,
+      "sha256": "9bcea6161a236e64051282e4b68ecac77453c3bb10b841596340eb4dc274558a"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/block/B_1km_black_alone.npz",
+      "bytes": 2731,
+      "sha256": "d376998f11e848e3fec8f890b809487b6718374f5593e7e2c2c4df8ec612a9dd"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/block/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 165224,
+      "sha256": "f234d496ad761970910bd66d2522526beef0ae12a4db04f688523ac6aa9241a0"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/block/B_1km_white_alone.npz",
+      "bytes": 244475,
+      "sha256": "c7cd289bf6095036efb62e3a4a78e9e4106459826206ca685d783d8da189eec0"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/block/B_node_indices_asian_alone.npy",
+      "bytes": 744,
+      "sha256": "4d09d644f60d2516e58dc177eb6ffa628fb8ba695d1475b5e903b49ff6f0895f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/block/B_node_indices_black_alone.npy",
+      "bytes": 1616,
+      "sha256": "05ebef0d6659805112fadaaa5b1f4fdc98f237bfdb220e494c9f236042150d10"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/block/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 50928,
+      "sha256": "923baab9586aded14f15217edcaf8e0c3a68a60cf124cee0e1b1fd171803c83d"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/block/B_node_indices_white_alone.npy",
+      "bytes": 73472,
+      "sha256": "c8b9d1e1cc5c6a6fafe0a576c05a46a22091b7af12a3773f184489ee3e0b541e"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/block/adjacency_1km.npz",
+      "bytes": 372227,
+      "sha256": "643701e6c85b77eb967c5bb3bdff2ace798c13ff1b4d5a13ee52bcb20049ff6c"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/block/components_1km.csv",
+      "bytes": 8951,
+      "sha256": "aa24409152d67f4a66988079ff6084c7284d309a3c2cc308d96e3c1768ddf68b"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/block/local_scores_1km.csv.gz",
+      "bytes": 1387775,
+      "sha256": "97bbf8f5cc932c89d86238e6348b57fc6413dc419c3d9fc632867de38e3493fa"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/block/manifest.json",
+      "bytes": 1031,
+      "sha256": "df05819676983f6fdd565774a3c391e717d4a58973b6a6ee0d4cbf994015f296"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/block/neighbor_weights_1km.npz",
+      "bytes": 463499,
+      "sha256": "51838bee40714829acbf978e48c8fa033ed15711a43c51743e5c4bc146049cb6"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/block/nodes.csv",
+      "bytes": 1195613,
+      "sha256": "d730d55c3046d23a0aff326763ada2ee4f1e953ae586be6b8dc06c111c6a22c2"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/block/scores_all_radii.csv",
+      "bytes": 3184,
+      "sha256": "405030afecfacc3821b2e841670ccf5a840fbca007b4ae16e287e2dd852133cf"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/tract/B_1km_asian_alone.npz",
+      "bytes": 945,
+      "sha256": "a958cf6b14b261e8453c05f2f093cc947082737fed9d7d711f087737e49af7d7"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/tract/B_1km_black_alone.npz",
+      "bytes": 947,
+      "sha256": "2ec63b183ad3d38c4a1e770ae469cf29dbcf1e2e7e2607d2105a381fb1cdf813"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/tract/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 1414,
+      "sha256": "763e959525fa73ac3e50e7ef52482f1618045abe5fd62697f01c31895c848eb5"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/tract/B_1km_white_alone.npz",
+      "bytes": 1249,
+      "sha256": "bda7a5059dd6fa755fde0a23cff6f52d41f0489cd5bee1e4a434e640357d353f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/tract/B_node_indices_asian_alone.npy",
+      "bytes": 128,
+      "sha256": "e734dac55ea9fbbe782af2d8c02c3c5992131906228afb2aaaf137d6f3ed74db"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/tract/B_node_indices_black_alone.npy",
+      "bytes": 136,
+      "sha256": "e4a9d038827d1b2d78f284c075f04a19256acf88395ab60ce4b35b757e825b33"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/tract/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 896,
+      "sha256": "3dd95c4618fdd059f24ab42792864fb3249bd960ec0459dfb841578b05a7c742"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/tract/B_node_indices_white_alone.npy",
+      "bytes": 712,
+      "sha256": "d495049e67ff884009ba81ead076d242dbbb4d318c44c64a3e384a729b9a3bfb"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/tract/adjacency_1km.npz",
+      "bytes": 1731,
+      "sha256": "9e254bcc92737c8e962913c047b1fc3866d34e8d4f4b00ac0de372e1655e2a42"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/tract/components_1km.csv",
+      "bytes": 3942,
+      "sha256": "aebf236464e779c22bc8226b1e0eb36f8cdf05a43f30ff26d3d7ec073614a318"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/tract/local_scores_1km.csv.gz",
+      "bytes": 37571,
+      "sha256": "c7fe5519f41cc1f7ffa67969683c18c4ee41e76d790c39a426f4719ffd7c35c7"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/tract/manifest.json",
+      "bytes": 1053,
+      "sha256": "098d9b29897d8e6e469e5898ee8fb86a7e355246b2abf4d594f001775605ce0f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/tract/neighbor_weights_1km.npz",
+      "bytes": 1845,
+      "sha256": "64c2d5b6e5af0c801f970adc89adf468f54f2bf176e80feea4373901c4862973"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/tract/nodes.csv",
+      "bytes": 30348,
+      "sha256": "552472e31b63595566c72fb3a047da881d09ec09275324722754e00c83da4312"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/phoenix/tract/scores_all_radii.csv",
+      "bytes": 2802,
+      "sha256": "3bb95fda8ac7a51a9bea2d90e7a1e3379f1be091941c32c7580e4031b192af4e"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/pssi_and_distance_fryer.csv",
+      "bytes": 16045,
+      "sha256": "ec3f7508948159b8ea24e44effdf67627f0b82e5d2324ec09b36e410e3374309"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/radius_sensitivity.png",
+      "bytes": 301879,
+      "sha256": "e8d98f56ccedb14563a75e024ee09afa021da277576cb9864d800ed8ad0a0cb2"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/block/B_1km_asian_alone.npz",
+      "bytes": 971,
+      "sha256": "ec05196f5fef91b66f6f63fdcf1ee3d9cf418943eb6f12826aab8e0e062800c6"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/block/B_1km_black_alone.npz",
+      "bytes": 947,
+      "sha256": "50d2dfcb472c1a5b726d1dbe046bdb4865fc810729f92ada98b06fd54dc227f2"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/block/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 7636,
+      "sha256": "9dc904e90f7b98c457b17d12ebad088da752ab4d5627f25d45eb6952c99332a6"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/block/B_1km_white_alone.npz",
+      "bytes": 58327,
+      "sha256": "5d1e287f3a5577472ed7e69338f0af7df6f651a97441f08d5aa6796402a617cd"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/block/B_node_indices_asian_alone.npy",
+      "bytes": 192,
+      "sha256": "cfb33bd2f2a8ca804b185b72be24b2aff1bd725a0845b041be90a5de580c45e2"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/block/B_node_indices_black_alone.npy",
+      "bytes": 152,
+      "sha256": "3709921a467105c67dd6647ae64706e3203cdfd2f69fa3447a89e7d9e94da20b"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/block/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 2744,
+      "sha256": "b5cfa8262e2de546d87040b2075a8a5065ab3a0fde73fd3352c97f34cef54bcb"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/block/B_node_indices_white_alone.npy",
+      "bytes": 14064,
+      "sha256": "7b09de399886cbbc88743db64ea8ba183f16cf84ff35f396de8b09abec2dfeba"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/block/adjacency_1km.npz",
+      "bytes": 56968,
+      "sha256": "5bd76cb82b475c8892039505776ef6c2b879d8ec1dfb5f685b93c50b50b03bc2"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/block/components_1km.csv",
+      "bytes": 1032,
+      "sha256": "10c692655ba6f2d03348f54895146ce719cf4f96edb2b2fea02aabc452b9fd48"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/block/local_scores_1km.csv.gz",
+      "bytes": 182410,
+      "sha256": "a344e3f9ede78b2e172090397597b9debdf87809b30715bfb921737abe868d5e"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/block/manifest.json",
+      "bytes": 1040,
+      "sha256": "e185e55928392c2a772d92800846f060eed229ecdcb601063d262531ac31fa08"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/block/neighbor_weights_1km.npz",
+      "bytes": 71390,
+      "sha256": "6b17181939daa3862ec3dfabe4b39063dfbcb8d9dc60f16bcb53d6a3f87de8ac"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/block/nodes.csv",
+      "bytes": 149218,
+      "sha256": "38c844db9608cc5c4ae596c7e1a759fd05897a769bfc01acff92050776acbfa1"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/block/scores_all_radii.csv",
+      "bytes": 3080,
+      "sha256": "e86e1ff430416ac873f2440497ce79fac713b73ed74ccdb3629a9bc81e6b56bd"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/tract/B_1km_asian_alone.npz",
+      "bytes": 945,
+      "sha256": "a958cf6b14b261e8453c05f2f093cc947082737fed9d7d711f087737e49af7d7"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/tract/B_1km_black_alone.npz",
+      "bytes": 945,
+      "sha256": "a958cf6b14b261e8453c05f2f093cc947082737fed9d7d711f087737e49af7d7"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/tract/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 976,
+      "sha256": "5a0b6fe08a9be8836685e9fd8c183e2293ba0ecb9010f35f21c3ce3d3c3cb012"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/tract/B_1km_white_alone.npz",
+      "bytes": 1201,
+      "sha256": "fb78d8fe8bdb9973b294857c51eaaa80bce68922ce925263cfe80a0a57623da1"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/tract/B_node_indices_asian_alone.npy",
+      "bytes": 128,
+      "sha256": "e734dac55ea9fbbe782af2d8c02c3c5992131906228afb2aaaf137d6f3ed74db"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/tract/B_node_indices_black_alone.npy",
+      "bytes": 128,
+      "sha256": "e734dac55ea9fbbe782af2d8c02c3c5992131906228afb2aaaf137d6f3ed74db"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/tract/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 168,
+      "sha256": "ef8cc8d3cae2accff83e83529445ca8a046ebb09d7f5a03f95526b813f35b794"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/tract/B_node_indices_white_alone.npy",
+      "bytes": 448,
+      "sha256": "c27afd4136c5b191ba8d1c775d04ec5e394f3ba787c92bf311d33cb257045762"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/tract/adjacency_1km.npz",
+      "bytes": 1174,
+      "sha256": "2e91eed262b32c69ccc9e96c06a81b78040e0a3df512db312e492edd84eea5bd"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/tract/components_1km.csv",
+      "bytes": 678,
+      "sha256": "cfd65ff57a61b923c36603491b444aa91696ac730f787d26412e586cb5e04cc2"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/tract/local_scores_1km.csv.gz",
+      "bytes": 5467,
+      "sha256": "d1e053ae873273c1c9e939d3da8d8a3e4f953219cd6e7b17fe6f1adb967b0668"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/tract/manifest.json",
+      "bytes": 1063,
+      "sha256": "496f1c9aa1097315849bf0044dc017faeed17631c1702057f23b21e18052c282"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/tract/neighbor_weights_1km.npz",
+      "bytes": 1228,
+      "sha256": "7398dbda834a84b64a3402426eb50af27f67df655634998bfad8097e60e0b5a7"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/tract/nodes.csv",
+      "bytes": 4420,
+      "sha256": "888ca49e8eb6a43db2d02420544bbfe33a9d8a46428bfdfac3dd5d34369935c1"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/salt_lake_city/tract/scores_all_radii.csv",
+      "bytes": 2840,
+      "sha256": "8d93b31b3889660ad702ac05bffa6016575791f33ca47bee5a138c9af23cdb9d"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/block/B_1km_asian_alone.npz",
+      "bytes": 55634,
+      "sha256": "e3b20f733e5e72ac719e0ee16b561d30e9fa08c565ef8ffcadffe84b7d4d0973"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/block/B_1km_black_alone.npz",
+      "bytes": 2591,
+      "sha256": "040e82d92067041589d8075fe3947e940fcd0535715267b232e4305f3492c0c3"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/block/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 11443,
+      "sha256": "35d2244eda48d89f78c0de16209e825ab848af06568e7707bc57c910c0d2768f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/block/B_1km_white_alone.npz",
+      "bytes": 119550,
+      "sha256": "6b9a919122fae3d55079270c6452f0486d3fc5ab9225611d2551f948ec43cd32"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/block/B_node_indices_asian_alone.npy",
+      "bytes": 13848,
+      "sha256": "6bef3acdb4705a3279778fb8313f7f286e8b7d3ba4b6625e95b69004ab333f95"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/block/B_node_indices_black_alone.npy",
+      "bytes": 952,
+      "sha256": "b6cd604c0f33a5a231e3898b4cf3e6857a97d04c5b53a49dcd4798e777d27a65"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/block/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 4128,
+      "sha256": "9877c26479044a6409893b83709d66acab7f4f9b799d9a3b7c0a8d39c911861b"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/block/B_node_indices_white_alone.npy",
+      "bytes": 22600,
+      "sha256": "5935b790397f6e7527d12b384e1de90adb8f4bcde27e815f4494c83f3aef5391"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/block/adjacency_1km.npz",
+      "bytes": 205577,
+      "sha256": "26011b3cf59c24a22f4de7cc65be30b1500f95c4a7755f69b6af5fee14fb8a4b"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/block/components_1km.csv",
+      "bytes": 1797,
+      "sha256": "031a71d12a87705f587579fa40afe2733ede1f281c05193165b7716c178facee"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/block/local_scores_1km.csv.gz",
+      "bytes": 520711,
+      "sha256": "2f41cf7ecacdc4b94ce0c6a85adc7fbe27db2be8151bbf0f802ee5233abd5fab"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/block/manifest.json",
+      "bytes": 1037,
+      "sha256": "88f88dd4129030aeb750d74e06f04124fc129a5b77af9f04c2b9bb0f9241bb1c"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/block/neighbor_weights_1km.npz",
+      "bytes": 251102,
+      "sha256": "2c4c26356c12e678d2da11ddc4ee287772d4c0c0be8b45f38bf1c494244db7ca"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/block/nodes.csv",
+      "bytes": 372500,
+      "sha256": "2618174e612b446992186a6dc3cc4c0c51991117c4b81090334a97b684e501a2"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/block/scores_all_radii.csv",
+      "bytes": 3236,
+      "sha256": "c91a616184ad5b9b4778a15974553dc50785406425d311b3e96491e7c37b709c"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/tract/B_1km_asian_alone.npz",
+      "bytes": 1708,
+      "sha256": "e3ab7940bce2e398e94435ca84ca99e64efc585f185a2d7437a892be0fe17971"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/tract/B_1km_black_alone.npz",
+      "bytes": 968,
+      "sha256": "b482191c271f74fdd885afebacc27a03b60b6324c4d76caddbd608d19ce83d59"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/tract/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 1060,
+      "sha256": "d0c4b836749dfa009338e790e04049d1aa95df9612129fd28a22c03a43e574b7"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/tract/B_1km_white_alone.npz",
+      "bytes": 2675,
+      "sha256": "a0b39c3562aa745f9625ab61336fcc0586907f24d403bcd6c409843dde27bd2c"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/tract/B_node_indices_asian_alone.npy",
+      "bytes": 752,
+      "sha256": "a2e99bec21d767d8ab460d0f9ee51d3a91341e67aad75151823176da4f41563d"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/tract/B_node_indices_black_alone.npy",
+      "bytes": 152,
+      "sha256": "89053c704b739b12e3c5cccc759bee85efbb2625c43b3fcff8d70d7ac7753d49"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/tract/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 232,
+      "sha256": "338a29db8def66b6136852e3ed6caa655170e2a3d9ea1ef456a106e64d7122c1"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/tract/B_node_indices_white_alone.npy",
+      "bytes": 1272,
+      "sha256": "1b28592912a39169dd84be09e7c350692ae785d45e762336596cca450eb792b4"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/tract/adjacency_1km.npz",
+      "bytes": 3186,
+      "sha256": "ce3fd08b200bcb236e9195b6220bc2dd278dc8ebd6133e8566bd55ca5364472d"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/tract/components_1km.csv",
+      "bytes": 997,
+      "sha256": "0584f4bcd3958ee557b5a5f372b28a3366e4f6dd3a8779920cc958e190b14dec"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/tract/local_scores_1km.csv.gz",
+      "bytes": 29778,
+      "sha256": "69505ad4af3baf68455902d75a191d574a80ef4280a3ee57c008bba12857237b"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/tract/manifest.json",
+      "bytes": 1061,
+      "sha256": "16d8ec71fb581746ff4cd668b7f5ee62531c21287f9cc99fba43e7318888fa9a"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/tract/neighbor_weights_1km.npz",
+      "bytes": 3804,
+      "sha256": "f2e70db0249a7c5ea6228bb347d8fa6c7b9c966693b6669f134a6797df53cfe8"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/tract/nodes.csv",
+      "bytes": 17914,
+      "sha256": "aaf3c5be624f56d861b31c666b4f711344f5a264b029e927c957388d2708777a"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/san_francisco/tract/scores_all_radii.csv",
+      "bytes": 3117,
+      "sha256": "79a1243d1368cc3be33bf7a909c741b34ec2f62caa6fcc8340fde7c48bf92ea3"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/scores_all_radii.csv",
+      "bytes": 63077,
+      "sha256": "0900447e6ad4a517eeedbb5d17a31c7f7294bee23ecc9db7418167f501c59d5f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/tract_fryer_1km.png",
+      "bytes": 460760,
+      "sha256": "ccf006f3ab78d4597dddd7b1a8fb58fee046275821881cce374f89e8ab134a27"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/tract_scores_1km.csv",
+      "bytes": 10583,
+      "sha256": "b89bb775f8f93150559fc53336ed4d138e3afe3490bed901569bfe8adb6f0edb"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/verification.json",
+      "bytes": 828,
+      "sha256": "2ee8adffe7e97c1f1a51a12f0e96f38448c2d5a48a53678fadc9435896fee37c"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/block/B_1km_asian_alone.npz",
+      "bytes": 1129,
+      "sha256": "c989a214c9143cb293911f319d44a0301dab7c88edc07e7be2b4971d3f1957b1"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/block/B_1km_black_alone.npz",
+      "bytes": 66653,
+      "sha256": "4fd0a81bf7a9c3031b346490d21c321c528acf3a31d89f9ead625b1658694c69"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/block/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 4099,
+      "sha256": "fa19f105db052083afaa327b8520aa089d67af47d7a57eaee889f7d9ad946cb3"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/block/B_1km_white_alone.npz",
+      "bytes": 75109,
+      "sha256": "ca4073cd80ef226d77523b46dbf963a734000220908d19cb6448d8224a175c6e"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/block/B_node_indices_asian_alone.npy",
+      "bytes": 320,
+      "sha256": "daf0a56bb83bd6a5a7c6f7624d3ef8125a61b01b517cc391f28a6147b1652395"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/block/B_node_indices_black_alone.npy",
+      "bytes": 17168,
+      "sha256": "e87ce8084a0b1cc8b4cfa7f05f6240e22e687213f2f49c0e89abda719b2a218f"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/block/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 1856,
+      "sha256": "638a5fe61a513086b75407d5b96a6a31df5ff43f4ae8d6bff56f667914b50a4b"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/block/B_node_indices_white_alone.npy",
+      "bytes": 17120,
+      "sha256": "fe21b7d3b77ceb02b969f05182f3cd85e521daede4bc2a14e6dd4dd1003fcd96"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/block/adjacency_1km.npz",
+      "bytes": 139725,
+      "sha256": "65fe8ae0161b522dd774f20029157968114fc7932fc024ce689616f78854768e"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/block/components_1km.csv",
+      "bytes": 1838,
+      "sha256": "b0f0c48fa607d60d9226d7b3439a9324588690b5047f50a08083608e4ae12a03"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/block/local_scores_1km.csv.gz",
+      "bytes": 429578,
+      "sha256": "919a99d877d62bffd6d9d986d021e72c039dce8138c65bcf7bcbbf71751cb876"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/block/manifest.json",
+      "bytes": 1037,
+      "sha256": "6a8b22444c1eabb877f429414cf4cad12611b348f89a00db2cdfa4ac34e696ae"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/block/neighbor_weights_1km.npz",
+      "bytes": 175748,
+      "sha256": "03dc6c881ce53d191bb64e799c02ea5f64b886b268c11f2a499f5b25b8771f61"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/block/nodes.csv",
+      "bytes": 314798,
+      "sha256": "e5638b711f301edadf5cc547e69023166d5dbacbc8b4f79b957e1b5ad5be6361"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/block/scores_all_radii.csv",
+      "bytes": 3277,
+      "sha256": "48d806a66cc214fc7cedf39bad82cd6ae71c51090569549762eea24984dae0cc"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/tract/B_1km_asian_alone.npz",
+      "bytes": 945,
+      "sha256": "a958cf6b14b261e8453c05f2f093cc947082737fed9d7d711f087737e49af7d7"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/tract/B_1km_black_alone.npz",
+      "bytes": 1614,
+      "sha256": "3b532f72fe75c7672f040e08fcf30a429ecd51a76a433bf956aba760fd0478ad"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/tract/B_1km_hispanic_latino_any_race.npz",
+      "bytes": 947,
+      "sha256": "50d2dfcb472c1a5b726d1dbe046bdb4865fc810729f92ada98b06fd54dc227f2"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/tract/B_1km_white_alone.npz",
+      "bytes": 2062,
+      "sha256": "ed577a8342d67ac53dd625878c78d3bc5e30672f58f4a1f2a7cb3999d4d2b986"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/tract/B_node_indices_asian_alone.npy",
+      "bytes": 128,
+      "sha256": "e734dac55ea9fbbe782af2d8c02c3c5992131906228afb2aaaf137d6f3ed74db"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/tract/B_node_indices_black_alone.npy",
+      "bytes": 864,
+      "sha256": "6754e33c91bf087be66f24414957d40e257a3c2cab54ec944678a01644c21717"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/tract/B_node_indices_hispanic_latino_any_race.npy",
+      "bytes": 152,
+      "sha256": "5aa808e6cd804216110dde4cd45041f2194cfb74da70125aedf4140c1079dfd1"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/tract/B_node_indices_white_alone.npy",
+      "bytes": 936,
+      "sha256": "ec07bda75516d6b61533e7813954b1762e59c9a1e23b8aaad2a3ebe04660af40"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/tract/adjacency_1km.npz",
+      "bytes": 2476,
+      "sha256": "b5862cbd836b017158eefef578e2685540eac6d03813bb042700d95480c21482"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/tract/components_1km.csv",
+      "bytes": 1085,
+      "sha256": "8b1fb1fdeef87c8350ad56a1129f6341e0b3774f8684fb01f600577dbf03c5a5"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/tract/local_scores_1km.csv.gz",
+      "bytes": 22607,
+      "sha256": "eb0e2132a3fb23887c665a7a5a0a1c515fa4cb6768d0f0383f01ac2420973884"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/tract/manifest.json",
+      "bytes": 1061,
+      "sha256": "ae49b5870cb4658bd427af22b1b43d1e67f663756f0b573fca938f2373d0aaeb"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/tract/neighbor_weights_1km.npz",
+      "bytes": 2868,
+      "sha256": "7ca858a65e97686477792986294c9da1c857f4cf484324a57523445d0ad14bb1"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/tract/nodes.csv",
+      "bytes": 14908,
+      "sha256": "16bb97602f16ecd496756f789be0bfe98d7fed5a8c1999fb966df41cda2e8824"
+    },
+    {
+      "path": "docs/outputs/distance_fryer/washington_dc/tract/scores_all_radii.csv",
+      "bytes": 2991,
+      "sha256": "b3636bb13ffaee48aeecea0962c5cbcac582716f92f58c7ea5e9a6c4956026bb"
+    },
+    {
+      "path": "docs/outputs/multicity/data_attribution.txt",
+      "bytes": 843,
+      "sha256": "dded103757815ff11299bb3bcd82bbb0c83960ef4337b53b690b5d9135ea2dd4"
+    },
+    {
+      "path": "docs/outputs/multicity/transit_sources.json",
+      "bytes": 90877,
+      "sha256": "9ad30d3454d0f714ecfb057c4db17cc604762bd12cfbbec125306d7d95bc949d"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/all_node_scores.csv",
+      "bytes": 10989494,
+      "sha256": "873ddc7b6ea2e9342c53906cbfef9b015e14abf03b6256b2a0abcaada465cb00"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/atlanta/boarding_access_by_node.csv",
+      "bytes": 5896,
+      "sha256": "ac438fe74f8ca7655d464936224a3d37bc9a2b2b619c25f7d7577ff9928088b0"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/atlanta/nodes.csv",
+      "bytes": 27093,
+      "sha256": "e5f910f30605dfebedc7c946cc9613fb54cab71aae6e1047b28cad1cc674a3ca"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/atlanta/travel/manifest.json",
+      "bytes": 6235,
+      "sha256": "cfa2f9458a193df833a4be2290ae2b186a9e36594ad31fa1cba3280a8784d385"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/atlanta/walking_only/legacy_travel_majority_diagnostics.csv",
+      "bytes": 782,
+      "sha256": "3f793dcdb2cd0307bf71a09658df44e0a93e49abd85d189daa5da5f7afc2075e"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/atlanta/walking_only/manifest.json",
+      "bytes": 2179,
+      "sha256": "dbb4230ba138bc9d27c8b74055ca7ceb1c3db174de643d88d089384bee529d70"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/atlanta/walking_only/segregation_comparison.csv",
+      "bytes": 1599,
+      "sha256": "3050d0e45480e1a3910e9ab9b684db303f2801276e5a96881d6e096dec612f08"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/atlanta/walking_only/tract_scores.csv",
+      "bytes": 213358,
+      "sha256": "dc684008a39077ab8539b562d5ca373d71ea2cbefda0baca3ed3bd795d6d1562"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/atlanta/with_transit/legacy_travel_majority_diagnostics.csv",
+      "bytes": 787,
+      "sha256": "e6c59a73ef65cdb563754a5045a46a345db317ca7d2a2b6fcb7fb0fe11e8bc7f"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/atlanta/with_transit/manifest.json",
+      "bytes": 2492,
+      "sha256": "aece41e5085df8183c19ddc5a502a2ce72f0f5556f2f0b4466537599bf59dd08"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/atlanta/with_transit/segregation_comparison.csv",
+      "bytes": 1607,
+      "sha256": "e721a3c30d16a4e38630c235b842f55d62ab41fa8dd52ec8dff3e79dfb067aa6"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/atlanta/with_transit/tract_scores.csv",
+      "bytes": 213507,
+      "sha256": "eda0044f847edd1bf90ad46cca2a7eba7679c763e0fdee8cdaf702078e1c6219"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/chicago/boarding_access_by_node.csv",
+      "bytes": 25360,
+      "sha256": "add6bfb652ba8065af26984ddbf1f09d6efe32f6c4605bd075aa0de062a0d7ed"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/chicago/nodes.csv",
+      "bytes": 113279,
+      "sha256": "10895acca4bb5b2268bdd5e71e7cf565ea678ee4e3a44a402d07ad34c9d07c4d"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/chicago/travel/manifest.json",
+      "bytes": 6812,
+      "sha256": "b63db5c4726204f8fab2fbbbec7cd908b62b2da8b118a5594e761bdecb11b89d"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/chicago/walking_only/legacy_travel_majority_diagnostics.csv",
+      "bytes": 759,
+      "sha256": "0600841651f48c7fb8a6ef6a67b06ba04337d92ea5bd17169b321ba28edf7591"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/chicago/walking_only/manifest.json",
+      "bytes": 2184,
+      "sha256": "19330b8a8982526e634bbae2b4888b9373a12d12f1a811fea4947b5e7eac686f"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/chicago/walking_only/segregation_comparison.csv",
+      "bytes": 1594,
+      "sha256": "e2dfa5fca92f74af1a0f083497d6d8b3bdd4d3efbb4375e962682f0bb82b44e3"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/chicago/walking_only/tract_scores.csv",
+      "bytes": 904797,
+      "sha256": "5809c542efb3212fe73dc364d953b021caa950986dbbed1ced1bdbdcf1cbd47d"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/chicago/with_transit/legacy_travel_majority_diagnostics.csv",
+      "bytes": 767,
+      "sha256": "4bbb46529fede90b191871ed327289b859f09ce175bab93c3a0b80216f8cd7ab"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/chicago/with_transit/manifest.json",
+      "bytes": 2499,
+      "sha256": "ca8d9ff9cba55e8d84aca82bfaf6b84b42dcf1c5a1b14a05ab49cfc685c48472"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/chicago/with_transit/segregation_comparison.csv",
+      "bytes": 1602,
+      "sha256": "710945ed20f91cd81db8f8d576c13f2a44381284646ae5aa53f528421ee32103"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/chicago/with_transit/tract_scores.csv",
+      "bytes": 900543,
+      "sha256": "309755f2b65060b203c0430736fc974c0f84f615934f228aba40d24b32adf02a"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/city_column_dictionary.csv",
+      "bytes": 4739,
+      "sha256": "586dcb3ea8a391ef351750dde8afc59d1b95870cacba7a78e61a45645883478d"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/city_scores.csv",
+      "bytes": 20341,
+      "sha256": "b8e315ace9b0d7ff39810f2233a14225aa28cc9b9ebeaac0e6ee39e91b549851"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/coverage.csv",
+      "bytes": 7660,
+      "sha256": "a66d79da10db7353e40f8b4c610b90c153421836442c2f8711a879227af11f66"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/detroit/boarding_access_by_node.csv",
+      "bytes": 8558,
+      "sha256": "a1878f3259df60ffd66b07a1ced8e31da9b9985fdd4472129c73c9e71276e288"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/detroit/nodes.csv",
+      "bytes": 37960,
+      "sha256": "d4da8e38a5be7c51b180e4a255b7867515a0b03d2085a5bb90e1e1a667b208e1"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/detroit/travel/manifest.json",
+      "bytes": 9343,
+      "sha256": "858f1332b9f331b19941e9578368125f763c9b3494efc81cc3882384b292b9df"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/detroit/walking_only/legacy_travel_majority_diagnostics.csv",
+      "bytes": 761,
+      "sha256": "130c219652c4ad8a3f5cb3055b74f1479e8cbb3db2b03fc89e3195896d3d8c45"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/detroit/walking_only/manifest.json",
+      "bytes": 2177,
+      "sha256": "b49dddb3a6cde906fa0d9d55a50ddb637d82fc88dc0351eccb272d105201aae1"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/detroit/walking_only/segregation_comparison.csv",
+      "bytes": 1594,
+      "sha256": "94f22f037cb838bc7a8b5ff6eeca98ee62e4ac5bfc43aaa4fb6cef9477fddf48"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/detroit/walking_only/tract_scores.csv",
+      "bytes": 306489,
+      "sha256": "3e006e12e4aadc68f4cbdc1be6c317566b37c198108143c107bfb154b277844b"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/detroit/with_transit/legacy_travel_majority_diagnostics.csv",
+      "bytes": 766,
+      "sha256": "53778c1f8a0d2c8077d5dac2f02b41ca78f978537ffc75f0917cebd87cd95eea"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/detroit/with_transit/manifest.json",
+      "bytes": 2490,
+      "sha256": "b1b737795ff6ed73c00c94e48babf5f1dfb5112de3e8095ff0f19adaabcdc43f"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/detroit/with_transit/segregation_comparison.csv",
+      "bytes": 1599,
+      "sha256": "f99d40ffc7f6618dcdd23f207d784af38c3783956742ea550e096c314e7615da"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/detroit/with_transit/tract_scores.csv",
+      "bytes": 305095,
+      "sha256": "c64733f9e117520bf43fead9542ce86b0e2f23c10cc1627eed9c5489b6599d12"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/distance_fryer_comparison.png",
+      "bytes": 490925,
+      "sha256": "39b6e5273114777e751061df18c68272841a1376912b9b0a35f277e8a8ace9b6"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/distance_fryer_recomputed.csv",
+      "bytes": 15814,
+      "sha256": "8236ab9e02a7faa9a735643ccf8f66ee03854af5072832f11b1dc7102801d335"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/distance_fryer_sources.json",
+      "bytes": 7619,
+      "sha256": "1016e2c0b6865f84417b96a96ed7a2267c847ba8f269b4f0db579cd2ca4f4248"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/fryer_column_dictionary.csv",
+      "bytes": 1869,
+      "sha256": "7b36c57237ce400bb5c281c3c985cd3a5e3ccb7d64185e7841d82043e352fddb"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/houston/boarding_access_by_node.csv",
+      "bytes": 29097,
+      "sha256": "02dc9e9d20d30dfc8d10ddc2eee3bf8f25d8a7cd0b9507e5d473025c1ed2b29a"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/houston/nodes.csv",
+      "bytes": 136770,
+      "sha256": "b588de306d5e750eca56404e770c3d27f704c411141e057723c9fdf0786a6398"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/houston/travel/manifest.json",
+      "bytes": 6583,
+      "sha256": "12234fdfe5788c3da3d272b6e27f38de1364791c8c09260537524fd6c06c482a"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/houston/walking_only/legacy_travel_majority_diagnostics.csv",
+      "bytes": 764,
+      "sha256": "1c0472f29eb4e75881fb1c23d3fa1b09509daa905b6f396c7ae5c693157de643"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/houston/walking_only/manifest.json",
+      "bytes": 2185,
+      "sha256": "0102cef44eadf3a366087a4dc01f9e95f3e963c4c22e0c3b0abd1afb3c06a1d3"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/houston/walking_only/segregation_comparison.csv",
+      "bytes": 1602,
+      "sha256": "e7933f88f0196d0d816e9bae35a5f55514c031c97ea756e2bd04d7a4895ef9f3"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/houston/walking_only/tract_scores.csv",
+      "bytes": 1092784,
+      "sha256": "0a482837fd9dc551ed1692c173ff70eca2c5fb1ab3428c6b079c90f5c8afe7ac"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/houston/with_transit/legacy_travel_majority_diagnostics.csv",
+      "bytes": 770,
+      "sha256": "7b03ddb99fd65893566a6af2004e302370efe2bab1bbe2519c865d958660e661"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/houston/with_transit/manifest.json",
+      "bytes": 2507,
+      "sha256": "cff40cf213925b194bad72412520eb9ad31827d80bbc7afcc8653e4be6488051"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/houston/with_transit/segregation_comparison.csv",
+      "bytes": 1609,
+      "sha256": "b0670cc68e2f90952d334d9a5e656c83999aab490e9eec3d86a41d5025ebcb98"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/houston/with_transit/tract_scores.csv",
+      "bytes": 1086595,
+      "sha256": "877fbeb7779fcb3bdba0d0b70f5789311ac02f91d2f2e24bf4a463aae4cdf2d2"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/index.html",
+      "bytes": 84055,
+      "sha256": "21e4c52f5222ff2d96b643454462d7bf33af6cc1b2d796f10b48a63e49ffec5a"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/los_angeles/boarding_access_by_node.csv",
+      "bytes": 35298,
+      "sha256": "4a27ca9767bd7698aac40b204cdc6d14c391e4feade04f87750c36406c7c5602"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/los_angeles/nodes.csv",
+      "bytes": 161242,
+      "sha256": "8543462e697444390041ae809b0258973b42408ff6fa4c83eeceb925eff9f3d7"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/los_angeles/travel/manifest.json",
+      "bytes": 8638,
+      "sha256": "25053f80d51d2cd77604692130a1fed34eb95363f5aeb81ccc5470d94ce152b4"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/los_angeles/walking_only/legacy_travel_majority_diagnostics.csv",
+      "bytes": 798,
+      "sha256": "a89e36709fba1f36e89fee90efaea59473fe47be4424627b206f2b3a35cfb232"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/los_angeles/walking_only/manifest.json",
+      "bytes": 2213,
+      "sha256": "f56d681fca324f9c4203c7266b1a8a1d55feead91a8f3b69a8b39e72e00d3069"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/los_angeles/walking_only/segregation_comparison.csv",
+      "bytes": 1645,
+      "sha256": "439c48cf1d651f19430ae714b27cd473cfaf37d9fc5a06b68f9f4e9ba488e38b"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/los_angeles/walking_only/tract_scores.csv",
+      "bytes": 1313858,
+      "sha256": "a9bf48d710d23e62da9c74f1bb5d960f9f0e5fd37f303b85bee5a3f08a90fcca"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/los_angeles/with_transit/legacy_travel_majority_diagnostics.csv",
+      "bytes": 809,
+      "sha256": "4521c133b7e7ed9cdb8adaf443f5d5f276883ed09d798f286d471abe1f449d6a"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/los_angeles/with_transit/manifest.json",
+      "bytes": 2535,
+      "sha256": "71974c94314ca22aaf0a3414d4640fb057f0d8cdd9921dc82f81574d34c5ff09"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/los_angeles/with_transit/segregation_comparison.csv",
+      "bytes": 1651,
+      "sha256": "3c12c84e36b593916afd20681e73ab4427fe48fae400b1d5cbb90a2844944fb9"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/los_angeles/with_transit/tract_scores.csv",
+      "bytes": 1306350,
+      "sha256": "ea7a76af0d7d428679e2f658dbebd214121e553c2df79840936bff7c82cd4acc"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/manifest.json",
+      "bytes": 1882,
+      "sha256": "613807c479f89d01da3fc27c0814f18b1ebacc8ab33804bd11c7ffefbbc0631f"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/all_city_section_eigenvectors.csv",
+      "bytes": 3387059,
+      "sha256": "2dd641d2f847527a4f6ef70d8f26b9917a346b27458c55115964b90e77b554ac"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/atlanta/asian_alone_pssi_eigenvector.png",
+      "bytes": 483451,
+      "sha256": "de26926d53e7f3dd9ba0970b174016cbe203871eb399c3e2eed3a2d92f3fdbda"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/atlanta/black_alone_pssi_eigenvector.png",
+      "bytes": 485523,
+      "sha256": "3f2b149de1e863c46746f59315b96dbbd6f798d5d1110ccf2b461775bc1d1a33"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/atlanta/four_category_pssi_eigenvectors.png",
+      "bytes": 951335,
+      "sha256": "5da868cda5d574d691504ee5f73da4e0346852c7189dea3a8327540ad5e57491"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/atlanta/hispanic_latino_any_race_pssi_eigenvector.png",
+      "bytes": 463752,
+      "sha256": "63632ef6e615cdfe94ba26bd927b366a1b61b2e2e828cda12a1055bf2730d92d"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/atlanta/index.html",
+      "bytes": 143482,
+      "sha256": "1fe66a377a56b8a115f9e165f90737dadc8ad29a498dc670d5cbb204bb262f5b"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/atlanta/metadata.json",
+      "bytes": 13310,
+      "sha256": "2bbd0811fe4b4138ebd4b9fd1909bbca7f4b4400c0b9076ee4bc4382ca99fcba"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/atlanta/section_eigenvectors.csv",
+      "bytes": 131273,
+      "sha256": "274ca689fcb2e3b4f6aba4bd5face5391b3ae1c6a04abf082313e081f85d5cf6"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/atlanta/white_alone_pssi_eigenvector.png",
+      "bytes": 483258,
+      "sha256": "10fa1734a9f567ce47d49af32a10d97213f43be40b5730df8a93cfa9b758f073"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/chicago/asian_alone_pssi_eigenvector.png",
+      "bytes": 447957,
+      "sha256": "5d01107a358c2506dabbd00c997c10988f0c31f62495fbf153785e2854aa839a"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/chicago/black_alone_pssi_eigenvector.png",
+      "bytes": 477826,
+      "sha256": "1f6d66b531fd6836d43306882f253efeb2cd8e7d6e4fa2eb419b9d2b191dd057"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/chicago/four_category_pssi_eigenvectors.png",
+      "bytes": 905837,
+      "sha256": "e0033130f1dc457c48f6728e7650fd96d80d1dd6f33fc814273c562ac8a87fad"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/chicago/hispanic_latino_any_race_pssi_eigenvector.png",
+      "bytes": 449005,
+      "sha256": "c2a37f8abf2c9472487486d1689cad63d11fec2d0c0c7a95d80985bd74b90cde"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/chicago/index.html",
+      "bytes": 599835,
+      "sha256": "908990fc9e1262c095998f781d41029b82069f348ab757689ebb16df5e1b3982"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/chicago/metadata.json",
+      "bytes": 13975,
+      "sha256": "47bd0aa18435c8973eddb14dd11678096a7121e0997d06c498f3e82e478844ef"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/chicago/section_eigenvectors.csv",
+      "bytes": 561034,
+      "sha256": "01cda7a0052bbe9dba803ab1485312b2f5e3d80a987a2e7a5b98f7e5e5c22c89"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/chicago/white_alone_pssi_eigenvector.png",
+      "bytes": 454683,
+      "sha256": "a2d9b7311e31c5b63b54d35f5d2a2f2d50a57ea1c9efa56518194db33370a85d"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/combined_map_overviews.zip",
+      "bytes": 11989166,
+      "sha256": "dd51d6c2587e681aa657708aa1aaadb001f8b7ddd56ed9820f64b0ff6c032131"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/detroit/asian_alone_pssi_eigenvector.png",
+      "bytes": 479133,
+      "sha256": "aa57bf583e340556e4ac7829083e040989b48f0a9e0c0e2e2e04e27adde6fbbf"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/detroit/black_alone_pssi_eigenvector.png",
+      "bytes": 429447,
+      "sha256": "b124763feb0998505b3cd462573a7badb150ffbeb39b652e86af18a9994328ca"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/detroit/four_category_pssi_eigenvectors.png",
+      "bytes": 989120,
+      "sha256": "8eb5342c4c93fb5437849a1f0beea44a13e518867d1f609e850f5dc87d6f0db2"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/detroit/hispanic_latino_any_race_pssi_eigenvector.png",
+      "bytes": 485965,
+      "sha256": "02d0d01c3ab5355a53fe25418639c61fc082168806b2ddd5d4e52853ae42e51f"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/detroit/index.html",
+      "bytes": 205081,
+      "sha256": "b995abf5f3ae11ec67d58b1de67d5aad065b1466b0815d4ad1e2549f4a9006ed"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/detroit/metadata.json",
+      "bytes": 16784,
+      "sha256": "5c69c182c1cf84a9f88b21cc9686f18039297a6e8b80662314135f29ff286007"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/detroit/section_eigenvectors.csv",
+      "bytes": 188724,
+      "sha256": "38eeebfcd6d3de3be2b89fcc3e55acbf0c99a155e02217e2a14185d4230d8337"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/detroit/white_alone_pssi_eigenvector.png",
+      "bytes": 466086,
+      "sha256": "fa21f9bab261f2165d417e5eed01b05b9513faf32a44e6ab19d635095d50dafa"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/houston/asian_alone_pssi_eigenvector.png",
+      "bytes": 929566,
+      "sha256": "9e46924e095d734931a1bb78622951ef41c94ae0bad83978ab7efc6d57590b15"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/houston/black_alone_pssi_eigenvector.png",
+      "bytes": 858011,
+      "sha256": "702319a0cbb50da466b85654377cc8c53d30e58b4bec2cf5726fe52a7b56ce54"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/houston/four_category_pssi_eigenvectors.png",
+      "bytes": 1865413,
+      "sha256": "724471e1f05075810cf6076dc9b3e91bce931958ca592e4663dfcfb1003b0ed2"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/houston/hispanic_latino_any_race_pssi_eigenvector.png",
+      "bytes": 848471,
+      "sha256": "1ff0b7294e4e25a90be8f9132836d379531967fb33c4f677a3f9a211d6453706"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/houston/index.html",
+      "bytes": 711447,
+      "sha256": "cbeb74d661ebef8e0419b5a950f4e430c8683eca445e7a75fbb8bab3061b6194"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/houston/metadata.json",
+      "bytes": 13691,
+      "sha256": "114916b182d95762b5241293e300aa61b223678a7affe1761a239493f420f0cc"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/houston/section_eigenvectors.csv",
+      "bytes": 658749,
+      "sha256": "c27a011080f7757d145846d125b11b0de84d11bdd85ff937142bd552bba726e0"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/houston/white_alone_pssi_eigenvector.png",
+      "bytes": 933908,
+      "sha256": "3c0bb2526c9bfb384628551210e834f23c8d6c3a44cda6110f8bb2be7a838462"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/index.html",
+      "bytes": 7607,
+      "sha256": "5bdc50ca0b888c6e806eee671c34c3406392e4c06c06009a2e2a024c71aa9e6c"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/los_angeles/asian_alone_pssi_eigenvector.png",
+      "bytes": 526281,
+      "sha256": "397bf7995effb43c90bab73e57444c68645273f8a5c55438b4479f8b5cfa5cf2"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/los_angeles/black_alone_pssi_eigenvector.png",
+      "bytes": 573274,
+      "sha256": "86ee86e92b153fa4a9f3c53948f1127520d2ba695a356b6e92ee4873e8e39661"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/los_angeles/four_category_pssi_eigenvectors.png",
+      "bytes": 1100118,
+      "sha256": "0d1359658acd5aac755f6c53604b2d954892eb4bac35fe27e8723e82590fce9a"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/los_angeles/hispanic_latino_any_race_pssi_eigenvector.png",
+      "bytes": 532938,
+      "sha256": "c116c76e2478eaaed115e96837678d0dfc04824f522974b3582b9626a6b4aec3"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/los_angeles/index.html",
+      "bytes": 842006,
+      "sha256": "a2c087838ad8baac91482ccb4e7ab7eb14df5d3cefc132ccb6ae5ee6829c2843"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/los_angeles/metadata.json",
+      "bytes": 16065,
+      "sha256": "e314f921d56ca033abdc2439d29c9754785c110d5037d6e4a5d4b92bb0a05170"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/los_angeles/section_eigenvectors.csv",
+      "bytes": 827584,
+      "sha256": "4693ac4c123fd7e9e76c47e439e52fd811af415a2102a029be92f6844ea9c4d8"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/los_angeles/white_alone_pssi_eigenvector.png",
+      "bytes": 548875,
+      "sha256": "a574185aa32aa1cb93adaee0fe47f665080f21b5c1c7b906cb5f75b0f8b19320"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/manifest.json",
+      "bytes": 454,
+      "sha256": "957a203d55c1e877564b6ecc74d72acfee7b8b91659f8493032d0196ab3e0722"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/miami/asian_alone_pssi_eigenvector.png",
+      "bytes": 392468,
+      "sha256": "818f51efd24792950f477604b62640388c31295ad7a7ce3a545689051ff9fbb5"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/miami/black_alone_pssi_eigenvector.png",
+      "bytes": 406700,
+      "sha256": "7c70e36b2005c8b9961acbd78ad4d727bfa512cf9a1956b34672a7e8088d1af5"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/miami/four_category_pssi_eigenvectors.png",
+      "bytes": 758785,
+      "sha256": "c526294e5f4f7a3ba8b7087af17562094dec0ead634be6f5f42b2d6a7b33223b"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/miami/hispanic_latino_any_race_pssi_eigenvector.png",
+      "bytes": 390028,
+      "sha256": "5a75445db993e11619830db83dfb79aef335d02f41b51279da359374bcb69d19"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/miami/index.html",
+      "bytes": 106739,
+      "sha256": "a98af89ec80973db7411b214f6bb06e82fece60f2907797341411c738c2f8767"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/miami/metadata.json",
+      "bytes": 14227,
+      "sha256": "4b2d6195e80ba79aca1b91923b76062b78a1d746a466359e4de53263761e7e0b"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/miami/section_eigenvectors.csv",
+      "bytes": 94542,
+      "sha256": "f89c08095bd880c1fb02ae6c5a9e470fd5990b7915fd1f9be839b2955c70f41a"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/miami/white_alone_pssi_eigenvector.png",
+      "bytes": 387350,
+      "sha256": "d56b7f06a7db787ba560429997de5e6b041eaee9a7bd47ab66bbf50c110e3869"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/new_york_city/asian_alone_pssi_eigenvector.png",
+      "bytes": 586355,
+      "sha256": "82696a43aeec973b1b45f58f57cf9f3395ba17c9281c07c3fd6614c4bde749c4"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/new_york_city/black_alone_pssi_eigenvector.png",
+      "bytes": 575673,
+      "sha256": "1dcc54b908444c0c0e26f35e896f29458b574bb2a5336976c7434f8eacc209c7"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/new_york_city/four_category_pssi_eigenvectors.png",
+      "bytes": 1198679,
+      "sha256": "4a4beba2feee9086bf5c69d6fc24611cbbe90654849b8ed87ca4aa82c9d51839"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/new_york_city/hispanic_latino_any_race_pssi_eigenvector.png",
+      "bytes": 571029,
+      "sha256": "fba3fbcd89db710fdf9cf7088df397db964a0388e432ff76c033a2dcaac8aa68"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/new_york_city/index.html",
+      "bytes": 54440,
+      "sha256": "13d27dac0b2680722c5763a013afcce5f7ba82cb3163ec7e925a8693a6dd359e"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/new_york_city/metadata.json",
+      "bytes": 14128,
+      "sha256": "65f6b6f8ff7b769695917e5be87f831ff5920e4115c226127479a74c5695f975"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/new_york_city/section_eigenvectors.csv",
+      "bytes": 51699,
+      "sha256": "6e3d51ddd3453c2e78ac26d368102667031267eff7510581ea9bfe5e6b1a4ae5"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/new_york_city/white_alone_pssi_eigenvector.png",
+      "bytes": 600039,
+      "sha256": "ac7c5ea6ff6cb8f2a84825d887c006fe04e2fee2aa5227fe260f80344ae19c2c"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/philadelphia/asian_alone_pssi_eigenvector.png",
+      "bytes": 616159,
+      "sha256": "5b7a5385a09319633195352f5f23164b2c1f0fc923cd52802a8a6315deb655b3"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/philadelphia/black_alone_pssi_eigenvector.png",
+      "bytes": 623430,
+      "sha256": "d65e71b6a7dd6b7c2a4c3b0cbf93ff41eaefe6a2c253f5161d73efb041e0d4ec"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/philadelphia/four_category_pssi_eigenvectors.png",
+      "bytes": 1260146,
+      "sha256": "7c17d598d14415300aa4577b804fccf28f078e965cd26e2a9a6766464475e2c6"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/philadelphia/hispanic_latino_any_race_pssi_eigenvector.png",
+      "bytes": 626916,
+      "sha256": "9ed813a622107bfc007012eebe9b0e00f0fdc9eaae521da573b4156093dee054"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/philadelphia/index.html",
+      "bytes": 305500,
+      "sha256": "dad96b0b42352ca05eebdba98bfee220eac0b769c9f708298462f00823b632c5"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/philadelphia/metadata.json",
+      "bytes": 14702,
+      "sha256": "8e224f5562b4ad10b31c6a33a0e681a181b1d099b2f9db0edc62064b9b8c26f4"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/philadelphia/section_eigenvectors.csv",
+      "bytes": 300051,
+      "sha256": "bfdbf9edb55a74c9533da406e21cb07983d28ba6c9c0ff97abfc06a2051b885e"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/philadelphia/white_alone_pssi_eigenvector.png",
+      "bytes": 610296,
+      "sha256": "9212c6db06efc4fb501b36b8d6971431a30fe747b4c4e2b37578eb6d3829347b"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/phoenix/asian_alone_pssi_eigenvector.png",
+      "bytes": 376340,
+      "sha256": "1b71e34a3cf2b359600e41d7f5271f732aabfae092b9385d87424246e910859e"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/phoenix/black_alone_pssi_eigenvector.png",
+      "bytes": 367825,
+      "sha256": "e23b466d6f68b10163fd719499d11512d26bedc6209f1f3da3667e0a8c295c66"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/phoenix/four_category_pssi_eigenvectors.png",
+      "bytes": 736332,
+      "sha256": "2024c226d7630ee8341e0416bc463401e53b1c022bc8f60973e906728827e5fe"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/phoenix/hispanic_latino_any_race_pssi_eigenvector.png",
+      "bytes": 371208,
+      "sha256": "79b30d6d2a6e67f6eefd78cfac0a6a2c50c67617128cf66c77b43d644a3676ac"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/phoenix/index.html",
+      "bytes": 291971,
+      "sha256": "241d9b476535433843a1fabcf28ef16b7a5af210102a520df8a97d6f16739e41"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/phoenix/metadata.json",
+      "bytes": 13908,
+      "sha256": "d4440ef9db3fdd96a90a7ebc771867c9a59b3bff7eb6d2f4e714d52de84ab946"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/phoenix/section_eigenvectors.csv",
+      "bytes": 273066,
+      "sha256": "5fb5dfa1364cc72bd619e65166a09ee825f877a092246f4cde043ae9bff7427a"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/phoenix/white_alone_pssi_eigenvector.png",
+      "bytes": 399824,
+      "sha256": "aab5eb42fd332ec7a433b8dffb48816f37dab9f0cb7b8d7747723ee0780bb89d"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/salt_lake_city/asian_alone_pssi_eigenvector.png",
+      "bytes": 254019,
+      "sha256": "24523d7c89574d0f82d12c4ea9f731181a8a8313ee34d35ee3d83b3d7f232903"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/salt_lake_city/black_alone_pssi_eigenvector.png",
+      "bytes": 262578,
+      "sha256": "ef70bc4f0119dee05af0b5fccfd23cc90e097752b0ec6e888ffd267871ac2384"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/salt_lake_city/four_category_pssi_eigenvectors.png",
+      "bytes": 486376,
+      "sha256": "a756749b7aecc0be5bffde070bcc4c1bb4b9fa67c24d387e8ee98e09ed1124d2"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/salt_lake_city/hispanic_latino_any_race_pssi_eigenvector.png",
+      "bytes": 268876,
+      "sha256": "53970a6d02eafd8fb17cbf8ac53ec1974169edc37f4f76c900a1060231d118ca"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/salt_lake_city/index.html",
+      "bytes": 47312,
+      "sha256": "b4d59b73c1c2df8775dab32c36afb78a4c4b2d1f7233262d718d02c56ced9f11"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/salt_lake_city/metadata.json",
+      "bytes": 13801,
+      "sha256": "d94ab20349b594fcff6938f876f7c81f0fb76a986739d6cf529cd081ace105c4"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/salt_lake_city/section_eigenvectors.csv",
+      "bytes": 44932,
+      "sha256": "70c744363674cba4306b9ccb5f81dec9d1fe87189310350e183827b22e4ecfe2"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/salt_lake_city/white_alone_pssi_eigenvector.png",
+      "bytes": 257327,
+      "sha256": "1c3a10c0522a060abca03a618796b3859e9230149dc5418b9bac2d0ce9944e31"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/san_francisco/asian_alone_pssi_eigenvector.png",
+      "bytes": 436562,
+      "sha256": "4100f453f71a7abc76d7af8d4d0de93da4c0c70a156d1843c0f2e30b282639c8"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/san_francisco/black_alone_pssi_eigenvector.png",
+      "bytes": 448219,
+      "sha256": "43c68c60102c0b0ac68374a54924c76f613c478ed6436b098a132932eb2a78b0"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/san_francisco/four_category_pssi_eigenvectors.png",
+      "bytes": 867013,
+      "sha256": "36f522b94c8457bf344e8c0c5114032ff88a93aa6443a1faeac5cb08e139489f"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/san_francisco/hispanic_latino_any_race_pssi_eigenvector.png",
+      "bytes": 450464,
+      "sha256": "640ed6dc9b048c73e808f8aa813deaf640b8cf7a9d399853147347cff3ffba92"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/san_francisco/index.html",
+      "bytes": 184138,
+      "sha256": "42282585d040ec7346a86f2b0b568a1547faca07a804747d71501aba75c894fa"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/san_francisco/metadata.json",
+      "bytes": 15714,
+      "sha256": "b593f092de072c829adbd654835d3478607666faf6c6852fe37e9b9b2e5162ba"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/san_francisco/section_eigenvectors.csv",
+      "bytes": 182809,
+      "sha256": "0726dfc89abaa52efedefc459bcd13fccf5d41580fc698033d474abade79e487"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/san_francisco/white_alone_pssi_eigenvector.png",
+      "bytes": 438256,
+      "sha256": "b1f0f065912dfa1ed89ba3aeac24e8d68103edf1571b651c23609ceb506f9b2f"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/washington_dc/asian_alone_pssi_eigenvector.png",
+      "bytes": 443196,
+      "sha256": "4f777ec48e6c205f708eb55569810138458b7523192d7b441fd6db2c72938a69"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/washington_dc/black_alone_pssi_eigenvector.png",
+      "bytes": 447731,
+      "sha256": "a27ef4b9559f30a1302c1cba22d53aeb527020579e9edab440f4f4383857754b"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/washington_dc/four_category_pssi_eigenvectors.png",
+      "bytes": 868318,
+      "sha256": "550856512dac9da3c83bdc6eeedce7a69ea660d446dcb87498b0352e334c47cc"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/washington_dc/hispanic_latino_any_race_pssi_eigenvector.png",
+      "bytes": 442874,
+      "sha256": "21d67f996870e67ae67ca4c7de58e7a6fbad76ca12cb6983732c549ec366c7c7"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/washington_dc/index.html",
+      "bytes": 157906,
+      "sha256": "259381fa36958180738eae28a36a02b46b9eeea45dd81719792b5bcee31e4308"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/washington_dc/metadata.json",
+      "bytes": 14749,
+      "sha256": "73a440c7bf8a02e0396eb38ca65a10d2db5987662fb0d529f46e6e328590671c"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/washington_dc/section_eigenvectors.csv",
+      "bytes": 157320,
+      "sha256": "6504ec716427c93cc7e79600c2bf8d94c1275440d1e6c168dd627fb9f513d28d"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/maps/washington_dc/white_alone_pssi_eigenvector.png",
+      "bytes": 441330,
+      "sha256": "06045d390ec482214f4c2e2c896d2e6b79b529c603a44ee5ac80abfd2aea8117"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/miami/boarding_access_by_node.csv",
+      "bytes": 4273,
+      "sha256": "194ae8bfb14c5cb9b6683340a88f33b7ff2542cea341fdf85de2804b42dc30cd"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/miami/nodes.csv",
+      "bytes": 19898,
+      "sha256": "6b89899b97be2737d88ee545de8062b6f1d652e2b395aacbd32efbf34230145e"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/miami/travel/manifest.json",
+      "bytes": 7104,
+      "sha256": "f52fac7f53b2d47f26a114f021702c17ff18899845d6caf50221665a448db79b"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/miami/walking_only/legacy_travel_majority_diagnostics.csv",
+      "bytes": 768,
+      "sha256": "5c42cd3cc2d8e7d8104516fe34b9e80a33423708ae29d1e754f92dae45d19aea"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/miami/walking_only/manifest.json",
+      "bytes": 2166,
+      "sha256": "425c03b3e9fd730a1f91558a03f78e037902ce88e2b79713a1b6191f36a744c6"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/miami/walking_only/segregation_comparison.csv",
+      "bytes": 1584,
+      "sha256": "428207fab7756efe3601d27461da4408050a48722947d041967c7005b045379b"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/miami/walking_only/tract_scores.csv",
+      "bytes": 155123,
+      "sha256": "f898799bb1f764bb197d8949bed69300c6ba8d6b56c2ef245836f481fa7c1c36"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/miami/with_transit/legacy_travel_majority_diagnostics.csv",
+      "bytes": 771,
+      "sha256": "7f1904822c54837f605a6a1c565fcc42ea27bd7623fbca093dbf38fcf4352b28"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/miami/with_transit/manifest.json",
+      "bytes": 2477,
+      "sha256": "9e3059d2568ecaa437822a51be48715358d5aa6381e8e23ad871740b89d8d7e5"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/miami/with_transit/segregation_comparison.csv",
+      "bytes": 1583,
+      "sha256": "46ee48fd649c0d4098ddfa42d55512052895e221234b6948d0a3aa502fed4b43"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/miami/with_transit/tract_scores.csv",
+      "bytes": 154713,
+      "sha256": "a855662ef506abc890f22a8907028c8a47d1fd66cd9aecce3a91bd4e78dfb262"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/new_york_city/boarding_access_by_node.csv",
+      "bytes": 1821,
+      "sha256": "312e59ccadb20764a6ede9cb65c72fab4cf03db1fce66f43f10893caccd3fa53"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/new_york_city/nodes.csv",
+      "bytes": 5323,
+      "sha256": "20f8e11effb29af43abb0a6b99c8063901db8fcf9a4cfdb09ba9dfd288ac65f7"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/new_york_city/travel/manifest.json",
+      "bytes": 6698,
+      "sha256": "400b085d92c27bedd4545feaf492ec0171a2a595693c8e8e5f3672b4d75626d6"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/new_york_city/walking_only/legacy_travel_majority_diagnostics.csv",
+      "bytes": 736,
+      "sha256": "7581394a5f93881ab4930af9a3ffa07d426bbb70cc76b6904939affa1eb6eef2"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/new_york_city/walking_only/manifest.json",
+      "bytes": 2355,
+      "sha256": "c8543481c9dc04db409b23dd6d40d9613ae892268c74dd85d8da46e2bcdaafd6"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/new_york_city/walking_only/segregation_comparison.csv",
+      "bytes": 1580,
+      "sha256": "54a094646b5de8f8a162f2f4ed0f5ec9bae1b9adc2900006f9157447eb69c86b"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/new_york_city/walking_only/tract_scores.csv",
+      "bytes": 74886,
+      "sha256": "9f53ebbceb50fffbdd3c5e8560d4576d5683d0e25560e26d130a34dae7ea6306"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/new_york_city/with_transit/legacy_travel_majority_diagnostics.csv",
+      "bytes": 744,
+      "sha256": "4a1c3c76de56e7d383bc652dadee858ad83717395c067f131e6d4aa00104ff7b"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/new_york_city/with_transit/manifest.json",
+      "bytes": 2662,
+      "sha256": "31e890b884e7d7bec3d119e4c872d8d914fe7880c118c52b46dd72974f11e4d2"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/new_york_city/with_transit/segregation_comparison.csv",
+      "bytes": 1586,
+      "sha256": "60f652003ea51ca2305dcd08d09d1901be766d11cf4e83d4f9194bb35bdea593"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/new_york_city/with_transit/tract_scores.csv",
+      "bytes": 74678,
+      "sha256": "8f3425037f6723cc21ce9c1e7e1405d749519d5b0b98de984df8be37789fe059"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/node_column_dictionary.csv",
+      "bytes": 2293,
+      "sha256": "41c0667a0f628a5c6954647b9e8132ac7e5f439cb691ac0fd9d9b4c887954567"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/philadelphia/boarding_access_by_node.csv",
+      "bytes": 12786,
+      "sha256": "1f0b18537fd2e02ead3d05a53bd52aabff60cd3e2b2b362c137a303f21b72445"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/philadelphia/nodes.csv",
+      "bytes": 57671,
+      "sha256": "74083174f1b73bfc9b436119a7556a89182f61eeaaa75618f20760c2056cfb41"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/philadelphia/travel/manifest.json",
+      "bytes": 7413,
+      "sha256": "b6159ac58e1c45badb40ae3a9488aabff61de2bca2a174f309dd7cb4575e76bc"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/philadelphia/walking_only/legacy_travel_majority_diagnostics.csv",
+      "bytes": 804,
+      "sha256": "77e1b1ab8d4a87003e56360d98c4365ff7daefccd8f6a96e056b7cac3aeb8545"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/philadelphia/walking_only/manifest.json",
+      "bytes": 2218,
+      "sha256": "8a4cb2667e3e66a98c029d4a60a2589f47813485e9315ef7198c31fe320dbc04"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/philadelphia/walking_only/segregation_comparison.csv",
+      "bytes": 1636,
+      "sha256": "523422c8ebb982c9baf1c3c6f3a311e4d34d15f717ab5e0faf18b84ab686db46"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/philadelphia/walking_only/tract_scores.csv",
+      "bytes": 472308,
+      "sha256": "8c16e3e7578271dff14021a022962e7e92fa474086b9f4513107824f68918c61"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/philadelphia/with_transit/legacy_travel_majority_diagnostics.csv",
+      "bytes": 811,
+      "sha256": "b7f69dbb1887b9e268960ae82e25fa1035b14e419edcad5528d13137911856d1"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/philadelphia/with_transit/manifest.json",
+      "bytes": 2532,
+      "sha256": "d8389fdbf097e0b2dede06a350594feae7dfde2949c0d2819b8464f9d7aee4ea"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/philadelphia/with_transit/segregation_comparison.csv",
+      "bytes": 1647,
+      "sha256": "ab8b65ff2006e882a5e6dabb076d0b6a10b0f1aee1ab32c9f932a389a7e4aad0"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/philadelphia/with_transit/tract_scores.csv",
+      "bytes": 472539,
+      "sha256": "5901df5100e23da4a370de5dd410bc5cf4be5086df2358df0d2d963be078753c"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/phoenix/boarding_access_by_node.csv",
+      "bytes": 12225,
+      "sha256": "cf63a46d22ed194e3f126630ba4ef5c144a8335ab18877e0c37bc8fab54ef4c8"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/phoenix/nodes.csv",
+      "bytes": 56058,
+      "sha256": "b1666f75e3e6ea402ea33953b3e3b035c0955c2ce5aa61ce7a60b2d4477bc8f8"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/phoenix/travel/manifest.json",
+      "bytes": 6792,
+      "sha256": "23d616415088cb3c094f840c4edfa44e601d6312b0019a495c1435156a8cc43e"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/phoenix/walking_only/legacy_travel_majority_diagnostics.csv",
+      "bytes": 786,
+      "sha256": "1ad7b4930e891a72889e8fef67f74e692c2d4dada6fba02af0077c615e558cc9"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/phoenix/walking_only/manifest.json",
+      "bytes": 2182,
+      "sha256": "92dd76ce5dec20c69f2b0c53b87db41444e7314904c4edf35d1dcca6561b2bfd"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/phoenix/walking_only/segregation_comparison.csv",
+      "bytes": 1606,
+      "sha256": "13f797104b64868321caa34e315fa79ab01493291f05c6266558dce7ce4dfb98"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/phoenix/walking_only/tract_scores.csv",
+      "bytes": 442239,
+      "sha256": "ce0749ab7993f2859ca58e6c3335289c4b881be6c279e17f079f465f47cf88fd"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/phoenix/with_transit/legacy_travel_majority_diagnostics.csv",
+      "bytes": 786,
+      "sha256": "9f4350eb1ea535e0e16c6fdfbd9539144b520a9bfeb0e2846ea4d1d0aeec6658"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/phoenix/with_transit/manifest.json",
+      "bytes": 2497,
+      "sha256": "4f6c71c4362b64e0d8109ab6aca1b171dfb34f1dad4de40dc0a52101f2d8a5eb"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/phoenix/with_transit/segregation_comparison.csv",
+      "bytes": 1608,
+      "sha256": "da570537f582a27a046c27a59ddb1980644056f76995229f1e13c2422ebf1e08"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/phoenix/with_transit/tract_scores.csv",
+      "bytes": 441261,
+      "sha256": "4a70cdad2a1f063a9afe08abaa98e8b7ec65b6afdb01410161845aed705580e8"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/previous_results_comparison.csv",
+      "bytes": 15067,
+      "sha256": "e8157cbee4aaae6d14a4f184e705f06f4dc70ddd53e701ff56ef7eaaf3f804b9"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/run_status.json",
+      "bytes": 350,
+      "sha256": "1a957450757741d6932b71688cf7b948da47f107dda3ac65dbecaea1502ee22b"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/salt_lake_city/boarding_access_by_node.csv",
+      "bytes": 1896,
+      "sha256": "51eb6d0a2a8ab9a8aa3643b0e991c635f6684fb64127cf18fc718c4f5109781a"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/salt_lake_city/nodes.csv",
+      "bytes": 8822,
+      "sha256": "b61bf49fac820793d769ad36ee5070cb8b54067c39dcceb2b4f524cf17f9ba22"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/salt_lake_city/travel/manifest.json",
+      "bytes": 6574,
+      "sha256": "319d27e4f990f1c3d934133b46ac3fe716c292d794fc68df50db41cd897b4057"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/salt_lake_city/walking_only/legacy_travel_majority_diagnostics.csv",
+      "bytes": 857,
+      "sha256": "70b2904e2d91b671d6b92fc6892e7460647f839c3860513bd6943a3f72bb90f6"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/salt_lake_city/walking_only/manifest.json",
+      "bytes": 2224,
+      "sha256": "11d0fcc81058613cfa31a99506b270b0ab7fe9f4c2ffa214d2f609879d1ba36b"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/salt_lake_city/walking_only/segregation_comparison.csv",
+      "bytes": 1663,
+      "sha256": "28495f23e83b2000f60ad73eecd6c145d95d69e0977f1fc6a3219ecd5f1da3e3"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/salt_lake_city/walking_only/tract_scores.csv",
+      "bytes": 70938,
+      "sha256": "b4404146ba73d6aafc3c04d0d3c1b6c25739a3db2561b809e29959b52cad6e27"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/salt_lake_city/with_transit/legacy_travel_majority_diagnostics.csv",
+      "bytes": 860,
+      "sha256": "9b07d62fceadadfcc0d295beb79dd63cf4ba03705e3a3d28f00d25ddc6c9520a"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/salt_lake_city/with_transit/manifest.json",
+      "bytes": 2514,
+      "sha256": "f8e629b5ace29540e0e2f1a508fa62b3f453dcd036ab103cc128eb6a331a3e78"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/salt_lake_city/with_transit/segregation_comparison.csv",
+      "bytes": 1669,
+      "sha256": "9f569c83fc4b5719c74b34e69adac200e677c2e1963afa40523db0cb0f7f1a5c"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/salt_lake_city/with_transit/tract_scores.csv",
+      "bytes": 70982,
+      "sha256": "3445f72f3dd382e253187514a0464eeb5569ff8bce92411188fa31fa6274d426"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/san_francisco/boarding_access_by_node.csv",
+      "bytes": 7680,
+      "sha256": "b6a6f318612d88697821c453977f5f19e341a672b2c89cc4f8da9c5112bd4d1f"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/san_francisco/nodes.csv",
+      "bytes": 34898,
+      "sha256": "4af6d05b4a9e42f588eeb0a69c8c0aa1c97c9d4f9706b757acc53ed71074fe7f"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/san_francisco/travel/manifest.json",
+      "bytes": 8310,
+      "sha256": "59b7eabd8f39774fe41eb29901464317194c0997163a20326d732c991016e9ab"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/san_francisco/walking_only/legacy_travel_majority_diagnostics.csv",
+      "bytes": 818,
+      "sha256": "edabab0f4e83ed7692a9eca4e948faa5824b48bb18f6cfdbd72a9ea648d759bc"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/san_francisco/walking_only/manifest.json",
+      "bytes": 2220,
+      "sha256": "14e02b9ab861bceb1775f9401281b5f64207b7e4b84217450a25b7a714d198f3"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/san_francisco/walking_only/segregation_comparison.csv",
+      "bytes": 1651,
+      "sha256": "a1566248ed559e5d1d5cf8bb310a0aa61d0f00af2ee7dedc76303edfe0dfc6bd"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/san_francisco/walking_only/tract_scores.csv",
+      "bytes": 285841,
+      "sha256": "a2b871ec1b731a16f8ac722b353042063f788738673439a98c5f0aabd0b2d51d"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/san_francisco/with_transit/legacy_travel_majority_diagnostics.csv",
+      "bytes": 823,
+      "sha256": "521509989d0ad1bc3628d21458516c9452974eb1bb66c5fbe350023f43e74d4b"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/san_francisco/with_transit/manifest.json",
+      "bytes": 2533,
+      "sha256": "e9c3a6f63ac5eba10bb8c5e941fd6b6813a9271bcef4ffa83727a3f1e2f1d309"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/san_francisco/with_transit/segregation_comparison.csv",
+      "bytes": 1662,
+      "sha256": "0ded90b878c274b2096bdf99846e7de9474768fd3d0194f265a3cbb3b8aa6287"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/san_francisco/with_transit/tract_scores.csv",
+      "bytes": 286667,
+      "sha256": "643aa233dd0072796f2ea3a7c30be249414f592110ccd058eb3385a659685e86"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/scenario_scores.csv",
+      "bytes": 30387,
+      "sha256": "e4241a1a4a44d968505b6902c17bdd28aa80a8a730985a8677c3ca5561316894"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/score_column_dictionary.csv",
+      "bytes": 2559,
+      "sha256": "d5a38f52edaa5dcd6c6edde12ff4e37b36e5e9971283833c00b660a264206303"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/segregation_index_comparison.png",
+      "bytes": 341217,
+      "sha256": "d42221c7599ba8d210da3afb05fd81b7c9c18c550943dc863b820e7dc949dcb6"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/segregation_index_normalized_comparison.png",
+      "bytes": 328432,
+      "sha256": "d0af6d30f26afbcda140f84cadb33c91595a666b5b0185fb5dda5fdd57fa3add"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/verification.json",
+      "bytes": 9972,
+      "sha256": "70f6eca5913cf7a5c6354f9b20a0b40a524f1144faef308e38f506987b263d03"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/washington_dc/boarding_access_by_node.csv",
+      "bytes": 6537,
+      "sha256": "5960ca9f38970fdb48dc9b4b560eb1f08452dcd124104ef2f44509362df880ce"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/washington_dc/nodes.csv",
+      "bytes": 29667,
+      "sha256": "8d24cf9c7aa648ad61fd0d49708c5f258b95126eb0abca965c980d21617b2ff3"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/washington_dc/travel/manifest.json",
+      "bytes": 7428,
+      "sha256": "da2d7407668c1446ff0ec90a58dcf97b40b8a4da9163a7d066e60a2d814804fe"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/washington_dc/walking_only/legacy_travel_majority_diagnostics.csv",
+      "bytes": 857,
+      "sha256": "0d7b573cd62e915496d3345952bf6ab8f5bf0d857f8afb7f09b753cdbf6c0a8b"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/washington_dc/walking_only/manifest.json",
+      "bytes": 2223,
+      "sha256": "c27cbaa6461739237e63a7556271b03a2edf925df8dd6f5a0644744056e951c6"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/washington_dc/walking_only/segregation_comparison.csv",
+      "bytes": 1660,
+      "sha256": "b1c2186c4316fd3198f74bf031825d41b1c3b322d0679f74056a2d937bc27e69"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/washington_dc/walking_only/tract_scores.csv",
+      "bytes": 246377,
+      "sha256": "2d2519b762ad2cdefe605f77236ec6e3a65110bbb46447f8908cfd89a5d4852f"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/washington_dc/with_transit/legacy_travel_majority_diagnostics.csv",
+      "bytes": 865,
+      "sha256": "fa2e1850e7987f299af8cc8f061d903b6d0d2c11b93a98a18f9de19475aace4d"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/washington_dc/with_transit/manifest.json",
+      "bytes": 2535,
+      "sha256": "b5b83cd8b67822f5baeac9320a19db2300dfe48f24fd33e7ce7134d196d89c1b"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/washington_dc/with_transit/segregation_comparison.csv",
+      "bytes": 1673,
+      "sha256": "774da93a926da7f2ad10d384b1b1270bbba368c27331726368d5425b34820af4"
+    },
+    {
+      "path": "docs/outputs/multicity/walk_access_revision/washington_dc/with_transit/tract_scores.csv",
+      "bytes": 246361,
+      "sha256": "d4560844c736628f7f133d8c8cce28ac326dec69f1cba54ee360c9e1d54054dc"
+    },
+    {
+      "path": "reproducibility/map_geometry/atlanta.json.gz",
+      "bytes": 440894,
+      "sha256": "7d8b9e45a97928908c697dc2e819a5c4ba2079d7ad35fc20e7e3994cdd92a3b3"
+    },
+    {
+      "path": "reproducibility/map_geometry/chicago.json.gz",
+      "bytes": 1298024,
+      "sha256": "eec99fabc6fd95768ca8e6cff7435ea985e4ef63daed986b7c8066db32681974"
+    },
+    {
+      "path": "reproducibility/map_geometry/detroit.json.gz",
+      "bytes": 222199,
+      "sha256": "ec957684146956fc07907b6eceb57f69c594947b9906d610c3fddf29b0797479"
+    },
+    {
+      "path": "reproducibility/map_geometry/houston.json.gz",
+      "bytes": 2528511,
+      "sha256": "6284aeeef37973276ca960927099fc80ac78fff38beed9bc6dd7e1f2d62aa2a8"
+    },
+    {
+      "path": "reproducibility/map_geometry/los_angeles.json.gz",
+      "bytes": 1257654,
+      "sha256": "4fb7eaab908c42494814e52f71e5a093a86c5c4f289311495f278988e775567e"
+    },
+    {
+      "path": "reproducibility/map_geometry/miami.json.gz",
+      "bytes": 194791,
+      "sha256": "466bdf73c97116c9cdd9583f081dbba7b502559ff2cb97325847ed0ecb0c3089"
+    },
+    {
+      "path": "reproducibility/map_geometry/new_york_city.json.gz",
+      "bytes": 571482,
+      "sha256": "04f1caccb794f06a4d555e3cfaf83a179935130ff043a83ad9ec8147d28bb3d3"
+    },
+    {
+      "path": "reproducibility/map_geometry/philadelphia.json.gz",
+      "bytes": 968209,
+      "sha256": "dfda15191c157504ae82a0048c0c5ca962925972bc45d65bb56b9a9f6682ad6f"
+    },
+    {
+      "path": "reproducibility/map_geometry/phoenix.json.gz",
+      "bytes": 598490,
+      "sha256": "0dada1b4d6caf6298d8fefb5501c1966e4e9a340fe0f714e6fe0f9e5731d464d"
+    },
+    {
+      "path": "reproducibility/map_geometry/salt_lake_city.json.gz",
+      "bytes": 158443,
+      "sha256": "fe7410b1a3c9bf571e0af2772cf1e157bdbcae6ecfec58b8460038d7bd64633b"
+    },
+    {
+      "path": "reproducibility/map_geometry/san_francisco.json.gz",
+      "bytes": 331757,
+      "sha256": "4f9af659007888595b0c26025a4410231d1ca54517ab8d77ccf45a1b8b445b91"
+    },
+    {
+      "path": "reproducibility/map_geometry/washington_dc.json.gz",
+      "bytes": 839233,
+      "sha256": "09f6e5dfba3d64bb3c1b0cfea1fba199764b4645b030f1fe513de9658414291a"
+    },
+    {
+      "path": "reproducibility/travel/atlanta/modes.npz",
+      "bytes": 510254,
+      "sha256": "a89c60a22bb22d4b27b34a380211596ff8d02f3135d27cb98721dad668357bb1"
+    },
+    {
+      "path": "reproducibility/travel/chicago/modes.npz",
+      "bytes": 9505044,
+      "sha256": "9063277c963a19fd50a0d5facecae3ae2385c8cb49fff6d6f406f4f8f17ce312"
+    },
+    {
+      "path": "reproducibility/travel/detroit/modes.npz",
+      "bytes": 1074405,
+      "sha256": "3cf8c4b1aeaea75b611cd5f482fc0419a1853727d76c526c8e3f95afe2526e28"
+    },
+    {
+      "path": "reproducibility/travel/houston/modes.npz",
+      "bytes": 13124956,
+      "sha256": "eac6022ec7bbeca38ba9292c24de11c0fe5ad9083224eeb85fdd0c7bd8229ff1"
+    },
+    {
+      "path": "reproducibility/travel/los_angeles/modes.npz",
+      "bytes": 18680151,
+      "sha256": "73f9924103a0d42d49b3011844c884361ac4068314354465f6a3cefa261c4a9b"
+    },
+    {
+      "path": "reproducibility/travel/miami/modes.npz",
+      "bytes": 267261,
+      "sha256": "9e52688ed04a22b544c0f19e5868655a1f46f475e7e5e685cf8ceb4d2829fc69"
+    },
+    {
+      "path": "reproducibility/travel/new_york_city/modes.npz",
+      "bytes": 58855,
+      "sha256": "639b19ad001bade57a518da813ba9c533342a17f5f1c7c03b6542182b41bf0d5"
+    },
+    {
+      "path": "reproducibility/travel/philadelphia/modes.npz",
+      "bytes": 2430382,
+      "sha256": "e746ce1af4dc56c70f897c898d014725ad8f9d7a88785d9a0095074e8a70413f"
+    },
+    {
+      "path": "reproducibility/travel/phoenix/modes.npz",
+      "bytes": 2213863,
+      "sha256": "cce9c083335dd25c00a6bd9c8752945776c185b5abf16a6fa25088290fe4df09"
+    },
+    {
+      "path": "reproducibility/travel/salt_lake_city/modes.npz",
+      "bytes": 44749,
+      "sha256": "c12a07c49a13f3e3d88f96d0f2e8dcb5f2e888f576f2f9825b9c2d4c255538e7"
+    },
+    {
+      "path": "reproducibility/travel/san_francisco/modes.npz",
+      "bytes": 862663,
+      "sha256": "ba1b3929ef751f3700e4b686f1f176ff84c5e34eec236be2918a25c0bdc54601"
+    },
+    {
+      "path": "reproducibility/travel/washington_dc/modes.npz",
+      "bytes": 623724,
+      "sha256": "73da758b18bd5637c2ca6026838f1c6e18a1b3d383738f66bcdab32203e8fbb6"
+    }
+  ],
+  "scope": "Exact published scores and plots, sufficient saved travel estimates, Census nodes, geographic Fryer graphs and prepared display geometries.",
+  "excluded": "Raw Census/GTFS downloads, credentials, workstation caches, and redundant dense matrices. Recompute C/F/P/A with scripts.reproduce_public.",
+  "provenance_note": "Original analysis manifests describe the original full-cache validation. Workstation paths are made relative. This manifest verifies the exported public files."
+}

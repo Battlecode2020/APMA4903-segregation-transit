@@ -1,0 +1,34 @@
+{
+  "city_id": "los_angeles",
+  "city": "Los Angeles",
+  "node_scale": "block",
+  "node_count": 23843,
+  "zero_population_nodes_excluded": 4244,
+  "city_population": 3898747,
+  "source": "outputs/multicity/los_angeles/demographics/city_blocks.csv.gz",
+  "source_sha256": "b278eab9b38a7fc55a9d6ff17e0e3e5bead277608af5ba9dc418176ccfaef0c8",
+  "representative_points": "Census populated-block internal points",
+  "graphs": [
+    {
+      "radius_km": 0.5,
+      "undirected_edges": 287181,
+      "all_degree_zero_node_count": 101,
+      "all_degree_zero_population": 20820,
+      "mean_all_neighbor_count": 24.08933439583945
+    },
+    {
+      "radius_km": 1.0,
+      "undirected_edges": 1049900,
+      "all_degree_zero_node_count": 10,
+      "all_degree_zero_population": 498,
+      "mean_all_neighbor_count": 88.06777670595143
+    },
+    {
+      "radius_km": 1.5,
+      "undirected_edges": 2207550,
+      "all_degree_zero_node_count": 5,
+      "all_degree_zero_population": 34,
+      "mean_all_neighbor_count": 185.1738455731242
+    }
+  ]
+}

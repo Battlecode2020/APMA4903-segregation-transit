@@ -1,0 +1,15 @@
+column,definition
+city_id,Stable folder and file identifier.
+city,2020 Census incorporated place/city; Washington uses the District of Columbia place.
+fryer_node_scale,"block: populated 2020 city-limit Census blocks; tract: populated city-limit tract portions. NYC also uses tracts here, unlike its 70-section PSSI model."
+radius_km,"Maximum great-circle distance between connected representative points, in kilometers. No self-links."
+fryer_node_count,Number of populated geographic units in the distance-based Fryer model; differs from PSSI for block models and NYC.
+group,"2020 Census category. White, Black and Asian alone include Hispanic residents; Hispanic is any race. Categories overlap."
+population_share_K,"Nᵣ / N, where N is the total city population across all tract portions. Fraction from 0 to 1; used in every adjustment."
+fryer_ssi,"Distance-based geographic-neighbor SSI, radius 1 km, dominant category assignment, equal all-neighbor weights, no self-links. Component eigenvalues averaged by eligible assigned-node count; geographic isolates excluded."
+fryer_ssi_minus_K,"Distance Fryer SSI minus all-city category population fraction K. Requested adjustment, not simulated null baseline."
+fryer_ssi_normalized,(Distance Fryer SSI - K) / (1 - K). K is all-city category population fraction; negative values retained.
+eligible_assigned_node_count,Nodes assigned to this category that have at least one neighbor of any category. This is the unweighted city SSI averaging denominator.
+status,"ok or undefined_no_eligible_assigned_nodes. Undefined scores are blank/NaN, not zero."
+eigenpair_max_abs_residual,Largest absolute component eigenpair residual across this category in this geographic graph.
+change_from_previous,"New distance-based Fryer SSI minus the previous 1 km score. Transit does not change the graph, so this should be numerical zero."

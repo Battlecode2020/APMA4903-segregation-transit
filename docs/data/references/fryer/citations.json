@@ -1,0 +1,99 @@
+{
+  "title": "Echenique–Fryer Spectral Segregation Index: primary references",
+  "author_repository_url": "https://eml.berkeley.edu/~fechenique/segregation/",
+  "paper_url": "https://eml.berkeley.edu/~fechenique/published/echenique-fryer-qje.pdf",
+  "paper": "A Measure of Segregation Based on Social Interactions; QJE 122(2), 2007, pp. 441–485; author PDF June 2006 version",
+  "files": [
+    {
+      "filename": "neighbors.m",
+      "url": "https://eml.berkeley.edu/~fechenique/segregation/neighbors.m",
+      "sha256": "241de2d6bfb746a7ab7c9bebf80c20aa4cbd2aa4ec6ef71de68578b1fcb0b71c",
+      "bytes": 3470,
+      "retrieved_at_utc": "2026-10-21T05:19:40.032612+00:00",
+      "response_headers": {
+        "Content-Type": "application/octet-stream",
+        "Last-Modified": "Wed, 13 Jul 2022 21:08:23 GMT",
+        "ETag": "\"62cf3447-d8e\""
+      }
+    },
+    {
+      "filename": "blockspectral.m",
+      "url": "https://eml.berkeley.edu/~fechenique/segregation/blockspectral.m",
+      "sha256": "3bd5ddcc3dd2c1fbae77d1902ed9922bd3a21cbb5389a66f177896c164ec61c1",
+      "bytes": 5316,
+      "retrieved_at_utc": "2026-10-21T05:19:40.032755+00:00",
+      "response_headers": {
+        "Content-Type": "application/octet-stream",
+        "Last-Modified": "Wed, 13 Jul 2022 21:08:26 GMT",
+        "ETag": "\"62cf344a-14c4\""
+      }
+    },
+    {
+      "filename": "callspec.m",
+      "url": "https://eml.berkeley.edu/~fechenique/segregation/callspec.m",
+      "sha256": "e978a66a7bd9d23c60178e44b7df3c699d4d7c46d89384fb450c2cd748b1baf0",
+      "bytes": 1392,
+      "retrieved_at_utc": "2026-10-21T05:19:40.032585+00:00",
+      "response_headers": {
+        "Content-Type": "application/octet-stream",
+        "Last-Modified": "Wed, 13 Jul 2022 21:08:18 GMT",
+        "ETag": "\"62cf3442-570\""
+      }
+    },
+    {
+      "filename": "description-variables",
+      "url": "https://eml.berkeley.edu/~fechenique/segregation/description-variables",
+      "sha256": "24c21d3efe50a57494aed023dd4b600a1915e67b3e497a3f32679ac9263d9c9e",
+      "bytes": 1106,
+      "retrieved_at_utc": "2026-10-21T05:19:40.032417+00:00",
+      "response_headers": {
+        "Content-Type": "application/octet-stream",
+        "Last-Modified": "Wed, 13 Jul 2022 21:08:18 GMT",
+        "ETag": "\"62cf3442-452\""
+      }
+    }
+  ],
+  "citations": {
+    "distance_and_classification": "Paper PDF pages 24–25, Section VI.B: Census blocks, majority race/ethnicity, 1 km neighborhoods, inverse all-race degree; notes density is ignored.",
+    "components_and_local_scaling": "Paper PDF page 31, Appendix 1: sum-one right eigenvector x, local SSI lambda * component_size * x. PDF pages 14–15 describe component averaging.",
+    "isolation": "Paper PDF page 31, Proposition 3: no same-race neighbors implies local SSI zero. Author neighbors.m lines 64–69 removes zero all-race-degree nodes from aggregation sizes.",
+    "code_self_links": "neighbors.m lines 35–42: j starts at i+1; great-circle radius 6378.1 km; inclusive distance <= threshold; all-race degree increments before same-race test.",
+    "code_aggregation": "blockspectral.m lines 155–166: sum(lambda*component_size)/eligible_race_nodes; eligible nodes exclude zero all-race-degree nodes.",
+    "classification_limit": "Paper PDF pages 24–25 says majority; author webpage says predominant. The public MATLAB reads preassigned integer race labels and the linked author repository contains no preprocessing code. In the first 10000 published 2000-block records, every assigned label maximizes White, Black, Asian, Hispanic counts; 91 labeled blocks have maximum share below 50%. All 31 ties choose the last maximum in White, Black, Asian, Hispanic order. This is direct evidence for plurality rather than strict >50%; tie policy is a documented replication convention supported by this nonrandom sample, not a claim about uninspected original records.",
+    "code_local_scaling_and_published_data": "blockspectral.m lines 129–140 exports lambda*x after normalizing sum(x)=1; callspec.m lines 27–34 saves it. Author published block data separately contains littlesi (documented as block SSI), consistent with blocksi * component_size in the first 10000 records; this restores the paper Appendix 1 formula lambda * component_size * x. Thus intermediate MATLAB blocksi should not be mistaken for final local SSI."
+  },
+  "methodology_notes": [
+    "City-limit boundaries, 2020 populations, category definitions and tract-node companion analyses differ from the original MSA/2000/block application.",
+    "For user-requested population-share adjustment, K counts all city residents and is not the fraction of dominant-category or eligible nodes.",
+    "The requested SSI-K and (SSI-K)/(1-K) differ from the paper simulated-baseline adjustment.",
+    "The published original category counts overlap with Hispanic, so overlap itself is consistent with the released data. Dominant-category classification nevertheless forces one label per populated block. This differs from the fractional-race PSSI construction.",
+    "Paper-scaled local SSI = lambda * component_size * sum-one eigenvector entry can exceed 1. Component eigenvalues and city averages are bounded by 1; local values must not be clipped or mislabeled as eigenvalues."
+  ],
+  "published_data_audit": {
+    "source_url": "https://eml.berkeley.edu/~fechenique/segregation/blocklevel_SSI_2000Census.txt.gz",
+    "local_file": "published_data_sample_audit.json",
+    "sha256": "4b72c89240ba9b37686e038015d3e4cb362248fdc5751b5e53ad0cc9c184a6b3",
+    "scope": "First 10000 published rows only; source was streamed, not fully downloaded; row sample SHA256 and retrieval time are included in the audit."
+  },
+  "recommended_output_labels": {
+    "all_populated_nodes": "All populated city-limit Census blocks",
+    "race_assigned_nodes": "Blocks whose dominant category is [race]",
+    "excluded_all_neighbor_isolates": "Dominant-[race] blocks with no other populated block within the distance threshold",
+    "eligible_race_nodes": "Eligible dominant-[race] blocks: at least one other populated block within the distance threshold",
+    "same_race_isolates_in_denominator": "Eligible dominant-[race] blocks with no same-category neighbor (local SSI = 0; included in denominator)",
+    "city_ssi": "Sum of component eigenvalue × component block count / eligible dominant-category block count",
+    "component_lambda": "Perron eigenvalue of the block’s same-category connected component",
+    "perron_sum_one": "Component right eigenvector entry, normalized to sum to one within its component",
+    "local_ssi": "Component eigenvalue × component block count × component sum-one eigenvector entry",
+    "population_K": "[Race] population divided by total city population; all city residents remain in K, irrespective of node labels or isolation"
+  },
+  "recommended_edge_conventions": {
+    "distance": "great-circle distance <= radius, excluding self; author Earth radius 6378.1 km",
+    "degree": "all populated blocks within threshold, regardless of dominant category; then restrict rows and columns to category for B",
+    "unknown_category": "If all four counts are zero, keep block as unclassified in all-neighbor degree rather than force a false category; report this explicit extension, because supplied author code expects preassigned labels.",
+    "eligible_none": "NaN/undefined when no eligible nodes exist for the category, with count=0; do not present a genuine zero SSI.",
+    "K_one": "Normalized (SSI-K)/(1-K) is undefined when K=1; retain NaN."
+  },
+  "updated_at_utc": "2026-10-21T05:23:03.405563+00:00",
+  "source_line_number_note": "neighbors.m contains mixed CR/LF line endings; cited line numbers count universal-newline logical lines (Python read_text().splitlines()), while all source bytes remain unmodified for checksums."
+}

@@ -1,0 +1,5 @@
+scenario,city_id,city,node_scale,group,fryer_majority_ssi,fryer_majority_ssi_minus_K,fryer_majority_ssi_normalized,majority_zone_count,majority_component_count,fryer_status
+with_transit,los_angeles,Los Angeles,populated city-limit tract portions,white_alone,0.32621102958335624,-0.022379940797640552,-0.034356202907918174,331,1,ok
+with_transit,los_angeles,Los Angeles,populated city-limit tract portions,black_alone,0.06938680909886558,-0.016819348930880898,-0.018406065086427247,18,1,ok
+with_transit,los_angeles,Los Angeles,populated city-limit tract portions,hispanic_latino_any_race,0.5648169586698666,0.09543769399842217,0.17986046839901199,504,1,ok
+with_transit,los_angeles,Los Angeles,populated city-limit tract portions,asian_alone,0.03142747652408865,-0.08723705851755423,-0.09898280732601196,12,1,ok

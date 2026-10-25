@@ -1,0 +1,5 @@
+scenario,city_id,city,node_scale,group,fryer_majority_ssi,fryer_majority_ssi_minus_K,fryer_majority_ssi_normalized,majority_zone_count,majority_component_count,fryer_status
+with_transit,san_francisco,San Francisco,populated city-limit tract portions,white_alone,0.39755986828028417,-0.015937239727473573,-0.027173335281157278,88,1,ok
+with_transit,san_francisco,San Francisco,populated city-limit tract portions,black_alone,0.03474040696023001,-0.01872283241434449,-0.019780354227313213,2,1,ok
+with_transit,san_francisco,San Francisco,populated city-limit tract portions,hispanic_latino_any_race,0.013816203698729596,-0.14266717950311486,-0.16913381036245023,1,1,ok
+with_transit,san_francisco,San Francisco,populated city-limit tract portions,asian_alone,0.2616728306380857,-0.07759132753758491,-0.11743169149618223,42,1,ok

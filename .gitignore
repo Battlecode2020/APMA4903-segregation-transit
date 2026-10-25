@@ -1,0 +1,10 @@
+.venv/
+/outputs/
+/data/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+.env
+.env.*
+*.pem
+*.key

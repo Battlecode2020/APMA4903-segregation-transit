@@ -1,0 +1,34 @@
+{
+  "city_id": "atlanta",
+  "city": "Atlanta",
+  "node_scale": "tract",
+  "node_count": 187,
+  "zero_population_nodes_excluded": 0,
+  "city_population": 498715,
+  "source": "outputs/multicity/atlanta/demographics/nodes.csv",
+  "source_sha256": "d829ff912a05a9fd762418630c5df7194de3f07e95cd86b74c1cf071c7d86950",
+  "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+  "graphs": [
+    {
+      "radius_km": 0.5,
+      "undirected_edges": 12,
+      "all_degree_zero_node_count": 166,
+      "all_degree_zero_population": 444390,
+      "mean_all_neighbor_count": 0.12834224598930483
+    },
+    {
+      "radius_km": 1.0,
+      "undirected_edges": 140,
+      "all_degree_zero_node_count": 64,
+      "all_degree_zero_population": 194132,
+      "mean_all_neighbor_count": 1.4973262032085561
+    },
+    {
+      "radius_km": 1.5,
+      "undirected_edges": 398,
+      "all_degree_zero_node_count": 18,
+      "all_degree_zero_population": 56012,
+      "mean_all_neighbor_count": 4.25668449197861
+    }
+  ]
+}

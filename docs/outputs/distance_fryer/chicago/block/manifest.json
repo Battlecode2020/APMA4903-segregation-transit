@@ -1,0 +1,34 @@
+{
+  "city_id": "chicago",
+  "city": "Chicago",
+  "node_scale": "block",
+  "node_count": 33801,
+  "zero_population_nodes_excluded": 5015,
+  "city_population": 2746388,
+  "source": "outputs/multicity/chicago/demographics/city_blocks.csv.gz",
+  "source_sha256": "647d4566f2e74561cf86c04757e223f66e897df62266d27b6f2602f3f3a69b2d",
+  "representative_points": "Census populated-block internal points",
+  "graphs": [
+    {
+      "radius_km": 0.5,
+      "undirected_edges": 1049804,
+      "all_degree_zero_node_count": 21,
+      "all_degree_zero_population": 950,
+      "mean_all_neighbor_count": 62.11674210822165
+    },
+    {
+      "radius_km": 1.0,
+      "undirected_edges": 3756346,
+      "all_degree_zero_node_count": 2,
+      "all_degree_zero_population": 23,
+      "mean_all_neighbor_count": 222.26241827164876
+    },
+    {
+      "radius_km": 1.5,
+      "undirected_edges": 7932049,
+      "all_degree_zero_node_count": 1,
+      "all_degree_zero_population": 16,
+      "mean_all_neighbor_count": 469.33812609094406
+    }
+  ]
+}

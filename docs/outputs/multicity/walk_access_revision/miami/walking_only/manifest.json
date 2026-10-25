@@ -1,0 +1,47 @@
+{
+  "city_id": "miami",
+  "city": "Miami",
+  "node_scale": "populated city-limit tract portions",
+  "scenario": "walking_only",
+  "parameters": {
+    "beta_per_usd": 0.1,
+    "omega_usd_per_hour": 15.0,
+    "c0_usd": 1.25,
+    "standardized_transit_fare_usd": 3.0
+  },
+  "access_policy": "uncapped distance, barrier-screened access and egress; every walking leg charged",
+  "walking_transfers": "Automatic transfer links within 400m; explicit GTFS links, transfer restrictions and chained walks retained.",
+  "no_transit_proxy": true,
+  "diagnostics": {
+    "city_id": "miami",
+    "city": "Miami",
+    "scenario": "walking_only",
+    "node_count": 138,
+    "population": 442241,
+    "transit_selected_pairs": 0,
+    "nonlocal_pairs": 18906,
+    "transit_selected_percent": 0.0,
+    "nodes_without_boarding_access": 2,
+    "old_nodes_without_boarding_access": 2,
+    "barrier_flagged_direct_walking_pairs": 10746,
+    "population_weighted_flagged_walking_mass_percent": 34.341417686306116,
+    "service_dates": [
+      "2026-10-20"
+    ],
+    "bus_routes": 113,
+    "rail_routes": 6,
+    "max_pssi_eigenpair_residual": 4.1388420468635445e-13,
+    "transit_selected_pairs_beyond_old_access_radius": 0,
+    "transit_selected_pairs_beyond_old_egress_radius": 0,
+    "transit_selected_pairs_beyond_either_old_radius": 0,
+    "nodes_without_boarding_access_reason": "No boarding stop passes the retained geometric water/land screen; no access distance cutoff remains."
+  },
+  "source_sha256": {
+    "outputs/multicity/walk_access_revision/miami/nodes.csv": "6b89899b97be2737d88ee545de8062b6f1d652e2b395aacbd32efbf34230145e",
+    "outputs/multicity/walk_access_revision/miami/travel/modes.npz": "6f7522509e182be8aa1d0959bca5e185d1b9b1aaf836f04a3512de647a514ba3",
+    "outputs/multicity/walk_access_revision/miami/travel/manifest.json": "23db8ba832ccfd8f486c58fee8a78da25169106452e2b2e487b9a6510f571858"
+  },
+  "nyc_scope": null,
+  "normalization": "Raw PSSI=lambda; normalized PSSI=(lambda-K)/(1-K). K=all city group residents/all city residents. Per-node right eigenvector sum 1; n*v mean 1. Distance Fryer is a separate geography-only model.",
+  "routes_api_calls": 0
+}

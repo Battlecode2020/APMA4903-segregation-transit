@@ -1,0 +1,271 @@
+{
+  "passed": true,
+  "status": "passed",
+  "verified_at_utc": "2026-10-25T16:35:26.548270+00:00",
+  "cities": 12,
+  "scenario_category_rows": 96,
+  "paired_category_rows": 48,
+  "nodes_per_scenario": 4808,
+  "local_rows_both_scenarios": 38464,
+  "maximum_pssi_eigenpair_residual": 7.924819654669957e-13,
+  "source_files_checksum_verified": 156,
+  "city_checks": [
+    {
+      "city_id": "philadelphia",
+      "node_count": 403,
+      "transit_finite_pairs": 161202,
+      "old_finite_candidates_preserved": 158802,
+      "maximum_access_egress_reconstruction_error_seconds": 0.0,
+      "scenarios": {
+        "with_transit": {
+          "max_pssi_eigenpair_residual": 1.0465630098654977e-13,
+          "max_collatz_perron_interval_width": 4.6427639510682184e-11,
+          "transit_selected_pairs": 145748
+        },
+        "walking_only": {
+          "max_pssi_eigenpair_residual": 4.504790637738232e-13,
+          "max_collatz_perron_interval_width": 2.9096514087001424e-10,
+          "transit_selected_pairs": 0
+        }
+      }
+    },
+    {
+      "city_id": "miami",
+      "node_count": 138,
+      "transit_finite_pairs": 18360,
+      "old_finite_candidates_preserved": 18360,
+      "maximum_access_egress_reconstruction_error_seconds": 0.0,
+      "scenarios": {
+        "with_transit": {
+          "max_pssi_eigenpair_residual": 9.835708636440899e-14,
+          "max_collatz_perron_interval_width": 1.859346010490981e-11,
+          "transit_selected_pairs": 13049
+        },
+        "walking_only": {
+          "max_pssi_eigenpair_residual": 4.1388420468635445e-13,
+          "max_collatz_perron_interval_width": 4.771338879550058e-11,
+          "transit_selected_pairs": 0
+        }
+      }
+    },
+    {
+      "city_id": "los_angeles",
+      "node_count": 1114,
+      "transit_finite_pairs": 1233210,
+      "old_finite_candidates_preserved": 1076406,
+      "maximum_access_egress_reconstruction_error_seconds": 0.0,
+      "scenarios": {
+        "with_transit": {
+          "max_pssi_eigenpair_residual": 3.437412030363185e-13,
+          "max_collatz_perron_interval_width": 4.1593328781175387e-10,
+          "transit_selected_pairs": 1183295
+        },
+        "walking_only": {
+          "max_pssi_eigenpair_residual": 5.961724169889493e-13,
+          "max_collatz_perron_interval_width": 2.839331423309943e-07,
+          "transit_selected_pairs": 0
+        }
+      }
+    },
+    {
+      "city_id": "salt_lake_city",
+      "node_count": 59,
+      "transit_finite_pairs": 3422,
+      "old_finite_candidates_preserved": 2970,
+      "maximum_access_egress_reconstruction_error_seconds": 0.0,
+      "scenarios": {
+        "with_transit": {
+          "max_pssi_eigenpair_residual": 1.2526264747680926e-13,
+          "max_collatz_perron_interval_width": 1.3333223414235817e-11,
+          "transit_selected_pairs": 2399
+        },
+        "walking_only": {
+          "max_pssi_eigenpair_residual": 3.3780270247696365e-13,
+          "max_collatz_perron_interval_width": 4.0542680324051616e-11,
+          "transit_selected_pairs": 0
+        }
+      }
+    },
+    {
+      "city_id": "san_francisco",
+      "node_count": 241,
+      "transit_finite_pairs": 57840,
+      "old_finite_candidates_preserved": 57360,
+      "maximum_access_egress_reconstruction_error_seconds": 0.0,
+      "scenarios": {
+        "with_transit": {
+          "max_pssi_eigenpair_residual": 5.752039469730796e-14,
+          "max_collatz_perron_interval_width": 1.8071655283335986e-11,
+          "transit_selected_pairs": 44053
+        },
+        "walking_only": {
+          "max_pssi_eigenpair_residual": 1.9330630846026153e-13,
+          "max_collatz_perron_interval_width": 7.04939440154817e-11,
+          "transit_selected_pairs": 0
+        }
+      }
+    },
+    {
+      "city_id": "washington_dc",
+      "node_count": 206,
+      "transit_finite_pairs": 42230,
+      "old_finite_candidates_preserved": 41820,
+      "maximum_access_egress_reconstruction_error_seconds": 0.0,
+      "scenarios": {
+        "with_transit": {
+          "max_pssi_eigenpair_residual": 9.207478529615898e-14,
+          "max_collatz_perron_interval_width": 2.1533053118361067e-11,
+          "transit_selected_pairs": 34726
+        },
+        "walking_only": {
+          "max_pssi_eigenpair_residual": 3.265634290761099e-13,
+          "max_collatz_perron_interval_width": 4.310873880086774e-11,
+          "transit_selected_pairs": 0
+        }
+      }
+    },
+    {
+      "city_id": "houston",
+      "node_count": 943,
+      "transit_finite_pairs": 843642,
+      "old_finite_candidates_preserved": 416025,
+      "maximum_access_egress_reconstruction_error_seconds": 0.0,
+      "scenarios": {
+        "with_transit": {
+          "max_pssi_eigenpair_residual": 3.608611619156793e-13,
+          "max_collatz_perron_interval_width": 9.101023823454568e-10,
+          "transit_selected_pairs": 800482
+        },
+        "walking_only": {
+          "max_pssi_eigenpair_residual": 5.416205678399066e-13,
+          "max_collatz_perron_interval_width": 0.0004921539086921722,
+          "transit_selected_pairs": 0
+        }
+      }
+    },
+    {
+      "city_id": "detroit",
+      "node_count": 269,
+      "transit_finite_pairs": 72092,
+      "old_finite_candidates_preserved": 72092,
+      "maximum_access_egress_reconstruction_error_seconds": 0.0,
+      "scenarios": {
+        "with_transit": {
+          "max_pssi_eigenpair_residual": 3.012915437972108e-13,
+          "max_collatz_perron_interval_width": 1.2037260077590872e-10,
+          "transit_selected_pairs": 65136
+        },
+        "walking_only": {
+          "max_pssi_eigenpair_residual": 7.924819654669957e-13,
+          "max_collatz_perron_interval_width": 2.848120628229367e-10,
+          "transit_selected_pairs": 0
+        }
+      }
+    },
+    {
+      "city_id": "chicago",
+      "node_count": 794,
+      "transit_finite_pairs": 629642,
+      "old_finite_candidates_preserved": 629642,
+      "maximum_access_egress_reconstruction_error_seconds": 0.0,
+      "scenarios": {
+        "with_transit": {
+          "max_pssi_eigenpair_residual": 1.7770398867689163e-13,
+          "max_collatz_perron_interval_width": 2.0319934623813651e-10,
+          "transit_selected_pairs": 601076
+        },
+        "walking_only": {
+          "max_pssi_eigenpair_residual": 3.8189503642760414e-13,
+          "max_collatz_perron_interval_width": 9.008150891887112e-10,
+          "transit_selected_pairs": 0
+        }
+      }
+    },
+    {
+      "city_id": "phoenix",
+      "node_count": 384,
+      "transit_finite_pairs": 147072,
+      "old_finite_candidates_preserved": 103362,
+      "maximum_access_egress_reconstruction_error_seconds": 0.0,
+      "scenarios": {
+        "with_transit": {
+          "max_pssi_eigenpair_residual": 6.236122729319504e-13,
+          "max_collatz_perron_interval_width": 9.277574541943778e-11,
+          "transit_selected_pairs": 137597
+        },
+        "walking_only": {
+          "max_pssi_eigenpair_residual": 7.041589533685055e-13,
+          "max_collatz_perron_interval_width": 3.667116610373e-10,
+          "transit_selected_pairs": 0
+        }
+      }
+    },
+    {
+      "city_id": "atlanta",
+      "node_count": 187,
+      "transit_finite_pairs": 34410,
+      "old_finite_candidates_preserved": 30800,
+      "maximum_access_egress_reconstruction_error_seconds": 0.0,
+      "scenarios": {
+        "with_transit": {
+          "max_pssi_eigenpair_residual": 1.415811912153231e-13,
+          "max_collatz_perron_interval_width": 1.726596643436551e-11,
+          "transit_selected_pairs": 29347
+        },
+        "walking_only": {
+          "max_pssi_eigenpair_residual": 5.357936316841005e-13,
+          "max_collatz_perron_interval_width": 6.004896579980823e-11,
+          "transit_selected_pairs": 0
+        }
+      }
+    },
+    {
+      "city_id": "new_york_city",
+      "node_count": 70,
+      "transit_finite_pairs": 4302,
+      "old_finite_candidates_preserved": 0,
+      "maximum_access_egress_reconstruction_error_seconds": 0.0,
+      "scenarios": {
+        "with_transit": {
+          "max_pssi_eigenpair_residual": 3.2296387786345804e-13,
+          "max_collatz_perron_interval_width": 8.138451024208848e-11,
+          "transit_selected_pairs": 4033
+        },
+        "walking_only": {
+          "max_pssi_eigenpair_residual": 5.292433158388121e-13,
+          "max_collatz_perron_interval_width": 2.2961998968895614e-10,
+          "transit_selected_pairs": 0
+        }
+      }
+    }
+  ],
+  "distance_fryer": {
+    "rows": 96,
+    "undefined_rows": 5,
+    "maximum_change_from_previous": 0.0
+  },
+  "maps": {
+    "checked": true,
+    "cities": 12,
+    "png_images": 60,
+    "checks": "PNG integrity; source SHA256 correspondence; exact node ordering, eigenvectors and n*v exports"
+  },
+  "checks": [
+    "Unchanged original Census counts, coordinates and node ordering",
+    "Cached feed checksums, service dates and fixed controlled-comparison parameters",
+    "Selected boarding/alighting indexes and full walking-leg times reconstructed from GTFS stop coordinates",
+    "Uncapped transit preserves every formerly feasible candidate; identical direct walking baseline",
+    "Generalized costs, mode choices, F, P and all four A matrices rebuilt from definitions",
+    "Positive sum-one eigenvectors, eigenpair residuals, local exports and exposure statistics",
+    "Population-share adjustments and exact signed paired differences",
+    "Geographic Fryer scores unchanged, with undefined groups retained as NaN",
+    "Complete column dictionaries and optional map provenance/integrity"
+  ],
+  "limits": [
+    "This verifier does not claim walking chords are real street/bridge itineraries.",
+    "It does not independently rerun all GTFS shortest paths; ride-required topology and optimality were separately checked with independent synthetic shortest-path oracles.",
+    "Source hashes verify provenance, not schedule accuracy or real-time service."
+  ],
+  "routes_api_calls_during_verification": 0,
+  "network_calls_during_verification": 0
+}

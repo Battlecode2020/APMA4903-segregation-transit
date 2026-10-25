@@ -1,0 +1,34 @@
+{
+  "city_id": "houston",
+  "city": "Houston",
+  "node_scale": "block",
+  "node_count": 19808,
+  "zero_population_nodes_excluded": 9696,
+  "city_population": 2304580,
+  "source": "outputs/multicity/houston/demographics/city_blocks.csv.gz",
+  "source_sha256": "b8e0e24fbf2054cfb146cbdb8a0a0f9be43c04a4d57046af3e4c89e2a7cb03fc",
+  "representative_points": "Census populated-block internal points",
+  "graphs": [
+    {
+      "radius_km": 0.5,
+      "undirected_edges": 214317,
+      "all_degree_zero_node_count": 395,
+      "all_degree_zero_population": 64099,
+      "mean_all_neighbor_count": 21.63943861066236
+    },
+    {
+      "radius_km": 1.0,
+      "undirected_edges": 751918,
+      "all_degree_zero_node_count": 87,
+      "all_degree_zero_population": 6446,
+      "mean_all_neighbor_count": 75.92063812600969
+    },
+    {
+      "radius_km": 1.5,
+      "undirected_edges": 1554703,
+      "all_degree_zero_node_count": 31,
+      "all_degree_zero_population": 1397,
+      "mean_all_neighbor_count": 156.97728190630048
+    }
+  ]
+}

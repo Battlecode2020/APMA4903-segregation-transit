@@ -1,0 +1,5 @@
+scenario,city_id,city,node_scale,group,fryer_majority_ssi,fryer_majority_ssi_minus_K,fryer_majority_ssi_normalized,majority_zone_count,majority_component_count,fryer_status
+with_transit,miami,Miami,populated city-limit tract portions,white_alone,0.16110244000814725,-0.14119879393443155,-0.20237787538642538,18,1,ok
+with_transit,miami,Miami,populated city-limit tract portions,black_alone,0.28361020719965385,0.15414686029152005,0.17707107419778362,19,1,ok
+with_transit,miami,Miami,populated city-limit tract portions,hispanic_latino_any_race,0.7815417081413042,0.07949915668180585,0.26681379193982274,95,1,ok
+with_transit,miami,Miami,populated city-limit tract portions,asian_alone,0.0,-0.01389513862351071,-0.014090934106251833,0,0,no_majority_zones_zero_by_convention

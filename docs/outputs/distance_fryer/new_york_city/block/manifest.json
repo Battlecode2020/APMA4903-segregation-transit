@@ -1,0 +1,34 @@
+{
+  "city_id": "new_york_city",
+  "city": "New York City",
+  "node_scale": "block",
+  "node_count": 30696,
+  "zero_population_nodes_excluded": 7288,
+  "city_population": 8804190,
+  "source": "outputs/distance_fryer/inputs/new_york_city_blocks.csv.gz",
+  "source_sha256": "be357ec18b2d2ccbb529956e849b5b7f78d72bd6c83e0b3f3eaa7c439e950b86",
+  "representative_points": "Census populated-block internal points",
+  "graphs": [
+    {
+      "radius_km": 0.5,
+      "undirected_edges": 634399,
+      "all_degree_zero_node_count": 30,
+      "all_degree_zero_population": 1853,
+      "mean_all_neighbor_count": 41.3343106593693
+    },
+    {
+      "radius_km": 1.0,
+      "undirected_edges": 2295787,
+      "all_degree_zero_node_count": 3,
+      "all_degree_zero_population": 23,
+      "mean_all_neighbor_count": 149.58216054209018
+    },
+    {
+      "radius_km": 1.5,
+      "undirected_edges": 4798341,
+      "all_degree_zero_node_count": 2,
+      "all_degree_zero_population": 22,
+      "mean_all_neighbor_count": 312.6362392494136
+    }
+  ]
+}

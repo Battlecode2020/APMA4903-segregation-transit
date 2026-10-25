@@ -1,0 +1,47 @@
+{
+  "city_id": "atlanta",
+  "city": "Atlanta",
+  "node_scale": "populated city-limit tract portions",
+  "scenario": "walking_only",
+  "parameters": {
+    "beta_per_usd": 0.1,
+    "omega_usd_per_hour": 15.0,
+    "c0_usd": 1.25,
+    "standardized_transit_fare_usd": 3.0
+  },
+  "access_policy": "uncapped distance, barrier-screened access and egress; every walking leg charged",
+  "walking_transfers": "Automatic transfer links within 400m; explicit GTFS links, transfer restrictions and chained walks retained.",
+  "no_transit_proxy": true,
+  "diagnostics": {
+    "city_id": "atlanta",
+    "city": "Atlanta",
+    "scenario": "walking_only",
+    "node_count": 187,
+    "population": 498715,
+    "transit_selected_pairs": 0,
+    "nonlocal_pairs": 34782,
+    "transit_selected_percent": 0.0,
+    "nodes_without_boarding_access": 1,
+    "old_nodes_without_boarding_access": 11,
+    "barrier_flagged_direct_walking_pairs": 14674,
+    "population_weighted_flagged_walking_mass_percent": 18.770876559055758,
+    "service_dates": [
+      "2026-10-20"
+    ],
+    "bus_routes": 81,
+    "rail_routes": 5,
+    "max_pssi_eigenpair_residual": 5.357866927901966e-13,
+    "transit_selected_pairs_beyond_old_access_radius": 0,
+    "transit_selected_pairs_beyond_old_egress_radius": 0,
+    "transit_selected_pairs_beyond_either_old_radius": 0,
+    "nodes_without_boarding_access_reason": "No boarding stop passes the retained geometric water/land screen; no access distance cutoff remains."
+  },
+  "source_sha256": {
+    "outputs/multicity/walk_access_revision/atlanta/nodes.csv": "e5f910f30605dfebedc7c946cc9613fb54cab71aae6e1047b28cad1cc674a3ca",
+    "outputs/multicity/walk_access_revision/atlanta/travel/modes.npz": "03e869b9d378fa8bd48a6bfc64edf9f275ede52a4aeb04a6a9baf024637f2113",
+    "outputs/multicity/walk_access_revision/atlanta/travel/manifest.json": "5b500b55822e7181066ed4acc59d0fc5341548d8bdeb01fb7d5aaf785f0d9edd"
+  },
+  "nyc_scope": null,
+  "normalization": "Raw PSSI=lambda; normalized PSSI=(lambda-K)/(1-K). K=all city group residents/all city residents. Per-node right eigenvector sum 1; n*v mean 1. Distance Fryer is a separate geography-only model.",
+  "routes_api_calls": 0
+}

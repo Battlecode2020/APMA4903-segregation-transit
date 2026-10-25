@@ -1,0 +1,369 @@
+%% Replace the entire supplied frame excerpt with these frames.
+%% Keep your existing preamble unchanged.
+
+\begin{frame}{Proposition 5.1: Why Monotonicity Holds (I)}
+\small
+
+Suppose $0\leq B\leq C$ entrywise.
+
+Because both matrices are nonnegative,
+multiplication preserves the inequalities:
+\[
+0\leq B^k\leq C^k
+\qquad(k\geq1).
+\]
+
+Using the infinity norm,
+\[
+\|B^k\|_\infty\leq\|C^k\|_\infty.
+\]
+\end{frame}
+
+\begin{frame}{Proposition 5.1: Why Monotonicity Holds (II)}
+\small
+
+We have $\|B^k\|_\infty\leq\|C^k\|_\infty$ for every $k\geq1$.
+
+By Gelfand's formula,
+\[
+\rho(B)=\lim_{k\to\infty}
+\|B^k\|_\infty^{1/k}.
+\]
+
+Consequently,
+\[
+\boxed{\rho(B)\leq\rho(C).}
+\]
+
+\begin{block}{Application}
+Taking $B=cJ$ and $C=A$ proves
+that $\rho(A)>0$.
+\end{block}
+\end{frame}
+
+\begin{frame}{Proposition 5.1: Strict Dominance (I)}
+\small
+
+Normalize $A$ by its spectral radius:
+\[
+M=\frac{A}{\rho(A)},\qquad \rho(M)=1.
+\]
+
+Choose an eigenvalue $\mu$ of $M$ satisfying
+$|\mu|=1$.
+
+We want to show that $\mu=1$.
+
+Suppose instead that $\mu\neq1$.
+Choose an integer $m\geq1$ such that
+\[
+\operatorname{Re}(\mu^m)<0.
+\]
+\end{frame}
+
+\begin{frame}{Proposition 5.1: Strict Dominance (II)}
+\small
+
+Recall that $|\mu|=1$ and $\operatorname{Re}(\mu^m)<0$.
+
+Since $M>0$, we also have $M^m>0$.
+
+For sufficiently small $\varepsilon>0$,
+define
+\[
+T=M^m-\varepsilon I\geq0.
+\]
+
+\begin{block}{Key Observation}
+Because $\mu^m$ is an eigenvalue of $M^m$,
+the number $\mu^m-\varepsilon$ is an
+eigenvalue of $T$.
+\end{block}
+\end{frame}
+
+\begin{frame}{Proposition 5.1: Strict Dominance (III)}
+\small
+
+From the previous slide,
+$\mu^m-\varepsilon$ is an eigenvalue of $T$.
+
+Since $|\mu|=1$ and
+$\operatorname{Re}(\mu^m)<0$,
+\[
+\begin{aligned}
+|\mu^m-\varepsilon|^2
+&=|\mu^m|^2
+  -2\varepsilon\operatorname{Re}(\mu^m)
+  +\varepsilon^2\\
+&=1-2\varepsilon\operatorname{Re}(\mu^m)
+  +\varepsilon^2\\
+&>1.
+\end{aligned}
+\]
+
+Thus
+\[
+\rho(T)\geq|\mu^m-\varepsilon|>1.
+\]
+\end{frame}
+
+\begin{frame}{Proposition 5.1: Strict Dominance (IV)}
+\small
+
+We have shown that $\rho(T)>1$.
+
+\begin{block}{Contradiction}But $0\leq T\leq M^m$, so monotonicity gives
+\[
+\rho(T)\leq\rho(M^m)=1.
+\]
+\end{block}
+
+
+Thus $1$ is the only eigenvalue of $M$
+with modulus one.
+
+Since $\rho(M)=1$, such an eigenvalue
+must exist. Hence $1$ is an eigenvalue
+of $M$, so $r=\rho(A)>0$ is an eigenvalue
+of $A$.
+
+Every other eigenvalue $\lambda$ of $A$
+therefore satisfies $|\lambda|<r$.
+\end{frame}
+
+\begin{frame}{Proposition 5.2: Positive Eigenvectors (I)}
+\small
+
+By Proposition 5.1, $r=\rho(A)>0$ is a real
+eigenvalue. Choose a nonzero real eigenvector $x$:
+\[
+Ax=rx.
+\]
+
+Define $y=|x|$, taking absolute values
+componentwise. Then $y\geq 0$ and $y\neq 0$.
+
+Since $A$ has strictly positive entries,
+the triangle inequality gives
+\[
+Ay\geq |Ax|=r|x|=ry.
+\]
+
+\begin{block}{Goal}
+We want to show that equality holds:
+\[
+Ay=ry.
+\]
+This would give us a nonnegative eigenvector.
+\end{block}
+\end{frame}
+
+\begin{frame}{Proposition 5.2: Positive Eigenvectors (II)}
+\small
+
+Suppose $Ay\geq ry$ is strict in at least
+one coordinate.
+
+Define
+\[
+d=Ay-ry\geq0,\qquad d\neq0.
+\]
+
+Because $A>0$ and $d$ is nonnegative
+and nonzero, every component of $Ad$
+is strictly positive:
+\[
+Ad>0.
+\]
+
+Multiplying $Ay=ry+d$ by $A$ gives
+\[
+A^2y=rAy+Ad>rAy.
+\]
+
+Now set $v=Ay>0$. Consequently,
+\[
+\boxed{Av>rv.}
+\]
+\end{frame}
+
+\begin{frame}{Proposition 5.2: Positive Eigenvectors (III)}
+\small
+
+We have $v>0$ and $Av>rv$.
+
+Define
+\[
+q=\min_i\frac{(Av)_i}{v_i}.
+\]
+
+Since the inequality is strict in every
+coordinate,
+\[
+q>r,\qquad Av\geq qv.
+\]
+
+
+Repeated multiplication by $A$ gives
+\[
+A^kv\geq q^kv.
+\]
+\end{frame}
+
+\begin{frame}{Proposition 5.2: Positive Eigenvectors (IV)}
+\small
+
+Recall that $v>0$, $q>r$, and $A^kv\geq q^kv$.
+
+Taking infinity norms,
+\[
+\|A^k\|_\infty
+\geq
+\frac{\|A^kv\|_\infty}{\|v\|_\infty}
+\geq q^k.
+\]
+
+By Gelfand's formula,
+\[
+\rho(A)=\lim_{k\to\infty}
+\|A^k\|_\infty^{1/k}\geq q>r.
+\]
+
+This contradicts $\rho(A)=r$.
+\end{frame}
+
+\begin{frame}{Proposition 5.2: Positive Eigenvectors (V)}
+\small
+
+The contradiction shows that our
+original inequality cannot be strict.
+Therefore,
+\[
+Ay=ry.
+\]
+
+Since $A>0$ and $y\geq0$ is nonzero,
+we know $Ay>0$.
+
+Because $r>0$, the equation $Ay=ry$
+implies $y>0$.
+
+\begin{block}{Positive Right and Left Eigenvectors}
+We have obtained a positive right
+eigenvector $y>0$ satisfying $Ay=ry$.
+
+Since $A^T>0$ and $\rho(A^T)=r$,
+the same argument gives $w>0$ with
+\[
+A^Tw=rw
+\quad\Longleftrightarrow\quad
+w^TA=rw^T.
+\]
+\end{block}
+\end{frame}
+
+\begin{frame}{Proposition 5.3: Geometric Simplicity (I)}
+\small
+
+By Proposition 5.2, there exists $x>0$
+such that $Ax=rx$.
+
+Let $y$ be another real eigenvector
+corresponding to $r$, so $Ay=ry$.
+
+Define
+\[
+t=\max_i\frac{y_i}{x_i},
+\qquad z=tx-y.
+\]
+
+By construction, $z\geq0$, and at least
+one component of $z$ is zero.
+
+Since $Ax=rx$ and $Ay=ry$,
+\[
+Az=tAx-Ay=r(tx-y)=rz.
+\]
+\end{frame}
+
+\begin{frame}{Proposition 5.3: Geometric Simplicity (II)}
+\small
+
+Recall that $z\geq0$, at least one component of $z$ is zero, and $Az=rz$.
+
+If $z\neq0$, then $A>0$ implies $Az>0$.
+But $rz$ has a zero component,
+giving a contradiction.
+
+\begin{block}{Conclusion}
+Thus $z=0$, so $y=tx$.
+The result extends to complex eigenvectors
+by considering real and imaginary parts.
+
+Therefore,
+\[
+\boxed{\dim\ker(A-rI)=1.}
+\]
+\end{block}
+\end{frame}
+
+\begin{frame}{Proposition 5.3: Algebraic Simplicity (I)}
+\small
+
+By Proposition 5.2, there exist positive
+right and left eigenvectors $x,w>0$ such that
+\[
+Ax=rx,\qquad A^Tw=rw.
+\]
+
+Suppose, for contradiction, that $r$
+has algebraic multiplicity greater than one.
+
+We already proved that its eigenspace is
+one-dimensional:
+\[
+\dim\ker(A-rI)=1.
+\]
+
+Therefore, there exists a generalized
+eigenvector $u$ satisfying
+\[
+(A-rI)u=x.
+\]
+
+\begin{block}{Key Idea}
+We will multiply this equation by the
+positive left eigenvector $w^T$ to
+obtain a contradiction.
+\end{block}
+\end{frame}
+
+\begin{frame}{Proposition 5.3: Algebraic Simplicity (II)}
+\small
+
+From the previous slide, we have
+\[
+(A-rI)u=x.
+\]
+
+Multiplying by the left eigenvector $w^T$ gives
+\[
+w^T(A-rI)u=w^Tx.
+\]
+
+Since $w^TA=rw^T$, we know
+\[
+w^T(A-rI)=w^TA-rw^T=0.
+\]
+
+\begin{block}{Contradiction}
+\[
+\boxed{0=w^Tx>0.}
+\]
+
+This is impossible because $w,x>0$,
+so their dot product is strictly positive.
+
+Thus, $r$ must be algebraically simple.
+\end{block}
+\end{frame}

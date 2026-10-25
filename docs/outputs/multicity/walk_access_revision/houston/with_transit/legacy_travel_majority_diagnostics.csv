@@ -1,0 +1,5 @@
+scenario,city_id,city,node_scale,group,fryer_majority_ssi,fryer_majority_ssi_minus_K,fryer_majority_ssi_normalized,majority_zone_count,majority_component_count,fryer_status
+with_transit,houston,Houston,populated city-limit tract portions,white_alone,0.7282392302923548,0.4071946147875774,0.5997369254097765,220,1,ok
+with_transit,houston,Houston,populated city-limit tract portions,black_alone,0.2240583154877119,-0.001748122127818913,-0.002257991040941755,126,1,ok
+with_transit,houston,Houston,populated city-limit tract portions,hispanic_latino_any_race,0.4611228337654283,0.021379800327665233,0.038160704111994695,348,1,ok
+with_transit,houston,Houston,populated city-limit tract portions,asian_alone,0.0143174919597255,-0.05822891562864201,-0.06278364341360837,9,1,ok

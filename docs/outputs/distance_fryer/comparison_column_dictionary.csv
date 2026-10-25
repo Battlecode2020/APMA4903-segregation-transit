@@ -1,0 +1,29 @@
+column,definition
+city_id,Stable city directory identifier.
+city,2020 city-limit geography; New York includes all five boroughs.
+group,"Category assigned to nodes by the largest of White-alone, Black-alone, Hispanic-any-race, Asian-alone counts. Counts themselves overlap; assigned node labels do not."
+populated_tract_portions,Node count in the existing travel-cost PSSI model.
+city_population,All 2020 city residents; includes those in geographic isolates or other/unclassified nodes.
+population,All city category residents; same as group_population in the Fryer table.
+population_share_K,"group_population/city_population, fraction0–1. Uses all residents, not the fraction of assigned nodes or only eligible nodes."
+population_percent,"100*K, for display only; never substituted for fractionK in a normalization."
+segregation_index_with_transit,PSSI dominant city/category eigenvalue lambda using existing controlled walking+transit model.
+segregation_index_walking_only,PSSI dominant city/category eigenvalue lambda using existing controlled walking-only model.
+segregation_index_change_without_minus_with,Walking-only value minus walking+transit value of PSSI dominant city/category eigenvalue lambda. Absolute score difference.
+segregation_index_normalized_with_transit,(lambda-K)/(1-K) using existing controlled walking+transit model.
+segregation_index_normalized_walking_only,(lambda-K)/(1-K) using existing controlled walking-only model.
+segregation_index_normalized_change_without_minus_with,Walking-only value minus walking+transit value of (lambda-K)/(1-K). Absolute score difference.
+distance_block_radius_km,"Block distance-neighbor model: Inclusive great-circle distance cutoff in kilometers, with Earth radius6378.1km; distinct nodes only."
+distance_block_node_count,"Block distance-neighbor model: All positive-population city nodes, before excluding geographic isolates from the SSI denominator."
+distance_block_fryer_ssi,Block distance-neighbor model: Sum over same-category components of component_eigenvalue*component_size/eligible_assigned_node_count. R_ij=1/all-neighbor-degree; restrict R without renormalizing. Undefined if denominator0.
+distance_block_fryer_ssi_minus_K,Block distance-neighbor model: Requested population-share adjustment SSI-K. No division. The paper simulated-null adjustment is different and is not computed.
+distance_block_fryer_ssi_normalized,"Block distance-neighbor model: (SSI-K)/(1-K), using the all-city resident fractionK. Negative values retained; undefined forK1 or undefinedSSI."
+distance_block_eligible_assigned_node_count,Block distance-neighbor model: Assigned nodes with at least one neighbor of any category. Denominator for city SSI component-size weighting.
+distance_block_status,Block distance-neighbor model: ok = at least one eligible assigned node; undefined_no_eligible_assigned_nodes = city SSI and adjustments are blank/NaN.
+distance_tract_radius_km,"Tract distance-neighbor model: Inclusive great-circle distance cutoff in kilometers, with Earth radius6378.1km; distinct nodes only."
+distance_tract_node_count,"Tract distance-neighbor model: All positive-population city nodes, before excluding geographic isolates from the SSI denominator."
+distance_tract_fryer_ssi,Tract distance-neighbor model: Sum over same-category components of component_eigenvalue*component_size/eligible_assigned_node_count. R_ij=1/all-neighbor-degree; restrict R without renormalizing. Undefined if denominator0.
+distance_tract_fryer_ssi_minus_K,Tract distance-neighbor model: Requested population-share adjustment SSI-K. No division. The paper simulated-null adjustment is different and is not computed.
+distance_tract_fryer_ssi_normalized,"Tract distance-neighbor model: (SSI-K)/(1-K), using the all-city resident fractionK. Negative values retained; undefined forK1 or undefinedSSI."
+distance_tract_eligible_assigned_node_count,Tract distance-neighbor model: Assigned nodes with at least one neighbor of any category. Denominator for city SSI component-size weighting.
+distance_tract_status,Tract distance-neighbor model: ok = at least one eligible assigned node; undefined_no_eligible_assigned_nodes = city SSI and adjustments are blank/NaN.

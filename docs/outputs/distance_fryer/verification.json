@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "cities": 12,
+  "score_rows_all_radii": 288,
+  "primary_block_rows": 48,
+  "nodes_by_scale": {
+    "block": 170059,
+    "tract": 7030
+  },
+  "primary_local_score_rows": 708356,
+  "checked_components": 2650,
+  "maximum_recomputed_eigenpair_residual": 5.463897563562359e-13,
+  "checks": [
+    "Block/tract demographic totals agree",
+    "Unique ordered node IDs",
+    "Neighbor symmetry, no self edges and sampled actual1km distances",
+    "Equal all-neighbor degree weights",
+    "Dominant assignments and explicit tie rule",
+    "Geographic isolate exclusion and other-category inclusion in denominator",
+    "B index mapping and original weights",
+    "Component eigenpairs, local scaling and city aggregation",
+    "Requested population-share adjustment and normalization"
+  ],
+  "routes_api_calls": 0
+}

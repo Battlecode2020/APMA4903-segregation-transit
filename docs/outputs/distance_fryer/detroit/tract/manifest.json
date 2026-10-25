@@ -1,0 +1,34 @@
+{
+  "city_id": "detroit",
+  "city": "Detroit",
+  "node_scale": "tract",
+  "node_count": 269,
+  "zero_population_nodes_excluded": 0,
+  "city_population": 639111,
+  "source": "outputs/multicity/detroit/demographics/nodes.csv",
+  "source_sha256": "cfa8f01b3f999cb31b12bc5f1ccda631535508d4e973827724c12c42c350d9a7",
+  "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+  "graphs": [
+    {
+      "radius_km": 0.5,
+      "undirected_edges": 5,
+      "all_degree_zero_node_count": 260,
+      "all_degree_zero_population": 623597,
+      "mean_all_neighbor_count": 0.03717472118959108
+    },
+    {
+      "radius_km": 1.0,
+      "undirected_edges": 203,
+      "all_degree_zero_node_count": 51,
+      "all_degree_zero_population": 119411,
+      "mean_all_neighbor_count": 1.5092936802973977
+    },
+    {
+      "radius_km": 1.5,
+      "undirected_edges": 606,
+      "all_degree_zero_node_count": 6,
+      "all_degree_zero_population": 15777,
+      "mean_all_neighbor_count": 4.5055762081784385
+    }
+  ]
+}

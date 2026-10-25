@@ -1,0 +1,293 @@
+{
+  "created_utc": "2026-10-25T16:32:01.116978+00:00",
+  "city_id": "chicago",
+  "city": "Chicago",
+  "section_count": 794,
+  "population": 2746388,
+  "geography": "794 city-limit tract portions",
+  "map_value": "n times the saved right Perron eigenvector component; vector sums to one, arithmetic mean of mapped values is one",
+  "color_scale": {
+    "shared_across_all_cities_and_categories": true,
+    "transform": "log",
+    "minimum": 0.25,
+    "maximum": 4.0,
+    "neutral_value": 1,
+    "out_of_range": "Explicitly saturated with colorbar extension triangles and counts/ranges on every panel; exact values remain in CSV",
+    "zeros": "Below-scale color; counted separately, not dropped"
+  },
+  "category_diagnostics": {
+    "white_alone": {
+      "eigenvalue": 0.42425168399709023,
+      "vector_sum": 1.0,
+      "relative_score_mean": 1.0,
+      "minimum": 0.6457393531713345,
+      "maximum": 1.3842365425578684,
+      "below_color_scale": 0,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 8.489975215908441e-14
+    },
+    "black_alone": {
+      "eigenvalue": 0.3745289894843195,
+      "vector_sum": 1.0,
+      "relative_score_mean": 0.9999999999999999,
+      "minimum": 0.4981696610778009,
+      "maximum": 1.9734194829355678,
+      "below_color_scale": 0,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 1.166014984219088e-13
+    },
+    "hispanic_latino_any_race": {
+      "eigenvalue": 0.3407281450909083,
+      "vector_sum": 0.9999999999999999,
+      "relative_score_mean": 1.0,
+      "minimum": 0.7372251740465661,
+      "maximum": 1.487118027556491,
+      "below_color_scale": 0,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 1.7770388025667438e-13
+    },
+    "asian_alone": {
+      "eigenvalue": 0.08884629058778509,
+      "vector_sum": 1.0000000000000002,
+      "relative_score_mean": 1.0000000000000002,
+      "minimum": 0.6623331352836674,
+      "maximum": 1.694356715821416,
+      "below_color_scale": 0,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 2.12700408501465e-14
+    }
+  },
+  "display_projection": "+proj=laea +lat_0=41.85999119269522 +lon_0=-87.67770140617128 +datum=WGS84 +units=m +type=crs",
+  "display_geometry": "Saved city-limit tract portions minus saved Census mapped-water polygons for display only; statistical assignments unchanged.",
+  "sections_without_land_display_geometry": [],
+  "checks": [
+    "Exact node/geometry/eigenvector ID ordering",
+    "Counts and population match saved nodes",
+    "P rows and eigenvectors normalized",
+    "A=P diag(p)",
+    "A v=lambda v within 1e-9"
+  ],
+  "sources": [
+    {
+      "path": "outputs/multicity/walk_access_revision/chicago/nodes.csv",
+      "sha256": "10895acca4bb5b2268bdd5e71e7cf565ea678ee4e3a44a402d07ad34c9d07c4d"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/chicago/with_transit/analysis_matrices.npz",
+      "sha256": "cedca513ac95c2beb138de4e6cf7174fab134b6c25fea2741f0aaba0e5a3b016"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/chicago/travel/manifest.json",
+      "sha256": "ed5f5abebdd5a3d77ac3b569f3ae06bb862bd0113f08ff96a3359b4a5d42ff76"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/chicago/with_transit/manifest.json",
+      "sha256": "ca8d9ff9cba55e8d84aca82bfaf6b84b42dcf1c5a1b14a05ab49cfc685c48472"
+    },
+    {
+      "path": "outputs/multicity/chicago/demographics/nodes.geojson",
+      "sha256": "9554448681a97047f9e0be0ae0d6110308016a62481df42493139059fb80ad19"
+    },
+    {
+      "path": "outputs/multicity/chicago/demographics/water.geojson",
+      "sha256": "d41f6b840deda1d8efe6dcdc3ce1591619838738b0e180155d6e875fe798a287"
+    }
+  ],
+  "model_manifests": {
+    "travel": {
+      "model": "GTFS pattern graph with mean-headway waiting",
+      "input_fingerprint": {
+        "nodes_sha256": "0eedc25c01248922b38953eae07009f5f6bafb1371d367c7eafc6b4df49b96c5",
+        "parameters": {
+          "reference_date": "2026-10-20",
+          "window_start": "07:00:00",
+          "window_end": "10:00:00",
+          "walking_speed_kmh": 4.8,
+          "walking_detour": 1.3,
+          "bus_access_km": 1.0,
+          "rail_access_km": 3.0,
+          "transfer_walk_km": 0.4,
+          "entrance_seconds": 60.0,
+          "transfer_buffer_seconds": 60.0,
+          "dijkstra_batch_size": 16,
+          "access_policy": "uncapped",
+          "pedestrian_barrier_policy": "reject"
+        },
+        "feeds": [
+          "a9372be5b70fcee4ed98c9476433f86065637a9a500b8af6afbb84d000ef2746",
+          "06b6f940e9f9c38805a7acaf8582a20d42491073a200078e4a6227ff2f12926d"
+        ],
+        "land_sha256": null,
+        "water_sha256": "f65ab9768d4bb960383da426549e41f36a8dceffd537d65d51d42bbf5e5bd70f",
+        "model_version": 4
+      },
+      "parameters": {
+        "reference_date": "2026-10-20",
+        "window_start": "07:00:00",
+        "window_end": "10:00:00",
+        "walking_speed_kmh": 4.8,
+        "walking_detour": 1.3,
+        "bus_access_km": 1.0,
+        "rail_access_km": 3.0,
+        "transfer_walk_km": 0.4,
+        "entrance_seconds": 60.0,
+        "transfer_buffer_seconds": 60.0,
+        "dijkstra_batch_size": 16,
+        "access_policy": "uncapped",
+        "pedestrian_barrier_policy": "reject"
+      },
+      "feeds": [
+        {
+          "path": "data/multicity/transit/cta.zip",
+          "sha256": "a9372be5b70fcee4ed98c9476433f86065637a9a500b8af6afbb84d000ef2746",
+          "service_date": "2026-10-20",
+          "patterns": 398,
+          "route_modes": [
+            "bus",
+            "rail"
+          ],
+          "used_routes_by_mode": {
+            "bus": 123,
+            "rail": 8
+          },
+          "published_feed_info": [],
+          "agency_timezones": [
+            "America/Chicago"
+          ],
+          "diagnostics": {
+            "scheduled_trip_samples": 5003
+          }
+        },
+        {
+          "path": "data/multicity/transit/metra.zip",
+          "sha256": "06b6f940e9f9c38805a7acaf8582a20d42491073a200078e4a6227ff2f12926d",
+          "service_date": "2026-10-20",
+          "patterns": 104,
+          "route_modes": [
+            "rail"
+          ],
+          "used_routes_by_mode": {
+            "bus": 0,
+            "rail": 11
+          },
+          "published_feed_info": [],
+          "agency_timezones": [
+            "America/Chicago"
+          ],
+          "diagnostics": {
+            "scheduled_trip_samples": 205
+          }
+        }
+      ],
+      "nodes": 794,
+      "graph_nodes": 53902,
+      "graph_edges": 178156,
+      "service_patterns": 502,
+      "served_physical_stops": 11086,
+      "pedestrian_transfer_pairs": 48095,
+      "explicit_transfer_rules_applied": 153,
+      "transfer_rule_diagnostics": {},
+      "access_policy": "uncapped",
+      "pedestrian_barrier_policy": "reject",
+      "walking_access_interpretation": "No maximum walking distance for initial access or final egress; every accepted walking second is charged.",
+      "transfer_walking_interpretation": "Automatic inter-stop links use a 0.4km approximate walking radius and geometry checks; explicit GTFS transfer links and chained walks remain. This is not a total interchange-walk cap.",
+      "routing_diagnostics": {
+        "routing_algorithm": "batched temporary origins plus chunked min-plus egress",
+        "base_graph_nodes": 53886,
+        "base_graph_edges": 178156,
+        "maximum_temporary_access_edges": 135921,
+        "maximum_temporary_origins": 16,
+        "finite_journeys_with_access_beyond_legacy_radius": 14375,
+        "finite_journeys_with_egress_beyond_legacy_radius": 15036
+      },
+      "mode_array_definitions": {
+        "transit_seconds": "Minimum modeled walk-access + boarding wait + actual GTFS ride(s), dwell/transfers + walk-egress. At least one ride required; diagonal and absent candidates are infinity.",
+        "transit_access_seconds": "For uncapped output: selected initial walking time plus entrance_seconds, fully included in transit_seconds.",
+        "transit_egress_seconds": "For uncapped output: selected final walking time plus entrance_seconds exit buffer, fully included in transit_seconds.",
+        "transit_first_boarding_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+        "transit_last_alighting_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+        "transit_access_barrier_flag": "For uncapped flag_only output: selected access chord fails supplied land/water screen; false under reject policy because such legs are excluded. False is not validation against streets or barriers outside supplied geometry.",
+        "transit_egress_barrier_flag": "Same as transit_access_barrier_flag, for selected egress chord.",
+        "transit_access_exceeds_legacy_radius": "For uncapped output: selected initial walking distance exceeds old mode-specific bus_access_km/rail_access_km radius. Exit/entrance buffer is excluded from this distance comparison.",
+        "transit_egress_exceeds_legacy_radius": "Same as transit_access_exceeds_legacy_radius, for final walking leg."
+      },
+      "common_service_date": true,
+      "nonlocal_pairs": 629642,
+      "transit_reachable_nonlocal_pairs": 629642,
+      "tracts_without_access_stops": 0,
+      "walk_land_check_available": false,
+      "walk_water_check_available": true,
+      "walk_barrier_check_available": true,
+      "barrier_clear_nonlocal_walk_pairs": 202316,
+      "limitations": [
+        "Expected-time graph, not exact departure-time or real-time routing; median rides and half mean headway are approximations.",
+        "Exact stop-sequence patterns are separate: splitting service patterns can overestimate waiting when several patterns serve the same journey.",
+        "Walking is great-circle distance times a detour factor, not a street/bridge/pedestrian-access route.",
+        "walk_seconds is the complete distance approximation, including potentially impossible pedestrian water crossings; use walk_barrier_checked_seconds for conservative barrier filtering.",
+        "Without supplied land/water geometry, pedestrian legs have not been checked for water barriers. Supplied water coverage is limited to downloaded counties.",
+        "When supplied, land-chord checks are conservative: they may reject genuine bridge or indirect land paths.",
+        "Pickup/drop-off types 1, 2 and 3 are unavailable to unrestricted riders in this model.",
+        "Interlining, timed transfers, schedule correlations, crowding, service reliability, and accessibility are not modeled.",
+        "GTFS minimum-transfer rules conservatively delay all onward transfers from affected arrival states; prohibitions disable all onward transfers there. This prevents walking via a third stop from bypassing a rule, but can overestimate journeys unaffected by the original rule.",
+        "Transit requires at least one actual GTFS ride edge; absent service stays infinite; no invented transit fallback."
+      ]
+    },
+    "analysis": {
+      "city_id": "chicago",
+      "city": "Chicago",
+      "node_scale": "populated city-limit tract portions",
+      "scenario": "with_transit",
+      "parameters": {
+        "beta_per_usd": 0.1,
+        "omega_usd_per_hour": 15.0,
+        "c0_usd": 1.25,
+        "standardized_transit_fare_usd": 3.0
+      },
+      "access_policy": "uncapped distance, barrier-screened access and egress; every walking leg charged",
+      "walking_transfers": "Automatic transfer links within 400m; explicit GTFS links, transfer restrictions and chained walks retained.",
+      "no_transit_proxy": true,
+      "diagnostics": {
+        "city_id": "chicago",
+        "city": "Chicago",
+        "scenario": "with_transit",
+        "node_count": 794,
+        "population": 2746388,
+        "transit_selected_pairs": 601076,
+        "nonlocal_pairs": 629642,
+        "transit_selected_percent": 95.46313619485359,
+        "nodes_without_boarding_access": 0,
+        "old_nodes_without_boarding_access": 0,
+        "barrier_flagged_direct_walking_pairs": 2879,
+        "population_weighted_flagged_walking_mass_percent": 1.1115852682833571,
+        "service_dates": [
+          "2026-10-20"
+        ],
+        "bus_routes": 123,
+        "rail_routes": 19,
+        "max_pssi_eigenpair_residual": 1.7770388025667438e-13,
+        "transit_access_seconds_selected_median_minutes": 7.005375657933982,
+        "transit_access_seconds_selected_max_minutes": 52.99453306125509,
+        "transit_egress_seconds_selected_median_minutes": 6.868746231431229,
+        "transit_egress_seconds_selected_max_minutes": 52.99453306125509,
+        "transit_selected_pairs_beyond_old_access_radius": 12950,
+        "transit_selected_pairs_beyond_old_egress_radius": 13637,
+        "transit_selected_pairs_beyond_either_old_radius": 26095,
+        "nodes_without_boarding_access_reason": "No boarding stop passes the retained geometric water/land screen; no access distance cutoff remains."
+      },
+      "source_sha256": {
+        "outputs/multicity/walk_access_revision/chicago/nodes.csv": "10895acca4bb5b2268bdd5e71e7cf565ea678ee4e3a44a402d07ad34c9d07c4d",
+        "outputs/multicity/walk_access_revision/chicago/travel/modes.npz": "1dc9c69e38e0d1f201ca10d43041112a24d0ec773ba14708de44559214bb837b",
+        "outputs/multicity/walk_access_revision/chicago/travel/manifest.json": "ed5f5abebdd5a3d77ac3b569f3ae06bb862bd0113f08ff96a3359b4a5d42ff76"
+      },
+      "nyc_scope": null,
+      "normalization": "Raw PSSI=lambda; normalized PSSI=(lambda-K)/(1-K). K=all city group residents/all city residents. Per-node right eigenvector sum 1; n*v mean 1. Distance Fryer is a separate geography-only model.",
+      "routes_api_calls": 0
+    }
+  },
+  "network_requests": 0,
+  "routes_api_calls": 0
+}

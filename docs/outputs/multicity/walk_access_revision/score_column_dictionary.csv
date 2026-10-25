@@ -1,0 +1,20 @@
+column,definition
+scenario,with_transit: walking + actual GTFS rail/bus with uncapped access/egress. walking_only: identical direct walking estimates and no transit.
+city_id,Stable folder and file identifier.
+city,2020 Census incorporated place/city; Washington uses the District of Columbia place.
+node_scale,Populated city-limit tract portions for 11 cities; 70 custom sections for NYC.
+node_count,Number of populated geographic units in this city PSSI model; dimensions of its P and A matrices.
+city_population,"Total 2020 population in the selected city limits, independently validated against the published place total."
+group,"2020 Census category. White, Black and Asian alone include Hispanic residents; Hispanic is any race. Categories overlap."
+population,Number of residents in this category across all populated city tract portions: Nᵣ = Σᵢ Dᵢ pᵢ. Unit: people.
+population_share_K,"Nᵣ / N, where N is the total city population across all tract portions. Fraction from 0 to 1; used in every adjustment."
+population_percent,100 × K. Display only: never use this 0–100 value in the normalization formula.
+segregation_index,"Largest eigenvalue of Aᵣ = P diag(pᵣ), with Pᵢⱼ = Fᵢⱼ Dⱼ / Σₖ Fᵢₖ Dₖ. Raw proportion-based spectral score."
+segregation_index_minus_K,Unscaled difference between PSSI and citywide population share. Zero means λ = K; negative values are retained.
+segregation_index_normalized,"Requested normalization. Subtract K, then divide the entire difference by 1 − K. Undefined at K = 1; negative values are retained."
+residential_isolation,Σᵢ (Dᵢ pᵢ / Nᵣ) pᵢ: mean same-category residential share experienced by a resident of this category. Undefined when Nᵣ = 0.
+residential_isolation_normalized,(I − K)/(1 − K). Population-share normalization of residential isolation; undefined at K = 1.
+network_isolation,Σᵢ (Dᵢ pᵢ / Nᵣ) (P pᵣ)ᵢ: mean same-category exposure under the modeled travel interaction network. Undefined when Nᵣ = 0.
+network_isolation_normalized,(J − K)/(1 − K). Population-share normalization of network isolation; undefined at K = 1.
+dissimilarity_vs_rest,"½ Σᵢ |Dᵢ pᵢ / Nᵣ − Dᵢ (1 − pᵢ)/(N − Nᵣ)|. Compares the distribution of this category with all other residents. Usual 0–1 scale, without a K adjustment; undefined at K = 0 or 1."
+eigenpair_max_abs_residual,"maxᵢ |(Aᵣ vᵣ − λᵣ vᵣ)ᵢ|. Numerical verification error, not a segregation score. Smaller is better; right eigenvectors separately sum to one."

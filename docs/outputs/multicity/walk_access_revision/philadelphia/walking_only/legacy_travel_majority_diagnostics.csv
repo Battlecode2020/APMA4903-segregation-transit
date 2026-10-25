@@ -1,0 +1,5 @@
+scenario,city_id,city,node_scale,group,fryer_majority_ssi,fryer_majority_ssi_minus_K,fryer_majority_ssi_normalized,majority_zone_count,majority_component_count,fryer_status
+walking_only,philadelphia,Philadelphia,populated city-limit tract portions,white_alone,0.6847508122914233,0.3214654339050066,0.5048815010566873,149,1,ok
+walking_only,philadelphia,Philadelphia,populated city-limit tract portions,black_alone,0.6043883549127308,0.21128249425829637,0.34813731186484914,147,1,ok
+walking_only,philadelphia,Philadelphia,populated city-limit tract portions,hispanic_latino_any_race,0.29705908012393917,0.14848853160688869,0.17439910182606866,28,1,ok
+walking_only,philadelphia,Philadelphia,populated city-limit tract portions,asian_alone,0.014598009435230033,-0.06867499830826868,-0.074913249951577,1,1,ok

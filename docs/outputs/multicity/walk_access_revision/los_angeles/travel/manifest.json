@@ -1,0 +1,193 @@
+{
+  "model": "GTFS pattern graph with mean-headway waiting",
+  "input_fingerprint": {
+    "nodes_sha256": "007a708ab41ee9860cb8c5dd02dd26735f3f5dce7f5fff6e422b219b52681e63",
+    "parameters": {
+      "reference_date": "2026-10-20",
+      "window_start": "07:00:00",
+      "window_end": "10:00:00",
+      "walking_speed_kmh": 4.8,
+      "walking_detour": 1.3,
+      "bus_access_km": 1.0,
+      "rail_access_km": 3.0,
+      "transfer_walk_km": 0.4,
+      "entrance_seconds": 60.0,
+      "transfer_buffer_seconds": 60.0,
+      "dijkstra_batch_size": 16,
+      "access_policy": "uncapped",
+      "pedestrian_barrier_policy": "reject"
+    },
+    "feeds": [
+      "cb1a2283abecc0af1619365ea0626262bc3d93d5e6bdd0df03288cd6120f6058",
+      "cc21c649b3ff74cfd3481255245a70ca91e42b650d0d2aadbf468be423fd297d",
+      "c3edea6a5595add0b50f5580c0997bc1d90e7ba0f1d94df3d7f47433d593df19"
+    ],
+    "land_sha256": null,
+    "water_sha256": "2907f4226c188031a91ff37327cb4857696fbd4844d274d2cd259b8fd5ac8c42",
+    "model_version": 4
+  },
+  "parameters": {
+    "reference_date": "2026-10-20",
+    "window_start": "07:00:00",
+    "window_end": "10:00:00",
+    "walking_speed_kmh": 4.8,
+    "walking_detour": 1.3,
+    "bus_access_km": 1.0,
+    "rail_access_km": 3.0,
+    "transfer_walk_km": 0.4,
+    "entrance_seconds": 60.0,
+    "transfer_buffer_seconds": 60.0,
+    "dijkstra_batch_size": 16,
+    "access_policy": "uncapped",
+    "pedestrian_barrier_policy": "reject"
+  },
+  "feeds": [
+    {
+      "path": "data/multicity/transit/la_metro_bus.zip",
+      "sha256": "cb1a2283abecc0af1619365ea0626262bc3d93d5e6bdd0df03288cd6120f6058",
+      "service_date": "2026-10-20",
+      "patterns": 366,
+      "route_modes": [
+        "bus"
+      ],
+      "used_routes_by_mode": {
+        "bus": 108,
+        "rail": 0
+      },
+      "published_feed_info": [
+        {
+          "feed_id": "us_ca_lacmta_bus",
+          "feed_publisher_name": "Los Angeles County Metropolitan Transportation Authority",
+          "feed_publisher_url": "https://www.metro.net",
+          "feed_lang": "en",
+          "feed_version": "",
+          "feed_license": "",
+          "feed_contact_email": "",
+          "feed_contact_url": "https://developer.metro.net",
+          "feed_start_date": "20260607",
+          "feed_end_date": "20261212"
+        }
+      ],
+      "agency_timezones": [
+        "America/Los_Angeles"
+      ],
+      "diagnostics": {
+        "scheduled_trip_samples": 3559
+      }
+    },
+    {
+      "path": "data/multicity/transit/la_metro_rail.zip",
+      "sha256": "cc21c649b3ff74cfd3481255245a70ca91e42b650d0d2aadbf468be423fd297d",
+      "service_date": "2026-10-20",
+      "patterns": 14,
+      "route_modes": [
+        "rail"
+      ],
+      "used_routes_by_mode": {
+        "bus": 0,
+        "rail": 6
+      },
+      "published_feed_info": [
+        {
+          "feed_id": "us_ca_lacmta_rail",
+          "feed_publisher_name": "Los Angeles County Metropolitan Transportation Authority",
+          "feed_publisher_url": "https://www.metro.net",
+          "feed_lang": "en",
+          "feed_version": "",
+          "feed_license": "",
+          "feed_contact_email": "",
+          "feed_contact_url": "http://developer.metro.net",
+          "feed_start_date": "",
+          "feed_end_date": ""
+        }
+      ],
+      "agency_timezones": [
+        "America/Los_Angeles"
+      ],
+      "diagnostics": {
+        "scheduled_trip_samples": 287
+      }
+    },
+    {
+      "path": "data/multicity/transit/metrolink.zip",
+      "sha256": "c3edea6a5595add0b50f5580c0997bc1d90e7ba0f1d94df3d7f47433d593df19",
+      "service_date": "2026-10-20",
+      "patterns": 23,
+      "route_modes": [
+        "rail"
+      ],
+      "used_routes_by_mode": {
+        "bus": 0,
+        "rail": 7
+      },
+      "published_feed_info": [
+        {
+          "feed_publisher_name": "Metrolink Trains",
+          "feed_publisher_url": "http://www.metrolinktrains.com",
+          "feed_lang": "en",
+          "feed_start_date": "20260505",
+          "feed_end_date": "20360501",
+          "feed_version": "20260505"
+        }
+      ],
+      "agency_timezones": [
+        "America/Los_Angeles"
+      ],
+      "diagnostics": {
+        "scheduled_trip_samples": 50
+      }
+    }
+  ],
+  "nodes": 1114,
+  "graph_nodes": 60649,
+  "graph_edges": 141200,
+  "service_patterns": 403,
+  "served_physical_stops": 11997,
+  "pedestrian_transfer_pairs": 23668,
+  "explicit_transfer_rules_applied": 0,
+  "transfer_rule_diagnostics": {},
+  "access_policy": "uncapped",
+  "pedestrian_barrier_policy": "reject",
+  "walking_access_interpretation": "No maximum walking distance for initial access or final egress; every accepted walking second is charged.",
+  "transfer_walking_interpretation": "Automatic inter-stop links use a 0.4km approximate walking radius and geometry checks; explicit GTFS transfer links and chained walks remain. This is not a total interchange-walk cap.",
+  "routing_diagnostics": {
+    "routing_algorithm": "batched temporary origins plus chunked min-plus egress",
+    "base_graph_nodes": 60633,
+    "base_graph_edges": 141200,
+    "maximum_temporary_access_edges": 190179,
+    "maximum_temporary_origins": 16,
+    "finite_journeys_with_access_beyond_legacy_radius": 267906,
+    "finite_journeys_with_egress_beyond_legacy_radius": 272358
+  },
+  "mode_array_definitions": {
+    "transit_seconds": "Minimum modeled walk-access + boarding wait + actual GTFS ride(s), dwell/transfers + walk-egress. At least one ride required; diagonal and absent candidates are infinity.",
+    "transit_access_seconds": "For uncapped output: selected initial walking time plus entrance_seconds, fully included in transit_seconds.",
+    "transit_egress_seconds": "For uncapped output: selected final walking time plus entrance_seconds exit buffer, fully included in transit_seconds.",
+    "transit_first_boarding_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+    "transit_last_alighting_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+    "transit_access_barrier_flag": "For uncapped flag_only output: selected access chord fails supplied land/water screen; false under reject policy because such legs are excluded. False is not validation against streets or barriers outside supplied geometry.",
+    "transit_egress_barrier_flag": "Same as transit_access_barrier_flag, for selected egress chord.",
+    "transit_access_exceeds_legacy_radius": "For uncapped output: selected initial walking distance exceeds old mode-specific bus_access_km/rail_access_km radius. Exit/entrance buffer is excluded from this distance comparison.",
+    "transit_egress_exceeds_legacy_radius": "Same as transit_access_exceeds_legacy_radius, for final walking leg."
+  },
+  "common_service_date": true,
+  "nonlocal_pairs": 1239882,
+  "transit_reachable_nonlocal_pairs": 1233210,
+  "tracts_without_access_stops": 3,
+  "walk_land_check_available": false,
+  "walk_water_check_available": true,
+  "walk_barrier_check_available": true,
+  "barrier_clear_nonlocal_walk_pairs": 301636,
+  "limitations": [
+    "Expected-time graph, not exact departure-time or real-time routing; median rides and half mean headway are approximations.",
+    "Exact stop-sequence patterns are separate: splitting service patterns can overestimate waiting when several patterns serve the same journey.",
+    "Walking is great-circle distance times a detour factor, not a street/bridge/pedestrian-access route.",
+    "walk_seconds is the complete distance approximation, including potentially impossible pedestrian water crossings; use walk_barrier_checked_seconds for conservative barrier filtering.",
+    "Without supplied land/water geometry, pedestrian legs have not been checked for water barriers. Supplied water coverage is limited to downloaded counties.",
+    "When supplied, land-chord checks are conservative: they may reject genuine bridge or indirect land paths.",
+    "Pickup/drop-off types 1, 2 and 3 are unavailable to unrestricted riders in this model.",
+    "Interlining, timed transfers, schedule correlations, crowding, service reliability, and accessibility are not modeled.",
+    "GTFS minimum-transfer rules conservatively delay all onward transfers from affected arrival states; prohibitions disable all onward transfers there. This prevents walking via a third stop from bypassing a rule, but can overestimate journeys unaffected by the original rule.",
+    "Transit requires at least one actual GTFS ride edge; absent service stays infinite; no invented transit fallback."
+  ]
+}

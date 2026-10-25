@@ -1,0 +1,5 @@
+scenario,city_id,city,node_scale,group,fryer_majority_ssi,fryer_majority_ssi_minus_K,fryer_majority_ssi_normalized,majority_zone_count,majority_component_count,fryer_status
+walking_only,salt_lake_city,Salt Lake City,populated city-limit tract portions,white_alone,0.9116054996629539,0.2275480801369103,0.7202197304192349,50,1,ok
+walking_only,salt_lake_city,Salt Lake City,populated city-limit tract portions,black_alone,0.0,-0.02886998492912684,-0.02972823873332749,0,0,no_majority_zones_zero_by_convention
+walking_only,salt_lake_city,Salt Lake City,populated city-limit tract portions,hispanic_latino_any_race,0.27596817648099764,0.06816036265885397,0.08604018551068009,5,1,ok
+walking_only,salt_lake_city,Salt Lake City,populated city-limit tract portions,asian_alone,0.0,-0.05502120436804975,-0.058224803162122356,0,0,no_majority_zones_zero_by_convention

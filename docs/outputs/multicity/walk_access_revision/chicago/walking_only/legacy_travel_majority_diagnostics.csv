@@ -1,0 +1,5 @@
+scenario,city_id,city,node_scale,group,fryer_majority_ssi,fryer_majority_ssi_minus_K,fryer_majority_ssi_normalized,majority_zone_count,majority_component_count,fryer_status
+walking_only,chicago,Chicago,populated city-limit tract portions,white_alone,0.709421725019288,0.3503027658627522,0.5465956137534017,262,1,ok
+walking_only,chicago,Chicago,populated city-limit tract portions,black_alone,0.7795576591805727,0.48783085291721884,0.6887608584246472,267,1,ok
+walking_only,chicago,Chicago,populated city-limit tract portions,hispanic_latino_any_race,0.6501170100634669,0.3517185317712518,0.5013081085045616,173,1,ok
+walking_only,chicago,Chicago,populated city-limit tract portions,asian_alone,0.0939177296845643,0.02379435308956024,0.025588720579328844,6,1,ok

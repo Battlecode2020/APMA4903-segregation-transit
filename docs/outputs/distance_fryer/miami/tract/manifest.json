@@ -1,0 +1,34 @@
+{
+  "city_id": "miami",
+  "city": "Miami",
+  "node_scale": "tract",
+  "node_count": 138,
+  "zero_population_nodes_excluded": 0,
+  "city_population": 442241,
+  "source": "outputs/multicity/miami/demographics/nodes.csv",
+  "source_sha256": "273d91e1b876e4d7da55bbb8bfa6004e432b860fa66cfad2642a97a3d7886ff5",
+  "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+  "graphs": [
+    {
+      "radius_km": 0.5,
+      "undirected_edges": 63,
+      "all_degree_zero_node_count": 92,
+      "all_degree_zero_population": 315872,
+      "mean_all_neighbor_count": 0.9130434782608695
+    },
+    {
+      "radius_km": 1.0,
+      "undirected_edges": 338,
+      "all_degree_zero_node_count": 6,
+      "all_degree_zero_population": 17644,
+      "mean_all_neighbor_count": 4.898550724637682
+    },
+    {
+      "radius_km": 1.5,
+      "undirected_edges": 691,
+      "all_degree_zero_node_count": 2,
+      "all_degree_zero_population": 3,
+      "mean_all_neighbor_count": 10.014492753623188
+    }
+  ]
+}

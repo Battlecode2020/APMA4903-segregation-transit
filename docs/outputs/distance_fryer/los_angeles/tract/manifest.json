@@ -1,0 +1,34 @@
+{
+  "city_id": "los_angeles",
+  "city": "Los Angeles",
+  "node_scale": "tract",
+  "node_count": 1114,
+  "zero_population_nodes_excluded": 0,
+  "city_population": 3898747,
+  "source": "outputs/multicity/los_angeles/demographics/nodes.csv",
+  "source_sha256": "99b2580480043d2a0489fab5265a68786abdd532fb3b028313b9f71cdc93280e",
+  "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+  "graphs": [
+    {
+      "radius_km": 0.5,
+      "undirected_edges": 365,
+      "all_degree_zero_node_count": 690,
+      "all_degree_zero_population": 2535271,
+      "mean_all_neighbor_count": 0.6552962298025135
+    },
+    {
+      "radius_km": 1.0,
+      "undirected_edges": 2323,
+      "all_degree_zero_node_count": 115,
+      "all_degree_zero_population": 405719,
+      "mean_all_neighbor_count": 4.170556552962298
+    },
+    {
+      "radius_km": 1.5,
+      "undirected_edges": 5359,
+      "all_degree_zero_node_count": 18,
+      "all_degree_zero_population": 44961,
+      "mean_all_neighbor_count": 9.621184919210053
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "city_id": "philadelphia",
+  "city": "Philadelphia",
+  "node_scale": "block",
+  "node_count": 14549,
+  "zero_population_nodes_excluded": 3005,
+  "city_population": 1603797,
+  "source": "outputs/multicity/philadelphia/demographics/city_blocks.csv.gz",
+  "source_sha256": "92b26b125b117d35973ba5f6e43418869f8b1a7f916b826e354b6d9ec4086dff",
+  "representative_points": "Census populated-block internal points",
+  "graphs": [
+    {
+      "radius_km": 0.5,
+      "undirected_edges": 433174,
+      "all_degree_zero_node_count": 21,
+      "all_degree_zero_population": 3296,
+      "mean_all_neighbor_count": 59.546910440580106
+    },
+    {
+      "radius_km": 1.0,
+      "undirected_edges": 1565240,
+      "all_degree_zero_node_count": 2,
+      "all_degree_zero_population": 6,
+      "mean_all_neighbor_count": 215.16805278713315
+    },
+    {
+      "radius_km": 1.5,
+      "undirected_edges": 3235586,
+      "all_degree_zero_node_count": 1,
+      "all_degree_zero_population": 3,
+      "mean_all_neighbor_count": 444.78465873943225
+    }
+  ]
+}

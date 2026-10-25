@@ -1,0 +1,34 @@
+{
+  "city_id": "washington_dc",
+  "city": "Washington, DC",
+  "node_scale": "tract",
+  "node_count": 206,
+  "zero_population_nodes_excluded": 0,
+  "city_population": 689545,
+  "source": "outputs/multicity/washington_dc/demographics/nodes.csv",
+  "source_sha256": "7107bd8be4b0dbdd1bcbd6f2b1c3a9e5bac1c611188cd67fd609250c3aafc900",
+  "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+  "graphs": [
+    {
+      "radius_km": 0.5,
+      "undirected_edges": 88,
+      "all_degree_zero_node_count": 100,
+      "all_degree_zero_population": 348793,
+      "mean_all_neighbor_count": 0.8543689320388349
+    },
+    {
+      "radius_km": 1.0,
+      "undirected_edges": 544,
+      "all_degree_zero_node_count": 10,
+      "all_degree_zero_population": 38771,
+      "mean_all_neighbor_count": 5.281553398058253
+    },
+    {
+      "radius_km": 1.5,
+      "undirected_edges": 1167,
+      "all_degree_zero_node_count": 0,
+      "all_degree_zero_population": 0,
+      "mean_all_neighbor_count": 11.330097087378642
+    }
+  ]
+}

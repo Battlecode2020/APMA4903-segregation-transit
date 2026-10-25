@@ -1,0 +1,22 @@
+column,definition
+scenario,with_transit: walking + actual GTFS rail/bus with uncapped access/egress. walking_only: identical direct walking estimates and no transit.
+city_id,City folder identifier.
+city,City name.
+node_scale,Populated city-limit tract portions for 11 cities; 70 custom sections for NYC.
+matrix_index,Zero-based row/column position in all this city’s matrices.
+tract_geoid,Exact node identifier: 11-digit tract GEOID in 11 cities; NYC 70-section zone ID in New York. Load as text; matches matrix ordering.
+latitude,WGS84 representative-point latitude. Eleven cities use the populated-block internal point nearest their population-weighted centroid; NYC retains its saved section representative points.
+longitude,WGS84 longitude of the same representative point.
+population,"2020 population of this city-limit tract portion, or custom section for NYC."
+full_tract_population,"Population of the entire Census tract, including any part outside city limits."
+city_share_of_tract_population,Population of the city portion divided by full tract population. Values below 1 identify tracts with residents outside city limits.
+small_population_under_100,Diagnostic flag for city tract portions with fewer than 100 residents. These are retained to conserve city counts; majority-tract measures can be sensitive to them.
+group,"One of White alone, Black alone, Hispanic any race, or Asian alone; groups overlap."
+group_population,2020 residents of this category within the city tract portion.
+group_proportion,"group_population / population; fraction in [0,1]."
+population_share_K,"Citywide population fraction of this category, repeated for interpretation."
+pssi_city_eigenvalue,Largest eigenvalue λ of the city’s A for this category. Same across tracts; it is not a tract-specific eigenvalue.
+pssi_right_eigenvector,Node component v_i of the right Perron vector. The vector sums to 1 across each city/category/scenario.
+pssi_eigenvector_times_n,"n*v_i with n the city node count; node mean 1. This is a relative eigenvector score, not a probability, city eigenvalue or scalar normalized PSSI."
+pssi_eigenpair_residual,"Maximum absolute residual of A*v - λ*v; numerical error, not segregation."
+network_same_group_exposure,"(P*p)_i, modeled same-category exposure for this tract."

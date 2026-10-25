@@ -1,0 +1,176 @@
+\begin{frame}{Motion, loss, and quasi-stationarity}
+\small
+The underlying motion is stochastic, but retention introduces loss:
+\[
+ P\mathbf{1}=\mathbf{1},\qquad
+ A=P\operatorname{diag}(r),\qquad
+ 0\le r_i\le1,\qquad A\mathbf{1}\le\mathbf{1}.
+\]
+The stationary distribution of the motion satisfies
+\[
+ \pi^TP=\pi^T,\qquad \pi^T\mathbf{1}=1.
+\]
+For irreducible $A$, its normalized left Perron vector satisfies
+\[
+ q^TA=\Lambda q^T,\qquad q^T\mathbf{1}=1,
+ \qquad \boxed{q^TA\mathbf{1}=\Lambda}.
+\]
+If $\Lambda>0$, conditioning on survival gives
+\[
+ \frac{q^TA}{q^TA\mathbf{1}}=q^T.
+\]
+Thus $q$ is a \emph{quasi-stationary distribution}, and $\Lambda$
+is its one-step survival probability. At uniform retention $r=K\mathbf{1}$,
+\[
+ A=KP,\qquad q=\pi,\qquad \Lambda=K.
+\]
+\end{frame}
+
+%================================================
+
+
+\begin{frame}{Random-matrix perturbation on the actual graph}
+\small
+
+For the fixed graph, write
+\[
+    r=K\mathbf{1}+\varepsilon,
+    \qquad
+    A=KP+P\operatorname{diag}(\varepsilon).
+\]
+
+Here $P\mathbf{1}=\mathbf{1}$: $P$ describes motion before loss.
+Let $\pi$ be the stationary distribution of $P$, and define
+\[
+    \pi^TP=\pi^T,
+    \qquad
+    \pi^T\mathbf{1}=1,
+    \qquad
+    \Pi=\mathbf{1}\pi^T,
+\]
+\[
+    H=(I-P+\Pi)^{-1}(P-\Pi).
+\]
+
+A second-order expansion of the Perron root gives
+\[
+    \boxed{
+    \Lambda\approx
+    K+\pi^T\varepsilon+
+    \frac{1}{K}
+    \pi^T\operatorname{diag}(\varepsilon)H\varepsilon.
+    }
+\]
+
+\textbf{Assumptions:}
+$K>0$, irreducible $P$, and perturbations small enough
+relative to the reduced resolvent scale.
+
+\medskip
+
+{\footnotesize
+This is a local expansion, not a universal large-matrix theorem.
+Non-normality and very small neighborhoods can affect its accuracy.
+We therefore compare it with actual simulated eigenvalues.
+}
+\end{frame}
+
+
+%================================================
+
+\begin{frame}{Deriving the second-order correction}
+\small
+
+Put $D=\operatorname{diag}(\varepsilon)$ and
+$A(t)=KP+tPD$. Expand
+\[
+    v(t)=\mathbf{1}+tu+O(t^2),
+    \qquad
+    \pi^Tu=0,
+\]
+\[
+    \lambda(t)=K+ta+t^2b+O(t^3).
+\]
+
+The first-order eigenvector equation gives
+\[
+    K(I-P)u=P\varepsilon-a\mathbf{1}.
+\]
+Multiplying by $\pi^T$ yields
+\[
+    a=\pi^T\varepsilon,
+    \qquad
+    u=\frac{H\varepsilon}{K}.
+\]
+
+At second order, multiplication by $\pi^T$ gives
+\[
+    b=\pi^TPDu
+     =\pi^TDu
+     =\frac{1}{K}
+       \pi^T\operatorname{diag}(\varepsilon)H\varepsilon.
+\]
+
+Thus
+\[
+    \Lambda\approx K+a+b.
+\]
+
+{\footnotesize
+The approximation evaluates a local expansion about $t=0$
+at $t=1$. Its finite-sample accuracy must be checked.
+}
+\end{frame}
+
+
+%================================================
+
+\begin{frame}{Predicting the mean and distribution}
+\small
+
+Under fixed-count resident assignment, the covariance is exactly
+\[
+    C=\operatorname{Cov}(\varepsilon)
+    =
+    \frac{K(1-K)}{N-1}
+    \left[
+        N\operatorname{diag}(1/n_i)
+        -\mathbf{1}\mathbf{1}^T
+    \right].
+\]
+
+Since $\mathbb{E}[\varepsilon]=0$,
+\[
+    \boxed{
+        m_0\approx
+        K+\frac{1}{K}
+        \sum_{i,j}\pi_iH_{ij}C_{ij}
+    },
+\]
+\[
+    \boxed{
+        \operatorname{Var}(\Lambda)\approx\pi^TC\pi
+    }.
+\]
+
+If the linear term dominates and a finite-population
+central limit theorem applies,
+\[
+    \Lambda\ \dot\sim\
+    \mathcal{N}\!\left(
+        K+\frac{1}{K}\sum_{i,j}\pi_iH_{ij}C_{ij},
+        \ \pi^TC\pi
+    \right).
+\]
+
+{\footnotesize
+The mean correction is second order; the variance is first order.
+The normal approximation requires that no resident contribution
+dominate the weighted fluctuation.
+If $\pi_i=n_i/N$, the linear variance vanishes.
+For complete mixing, $H=0$ and $\Lambda=K$ exactly.
+}
+\end{frame}
+
+
+%================================================

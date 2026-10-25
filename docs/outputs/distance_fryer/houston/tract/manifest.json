@@ -1,0 +1,34 @@
+{
+  "city_id": "houston",
+  "city": "Houston",
+  "node_scale": "tract",
+  "node_count": 943,
+  "zero_population_nodes_excluded": 0,
+  "city_population": 2304580,
+  "source": "outputs/multicity/houston/demographics/nodes.csv",
+  "source_sha256": "4a21c3878bf10d075cd97dc8d441ef6d683b8792da62e2d16baa5f426bd1e8b2",
+  "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+  "graphs": [
+    {
+      "radius_km": 0.5,
+      "undirected_edges": 105,
+      "all_degree_zero_node_count": 770,
+      "all_degree_zero_population": 1993222,
+      "mean_all_neighbor_count": 0.22269353128313893
+    },
+    {
+      "radius_km": 1.0,
+      "undirected_edges": 636,
+      "all_degree_zero_node_count": 311,
+      "all_degree_zero_population": 756446,
+      "mean_all_neighbor_count": 1.3488865323435844
+    },
+    {
+      "radius_km": 1.5,
+      "undirected_edges": 1574,
+      "all_degree_zero_node_count": 114,
+      "all_degree_zero_population": 207971,
+      "mean_all_neighbor_count": 3.3382820784729588
+    }
+  ]
+}

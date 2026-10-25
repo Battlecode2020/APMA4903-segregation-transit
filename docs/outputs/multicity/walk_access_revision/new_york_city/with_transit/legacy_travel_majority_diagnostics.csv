@@ -1,0 +1,5 @@
+scenario,city_id,city,node_scale,group,fryer_majority_ssi,fryer_majority_ssi_minus_K,fryer_majority_ssi_normalized,majority_zone_count,majority_component_count,fryer_status
+with_transit,new_york_city,New York City,70 custom sections,white_alone,0.8544280907675745,0.5135739065666429,0.7791506738824523,18,1,ok
+with_transit,new_york_city,New York City,70 custom sections,black_alone,0.35919656886820606,0.13843293246326704,0.17765204362973658,10,1,ok
+with_transit,new_york_city,New York City,70 custom sections,hispanic_latino_any_race,0.3332510589732856,0.05039142055112528,0.07026716560793615,11,1,ok
+with_transit,new_york_city,New York City,70 custom sections,asian_alone,0.11024390023257866,-0.04708391754509311,-0.055874536431144026,1,1,ok

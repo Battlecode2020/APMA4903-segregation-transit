@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "cities": 12,
+  "scenario_category_rows": 96,
+  "fryer_rows": 96,
+  "node_category_rows_both_scenarios": 38464,
+  "snapshot_files_verified": 650,
+  "max_eigenpair_residual": 7.924823991478647e-13,
+  "maps_regenerated": true,
+  "distance_graphs_rebuilt": true,
+  "network_calls": 0,
+  "routes_api_calls": 0,
+  "checks": [
+    "Committed snapshot checksums",
+    "Every PSSI summary column and local eigenvector reproduced",
+    "Normalized rows/vectors and eigenpair residuals",
+    "Both geographic Fryer scales and population-share adjustments reproduced"
+  ],
+  "unit_tests_passed": 92,
+  "local_site_links_verified": 259
+}

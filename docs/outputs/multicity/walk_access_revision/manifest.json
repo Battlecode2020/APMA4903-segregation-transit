@@ -1,0 +1,32 @@
+{
+  "generated_utc": "2026-10-25T16:33:17.604143+00:00",
+  "cities": {
+    "philadelphia": "Philadelphia",
+    "miami": "Miami",
+    "los_angeles": "Los Angeles",
+    "salt_lake_city": "Salt Lake City",
+    "san_francisco": "San Francisco",
+    "washington_dc": "Washington, DC",
+    "houston": "Houston",
+    "detroit": "Detroit",
+    "chicago": "Chicago",
+    "phoenix": "Phoenix",
+    "atlanta": "Atlanta",
+    "new_york_city": "New York City"
+  },
+  "parameters": {
+    "beta_per_usd": 0.1,
+    "omega_usd_per_hour": 15.0,
+    "c0_usd": 1.25,
+    "standardized_transit_fare_usd": 3.0
+  },
+  "node_policy": "11 cities retain populated city-limit tract portions; NYC retains its 70 custom sections. Do not interpret different spatial scales as identical.",
+  "access": "Uncapped walk distance to/from actual stops; full walking time charged. Original conservative water/land chord checks remain. Real bridge/street detours can be missed.",
+  "transfer": "Automatic transfer links within 400m remain, along with explicit GTFS links, restrictions and chained walks. This removes access/egress distance caps.",
+  "direct_walk": "Same complete great-circle walking proxy in both scenarios: 1.3 distance factor, 4.8 km/h, including flagged possible water crossings.",
+  "nyc_change": "Actual cached subway/SIR expected-time service only, no hypothetical transit replacements. Compared with older NYC70 results, routing method/proxy removal also changed.",
+  "fryer": "Recomputed 1km dominant-category geographic-neighbor SSI on both blocks and tracts. Transit cannot change it; scores verified against saved prior results. K remains all-city resident fraction. SSI-K and (SSI-K)/(1-K) provided.",
+  "source_dates": "Saved service dates retained (Oct 20, 2026 except SF Aug 25, 2026); no fresh schedule downloads.",
+  "routes_api_calls": 0,
+  "network_requests_during_calculation": 0
+}

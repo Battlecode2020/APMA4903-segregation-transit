@@ -1,0 +1,5 @@
+scenario,city_id,city,node_scale,group,fryer_majority_ssi,fryer_majority_ssi_minus_K,fryer_majority_ssi_normalized,majority_zone_count,majority_component_count,fryer_status
+with_transit,phoenix,Phoenix,populated city-limit tract portions,white_alone,0.8875502424374504,0.39059444446227537,0.776461477719208,198,1,ok
+with_transit,phoenix,Phoenix,populated city-limit tract portions,black_alone,0.0,-0.07789127681127067,-0.08447081656696198,0,0,no_majority_zones_zero_by_convention
+with_transit,phoenix,Phoenix,populated city-limit tract portions,hispanic_latino_any_race,0.6199801950380268,0.20858913991157318,0.3543764357104451,144,1,ok
+with_transit,phoenix,Phoenix,populated city-limit tract portions,asian_alone,0.00013576658992812683,-0.04101055222952715,-0.04277039660423975,1,1,ok

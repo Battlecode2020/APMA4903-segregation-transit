@@ -1,0 +1,281 @@
+{
+  "created_utc": "2026-10-25T16:26:41.495174+00:00",
+  "city_id": "houston",
+  "city": "Houston",
+  "section_count": 943,
+  "population": 2304580,
+  "geography": "943 city-limit tract portions",
+  "map_value": "n times the saved right Perron eigenvector component; vector sums to one, arithmetic mean of mapped values is one",
+  "color_scale": {
+    "shared_across_all_cities_and_categories": true,
+    "transform": "log",
+    "minimum": 0.25,
+    "maximum": 4.0,
+    "neutral_value": 1,
+    "out_of_range": "Explicitly saturated with colorbar extension triangles and counts/ranges on every panel; exact values remain in CSV",
+    "zeros": "Below-scale color; counted separately, not dropped"
+  },
+  "category_diagnostics": {
+    "white_alone": {
+      "eigenvalue": 0.4403864857057246,
+      "vector_sum": 1.0,
+      "relative_score_mean": 0.9999999999999998,
+      "minimum": 0.07406671544392114,
+      "maximum": 125.94394165916984,
+      "below_color_scale": 879,
+      "above_color_scale": 30,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 3.608611890207336e-13
+    },
+    "black_alone": {
+      "eigenvalue": 0.2503630486405484,
+      "vector_sum": 1.0,
+      "relative_score_mean": 1.0,
+      "minimum": 0.13554943895687294,
+      "maximum": 7.199620896354669,
+      "below_color_scale": 3,
+      "above_color_scale": 7,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 2.473331869173867e-13
+    },
+    "hispanic_latino_any_race": {
+      "eigenvalue": 0.45470476402940985,
+      "vector_sum": 1.0,
+      "relative_score_mean": 1.0,
+      "minimum": 0.10368901010960299,
+      "maximum": 2.039363044942376,
+      "below_color_scale": 15,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 3.3130624437459344e-13
+    },
+    "asian_alone": {
+      "eigenvalue": 0.09815094092462139,
+      "vector_sum": 1.0000000000000002,
+      "relative_score_mean": 1.0,
+      "minimum": 0.0016561122024084103,
+      "maximum": 129.22626080169024,
+      "below_color_scale": 918,
+      "above_color_scale": 14,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 9.364731212713195e-14
+    }
+  },
+  "display_projection": "+proj=laea +lat_0=29.791630503075293 +lon_0=-95.44237898462353 +datum=WGS84 +units=m +type=crs",
+  "display_geometry": "Saved city-limit tract portions minus saved Census mapped-water polygons for display only; statistical assignments unchanged.",
+  "sections_without_land_display_geometry": [],
+  "checks": [
+    "Exact node/geometry/eigenvector ID ordering",
+    "Counts and population match saved nodes",
+    "P rows and eigenvectors normalized",
+    "A=P diag(p)",
+    "A v=lambda v within 1e-9"
+  ],
+  "sources": [
+    {
+      "path": "outputs/multicity/walk_access_revision/houston/nodes.csv",
+      "sha256": "b588de306d5e750eca56404e770c3d27f704c411141e057723c9fdf0786a6398"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/houston/with_transit/analysis_matrices.npz",
+      "sha256": "3dd9b2d8da678b44b873a52ffb28c94a5a00dffba5d3a093ea8fce14aed14adf"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/houston/travel/manifest.json",
+      "sha256": "73ad8e13869a3628ef0318e4e90a72531804ea4521dcefcd71f6af71b8541d6a"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/houston/with_transit/manifest.json",
+      "sha256": "cff40cf213925b194bad72412520eb9ad31827d80bbc7afcc8653e4be6488051"
+    },
+    {
+      "path": "outputs/multicity/houston/demographics/nodes.geojson",
+      "sha256": "47913d07d8a786a0e5f83073a4c0c7b4c10eb11c82859d4020da326b0708388e"
+    },
+    {
+      "path": "outputs/multicity/houston/demographics/water.geojson",
+      "sha256": "1d7beadcee0908b77d853e5332e2612e2e29c2919da0afbde2b3e80f28e3e25b"
+    }
+  ],
+  "model_manifests": {
+    "travel": {
+      "model": "GTFS pattern graph with mean-headway waiting",
+      "input_fingerprint": {
+        "nodes_sha256": "cb3a602f687fc2163345e27bacffd735d0bf33ab1af81d539c56d08bf1e7c430",
+        "parameters": {
+          "reference_date": "2026-10-20",
+          "window_start": "07:00:00",
+          "window_end": "10:00:00",
+          "walking_speed_kmh": 4.8,
+          "walking_detour": 1.3,
+          "bus_access_km": 1.0,
+          "rail_access_km": 3.0,
+          "transfer_walk_km": 0.4,
+          "entrance_seconds": 60.0,
+          "transfer_buffer_seconds": 60.0,
+          "dijkstra_batch_size": 16,
+          "access_policy": "uncapped",
+          "pedestrian_barrier_policy": "reject"
+        },
+        "feeds": [
+          "71ae944d82e4c00788e788f8d97b9d53842264e3ba0900da94bc094c38ed04dd"
+        ],
+        "land_sha256": null,
+        "water_sha256": "b58c488e7fbd4d140fc3c1acb27eefc64c35fad66df30468986e1789c4b427c6",
+        "model_version": 4
+      },
+      "parameters": {
+        "reference_date": "2026-10-20",
+        "window_start": "07:00:00",
+        "window_end": "10:00:00",
+        "walking_speed_kmh": 4.8,
+        "walking_detour": 1.3,
+        "bus_access_km": 1.0,
+        "rail_access_km": 3.0,
+        "transfer_walk_km": 0.4,
+        "entrance_seconds": 60.0,
+        "transfer_buffer_seconds": 60.0,
+        "dijkstra_batch_size": 16,
+        "access_policy": "uncapped",
+        "pedestrian_barrier_policy": "reject"
+      },
+      "feeds": [
+        {
+          "path": "data/multicity/transit/houston_metro.zip",
+          "sha256": "71ae944d82e4c00788e788f8d97b9d53842264e3ba0900da94bc094c38ed04dd",
+          "service_date": "2026-10-20",
+          "patterns": 230,
+          "route_modes": [
+            "bus",
+            "rail"
+          ],
+          "used_routes_by_mode": {
+            "bus": 106,
+            "rail": 3
+          },
+          "published_feed_info": [
+            {
+              "feed_publisher_name": "Metropolitan Transit Authority of Harris County",
+              "feed_publisher_url": "http://www.ridemetro.org",
+              "feed_lang": "en",
+              "feed_start_date": "20260830",
+              "feed_end_date": "20270123",
+              "feed_version": "August2026IVOMS_20261008"
+            }
+          ],
+          "agency_timezones": [
+            "America/Chicago"
+          ],
+          "diagnostics": {
+            "scheduled_trip_samples": 2198
+          }
+        }
+      ],
+      "nodes": 943,
+      "graph_nodes": 33326,
+      "graph_edges": 91937,
+      "service_patterns": 230,
+      "served_physical_stops": 8752,
+      "pedestrian_transfer_pairs": 22058,
+      "explicit_transfer_rules_applied": 0,
+      "transfer_rule_diagnostics": {},
+      "access_policy": "uncapped",
+      "pedestrian_barrier_policy": "reject",
+      "walking_access_interpretation": "No maximum walking distance for initial access or final egress; every accepted walking second is charged.",
+      "transfer_walking_interpretation": "Automatic inter-stop links use a 0.4km approximate walking radius and geometry checks; explicit GTFS transfer links and chained walks remain. This is not a total interchange-walk cap.",
+      "routing_diagnostics": {
+        "routing_algorithm": "batched temporary origins plus chunked min-plus egress",
+        "base_graph_nodes": 33310,
+        "base_graph_edges": 91937,
+        "maximum_temporary_access_edges": 76599,
+        "maximum_temporary_origins": 16,
+        "finite_journeys_with_access_beyond_legacy_radius": 381311,
+        "finite_journeys_with_egress_beyond_legacy_radius": 372433
+      },
+      "mode_array_definitions": {
+        "transit_seconds": "Minimum modeled walk-access + boarding wait + actual GTFS ride(s), dwell/transfers + walk-egress. At least one ride required; diagonal and absent candidates are infinity.",
+        "transit_access_seconds": "For uncapped output: selected initial walking time plus entrance_seconds, fully included in transit_seconds.",
+        "transit_egress_seconds": "For uncapped output: selected final walking time plus entrance_seconds exit buffer, fully included in transit_seconds.",
+        "transit_first_boarding_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+        "transit_last_alighting_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+        "transit_access_barrier_flag": "For uncapped flag_only output: selected access chord fails supplied land/water screen; false under reject policy because such legs are excluded. False is not validation against streets or barriers outside supplied geometry.",
+        "transit_egress_barrier_flag": "Same as transit_access_barrier_flag, for selected egress chord.",
+        "transit_access_exceeds_legacy_radius": "For uncapped output: selected initial walking distance exceeds old mode-specific bus_access_km/rail_access_km radius. Exit/entrance buffer is excluded from this distance comparison.",
+        "transit_egress_exceeds_legacy_radius": "Same as transit_access_exceeds_legacy_radius, for final walking leg."
+      },
+      "common_service_date": true,
+      "nonlocal_pairs": 888306,
+      "transit_reachable_nonlocal_pairs": 843642,
+      "tracts_without_access_stops": 24,
+      "walk_land_check_available": false,
+      "walk_water_check_available": true,
+      "walk_barrier_check_available": true,
+      "barrier_clear_nonlocal_walk_pairs": 126426,
+      "limitations": [
+        "Expected-time graph, not exact departure-time or real-time routing; median rides and half mean headway are approximations.",
+        "Exact stop-sequence patterns are separate: splitting service patterns can overestimate waiting when several patterns serve the same journey.",
+        "Walking is great-circle distance times a detour factor, not a street/bridge/pedestrian-access route.",
+        "walk_seconds is the complete distance approximation, including potentially impossible pedestrian water crossings; use walk_barrier_checked_seconds for conservative barrier filtering.",
+        "Without supplied land/water geometry, pedestrian legs have not been checked for water barriers. Supplied water coverage is limited to downloaded counties.",
+        "When supplied, land-chord checks are conservative: they may reject genuine bridge or indirect land paths.",
+        "Pickup/drop-off types 1, 2 and 3 are unavailable to unrestricted riders in this model.",
+        "Interlining, timed transfers, schedule correlations, crowding, service reliability, and accessibility are not modeled.",
+        "GTFS minimum-transfer rules conservatively delay all onward transfers from affected arrival states; prohibitions disable all onward transfers there. This prevents walking via a third stop from bypassing a rule, but can overestimate journeys unaffected by the original rule.",
+        "Transit requires at least one actual GTFS ride edge; absent service stays infinite; no invented transit fallback."
+      ]
+    },
+    "analysis": {
+      "city_id": "houston",
+      "city": "Houston",
+      "node_scale": "populated city-limit tract portions",
+      "scenario": "with_transit",
+      "parameters": {
+        "beta_per_usd": 0.1,
+        "omega_usd_per_hour": 15.0,
+        "c0_usd": 1.25,
+        "standardized_transit_fare_usd": 3.0
+      },
+      "access_policy": "uncapped distance, barrier-screened access and egress; every walking leg charged",
+      "walking_transfers": "Automatic transfer links within 400m; explicit GTFS links, transfer restrictions and chained walks retained.",
+      "no_transit_proxy": true,
+      "diagnostics": {
+        "city_id": "houston",
+        "city": "Houston",
+        "scenario": "with_transit",
+        "node_count": 943,
+        "population": 2304580,
+        "transit_selected_pairs": 800482,
+        "nonlocal_pairs": 888306,
+        "transit_selected_percent": 90.11331680749652,
+        "nodes_without_boarding_access": 24,
+        "old_nodes_without_boarding_access": 297,
+        "barrier_flagged_direct_walking_pairs": 67372,
+        "population_weighted_flagged_walking_mass_percent": 3.9452492065017686,
+        "service_dates": [
+          "2026-10-20"
+        ],
+        "bus_routes": 106,
+        "rail_routes": 3,
+        "max_pssi_eigenpair_residual": 3.608611890207336e-13,
+        "transit_access_seconds_selected_median_minutes": 12.223743614255055,
+        "transit_access_seconds_selected_max_minutes": 475.4640817121641,
+        "transit_egress_seconds_selected_median_minutes": 11.984128232920199,
+        "transit_egress_seconds_selected_max_minutes": 465.13837067183334,
+        "transit_selected_pairs_beyond_old_access_radius": 353124,
+        "transit_selected_pairs_beyond_old_egress_radius": 344126,
+        "transit_selected_pairs_beyond_either_old_radius": 549074,
+        "nodes_without_boarding_access_reason": "No boarding stop passes the retained geometric water/land screen; no access distance cutoff remains."
+      },
+      "source_sha256": {
+        "outputs/multicity/walk_access_revision/houston/nodes.csv": "b588de306d5e750eca56404e770c3d27f704c411141e057723c9fdf0786a6398",
+        "outputs/multicity/walk_access_revision/houston/travel/modes.npz": "5611c059e6fe538074d87b9fe3a833f13f28c10b1493493ed5526f659ca7a0bd",
+        "outputs/multicity/walk_access_revision/houston/travel/manifest.json": "73ad8e13869a3628ef0318e4e90a72531804ea4521dcefcd71f6af71b8541d6a"
+      },
+      "nyc_scope": null,
+      "normalization": "Raw PSSI=lambda; normalized PSSI=(lambda-K)/(1-K). K=all city group residents/all city residents. Per-node right eigenvector sum 1; n*v mean 1. Distance Fryer is a separate geography-only model.",
+      "routes_api_calls": 0
+    }
+  },
+  "network_requests": 0,
+  "routes_api_calls": 0
+}

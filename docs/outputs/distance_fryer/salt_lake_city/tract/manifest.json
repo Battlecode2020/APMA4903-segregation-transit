@@ -1,0 +1,34 @@
+{
+  "city_id": "salt_lake_city",
+  "city": "Salt Lake City",
+  "node_scale": "tract",
+  "node_count": 59,
+  "zero_population_nodes_excluded": 0,
+  "city_population": 199723,
+  "source": "outputs/multicity/salt_lake_city/demographics/nodes.csv",
+  "source_sha256": "af8cee326ed51eb3ac5f9421785d4fff59c2bc78934527d6cac87b723d8c6d70",
+  "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+  "graphs": [
+    {
+      "radius_km": 0.5,
+      "undirected_edges": 2,
+      "all_degree_zero_node_count": 55,
+      "all_degree_zero_population": 191119,
+      "mean_all_neighbor_count": 0.06779661016949153
+    },
+    {
+      "radius_km": 1.0,
+      "undirected_edges": 38,
+      "all_degree_zero_node_count": 14,
+      "all_degree_zero_population": 54659,
+      "mean_all_neighbor_count": 1.2881355932203389
+    },
+    {
+      "radius_km": 1.5,
+      "undirected_edges": 101,
+      "all_degree_zero_node_count": 4,
+      "all_degree_zero_population": 5809,
+      "mean_all_neighbor_count": 3.4237288135593222
+    }
+  ]
+}

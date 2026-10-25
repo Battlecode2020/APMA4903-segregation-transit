@@ -1,0 +1,34 @@
+{
+  "city_id": "new_york_city",
+  "city": "New York City",
+  "node_scale": "tract",
+  "node_count": 2292,
+  "zero_population_nodes_excluded": 35,
+  "city_population": 8804190,
+  "source": "outputs/ny_2020/tracts/nodes.csv",
+  "source_sha256": "fe02d5a5073228742c83355a8a7121e19adefbe729bc1d6ff948366095233267",
+  "representative_points": "Census tract internal points",
+  "graphs": [
+    {
+      "radius_km": 0.5,
+      "undirected_edges": 3027,
+      "all_degree_zero_node_count": 367,
+      "all_degree_zero_population": 1377726,
+      "mean_all_neighbor_count": 2.641361256544503
+    },
+    {
+      "radius_km": 1.0,
+      "undirected_edges": 14325,
+      "all_degree_zero_node_count": 32,
+      "all_degree_zero_population": 91740,
+      "mean_all_neighbor_count": 12.5
+    },
+    {
+      "radius_km": 1.5,
+      "undirected_edges": 31577,
+      "all_degree_zero_node_count": 9,
+      "all_degree_zero_population": 21507,
+      "mean_all_neighbor_count": 27.55410122164049
+    }
+  ]
+}

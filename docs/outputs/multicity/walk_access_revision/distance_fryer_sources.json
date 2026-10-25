@@ -1,0 +1,194 @@
+[
+  {
+    "path": "outputs/distance_fryer/philadelphia/block/nodes.csv",
+    "sha256": "7f4d4b276c7d04ec0fda974a8f474c25e8517879f2037af559c6dd1b1f637192"
+  },
+  {
+    "path": "outputs/distance_fryer/philadelphia/block/adjacency_1km.npz",
+    "sha256": "bf86fdb42949d3ee223cfaa5902b158dea3f6d6ecb6803502aa411e344555a79"
+  },
+  {
+    "path": "outputs/distance_fryer/philadelphia/tract/nodes.csv",
+    "sha256": "a50004dda5e029dea98381bafbc831f6a1604b225e1651aaaa07223cca4083cc"
+  },
+  {
+    "path": "outputs/distance_fryer/philadelphia/tract/adjacency_1km.npz",
+    "sha256": "1f41317d6ec4c212c395558ce3ff4617600c444519ef08178b422be6aaa6812f"
+  },
+  {
+    "path": "outputs/distance_fryer/miami/block/nodes.csv",
+    "sha256": "9b23f7df3e64309f126062aca515668dc8be634afad1689e54d8ac453299834c"
+  },
+  {
+    "path": "outputs/distance_fryer/miami/block/adjacency_1km.npz",
+    "sha256": "68365f726d562bc937ca3a01c6e37d1bbcd03bdc6c3442eb110ff9c2fcd1a9b5"
+  },
+  {
+    "path": "outputs/distance_fryer/miami/tract/nodes.csv",
+    "sha256": "fd5704d059ee8b01875072acb5aff8c466aaf23f9f04540f4eb6ee01436d3744"
+  },
+  {
+    "path": "outputs/distance_fryer/miami/tract/adjacency_1km.npz",
+    "sha256": "e3dcb6931f1897f7f6ae373b4a9b23381cf41f6bf0cc703f72e37ad235ab94b3"
+  },
+  {
+    "path": "outputs/distance_fryer/los_angeles/block/nodes.csv",
+    "sha256": "d2a026c1cb25ccd4f38d61287212ebc22eb9837bfac5aa2bcb959b075cf42af3"
+  },
+  {
+    "path": "outputs/distance_fryer/los_angeles/block/adjacency_1km.npz",
+    "sha256": "106d0ebe435a1331fdd8aaaf12492fa64b3d1a20e5ede067c2d9f8a1748d97d4"
+  },
+  {
+    "path": "outputs/distance_fryer/los_angeles/tract/nodes.csv",
+    "sha256": "d84f42d60a248431571a305f9c1c30653b2d716b240043e4acfc3ba6e9ad2eea"
+  },
+  {
+    "path": "outputs/distance_fryer/los_angeles/tract/adjacency_1km.npz",
+    "sha256": "21efb9ecb2bd8fccdae1e798caf60d0ab2c09889de49905fbbe6273813082b46"
+  },
+  {
+    "path": "outputs/distance_fryer/salt_lake_city/block/nodes.csv",
+    "sha256": "38c844db9608cc5c4ae596c7e1a759fd05897a769bfc01acff92050776acbfa1"
+  },
+  {
+    "path": "outputs/distance_fryer/salt_lake_city/block/adjacency_1km.npz",
+    "sha256": "5bd76cb82b475c8892039505776ef6c2b879d8ec1dfb5f685b93c50b50b03bc2"
+  },
+  {
+    "path": "outputs/distance_fryer/salt_lake_city/tract/nodes.csv",
+    "sha256": "888ca49e8eb6a43db2d02420544bbfe33a9d8a46428bfdfac3dd5d34369935c1"
+  },
+  {
+    "path": "outputs/distance_fryer/salt_lake_city/tract/adjacency_1km.npz",
+    "sha256": "2e91eed262b32c69ccc9e96c06a81b78040e0a3df512db312e492edd84eea5bd"
+  },
+  {
+    "path": "outputs/distance_fryer/san_francisco/block/nodes.csv",
+    "sha256": "2618174e612b446992186a6dc3cc4c0c51991117c4b81090334a97b684e501a2"
+  },
+  {
+    "path": "outputs/distance_fryer/san_francisco/block/adjacency_1km.npz",
+    "sha256": "26011b3cf59c24a22f4de7cc65be30b1500f95c4a7755f69b6af5fee14fb8a4b"
+  },
+  {
+    "path": "outputs/distance_fryer/san_francisco/tract/nodes.csv",
+    "sha256": "aaf3c5be624f56d861b31c666b4f711344f5a264b029e927c957388d2708777a"
+  },
+  {
+    "path": "outputs/distance_fryer/san_francisco/tract/adjacency_1km.npz",
+    "sha256": "ce3fd08b200bcb236e9195b6220bc2dd278dc8ebd6133e8566bd55ca5364472d"
+  },
+  {
+    "path": "outputs/distance_fryer/washington_dc/block/nodes.csv",
+    "sha256": "e5638b711f301edadf5cc547e69023166d5dbacbc8b4f79b957e1b5ad5be6361"
+  },
+  {
+    "path": "outputs/distance_fryer/washington_dc/block/adjacency_1km.npz",
+    "sha256": "65fe8ae0161b522dd774f20029157968114fc7932fc024ce689616f78854768e"
+  },
+  {
+    "path": "outputs/distance_fryer/washington_dc/tract/nodes.csv",
+    "sha256": "16bb97602f16ecd496756f789be0bfe98d7fed5a8c1999fb966df41cda2e8824"
+  },
+  {
+    "path": "outputs/distance_fryer/washington_dc/tract/adjacency_1km.npz",
+    "sha256": "b5862cbd836b017158eefef578e2685540eac6d03813bb042700d95480c21482"
+  },
+  {
+    "path": "outputs/distance_fryer/houston/block/nodes.csv",
+    "sha256": "427294dd651e5968d94abfb995b6c028f589fff263d29ed6aaa097c95bcab337"
+  },
+  {
+    "path": "outputs/distance_fryer/houston/block/adjacency_1km.npz",
+    "sha256": "89d3d101b2de0f0b847af1ed114d324b81ce3ce7301acc1544094e8f1cb38841"
+  },
+  {
+    "path": "outputs/distance_fryer/houston/tract/nodes.csv",
+    "sha256": "4b790cc585eb80fc7f7b95d86de1ea51a00347d3b5e961b90bc5e831ab533dbd"
+  },
+  {
+    "path": "outputs/distance_fryer/houston/tract/adjacency_1km.npz",
+    "sha256": "ffc769d5959a5e463505d660f6a61d1cb65de7a87d4c7da5652e5591960943a1"
+  },
+  {
+    "path": "outputs/distance_fryer/detroit/block/nodes.csv",
+    "sha256": "b22e34319c711ea31aa271f22893bcaef4d772d441dabdd28327ff5911614779"
+  },
+  {
+    "path": "outputs/distance_fryer/detroit/block/adjacency_1km.npz",
+    "sha256": "0b96869db3785ffabeeb2407c41ca58a4e1ffa7116923f30fc22eae6a8fd6485"
+  },
+  {
+    "path": "outputs/distance_fryer/detroit/tract/nodes.csv",
+    "sha256": "ed412bf802db4e740fee356c3f501a58aa906ba267211d8c1bbe9557cbf324c3"
+  },
+  {
+    "path": "outputs/distance_fryer/detroit/tract/adjacency_1km.npz",
+    "sha256": "bc8fec4dbd268052bbc4983ceb293accc8ee5d2c9e9f17a39f626554097274e6"
+  },
+  {
+    "path": "outputs/distance_fryer/chicago/block/nodes.csv",
+    "sha256": "234eb26d9a3d1a1663f57229d96f8a3c388265d01d0f86ab5aae8139fffe4a33"
+  },
+  {
+    "path": "outputs/distance_fryer/chicago/block/adjacency_1km.npz",
+    "sha256": "6868a966beafa76e1bfea596c5cd753a7cb3ef6d5863c299f8553a479083820b"
+  },
+  {
+    "path": "outputs/distance_fryer/chicago/tract/nodes.csv",
+    "sha256": "3afe25c47f58e6b528f2fa5d8107a12487b7b7e830d894ba9222d568434e79b8"
+  },
+  {
+    "path": "outputs/distance_fryer/chicago/tract/adjacency_1km.npz",
+    "sha256": "3693aeb83ddee792096472b4f00391e2d1c47ed30b0efe5ad5248720c9eb422f"
+  },
+  {
+    "path": "outputs/distance_fryer/phoenix/block/nodes.csv",
+    "sha256": "d730d55c3046d23a0aff326763ada2ee4f1e953ae586be6b8dc06c111c6a22c2"
+  },
+  {
+    "path": "outputs/distance_fryer/phoenix/block/adjacency_1km.npz",
+    "sha256": "643701e6c85b77eb967c5bb3bdff2ace798c13ff1b4d5a13ee52bcb20049ff6c"
+  },
+  {
+    "path": "outputs/distance_fryer/phoenix/tract/nodes.csv",
+    "sha256": "552472e31b63595566c72fb3a047da881d09ec09275324722754e00c83da4312"
+  },
+  {
+    "path": "outputs/distance_fryer/phoenix/tract/adjacency_1km.npz",
+    "sha256": "9e254bcc92737c8e962913c047b1fc3866d34e8d4f4b00ac0de372e1655e2a42"
+  },
+  {
+    "path": "outputs/distance_fryer/atlanta/block/nodes.csv",
+    "sha256": "a1c2124cc13a88c2bc0962cedb355983df0d8bbb471081304be5059c8b633ec3"
+  },
+  {
+    "path": "outputs/distance_fryer/atlanta/block/adjacency_1km.npz",
+    "sha256": "c5d04e9de08621ecda30886ecdc7fbe94d2960a298474e2b99a6f416a25ea5f8"
+  },
+  {
+    "path": "outputs/distance_fryer/atlanta/tract/nodes.csv",
+    "sha256": "3ba2d6ec4062aea8c05d28cb0beab83fa54a1cd00c4aef098c1dfefc66397b99"
+  },
+  {
+    "path": "outputs/distance_fryer/atlanta/tract/adjacency_1km.npz",
+    "sha256": "a41a563065f94ca86f88e8673e699ccafa50dc772d3d013790a7b724a3afaf8a"
+  },
+  {
+    "path": "outputs/distance_fryer/new_york_city/block/nodes.csv",
+    "sha256": "d01b0a32ef4a979ac64a252d42f124d3c8b7fc064df3073612d30c4eb524ba0d"
+  },
+  {
+    "path": "outputs/distance_fryer/new_york_city/block/adjacency_1km.npz",
+    "sha256": "b128191a4862ae89f29d1273f9bac3f9bf1d44af2100e57148c74f9a08149d00"
+  },
+  {
+    "path": "outputs/distance_fryer/new_york_city/tract/nodes.csv",
+    "sha256": "255c63a60602f68660802709ae89ec72061362b5d1d413d5901d2cd27f412d54"
+  },
+  {
+    "path": "outputs/distance_fryer/new_york_city/tract/adjacency_1km.npz",
+    "sha256": "5b9ac654dbf8f3cceaf5e7a89ff3a7409926cc409348bc7553d12b0b3b99608b"
+  }
+]

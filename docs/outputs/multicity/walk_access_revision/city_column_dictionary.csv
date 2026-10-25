@@ -1,0 +1,28 @@
+column,definition
+city_id,Stable folder and file identifier.
+city,2020 Census incorporated place/city; Washington uses the District of Columbia place.
+node_scale,Populated city-limit tract portions for 11 cities; 70 custom sections for NYC.
+node_count,Number of populated geographic units in this city PSSI model; dimensions of its P and A matrices.
+city_population,"Total 2020 population in the selected city limits, independently validated against the published place total."
+group,"2020 Census category. White, Black and Asian alone include Hispanic residents; Hispanic is any race. Categories overlap."
+population,Number of residents in this category across all populated city tract portions: Nᵣ = Σᵢ Dᵢ pᵢ. Unit: people.
+population_share_K,"Nᵣ / N, where N is the total city population across all tract portions. Fraction from 0 to 1; used in every adjustment."
+segregation_index_with_transit,"Largest eigenvalue of Aᵣ = P diag(pᵣ), with Pᵢⱼ = Fᵢⱼ Dⱼ / Σₖ Fᵢₖ Dₖ. Raw proportion-based spectral score. Walking + transit, uncapped walking access/egress."
+segregation_index_minus_K_with_transit,"Unscaled difference between PSSI and citywide population share. Zero means λ = K; negative values are retained. Walking + transit, uncapped walking access/egress."
+segregation_index_normalized_with_transit,"Requested normalization. Subtract K, then divide the entire difference by 1 − K. Undefined at K = 1; negative values are retained. Walking + transit, uncapped walking access/egress."
+segregation_index_walking_only,"Largest eigenvalue of Aᵣ = P diag(pᵣ), with Pᵢⱼ = Fᵢⱼ Dⱼ / Σₖ Fᵢₖ Dₖ. Raw proportion-based spectral score. Identical walking-only geography."
+segregation_index_minus_K_walking_only,Unscaled difference between PSSI and citywide population share. Zero means λ = K; negative values are retained. Identical walking-only geography.
+segregation_index_normalized_walking_only,"Requested normalization. Subtract K, then divide the entire difference by 1 − K. Undefined at K = 1; negative values are retained. Identical walking-only geography."
+segregation_index_walking_minus_transit,"Largest eigenvalue of Aᵣ = P diag(pᵣ), with Pᵢⱼ = Fᵢⱼ Dⱼ / Σₖ Fᵢₖ Dₖ. Raw proportion-based spectral score. Walking-only score minus walking+transit score; absolute score change."
+segregation_index_minus_K_walking_minus_transit,Unscaled difference between PSSI and citywide population share. Zero means λ = K; negative values are retained. Walking-only score minus walking+transit score; absolute score change.
+segregation_index_normalized_walking_minus_transit,"Requested normalization. Subtract K, then divide the entire difference by 1 − K. Undefined at K = 1; negative values are retained. Walking-only score minus walking+transit score; absolute score change."
+distance_block_fryer_node_count,Block geographic-node model: Number of populated geographic units in the distance-based Fryer model; differs from PSSI for block models and NYC.
+distance_block_fryer_ssi,"Block geographic-node model: Distance-based geographic-neighbor SSI, radius 1 km, dominant category assignment, equal all-neighbor weights, no self-links. Component eigenvalues averaged by eligible assigned-node count; geographic isolates excluded."
+distance_block_fryer_ssi_minus_K,"Block geographic-node model: Distance Fryer SSI minus all-city category population fraction K. Requested adjustment, not simulated null baseline."
+distance_block_fryer_ssi_normalized,Block geographic-node model: (Distance Fryer SSI - K) / (1 - K). K is all-city category population fraction; negative values retained.
+distance_block_status,"Block geographic-node model: ok or undefined_no_eligible_assigned_nodes. Undefined scores are blank/NaN, not zero."
+distance_tract_fryer_node_count,Tract geographic-node model: Number of populated geographic units in the distance-based Fryer model; differs from PSSI for block models and NYC.
+distance_tract_fryer_ssi,"Tract geographic-node model: Distance-based geographic-neighbor SSI, radius 1 km, dominant category assignment, equal all-neighbor weights, no self-links. Component eigenvalues averaged by eligible assigned-node count; geographic isolates excluded."
+distance_tract_fryer_ssi_minus_K,"Tract geographic-node model: Distance Fryer SSI minus all-city category population fraction K. Requested adjustment, not simulated null baseline."
+distance_tract_fryer_ssi_normalized,Tract geographic-node model: (Distance Fryer SSI - K) / (1 - K). K is all-city category population fraction; negative values retained.
+distance_tract_status,"Tract geographic-node model: ok or undefined_no_eligible_assigned_nodes. Undefined scores are blank/NaN, not zero."

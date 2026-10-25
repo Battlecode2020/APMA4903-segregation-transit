@@ -1,0 +1,8 @@
+SFMTA required derivative-data notice:
+Reproduced with permission granted by the City and County of San Francisco.  The information has been provided by means of a nonexclusive, limited, and revocable license granted by the City and County of San Francisco.
+
+The City and County of San Francisco does not guarantee the accuracy, adequacy, completeness or usefulness of any information.  The City and County of San Francisco provides this information "as is," without warranty of any kind, express or implied, including but not limited to warranties of merchantability or fitness for a particular purpose, and assumes no responsibility for anyone's use of the information.
+
+Route and departure data provided by permission of UTA.
+
+Contains information from City of Phoenix / Valley Metro GTFS, made available under the ODC Attribution License.

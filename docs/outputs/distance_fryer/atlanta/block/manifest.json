@@ -1,0 +1,34 @@
+{
+  "city_id": "atlanta",
+  "city": "Atlanta",
+  "node_scale": "block",
+  "node_count": 4713,
+  "zero_population_nodes_excluded": 1393,
+  "city_population": 498715,
+  "source": "outputs/multicity/atlanta/demographics/city_blocks.csv.gz",
+  "source_sha256": "469cd40c53600eebf155206ee9d2bca533b39a60b284cb18033686604c91a4b0",
+  "representative_points": "Census populated-block internal points",
+  "graphs": [
+    {
+      "radius_km": 0.5,
+      "undirected_edges": 38807,
+      "all_degree_zero_node_count": 39,
+      "all_degree_zero_population": 8224,
+      "mean_all_neighbor_count": 16.46806704858901
+    },
+    {
+      "radius_km": 1.0,
+      "undirected_edges": 137796,
+      "all_degree_zero_node_count": 0,
+      "all_degree_zero_population": 0,
+      "mean_all_neighbor_count": 58.47485677912158
+    },
+    {
+      "radius_km": 1.5,
+      "undirected_edges": 291307,
+      "all_degree_zero_node_count": 0,
+      "all_degree_zero_population": 0,
+      "mean_all_neighbor_count": 123.61850201570125
+    }
+  ]
+}

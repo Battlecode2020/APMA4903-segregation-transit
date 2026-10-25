@@ -1,0 +1,5 @@
+scenario,city_id,city,node_scale,group,fryer_majority_ssi,fryer_majority_ssi_minus_K,fryer_majority_ssi_normalized,majority_zone_count,majority_component_count,fryer_status
+with_transit,atlanta,Atlanta,populated city-limit tract portions,white_alone,0.5514101702362498,0.15390859117807032,0.25545061336008434,76,1,ok
+with_transit,atlanta,Atlanta,populated city-limit tract portions,black_alone,0.5442776749604895,0.07203801904478613,0.13649759754075014,88,1,ok
+with_transit,atlanta,Atlanta,populated city-limit tract portions,hispanic_latino_any_race,2.685197945965736e-05,-0.060103683496714105,-0.06394896926156116,1,1,ok
+with_transit,atlanta,Atlanta,populated city-limit tract portions,asian_alone,0.0,-0.04484926260489458,-0.04695516723068009,0,0,no_majority_zones_zero_by_convention

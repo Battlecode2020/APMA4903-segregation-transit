@@ -1,0 +1,148 @@
+{
+  "model": "GTFS pattern graph with mean-headway waiting",
+  "input_fingerprint": {
+    "nodes_sha256": "b53ea0a245845f8aee9c281e25a27e60025e48fe30be1bfc6ff007fcd889521e",
+    "parameters": {
+      "reference_date": "2026-10-20",
+      "window_start": "07:00:00",
+      "window_end": "10:00:00",
+      "walking_speed_kmh": 4.8,
+      "walking_detour": 1.3,
+      "bus_access_km": 1.0,
+      "rail_access_km": 3.0,
+      "transfer_walk_km": 0.4,
+      "entrance_seconds": 60.0,
+      "transfer_buffer_seconds": 60.0,
+      "dijkstra_batch_size": 16,
+      "access_policy": "uncapped",
+      "pedestrian_barrier_policy": "reject"
+    },
+    "feeds": [
+      "785460181e910e47af9172ccb9da0b10aa61ba9d55539fd6b69d0ad181758ef5",
+      "e27b9018c46fcea487a1e375164eac5cbd73187c05a74fe292e1b416cbd6eb9c"
+    ],
+    "land_sha256": null,
+    "water_sha256": "9ea20b3084ce2e2c8142a5b658776c8b47414dc475ada6174a7280ff30e51360",
+    "model_version": 4
+  },
+  "parameters": {
+    "reference_date": "2026-10-20",
+    "window_start": "07:00:00",
+    "window_end": "10:00:00",
+    "walking_speed_kmh": 4.8,
+    "walking_detour": 1.3,
+    "bus_access_km": 1.0,
+    "rail_access_km": 3.0,
+    "transfer_walk_km": 0.4,
+    "entrance_seconds": 60.0,
+    "transfer_buffer_seconds": 60.0,
+    "dijkstra_batch_size": 16,
+    "access_policy": "uncapped",
+    "pedestrian_barrier_policy": "reject"
+  },
+  "feeds": [
+    {
+      "path": "data/multicity/transit/miami_dade.zip",
+      "sha256": "785460181e910e47af9172ccb9da0b10aa61ba9d55539fd6b69d0ad181758ef5",
+      "service_date": "2026-10-20",
+      "patterns": 239,
+      "route_modes": [
+        "bus",
+        "rail"
+      ],
+      "used_routes_by_mode": {
+        "bus": 112,
+        "rail": 4
+      },
+      "published_feed_info": [],
+      "agency_timezones": [
+        "America/New_York"
+      ],
+      "diagnostics": {
+        "scheduled_trip_samples": 2267
+      }
+    },
+    {
+      "path": "data/multicity/transit/tri_rail.zip",
+      "sha256": "e27b9018c46fcea487a1e375164eac5cbd73187c05a74fe292e1b416cbd6eb9c",
+      "service_date": "2026-10-20",
+      "patterns": 6,
+      "route_modes": [
+        "bus",
+        "rail"
+      ],
+      "used_routes_by_mode": {
+        "bus": 1,
+        "rail": 2
+      },
+      "published_feed_info": [
+        {
+          "feed_publisher_name": "ETA Transit Systems",
+          "feed_publisher_url": "https://etatransit.com",
+          "feed_lang": "en",
+          "feed_start_date": "20230531",
+          "feed_end_date": "20261020",
+          "feed_version": "10"
+        }
+      ],
+      "agency_timezones": [
+        "America/New_York"
+      ],
+      "diagnostics": {
+        "scheduled_trip_samples": 36
+      }
+    }
+  ],
+  "nodes": 138,
+  "graph_nodes": 29404,
+  "graph_edges": 76159,
+  "service_patterns": 245,
+  "served_physical_stops": 6882,
+  "pedestrian_transfer_pairs": 16271,
+  "explicit_transfer_rules_applied": 0,
+  "transfer_rule_diagnostics": {},
+  "access_policy": "uncapped",
+  "pedestrian_barrier_policy": "reject",
+  "walking_access_interpretation": "No maximum walking distance for initial access or final egress; every accepted walking second is charged.",
+  "transfer_walking_interpretation": "Automatic inter-stop links use a 0.4km approximate walking radius and geometry checks; explicit GTFS transfer links and chained walks remain. This is not a total interchange-walk cap.",
+  "routing_diagnostics": {
+    "routing_algorithm": "batched temporary origins plus chunked min-plus egress",
+    "base_graph_nodes": 29388,
+    "base_graph_edges": 76159,
+    "maximum_temporary_access_edges": 36377,
+    "maximum_temporary_origins": 16,
+    "finite_journeys_with_access_beyond_legacy_radius": 1409,
+    "finite_journeys_with_egress_beyond_legacy_radius": 1347
+  },
+  "mode_array_definitions": {
+    "transit_seconds": "Minimum modeled walk-access + boarding wait + actual GTFS ride(s), dwell/transfers + walk-egress. At least one ride required; diagonal and absent candidates are infinity.",
+    "transit_access_seconds": "For uncapped output: selected initial walking time plus entrance_seconds, fully included in transit_seconds.",
+    "transit_egress_seconds": "For uncapped output: selected final walking time plus entrance_seconds exit buffer, fully included in transit_seconds.",
+    "transit_first_boarding_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+    "transit_last_alighting_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+    "transit_access_barrier_flag": "For uncapped flag_only output: selected access chord fails supplied land/water screen; false under reject policy because such legs are excluded. False is not validation against streets or barriers outside supplied geometry.",
+    "transit_egress_barrier_flag": "Same as transit_access_barrier_flag, for selected egress chord.",
+    "transit_access_exceeds_legacy_radius": "For uncapped output: selected initial walking distance exceeds old mode-specific bus_access_km/rail_access_km radius. Exit/entrance buffer is excluded from this distance comparison.",
+    "transit_egress_exceeds_legacy_radius": "Same as transit_access_exceeds_legacy_radius, for final walking leg."
+  },
+  "common_service_date": true,
+  "nonlocal_pairs": 18906,
+  "transit_reachable_nonlocal_pairs": 18360,
+  "tracts_without_access_stops": 2,
+  "walk_land_check_available": false,
+  "walk_water_check_available": true,
+  "walk_barrier_check_available": true,
+  "barrier_clear_nonlocal_walk_pairs": 8160,
+  "limitations": [
+    "Expected-time graph, not exact departure-time or real-time routing; median rides and half mean headway are approximations.",
+    "Exact stop-sequence patterns are separate: splitting service patterns can overestimate waiting when several patterns serve the same journey.",
+    "Walking is great-circle distance times a detour factor, not a street/bridge/pedestrian-access route.",
+    "walk_seconds is the complete distance approximation, including potentially impossible pedestrian water crossings; use walk_barrier_checked_seconds for conservative barrier filtering.",
+    "Without supplied land/water geometry, pedestrian legs have not been checked for water barriers. Supplied water coverage is limited to downloaded counties.",
+    "When supplied, land-chord checks are conservative: they may reject genuine bridge or indirect land paths.",
+    "Pickup/drop-off types 1, 2 and 3 are unavailable to unrestricted riders in this model.",
+    "Interlining, timed transfers, schedule correlations, crowding, service reliability, and accessibility are not modeled.",
+    "GTFS minimum-transfer rules conservatively delay all onward transfers from affected arrival states; prohibitions disable all onward transfers there. This prevents walking via a third stop from bypassing a rule, but can overestimate journeys unaffected by the original rule.",
+    "Transit requires at least one actual GTFS ride edge; absent service stays infinite; no invented transit fallback."
+  ]
+}

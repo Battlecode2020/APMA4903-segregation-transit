@@ -1,0 +1,23 @@
+column,definition
+city_id,Stable city directory identifier.
+node_scale,block = populated Census blocks; tract = populated city-limit tract portions. These are separate networks.
+group,"Category assigned to nodes by the largest of White-alone, Black-alone, Hispanic-any-race, Asian-alone counts. Counts themselves overlap; assigned node labels do not."
+matrix_index,"Zero-based position in nodes.csv, adjacency and R; B_node_indices maps each category B to these indices."
+node_id,"Census GEOID preserved as text:15digits block,11digits tract."
+all_neighbor_count,"Number of neighboring nodes of any category within1km, excluding self."
+strict_majority,Whether this category exceeds50% of this node population. Diagnostic only; assignment uses the largest of four counts.
+assigned_to_group,Whether this node is assigned to this category under the dominant-category rule.
+eligible_assigned,Assigned to this category and has at least one geographic neighbor; contributes to the city SSI denominator.
+geographically_isolated,"No other populated city node within1km; excluded from SSI, retained in population counts."
+same_group_neighbor_count,"Number of1km neighbors assigned to this row category, including for rows not assigned themselves."
+component_id,Zero-based connected-component ID within this city/scale/category. -1 when ineligible.
+component_size,Eligible nodes in this same-category component. Zero when ineligible.
+component_eigenvalue,Perron eigenvalue of induced B for this component; same for every node in the component. Blank when ineligible.
+component_eigenvector,"Right Perron vector component, scaled to sum1 within component. Singleton with B=0 uses vector1. Blank when ineligible."
+local_fryer_ssi,component_size*component_eigenvalue*component_eigenvector. Mean over eligible assigned nodes equals citySSI. Can exceed1; no clipping. Blank when ineligible.
+eigenpair_residual,Maximum component absolute residual B*v-lambda*v; repeated for component members.
+population,"Total node population, not category population."
+group_population,"Number of this category residents in this node, regardless of assigned category."
+group_proportion,Node category population/node total population.
+population_share_K,"group_population/city_population, fraction0–1. Uses all residents, not the fraction of assigned nodes or only eligible nodes."
+city_fryer_ssi,"City-level category SSI, repeated for interpretation; not a node eigenvalue."

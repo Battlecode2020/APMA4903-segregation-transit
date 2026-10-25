@@ -1,0 +1,34 @@
+{
+  "city_id": "phoenix",
+  "city": "Phoenix",
+  "node_scale": "block",
+  "node_count": 15806,
+  "zero_population_nodes_excluded": 2646,
+  "city_population": 1608139,
+  "source": "outputs/multicity/phoenix/demographics/city_blocks.csv.gz",
+  "source_sha256": "5ac6bbd50dada3449a89d31f359efde26ec94fa4acba0839f6dcbe91185c77c4",
+  "representative_points": "Census populated-block internal points",
+  "graphs": [
+    {
+      "radius_km": 0.5,
+      "undirected_edges": 142346,
+      "all_degree_zero_node_count": 105,
+      "all_degree_zero_population": 18593,
+      "mean_all_neighbor_count": 18.011641148930785
+    },
+    {
+      "radius_km": 1.0,
+      "undirected_edges": 505955,
+      "all_degree_zero_node_count": 24,
+      "all_degree_zero_population": 3796,
+      "mean_all_neighbor_count": 64.02062507908389
+    },
+    {
+      "radius_km": 1.5,
+      "undirected_edges": 1055008,
+      "all_degree_zero_node_count": 7,
+      "all_degree_zero_population": 1434,
+      "mean_all_neighbor_count": 133.49462229533088
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "city_id": "miami",
+  "city": "Miami",
+  "node_scale": "block",
+  "node_count": 3831,
+  "zero_population_nodes_excluded": 949,
+  "city_population": 442241,
+  "source": "outputs/multicity/miami/demographics/city_blocks.csv.gz",
+  "source_sha256": "085e6e0bf6728187e9ab9bc1395c3b15779986c27187e8d9698aa3b8f623caa1",
+  "representative_points": "Census populated-block internal points",
+  "graphs": [
+    {
+      "radius_km": 0.5,
+      "undirected_edges": 69194,
+      "all_degree_zero_node_count": 2,
+      "all_degree_zero_population": 2,
+      "mean_all_neighbor_count": 36.1232054293918
+    },
+    {
+      "radius_km": 1.0,
+      "undirected_edges": 249454,
+      "all_degree_zero_node_count": 1,
+      "all_degree_zero_population": 1,
+      "mean_all_neighbor_count": 130.22918298094493
+    },
+    {
+      "radius_km": 1.5,
+      "undirected_edges": 520981,
+      "all_degree_zero_node_count": 1,
+      "all_degree_zero_population": 1,
+      "mean_all_neighbor_count": 271.9817280083529
+    }
+  ]
+}

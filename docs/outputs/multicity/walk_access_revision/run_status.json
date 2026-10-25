@@ -1,0 +1,20 @@
+{
+  "completed_cities": [
+    "philadelphia",
+    "miami",
+    "los_angeles",
+    "salt_lake_city",
+    "san_francisco",
+    "washington_dc",
+    "houston",
+    "detroit",
+    "chicago",
+    "phoenix",
+    "atlanta",
+    "new_york_city"
+  ],
+  "city_count": 12,
+  "scenario_category_rows": 96,
+  "paired_category_rows": 48,
+  "routes_api_calls": 0
+}

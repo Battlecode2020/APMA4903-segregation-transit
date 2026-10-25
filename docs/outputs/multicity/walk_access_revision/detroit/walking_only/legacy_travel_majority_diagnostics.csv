@@ -1,0 +1,5 @@
+scenario,city_id,city,node_scale,group,fryer_majority_ssi,fryer_majority_ssi_minus_K,fryer_majority_ssi_normalized,majority_zone_count,majority_component_count,fryer_status
+walking_only,detroit,Detroit,populated city-limit tract portions,white_alone,0.14303810841138576,0.0360034931411119,0.040319024406538534,9,1,ok
+walking_only,detroit,Detroit,populated city-limit tract portions,black_alone,0.9340376128412403,0.15712405635418247,0.7043191593355025,229,1,ok
+walking_only,detroit,Detroit,populated city-limit tract portions,hispanic_latino_any_race,0.5096906570834122,0.4294714150425148,0.46692802749588613,16,1,ok
+walking_only,detroit,Detroit,populated city-limit tract portions,asian_alone,0.09671704781149007,0.08076833154780505,0.08207736007531861,1,1,ok

@@ -1,0 +1,320 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
+\usepackage{booktabs}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\setlist{itemsep=0.25em,topsep=0.35em}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\R}{\mathbb{R}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\title{A Chance-Adjusted Normalization of PSSI\\[0.3em]
+\large Motivation, aggregation consistency, and a uniqueness theorem}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\vspace{-1.5em}
+
+\section{Motivation: distinguish population composition from excess segregation}
+
+Raw PSSI is sensitive to the population share of the racial group being studied.
+A group that comprises a larger fraction of a city has more opportunities for
+same-group interaction, even under random mixing. Consequently, a larger raw
+score can reflect a larger population share rather than a stronger departure
+from random mixing. A city that is 30\% Black should not automatically be judged
+more segregated than a city that is 10\% Black merely because its raw PSSI is
+higher.
+
+For the project formulation, let $P$ be a nonnegative row-stochastic interaction
+matrix, let $r_i$ be the studied group's population proportion in unit $i$, and
+write
+\begin{equation}
+ A=P\operatorname{diag}(r),\qquad \lambda=\rho(A),
+ \label{eq:raw}
+\end{equation}
+where $\rho$ is the spectral radius. If every unit has the same group proportion
+$x$, then
+\[
+ A=xP,\qquad \lambda=x\rho(P)=x.
+\]
+Thus even perfectly uniform local composition produces a raw score of $0.10$
+when $x=0.10$ and $0.30$ when $x=0.30$. This establishes a composition effect;
+it does not assert that a larger group share always dominates every other
+difference between two cities.
+
+Echenique and Fryer explicitly discuss composition sensitivity and estimate a
+random-allocation baseline for SSI \cite[Section VI.B, manuscript p.~25]{EF}. Here the objective
+is to calibrate the chosen raw statistic against a city-specific null model
+while preserving its arithmetic aggregation structure.
+
+\section{The reference model and notation}
+
+Fix one city and one studied group. Let $Q_0$ be a specified random-mixing model,
+and let $\Lambda$ denote the raw PSSI produced by a random configuration drawn
+from $Q_0$. Distinguish the observed value $\lambda$ from this random variable.
+Define
+\begin{equation}
+ m_0=\E_0[\Lambda],\qquad 0\leq m_0<1.
+ \label{eq:baseline}
+\end{equation}
+The desired normalization is a function $\mu:[0,1]\to\R$. Negative values are
+allowed because a configuration may score below its random-mixing baseline.
+All expectations and uses of $\mu$ below refer to this same fixed calibration.
+
+One concrete null model fixes the interaction matrix $P$, the population $n_i>0$
+of each unit, and the city's total group count $K$. With $N=\sum_i n_i$, assign
+the $K$ group labels uniformly to the $N$ population slots. If $B_i$ is the
+random group count in unit $i$, then
+\[
+ \Prob_0(B_1=b_1,\ldots,B_m=b_m)
+ =\frac{\prod_{i=1}^{m}\binom{n_i}{b_i}}{\binom{N}{K}},
+ \qquad \sum_i b_i=K.
+\]
+Compute $\Lambda$ using the same raw-statistic definition as for the observed
+city. This preserves local population totals and the citywide group share.
+The theorem below applies to any specified $Q_0$ satisfying
+\eqref{eq:baseline}; this particular allocation model is a substantive choice.
+
+Uniform composition and random allocation are different reference points.
+Although $\E_0[B_i/n_i]=K/N$, in general
+\[
+ \E_0\!\left[\rho\!\left(P\operatorname{diag}(B_i/n_i)\right)\right]
+ \ne
+ \rho\!\left(P\operatorname{diag}(\E_0[B_i/n_i])\right).
+\]
+Accordingly, the baseline is $m_0$, not automatically the population share $K/N$.
+
+The reference value $1$ is justified by the bound
+\[
+ 0\leq\rho(A)\leq\|A\|_{\infty}
+ =\max_i\sum_jP_{ij}r_j\leq1.
+\]
+It is a universal upper bound, not necessarily an attainable value for a
+particular fixed city.
+
+\section{Three axioms for the normalization}
+
+\paragraph{Axiom 1: preservation of weighted averages.}
+For every positive integer $k$, every $y_1,\ldots,y_k\in[0,1]$, and every
+$w_1,\ldots,w_k\geq0$ with $\sum_iw_i=1$, require
+\begin{equation}
+ \boxed{\displaystyle
+ \mu\!\left(\sum_{i=1}^{k}w_i y_i\right)
+ =\sum_{i=1}^{k}w_i\mu(y_i).}
+ \label{eq:averaging}
+\end{equation}
+An aggregate score should have the same normalized value whether one first
+aggregates the raw scores and then normalizes, or first normalizes the scores
+and then aggregates using the original weights. This preserves the
+interpretation of those weights and avoids introducing an additional
+preference for dispersion among component scores. The connection to SSI's
+component decomposition is made precise in Section~\ref{sec:components}.
+
+This is an axiom about averaging \emph{scores under one calibration}. It does
+not claim that the spectral radius of an average of matrices equals the average
+of their spectral radii, or that physically merging cities averages their scores.
+
+\paragraph{Axiom 2: zero expectation under random mixing.}
+Require
+\begin{equation}
+ \boxed{\E_0[\mu(\Lambda)]=0.}
+ \label{eq:zero}
+\end{equation}
+Random configurations should have adjusted score zero on average. Applying
+this requirement separately to each city removes differences in their expected
+random baselines. It does not require every random configuration to receive
+zero, and it does not require the full distributions of adjusted scores to be
+identical across cities. The notation $\E_0[\mu(\Lambda)]$ makes explicit which
+random quantity is being averaged.
+
+\paragraph{Axiom 3: preservation of the upper reference.}
+Require
+\begin{equation}
+ \boxed{\mu(1)=1.}
+ \label{eq:upper}
+\end{equation}
+The universal upper reference remains one, providing a common endpoint and
+fixing the scale of the adjusted index. When $1$ is unattainable under a city's
+constraints, this is a calibration at a theoretical reference value. It does
+not assert that the city's largest feasible adjusted score must equal one.
+
+\section{Why weighted averages matter for SSI}
+\label{sec:components}
+
+Echenique and Fryer state:
+\begin{quote}
+``The SSI is the weighted average of the SSI by connected component
+\ldots\ weighting each component by how many individuals it has.''
+\end{quote}
+\hfill\cite[footnote 9, author-posted manuscript p.~14]{EF}
+
+Their Proposition~4 gives the decomposition into component eigenvalues.
+Let $C_1,\ldots,C_k$ be the connected components of the studied group's
+interaction graph, let $v_i=|C_i|$, and let $\lambda_i$ be the spectral radius
+of its component matrix. In our notation, their aggregate SSI is
+\begin{equation}
+ S=\sum_{i=1}^{k}w_i\lambda_i,
+ \qquad w_i=\frac{v_i}{\sum_{j=1}^{k}v_j}.
+ \label{eq:EF}
+\end{equation}
+The weights count members of the studied group in each component.
+
+\begin{proposition}[Consistency with component aggregation]
+Use a single city-level normalization $\mu$ for the component scores and the
+aggregate score in \eqref{eq:EF}. If Axiom~1 holds, the original component
+weights also aggregate the normalized scores:
+\[
+ \mu(S)=\sum_{i=1}^{k}\frac{v_i}{\sum_jv_j}\,\mu(\lambda_i).
+\]
+\end{proposition}
+\begin{proof}
+The weights $w_i=v_i/\sum_jv_j$ are nonnegative and sum to one. Substitute
+$S=\sum_iw_i\lambda_i$ into \eqref{eq:averaging}. Thus normalizing before or
+after component aggregation produces exactly the same answer.
+\end{proof}
+
+For example, two components with weights $1/4$ and $3/4$ and raw scores $0.4$
+and $0.8$ have aggregate score $0.7$. Axiom~1 requires
+\[
+ \mu(0.7)=\tfrac14\mu(0.4)+\tfrac34\mu(0.8).
+\]
+A nonlinear change of scale can violate this identity: squaring first gives
+$\tfrac14(0.4)^2+\tfrac34(0.8)^2=0.52$, whereas squaring the aggregate gives
+$(0.7)^2=0.49$. A positive affine calibration of the squared values leaves
+this discrepancy nonzero. The adjusted aggregate would then depend on the
+order of normalization and aggregation.
+
+\paragraph{Scope of this connection.}
+The same city-level $\mu$ must be used throughout. Independently calibrating
+each component to its own null mean generally produces different functions
+$\mu_i$ and does not preserve \eqref{eq:EF} with the original weights. In
+particular, the city-centered component scores need not each have null mean
+zero. Our averaging axiom is a requirement for the normalization; it is distinct
+from the authors' axiom named \emph{Linearity}, which defines the underlying SSI.
+
+Also, a single global spectral radius and the aggregate in \eqref{eq:EF}
+are different constructions on a disconnected graph:
+\[
+ \rho\!\left(\operatorname{diag}(A_1,\ldots,A_k)\right)
+ =\max_i\rho(A_i),
+ \qquad
+ S=\sum_i w_i\rho(A_i).
+\]
+The normalization theorem applies to either raw statistic in $[0,1]$. The
+component-aggregation proposition applies when the chosen raw statistic
+actually uses \eqref{eq:EF}; it does not turn the project's single global
+spectral radius into a component average. The null simulations must use
+whichever raw definition is selected.
+
+\section{Derivation and uniqueness}
+
+\begin{theorem}[Unique averaging-consistent, chance-adjusted normalization]
+Let $\Lambda\in[0,1]$ have a specified null distribution $Q_0$ with
+$m_0=\E_0[\Lambda]<1$. There is exactly one function
+$\mu:[0,1]\to\R$ satisfying Axioms~1--3. It is
+\begin{equation}
+ \boxed{\displaystyle
+ \mu(\lambda)=\frac{\lambda-m_0}{1-m_0}.}
+ \label{eq:result}
+\end{equation}
+In particular, the axioms imply an affine transformation without separately
+assuming continuity, differentiability, or monotonicity.
+\end{theorem}
+
+\begin{proof}
+\textit{Necessity.}
+Every $\lambda\in[0,1]$ is a weighted average of the endpoints:
+\[
+ \lambda=\lambda\cdot1+(1-\lambda)\cdot0.
+\]
+Axiom~1 therefore implies
+\[
+ \mu(\lambda)=\lambda\mu(1)+(1-\lambda)\mu(0).
+\]
+By Axiom~3, $\mu(1)=1$. Writing $b=\mu(0)$ yields
+\begin{equation}
+ \mu(\lambda)=\lambda+(1-\lambda)b
+             =(1-b)\lambda+b.
+ \label{eq:affine}
+\end{equation}
+Thus weighted-average consistency already forces an affine function.
+Taking the null expectation and using Axiom~2 gives
+\[
+ 0=\E_0[\mu(\Lambda)]
+  =m_0+(1-m_0)b.
+\]
+Since $m_0<1$, this equation has the unique solution
+\[
+ b=-\frac{m_0}{1-m_0}.
+\]
+Substituting into \eqref{eq:affine},
+\[
+ \mu(\lambda)
+ =\lambda-\frac{m_0(1-\lambda)}{1-m_0}
+ =\frac{\lambda-m_0}{1-m_0}.
+\]
+Hence every function satisfying the axioms must have the form
+\eqref{eq:result}.
+
+\textit{Existence.}
+Conversely, define $\mu$ by \eqref{eq:result}. For admissible weights,
+\begin{align*}
+ \mu\!\left(\sum_iw_i y_i\right)
+ &=\frac{\sum_iw_i y_i-m_0}{1-m_0}\\
+ &=\sum_iw_i\frac{y_i-m_0}{1-m_0}
+ =\sum_iw_i\mu(y_i),
+\end{align*}
+where the second equality uses $\sum_iw_i=1$. Furthermore,
+\[
+ \E_0[\mu(\Lambda)]
+ =\frac{\E_0[\Lambda]-m_0}{1-m_0}=0,
+ \qquad
+ \mu(1)=\frac{1-m_0}{1-m_0}=1.
+\]
+All three axioms hold, completing the existence and uniqueness proof.
+\end{proof}
+
+\paragraph{Interpretation and limits.}
+The numerator is excess PSSI above its random-mixing mean; the denominator is
+the gap from that mean to the universal upper reference. The result is
+\emph{affine} in the raw score (often called a linear normalization), with
+positive slope $1/(1-m_0)$. It has $\mu(m_0)=0$, preserves ordering under a
+fixed calibration, and may be negative. For every city $c$ with its own null
+mean $m_{0,c}<1$,
+\[
+ \E_{0,c}\!\left[\frac{\Lambda_c-m_{0,c}}{1-m_{0,c}}\right]=0.
+\]
+This is exact calibration of expected random baselines, not a proof of
+population-share invariance under every segregated alternative. If $m_0=1$,
+boundedness implies $\Lambda=1$ almost surely, so Axioms~2 and~3 contradict
+each other; the exclusion of this case is necessary.
+
+In computation, estimate $m_0$ by averaging PSSI over independent null
+simulations and substitute that estimate in \eqref{eq:result}. The exact
+theorem concerns the true expectation; a simulated mean introduces numerical
+approximation error.
+
+\begin{thebibliography}{9}
+\bibitem{EF}
+Federico Echenique and Roland G. Fryer, Jr. (2007).
+\emph{A Measure of Segregation Based on Social Interactions}.
+\emph{The Quarterly Journal of Economics}, 122(2), 441--485.
+\href{https://doi.org/10.1162/qjec.122.2.441}{doi:10.1162/qjec.122.2.441}.
+\href{https://eml.berkeley.edu/~fechenique/published/echenique-fryer-qje.pdf}{Author-posted manuscript}
+(dated June 2006, with publication information on its cover).
+The quotation is from footnote~9 on manuscript p.~14; the component formula
+is Proposition~4 on manuscript p.~32. These page numbers refer to the
+author-posted manuscript, not the journal pagination.
+\end{thebibliography}
+
+\end{document}

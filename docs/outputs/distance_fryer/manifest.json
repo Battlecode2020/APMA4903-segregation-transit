@@ -1,0 +1,842 @@
+{
+  "census_year": 2020,
+  "geography": "2020 city limits; New York is all five boroughs. No metropolitan suburbs.",
+  "primary": "Populated Census blocks, 1 km threshold. Tract-level companion and 0.5/1.5 km sensitivity retain separate labels.",
+  "neighbor_rule": "Distinct nodes at great-circle distance <= radius; no self-loops. Earth radius6378.1km matching authors neighbors.m. Block model uses Census block internal points; 11-city tract companion uses the existing populated-block representative near each population centroid; NYC tract companion uses Census tract internal points. None are household locations.",
+  "weights": "R_ij=1/d_i for each geographic neighbor, where d_i counts ALL populated neighbors. Restrict to assigned-category nodes without renormalization. No population, fare, travel-time, or transit weights.",
+  "classification": "Dominant/plurality among White alone, Black alone, Asian alone, Hispanic any race. Largest count wins; ties prefer Hispanic, then Asian, Black, White. This explicit convention matches a 10000-row sample of author published labels, including labels below50%; original preprocessing code unavailable. All-four-zero nodes stay other/unclassified and remain in degree counts. Categories overlap in population counts but each node gets only one label.",
+  "isolates": "As authors neighbors.m lines64-69, exclude all-neighbor-degree-zero nodes from the SSI denominator. Nodes with out-group neighbors only remain eligible with local SSI0. No eligible assigned nodes => undefined/NaN, not a fabricated zero.",
+  "city_score": "Sum over eligible same-category connected components of (component size / eligible assigned node count) * component Perron eigenvalue.",
+  "local_score": "Paper Appendix1: |component| * component eigenvalue * sum-one right eigenvector. Other-category and geographic-isolate local scores undefined. The authors final littlesi data restores the component-size factor omitted from their MATLAB intermediate export.",
+  "population_adjustments": "K=all city category residents/all city residents, including nodes excluded from SSI denominator. Requested adjustment=SSI-K. Normalization=(SSI-K)/(1-K). Paper simulated null baseline is not equal to K in general and is not calculated.",
+  "limitations": [
+    "Census2020 race-alone includes Hispanic; categories overlap.",
+    "City boundaries omit neighbors outsidecity; border effects remain.",
+    "Equal block weights ignore block population density.",
+    "Straight-line neighbor connections may crosswater; no pedestrian routing or transit here.",
+    "Tract aggregation and node classification differ from the original 2000 MSA implementation."
+  ],
+  "paper_url": "https://eml.berkeley.edu/~fechenique/published/echenique-fryer-qje.pdf",
+  "author_code_metadata": "data/references/fryer/citations.json",
+  "sources": [
+    {
+      "city_id": "philadelphia",
+      "city": "Philadelphia",
+      "node_scale": "block",
+      "node_count": 14549,
+      "zero_population_nodes_excluded": 3005,
+      "city_population": 1603797,
+      "source": "outputs/multicity/philadelphia/demographics/city_blocks.csv.gz",
+      "source_sha256": "92b26b125b117d35973ba5f6e43418869f8b1a7f916b826e354b6d9ec4086dff",
+      "representative_points": "Census populated-block internal points",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 433174,
+          "all_degree_zero_node_count": 21,
+          "all_degree_zero_population": 3296,
+          "mean_all_neighbor_count": 59.546910440580106
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 1565240,
+          "all_degree_zero_node_count": 2,
+          "all_degree_zero_population": 6,
+          "mean_all_neighbor_count": 215.16805278713315
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 3235586,
+          "all_degree_zero_node_count": 1,
+          "all_degree_zero_population": 3,
+          "mean_all_neighbor_count": 444.78465873943225
+        }
+      ]
+    },
+    {
+      "city_id": "philadelphia",
+      "city": "Philadelphia",
+      "node_scale": "tract",
+      "node_count": 403,
+      "zero_population_nodes_excluded": 0,
+      "city_population": 1603797,
+      "source": "outputs/multicity/philadelphia/demographics/nodes.csv",
+      "source_sha256": "bd1dfbbea630fbdbb40ba5ef32cc3e37f49e55a1c7f7d91353f564520b501257",
+      "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 126,
+          "all_degree_zero_node_count": 259,
+          "all_degree_zero_population": 1084310,
+          "mean_all_neighbor_count": 0.6253101736972705
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 918,
+          "all_degree_zero_node_count": 19,
+          "all_degree_zero_population": 68351,
+          "mean_all_neighbor_count": 4.555831265508685
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 2138,
+          "all_degree_zero_node_count": 3,
+          "all_degree_zero_population": 7820,
+          "mean_all_neighbor_count": 10.610421836228287
+        }
+      ]
+    },
+    {
+      "city_id": "miami",
+      "city": "Miami",
+      "node_scale": "block",
+      "node_count": 3831,
+      "zero_population_nodes_excluded": 949,
+      "city_population": 442241,
+      "source": "outputs/multicity/miami/demographics/city_blocks.csv.gz",
+      "source_sha256": "085e6e0bf6728187e9ab9bc1395c3b15779986c27187e8d9698aa3b8f623caa1",
+      "representative_points": "Census populated-block internal points",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 69194,
+          "all_degree_zero_node_count": 2,
+          "all_degree_zero_population": 2,
+          "mean_all_neighbor_count": 36.1232054293918
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 249454,
+          "all_degree_zero_node_count": 1,
+          "all_degree_zero_population": 1,
+          "mean_all_neighbor_count": 130.22918298094493
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 520981,
+          "all_degree_zero_node_count": 1,
+          "all_degree_zero_population": 1,
+          "mean_all_neighbor_count": 271.9817280083529
+        }
+      ]
+    },
+    {
+      "city_id": "miami",
+      "city": "Miami",
+      "node_scale": "tract",
+      "node_count": 138,
+      "zero_population_nodes_excluded": 0,
+      "city_population": 442241,
+      "source": "outputs/multicity/miami/demographics/nodes.csv",
+      "source_sha256": "273d91e1b876e4d7da55bbb8bfa6004e432b860fa66cfad2642a97a3d7886ff5",
+      "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 63,
+          "all_degree_zero_node_count": 92,
+          "all_degree_zero_population": 315872,
+          "mean_all_neighbor_count": 0.9130434782608695
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 338,
+          "all_degree_zero_node_count": 6,
+          "all_degree_zero_population": 17644,
+          "mean_all_neighbor_count": 4.898550724637682
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 691,
+          "all_degree_zero_node_count": 2,
+          "all_degree_zero_population": 3,
+          "mean_all_neighbor_count": 10.014492753623188
+        }
+      ]
+    },
+    {
+      "city_id": "los_angeles",
+      "city": "Los Angeles",
+      "node_scale": "block",
+      "node_count": 23843,
+      "zero_population_nodes_excluded": 4244,
+      "city_population": 3898747,
+      "source": "outputs/multicity/los_angeles/demographics/city_blocks.csv.gz",
+      "source_sha256": "b278eab9b38a7fc55a9d6ff17e0e3e5bead277608af5ba9dc418176ccfaef0c8",
+      "representative_points": "Census populated-block internal points",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 287181,
+          "all_degree_zero_node_count": 101,
+          "all_degree_zero_population": 20820,
+          "mean_all_neighbor_count": 24.08933439583945
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 1049900,
+          "all_degree_zero_node_count": 10,
+          "all_degree_zero_population": 498,
+          "mean_all_neighbor_count": 88.06777670595143
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 2207550,
+          "all_degree_zero_node_count": 5,
+          "all_degree_zero_population": 34,
+          "mean_all_neighbor_count": 185.1738455731242
+        }
+      ]
+    },
+    {
+      "city_id": "los_angeles",
+      "city": "Los Angeles",
+      "node_scale": "tract",
+      "node_count": 1114,
+      "zero_population_nodes_excluded": 0,
+      "city_population": 3898747,
+      "source": "outputs/multicity/los_angeles/demographics/nodes.csv",
+      "source_sha256": "99b2580480043d2a0489fab5265a68786abdd532fb3b028313b9f71cdc93280e",
+      "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 365,
+          "all_degree_zero_node_count": 690,
+          "all_degree_zero_population": 2535271,
+          "mean_all_neighbor_count": 0.6552962298025135
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 2323,
+          "all_degree_zero_node_count": 115,
+          "all_degree_zero_population": 405719,
+          "mean_all_neighbor_count": 4.170556552962298
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 5359,
+          "all_degree_zero_node_count": 18,
+          "all_degree_zero_population": 44961,
+          "mean_all_neighbor_count": 9.621184919210053
+        }
+      ]
+    },
+    {
+      "city_id": "salt_lake_city",
+      "city": "Salt Lake City",
+      "node_scale": "block",
+      "node_count": 2092,
+      "zero_population_nodes_excluded": 389,
+      "city_population": 199723,
+      "source": "outputs/multicity/salt_lake_city/demographics/city_blocks.csv.gz",
+      "source_sha256": "6459c541991aa71cc054061078d546fa8634408b75fc3b8daabd6564f272901f",
+      "representative_points": "Census populated-block internal points",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 24079,
+          "all_degree_zero_node_count": 21,
+          "all_degree_zero_population": 1360,
+          "mean_all_neighbor_count": 23.020076481835563
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 86792,
+          "all_degree_zero_node_count": 9,
+          "all_degree_zero_population": 334,
+          "mean_all_neighbor_count": 82.97514340344168
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 177668,
+          "all_degree_zero_node_count": 5,
+          "all_degree_zero_population": 258,
+          "mean_all_neighbor_count": 169.8546845124283
+        }
+      ]
+    },
+    {
+      "city_id": "salt_lake_city",
+      "city": "Salt Lake City",
+      "node_scale": "tract",
+      "node_count": 59,
+      "zero_population_nodes_excluded": 0,
+      "city_population": 199723,
+      "source": "outputs/multicity/salt_lake_city/demographics/nodes.csv",
+      "source_sha256": "af8cee326ed51eb3ac5f9421785d4fff59c2bc78934527d6cac87b723d8c6d70",
+      "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 2,
+          "all_degree_zero_node_count": 55,
+          "all_degree_zero_population": 191119,
+          "mean_all_neighbor_count": 0.06779661016949153
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 38,
+          "all_degree_zero_node_count": 14,
+          "all_degree_zero_population": 54659,
+          "mean_all_neighbor_count": 1.2881355932203389
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 101,
+          "all_degree_zero_node_count": 4,
+          "all_degree_zero_population": 5809,
+          "mean_all_neighbor_count": 3.4237288135593222
+        }
+      ]
+    },
+    {
+      "city_id": "san_francisco",
+      "city": "San Francisco",
+      "node_scale": "block",
+      "node_count": 5133,
+      "zero_population_nodes_excluded": 853,
+      "city_population": 873965,
+      "source": "outputs/multicity/san_francisco/demographics/city_blocks.csv.gz",
+      "source_sha256": "9ad9622bb6b1170752b854241fb17e24d04496a1313a0da8fe3b4962801a169c",
+      "representative_points": "Census populated-block internal points",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 111274,
+          "all_degree_zero_node_count": 7,
+          "all_degree_zero_population": 1736,
+          "mean_all_neighbor_count": 43.35632183908046
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 411815,
+          "all_degree_zero_node_count": 3,
+          "all_degree_zero_population": 1631,
+          "mean_all_neighbor_count": 160.45782193648938
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 873851,
+          "all_degree_zero_node_count": 0,
+          "all_degree_zero_population": 0,
+          "mean_all_neighbor_count": 340.4835378920709
+        }
+      ]
+    },
+    {
+      "city_id": "san_francisco",
+      "city": "San Francisco",
+      "node_scale": "tract",
+      "node_count": 241,
+      "zero_population_nodes_excluded": 0,
+      "city_population": 873965,
+      "source": "outputs/multicity/san_francisco/demographics/nodes.csv",
+      "source_sha256": "9b6bf3bd9e9f2c150de0bf9420ea83746b23745424f3b3baa2271d6d5648ef82",
+      "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 235,
+          "all_degree_zero_node_count": 83,
+          "all_degree_zero_population": 344695,
+          "mean_all_neighbor_count": 1.950207468879668
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 1076,
+          "all_degree_zero_node_count": 4,
+          "all_degree_zero_population": 10010,
+          "mean_all_neighbor_count": 8.929460580912863
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 2309,
+          "all_degree_zero_node_count": 1,
+          "all_degree_zero_population": 2747,
+          "mean_all_neighbor_count": 19.16182572614108
+        }
+      ]
+    },
+    {
+      "city_id": "washington_dc",
+      "city": "Washington, DC",
+      "node_scale": "block",
+      "node_count": 4500,
+      "zero_population_nodes_excluded": 1512,
+      "city_population": 689545,
+      "source": "outputs/multicity/washington_dc/demographics/city_blocks.csv.gz",
+      "source_sha256": "cd160f471db86d9d46954f5773f01723f45b26121572d791e043c968a48c3449",
+      "representative_points": "Census populated-block internal points",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 70240,
+          "all_degree_zero_node_count": 7,
+          "all_degree_zero_population": 1097,
+          "mean_all_neighbor_count": 31.217777777777776
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 248165,
+          "all_degree_zero_node_count": 0,
+          "all_degree_zero_population": 0,
+          "mean_all_neighbor_count": 110.29555555555555
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 501520,
+          "all_degree_zero_node_count": 0,
+          "all_degree_zero_population": 0,
+          "mean_all_neighbor_count": 222.89777777777778
+        }
+      ]
+    },
+    {
+      "city_id": "washington_dc",
+      "city": "Washington, DC",
+      "node_scale": "tract",
+      "node_count": 206,
+      "zero_population_nodes_excluded": 0,
+      "city_population": 689545,
+      "source": "outputs/multicity/washington_dc/demographics/nodes.csv",
+      "source_sha256": "7107bd8be4b0dbdd1bcbd6f2b1c3a9e5bac1c611188cd67fd609250c3aafc900",
+      "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 88,
+          "all_degree_zero_node_count": 100,
+          "all_degree_zero_population": 348793,
+          "mean_all_neighbor_count": 0.8543689320388349
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 544,
+          "all_degree_zero_node_count": 10,
+          "all_degree_zero_population": 38771,
+          "mean_all_neighbor_count": 5.281553398058253
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 1167,
+          "all_degree_zero_node_count": 0,
+          "all_degree_zero_population": 0,
+          "mean_all_neighbor_count": 11.330097087378642
+        }
+      ]
+    },
+    {
+      "city_id": "houston",
+      "city": "Houston",
+      "node_scale": "block",
+      "node_count": 19808,
+      "zero_population_nodes_excluded": 9696,
+      "city_population": 2304580,
+      "source": "outputs/multicity/houston/demographics/city_blocks.csv.gz",
+      "source_sha256": "b8e0e24fbf2054cfb146cbdb8a0a0f9be43c04a4d57046af3e4c89e2a7cb03fc",
+      "representative_points": "Census populated-block internal points",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 214317,
+          "all_degree_zero_node_count": 395,
+          "all_degree_zero_population": 64099,
+          "mean_all_neighbor_count": 21.63943861066236
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 751918,
+          "all_degree_zero_node_count": 87,
+          "all_degree_zero_population": 6446,
+          "mean_all_neighbor_count": 75.92063812600969
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 1554703,
+          "all_degree_zero_node_count": 31,
+          "all_degree_zero_population": 1397,
+          "mean_all_neighbor_count": 156.97728190630048
+        }
+      ]
+    },
+    {
+      "city_id": "houston",
+      "city": "Houston",
+      "node_scale": "tract",
+      "node_count": 943,
+      "zero_population_nodes_excluded": 0,
+      "city_population": 2304580,
+      "source": "outputs/multicity/houston/demographics/nodes.csv",
+      "source_sha256": "4a21c3878bf10d075cd97dc8d441ef6d683b8792da62e2d16baa5f426bd1e8b2",
+      "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 105,
+          "all_degree_zero_node_count": 770,
+          "all_degree_zero_population": 1993222,
+          "mean_all_neighbor_count": 0.22269353128313893
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 636,
+          "all_degree_zero_node_count": 311,
+          "all_degree_zero_population": 756446,
+          "mean_all_neighbor_count": 1.3488865323435844
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 1574,
+          "all_degree_zero_node_count": 114,
+          "all_degree_zero_population": 207971,
+          "mean_all_neighbor_count": 3.3382820784729588
+        }
+      ]
+    },
+    {
+      "city_id": "detroit",
+      "city": "Detroit",
+      "node_scale": "block",
+      "node_count": 11287,
+      "zero_population_nodes_excluded": 3070,
+      "city_population": 639111,
+      "source": "outputs/multicity/detroit/demographics/city_blocks.csv.gz",
+      "source_sha256": "5ba020b9a8388e290fbabde890db3d6d2c91ffea518afb6319f1bba1205ed865",
+      "representative_points": "Census populated-block internal points",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 159591,
+          "all_degree_zero_node_count": 3,
+          "all_degree_zero_population": 99,
+          "mean_all_neighbor_count": 28.278727739877734
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 594664,
+          "all_degree_zero_node_count": 0,
+          "all_degree_zero_population": 0,
+          "mean_all_neighbor_count": 105.37148932400106
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 1268192,
+          "all_degree_zero_node_count": 0,
+          "all_degree_zero_population": 0,
+          "mean_all_neighbor_count": 224.71728537255248
+        }
+      ]
+    },
+    {
+      "city_id": "detroit",
+      "city": "Detroit",
+      "node_scale": "tract",
+      "node_count": 269,
+      "zero_population_nodes_excluded": 0,
+      "city_population": 639111,
+      "source": "outputs/multicity/detroit/demographics/nodes.csv",
+      "source_sha256": "cfa8f01b3f999cb31b12bc5f1ccda631535508d4e973827724c12c42c350d9a7",
+      "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 5,
+          "all_degree_zero_node_count": 260,
+          "all_degree_zero_population": 623597,
+          "mean_all_neighbor_count": 0.03717472118959108
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 203,
+          "all_degree_zero_node_count": 51,
+          "all_degree_zero_population": 119411,
+          "mean_all_neighbor_count": 1.5092936802973977
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 606,
+          "all_degree_zero_node_count": 6,
+          "all_degree_zero_population": 15777,
+          "mean_all_neighbor_count": 4.5055762081784385
+        }
+      ]
+    },
+    {
+      "city_id": "chicago",
+      "city": "Chicago",
+      "node_scale": "block",
+      "node_count": 33801,
+      "zero_population_nodes_excluded": 5015,
+      "city_population": 2746388,
+      "source": "outputs/multicity/chicago/demographics/city_blocks.csv.gz",
+      "source_sha256": "647d4566f2e74561cf86c04757e223f66e897df62266d27b6f2602f3f3a69b2d",
+      "representative_points": "Census populated-block internal points",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 1049804,
+          "all_degree_zero_node_count": 21,
+          "all_degree_zero_population": 950,
+          "mean_all_neighbor_count": 62.11674210822165
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 3756346,
+          "all_degree_zero_node_count": 2,
+          "all_degree_zero_population": 23,
+          "mean_all_neighbor_count": 222.26241827164876
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 7932049,
+          "all_degree_zero_node_count": 1,
+          "all_degree_zero_population": 16,
+          "mean_all_neighbor_count": 469.33812609094406
+        }
+      ]
+    },
+    {
+      "city_id": "chicago",
+      "city": "Chicago",
+      "node_scale": "tract",
+      "node_count": 794,
+      "zero_population_nodes_excluded": 0,
+      "city_population": 2746388,
+      "source": "outputs/multicity/chicago/demographics/nodes.csv",
+      "source_sha256": "6fda564a1eaadd0fbe62af9c0341a59dec51c16a5fddd2df5aa80a09c447b6b8",
+      "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 325,
+          "all_degree_zero_node_count": 406,
+          "all_degree_zero_population": 1597933,
+          "mean_all_neighbor_count": 0.818639798488665
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 2130,
+          "all_degree_zero_node_count": 25,
+          "all_degree_zero_population": 112074,
+          "mean_all_neighbor_count": 5.365239294710327
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 4572,
+          "all_degree_zero_node_count": 3,
+          "all_degree_zero_population": 12252,
+          "mean_all_neighbor_count": 11.516372795969774
+        }
+      ]
+    },
+    {
+      "city_id": "phoenix",
+      "city": "Phoenix",
+      "node_scale": "block",
+      "node_count": 15806,
+      "zero_population_nodes_excluded": 2646,
+      "city_population": 1608139,
+      "source": "outputs/multicity/phoenix/demographics/city_blocks.csv.gz",
+      "source_sha256": "5ac6bbd50dada3449a89d31f359efde26ec94fa4acba0839f6dcbe91185c77c4",
+      "representative_points": "Census populated-block internal points",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 142346,
+          "all_degree_zero_node_count": 105,
+          "all_degree_zero_population": 18593,
+          "mean_all_neighbor_count": 18.011641148930785
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 505955,
+          "all_degree_zero_node_count": 24,
+          "all_degree_zero_population": 3796,
+          "mean_all_neighbor_count": 64.02062507908389
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 1055008,
+          "all_degree_zero_node_count": 7,
+          "all_degree_zero_population": 1434,
+          "mean_all_neighbor_count": 133.49462229533088
+        }
+      ]
+    },
+    {
+      "city_id": "phoenix",
+      "city": "Phoenix",
+      "node_scale": "tract",
+      "node_count": 384,
+      "zero_population_nodes_excluded": 0,
+      "city_population": 1608139,
+      "source": "outputs/multicity/phoenix/demographics/nodes.csv",
+      "source_sha256": "4d46c6d7f9805859b8ed9f863682685359a31331598942f1f4ba0cac3c0a4385",
+      "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 2,
+          "all_degree_zero_node_count": 380,
+          "all_degree_zero_population": 1596915,
+          "mean_all_neighbor_count": 0.010416666666666666
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 128,
+          "all_degree_zero_node_count": 214,
+          "all_degree_zero_population": 965663,
+          "mean_all_neighbor_count": 0.6666666666666666
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 401,
+          "all_degree_zero_node_count": 67,
+          "all_degree_zero_population": 300632,
+          "mean_all_neighbor_count": 2.0885416666666665
+        }
+      ]
+    },
+    {
+      "city_id": "atlanta",
+      "city": "Atlanta",
+      "node_scale": "block",
+      "node_count": 4713,
+      "zero_population_nodes_excluded": 1393,
+      "city_population": 498715,
+      "source": "outputs/multicity/atlanta/demographics/city_blocks.csv.gz",
+      "source_sha256": "469cd40c53600eebf155206ee9d2bca533b39a60b284cb18033686604c91a4b0",
+      "representative_points": "Census populated-block internal points",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 38807,
+          "all_degree_zero_node_count": 39,
+          "all_degree_zero_population": 8224,
+          "mean_all_neighbor_count": 16.46806704858901
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 137796,
+          "all_degree_zero_node_count": 0,
+          "all_degree_zero_population": 0,
+          "mean_all_neighbor_count": 58.47485677912158
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 291307,
+          "all_degree_zero_node_count": 0,
+          "all_degree_zero_population": 0,
+          "mean_all_neighbor_count": 123.61850201570125
+        }
+      ]
+    },
+    {
+      "city_id": "atlanta",
+      "city": "Atlanta",
+      "node_scale": "tract",
+      "node_count": 187,
+      "zero_population_nodes_excluded": 0,
+      "city_population": 498715,
+      "source": "outputs/multicity/atlanta/demographics/nodes.csv",
+      "source_sha256": "d829ff912a05a9fd762418630c5df7194de3f07e95cd86b74c1cf071c7d86950",
+      "representative_points": "Existing populated-block point nearest the city-portion population centroid",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 12,
+          "all_degree_zero_node_count": 166,
+          "all_degree_zero_population": 444390,
+          "mean_all_neighbor_count": 0.12834224598930483
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 140,
+          "all_degree_zero_node_count": 64,
+          "all_degree_zero_population": 194132,
+          "mean_all_neighbor_count": 1.4973262032085561
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 398,
+          "all_degree_zero_node_count": 18,
+          "all_degree_zero_population": 56012,
+          "mean_all_neighbor_count": 4.25668449197861
+        }
+      ]
+    },
+    {
+      "city_id": "new_york_city",
+      "city": "New York City",
+      "node_scale": "block",
+      "node_count": 30696,
+      "zero_population_nodes_excluded": 7288,
+      "city_population": 8804190,
+      "source": "outputs/distance_fryer/inputs/new_york_city_blocks.csv.gz",
+      "source_sha256": "be357ec18b2d2ccbb529956e849b5b7f78d72bd6c83e0b3f3eaa7c439e950b86",
+      "representative_points": "Census populated-block internal points",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 634399,
+          "all_degree_zero_node_count": 30,
+          "all_degree_zero_population": 1853,
+          "mean_all_neighbor_count": 41.3343106593693
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 2295787,
+          "all_degree_zero_node_count": 3,
+          "all_degree_zero_population": 23,
+          "mean_all_neighbor_count": 149.58216054209018
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 4798341,
+          "all_degree_zero_node_count": 2,
+          "all_degree_zero_population": 22,
+          "mean_all_neighbor_count": 312.6362392494136
+        }
+      ]
+    },
+    {
+      "city_id": "new_york_city",
+      "city": "New York City",
+      "node_scale": "tract",
+      "node_count": 2292,
+      "zero_population_nodes_excluded": 35,
+      "city_population": 8804190,
+      "source": "outputs/ny_2020/tracts/nodes.csv",
+      "source_sha256": "fe02d5a5073228742c83355a8a7121e19adefbe729bc1d6ff948366095233267",
+      "representative_points": "Census tract internal points",
+      "graphs": [
+        {
+          "radius_km": 0.5,
+          "undirected_edges": 3027,
+          "all_degree_zero_node_count": 367,
+          "all_degree_zero_population": 1377726,
+          "mean_all_neighbor_count": 2.641361256544503
+        },
+        {
+          "radius_km": 1.0,
+          "undirected_edges": 14325,
+          "all_degree_zero_node_count": 32,
+          "all_degree_zero_population": 91740,
+          "mean_all_neighbor_count": 12.5
+        },
+        {
+          "radius_km": 1.5,
+          "undirected_edges": 31577,
+          "all_degree_zero_node_count": 9,
+          "all_degree_zero_population": 21507,
+          "mean_all_neighbor_count": 27.55410122164049
+        }
+      ]
+    }
+  ],
+  "routes_api_calls": 0,
+  "network_calls_during_computation": 0,
+  "maximum_eigenpair_residual": 7.780886976008608e-13
+}

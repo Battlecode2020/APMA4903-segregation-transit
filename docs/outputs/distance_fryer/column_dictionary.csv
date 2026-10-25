@@ -1,0 +1,26 @@
+column,definition
+city_id,Stable city directory identifier.
+city,2020 city-limit geography; New York includes all five boroughs.
+node_scale,block = populated Census blocks; tract = populated city-limit tract portions. These are separate networks.
+radius_km,"Inclusive great-circle distance cutoff in kilometers, with Earth radius6378.1km; distinct nodes only."
+node_count,"All positive-population city nodes, before excluding geographic isolates from the SSI denominator."
+city_population,All 2020 city residents; includes those in geographic isolates or other/unclassified nodes.
+group,"Category assigned to nodes by the largest of White-alone, Black-alone, Hispanic-any-race, Asian-alone counts. Counts themselves overlap; assigned node labels do not."
+group_population,"All city residents in this Census category, irrespective of which category their node was assigned."
+population_share_K,"group_population/city_population, fraction0–1. Uses all residents, not the fraction of assigned nodes or only eligible nodes."
+assigned_node_count,"Nodes assigned to the category, including geographic isolates."
+assigned_nodes_without_strict_majority,Assigned nodes whose category population share is <=0.5. The dominant-category rule can assign a plurality without a strict majority.
+assigned_degree_zero_excluded,"Assigned nodes with no other populated node within the radius. Excluded from the SSI denominator, following author code."
+eligible_assigned_node_count,Assigned nodes with at least one neighbor of any category. Denominator for city SSI component-size weighting.
+eligible_without_same_group_neighbor_count,Eligible assigned nodes with no same-category neighbor. They remain in the SSI denominator and have localSSI0.
+fryer_ssi,Sum over same-category components of component_eigenvalue*component_size/eligible_assigned_node_count. R_ij=1/all-neighbor-degree; restrict R without renormalizing. Undefined if denominator0.
+component_count,"Number of eligible assigned-category components, including singleton nodes with only other-category neighbors."
+largest_component_size,Largest eligible same-category component node count; zero if no eligible assigned nodes.
+max_eigenpair_residual,"Maximum absolute residual |B_C*v_C-lambda_C*v_C| over components. Numerical error, not a segregation score."
+status,ok = at least one eligible assigned node; undefined_no_eligible_assigned_nodes = city SSI and adjustments are blank/NaN.
+fryer_ssi_minus_K,Requested population-share adjustment SSI-K. No division. The paper simulated-null adjustment is different and is not computed.
+fryer_ssi_normalized,"(SSI-K)/(1-K), using the all-city resident fractionK. Negative values retained; undefined forK1 or undefinedSSI."
+undirected_edges,"Number of unordered neighboring pairs, including all categories. No self-links."
+all_degree_zero_node_count,"All city nodes with no geographic neighbors at this radius, regardless of assigned category."
+all_degree_zero_population,Population of all geographic-isolate nodes. Included in city and group counts used forK.
+mean_all_neighbor_count,"Mean degree over all populated nodes, including degree-zero nodes."

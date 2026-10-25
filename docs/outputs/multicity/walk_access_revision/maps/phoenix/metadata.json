@@ -1,0 +1,286 @@
+{
+  "created_utc": "2026-10-25T16:26:44.825512+00:00",
+  "city_id": "phoenix",
+  "city": "Phoenix",
+  "section_count": 384,
+  "population": 1608139,
+  "geography": "384 city-limit tract portions",
+  "map_value": "n times the saved right Perron eigenvector component; vector sums to one, arithmetic mean of mapped values is one",
+  "color_scale": {
+    "shared_across_all_cities_and_categories": true,
+    "transform": "log",
+    "minimum": 0.25,
+    "maximum": 4.0,
+    "neutral_value": 1,
+    "out_of_range": "Explicitly saturated with colorbar extension triangles and counts/ranges on every panel; exact values remain in CSV",
+    "zeros": "Below-scale color; counted separately, not dropped"
+  },
+  "category_diagnostics": {
+    "white_alone": {
+      "eigenvalue": 0.6909237272572384,
+      "vector_sum": 1.0,
+      "relative_score_mean": 1.0,
+      "minimum": 0.008888061752944218,
+      "maximum": 161.33868019263377,
+      "below_color_scale": 366,
+      "above_color_scale": 5,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 6.237788063856442e-13
+    },
+    "black_alone": {
+      "eigenvalue": 0.09752281499704125,
+      "vector_sum": 0.9999999999999999,
+      "relative_score_mean": 1.0,
+      "minimum": 0.03782650786672145,
+      "maximum": 2.4232173786107882,
+      "below_color_scale": 10,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 3.755492011120465e-14
+    },
+    "hispanic_latino_any_race": {
+      "eigenvalue": 0.5326087987415662,
+      "vector_sum": 1.0,
+      "relative_score_mean": 1.0,
+      "minimum": 0.021311938758079678,
+      "maximum": 1.9188214347306076,
+      "below_color_scale": 11,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 1.7957857423311907e-13
+    },
+    "asian_alone": {
+      "eigenvalue": 0.04992841579959742,
+      "vector_sum": 1.0,
+      "relative_score_mean": 0.9999999999999999,
+      "minimum": 0.3263444162366429,
+      "maximum": 21.61265332659977,
+      "below_color_scale": 0,
+      "above_color_scale": 10,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 3.990774724571544e-14
+    }
+  },
+  "display_projection": "+proj=laea +lat_0=33.52440746328125 +lon_0=-112.08951134114584 +datum=WGS84 +units=m +type=crs",
+  "display_geometry": "Saved city-limit tract portions minus saved Census mapped-water polygons for display only; statistical assignments unchanged.",
+  "sections_without_land_display_geometry": [],
+  "checks": [
+    "Exact node/geometry/eigenvector ID ordering",
+    "Counts and population match saved nodes",
+    "P rows and eigenvectors normalized",
+    "A=P diag(p)",
+    "A v=lambda v within 1e-9"
+  ],
+  "sources": [
+    {
+      "path": "outputs/multicity/walk_access_revision/phoenix/nodes.csv",
+      "sha256": "b1666f75e3e6ea402ea33953b3e3b035c0955c2ce5aa61ce7a60b2d4477bc8f8"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/phoenix/with_transit/analysis_matrices.npz",
+      "sha256": "38df0ebb57024d3e2045a87b1041e05d4e589204811e32359b37115e0278bd74"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/phoenix/travel/manifest.json",
+      "sha256": "6d3390066176208cf843de32f6558e351dee25bb273ad6a6b2e220d6aed13783"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/phoenix/with_transit/manifest.json",
+      "sha256": "4f6c71c4362b64e0d8109ab6aca1b171dfb34f1dad4de40dc0a52101f2d8a5eb"
+    },
+    {
+      "path": "outputs/multicity/phoenix/demographics/nodes.geojson",
+      "sha256": "48c511dd52e5534725006ab8ee6fec5e9799a9d298d3de1565c8d28efea2e217"
+    },
+    {
+      "path": "outputs/multicity/phoenix/demographics/water.geojson",
+      "sha256": "945cac57ab2938ca22f1405c7d1c07aabc8962b7676c89c1c5e66644ee4145be"
+    }
+  ],
+  "model_manifests": {
+    "travel": {
+      "model": "GTFS pattern graph with mean-headway waiting",
+      "input_fingerprint": {
+        "nodes_sha256": "8d86f069b09284781852e821b99ae513391ece5ef7fe9df6d429256498645ad6",
+        "parameters": {
+          "reference_date": "2026-10-20",
+          "window_start": "07:00:00",
+          "window_end": "10:00:00",
+          "walking_speed_kmh": 4.8,
+          "walking_detour": 1.3,
+          "bus_access_km": 1.0,
+          "rail_access_km": 3.0,
+          "transfer_walk_km": 0.4,
+          "entrance_seconds": 60.0,
+          "transfer_buffer_seconds": 60.0,
+          "dijkstra_batch_size": 16,
+          "access_policy": "uncapped",
+          "pedestrian_barrier_policy": "reject"
+        },
+        "feeds": [
+          "5fd088231ac2028c28cc5b545b209684558024f456eb7c547db452c6164d8ae6"
+        ],
+        "land_sha256": null,
+        "water_sha256": "b4fc0b996fe602c822f870ca0a673ca3a3e836ba105231a60d2db03120eae49d",
+        "model_version": 4
+      },
+      "parameters": {
+        "reference_date": "2026-10-20",
+        "window_start": "07:00:00",
+        "window_end": "10:00:00",
+        "walking_speed_kmh": 4.8,
+        "walking_detour": 1.3,
+        "bus_access_km": 1.0,
+        "rail_access_km": 3.0,
+        "transfer_walk_km": 0.4,
+        "entrance_seconds": 60.0,
+        "transfer_buffer_seconds": 60.0,
+        "dijkstra_batch_size": 16,
+        "access_policy": "uncapped",
+        "pedestrian_barrier_policy": "reject"
+      },
+      "feeds": [
+        {
+          "path": "data/multicity/transit/phoenix.zip",
+          "sha256": "5fd088231ac2028c28cc5b545b209684558024f456eb7c547db452c6164d8ae6",
+          "service_date": "2026-10-20",
+          "patterns": 289,
+          "route_modes": [
+            "bus",
+            "rail"
+          ],
+          "used_routes_by_mode": {
+            "bus": 100,
+            "rail": 4
+          },
+          "published_feed_info": [
+            {
+              "feed_publisher_name": "City of Phoenix",
+              "feed_publisher_url": "https://www.phoenix.gov/publictransit",
+              "feed_lang": "en",
+              "feed_start_date": "20260928",
+              "feed_end_date": "20270124",
+              "feed_version": "GTFS_v4.5_20260914",
+              "feed_contact_email": "pubtrans@phoenix.gov",
+              "feed_contact_url": "https://www.phoenix.gov/publictransit/contactus"
+            }
+          ],
+          "agency_timezones": [
+            "America/Phoenix"
+          ],
+          "diagnostics": {
+            "scheduled_trip_samples": 1835,
+            "frequency_trip_templates": 2
+          }
+        }
+      ],
+      "nodes": 384,
+      "graph_nodes": 36767,
+      "graph_edges": 78543,
+      "service_patterns": 289,
+      "served_physical_stops": 7923,
+      "pedestrian_transfer_pairs": 11394,
+      "explicit_transfer_rules_applied": 4,
+      "transfer_rule_diagnostics": {
+        "minimums_conservatively_applied_to_all_onward_transfers": 4
+      },
+      "access_policy": "uncapped",
+      "pedestrian_barrier_policy": "reject",
+      "walking_access_interpretation": "No maximum walking distance for initial access or final egress; every accepted walking second is charged.",
+      "transfer_walking_interpretation": "Automatic inter-stop links use a 0.4km approximate walking radius and geometry checks; explicit GTFS transfer links and chained walks remain. This is not a total interchange-walk cap.",
+      "routing_diagnostics": {
+        "routing_algorithm": "batched temporary origins plus chunked min-plus egress",
+        "base_graph_nodes": 36751,
+        "base_graph_edges": 78543,
+        "maximum_temporary_access_edges": 96898,
+        "maximum_temporary_origins": 16,
+        "finite_journeys_with_access_beyond_legacy_radius": 65421,
+        "finite_journeys_with_egress_beyond_legacy_radius": 62823
+      },
+      "mode_array_definitions": {
+        "transit_seconds": "Minimum modeled walk-access + boarding wait + actual GTFS ride(s), dwell/transfers + walk-egress. At least one ride required; diagonal and absent candidates are infinity.",
+        "transit_access_seconds": "For uncapped output: selected initial walking time plus entrance_seconds, fully included in transit_seconds.",
+        "transit_egress_seconds": "For uncapped output: selected final walking time plus entrance_seconds exit buffer, fully included in transit_seconds.",
+        "transit_first_boarding_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+        "transit_last_alighting_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+        "transit_access_barrier_flag": "For uncapped flag_only output: selected access chord fails supplied land/water screen; false under reject policy because such legs are excluded. False is not validation against streets or barriers outside supplied geometry.",
+        "transit_egress_barrier_flag": "Same as transit_access_barrier_flag, for selected egress chord.",
+        "transit_access_exceeds_legacy_radius": "For uncapped output: selected initial walking distance exceeds old mode-specific bus_access_km/rail_access_km radius. Exit/entrance buffer is excluded from this distance comparison.",
+        "transit_egress_exceeds_legacy_radius": "Same as transit_access_exceeds_legacy_radius, for final walking leg."
+      },
+      "common_service_date": true,
+      "nonlocal_pairs": 147072,
+      "transit_reachable_nonlocal_pairs": 147072,
+      "tracts_without_access_stops": 0,
+      "walk_land_check_available": false,
+      "walk_water_check_available": true,
+      "walk_barrier_check_available": true,
+      "barrier_clear_nonlocal_walk_pairs": 45306,
+      "limitations": [
+        "Expected-time graph, not exact departure-time or real-time routing; median rides and half mean headway are approximations.",
+        "Exact stop-sequence patterns are separate: splitting service patterns can overestimate waiting when several patterns serve the same journey.",
+        "Walking is great-circle distance times a detour factor, not a street/bridge/pedestrian-access route.",
+        "walk_seconds is the complete distance approximation, including potentially impossible pedestrian water crossings; use walk_barrier_checked_seconds for conservative barrier filtering.",
+        "Without supplied land/water geometry, pedestrian legs have not been checked for water barriers. Supplied water coverage is limited to downloaded counties.",
+        "When supplied, land-chord checks are conservative: they may reject genuine bridge or indirect land paths.",
+        "Pickup/drop-off types 1, 2 and 3 are unavailable to unrestricted riders in this model.",
+        "Interlining, timed transfers, schedule correlations, crowding, service reliability, and accessibility are not modeled.",
+        "GTFS minimum-transfer rules conservatively delay all onward transfers from affected arrival states; prohibitions disable all onward transfers there. This prevents walking via a third stop from bypassing a rule, but can overestimate journeys unaffected by the original rule.",
+        "Transit requires at least one actual GTFS ride edge; absent service stays infinite; no invented transit fallback."
+      ]
+    },
+    "analysis": {
+      "city_id": "phoenix",
+      "city": "Phoenix",
+      "node_scale": "populated city-limit tract portions",
+      "scenario": "with_transit",
+      "parameters": {
+        "beta_per_usd": 0.1,
+        "omega_usd_per_hour": 15.0,
+        "c0_usd": 1.25,
+        "standardized_transit_fare_usd": 3.0
+      },
+      "access_policy": "uncapped distance, barrier-screened access and egress; every walking leg charged",
+      "walking_transfers": "Automatic transfer links within 400m; explicit GTFS links, transfer restrictions and chained walks retained.",
+      "no_transit_proxy": true,
+      "diagnostics": {
+        "city_id": "phoenix",
+        "city": "Phoenix",
+        "scenario": "with_transit",
+        "node_count": 384,
+        "population": 1608139,
+        "transit_selected_pairs": 137597,
+        "nonlocal_pairs": 147072,
+        "transit_selected_percent": 93.5575772410792,
+        "nodes_without_boarding_access": 0,
+        "old_nodes_without_boarding_access": 62,
+        "barrier_flagged_direct_walking_pairs": 1610,
+        "population_weighted_flagged_walking_mass_percent": 3.132890571185342,
+        "service_dates": [
+          "2026-10-20"
+        ],
+        "bus_routes": 100,
+        "rail_routes": 4,
+        "max_pssi_eigenpair_residual": 6.237788063856442e-13,
+        "transit_access_seconds_selected_median_minutes": 12.778049900817454,
+        "transit_access_seconds_selected_max_minutes": 310.0457900692064,
+        "transit_egress_seconds_selected_median_minutes": 12.81674443419761,
+        "transit_egress_seconds_selected_max_minutes": 309.3144312209802,
+        "transit_selected_pairs_beyond_old_access_radius": 60792,
+        "transit_selected_pairs_beyond_old_egress_radius": 58368,
+        "transit_selected_pairs_beyond_either_old_radius": 93119,
+        "nodes_without_boarding_access_reason": "No boarding stop passes the retained geometric water/land screen; no access distance cutoff remains."
+      },
+      "source_sha256": {
+        "outputs/multicity/walk_access_revision/phoenix/nodes.csv": "b1666f75e3e6ea402ea33953b3e3b035c0955c2ce5aa61ce7a60b2d4477bc8f8",
+        "outputs/multicity/walk_access_revision/phoenix/travel/modes.npz": "ed07f5718d7c3c34552e6c0f037293023540a50a3673437017d1ebcf1b7dbbc4",
+        "outputs/multicity/walk_access_revision/phoenix/travel/manifest.json": "6d3390066176208cf843de32f6558e351dee25bb273ad6a6b2e220d6aed13783"
+      },
+      "nyc_scope": null,
+      "normalization": "Raw PSSI=lambda; normalized PSSI=(lambda-K)/(1-K). K=all city group residents/all city residents. Per-node right eigenvector sum 1; n*v mean 1. Distance Fryer is a separate geography-only model.",
+      "routes_api_calls": 0
+    }
+  },
+  "network_requests": 0,
+  "routes_api_calls": 0
+}

@@ -1,0 +1,311 @@
+{
+  "created_utc": "2026-10-25T16:28:59.652349+00:00",
+  "city_id": "washington_dc",
+  "city": "Washington, DC",
+  "section_count": 206,
+  "population": 689545,
+  "geography": "206 city-limit tract portions",
+  "map_value": "n times the saved right Perron eigenvector component; vector sums to one, arithmetic mean of mapped values is one",
+  "color_scale": {
+    "shared_across_all_cities_and_categories": true,
+    "transform": "log",
+    "minimum": 0.25,
+    "maximum": 4.0,
+    "neutral_value": 1,
+    "out_of_range": "Explicitly saturated with colorbar extension triangles and counts/ranges on every panel; exact values remain in CSV",
+    "zeros": "Below-scale color; counted separately, not dropped"
+  },
+  "category_diagnostics": {
+    "white_alone": {
+      "eigenvalue": 0.4434128037725349,
+      "vector_sum": 0.9999999999999998,
+      "relative_score_mean": 1.0,
+      "minimum": 0.7506489359639382,
+      "maximum": 1.3059237385099904,
+      "below_color_scale": 0,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 9.207391793442099e-14
+    },
+    "black_alone": {
+      "eigenvalue": 0.4406502341328471,
+      "vector_sum": 0.9999999999999998,
+      "relative_score_mean": 0.9999999999999998,
+      "minimum": 0.6827653610150318,
+      "maximum": 1.4746598651037879,
+      "below_color_scale": 0,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 5.807030203919261e-14
+    },
+    "hispanic_latino_any_race": {
+      "eigenvalue": 0.12910579289231022,
+      "vector_sum": 1.0,
+      "relative_score_mean": 1.0,
+      "minimum": 0.7406430475727235,
+      "maximum": 1.3755258188664894,
+      "below_color_scale": 0,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 2.0781445141115906e-14
+    },
+    "asian_alone": {
+      "eigenvalue": 0.05678167325886356,
+      "vector_sum": 1.0,
+      "relative_score_mean": 1.0000000000000002,
+      "minimum": 0.7352633967894447,
+      "maximum": 1.335956656083287,
+      "below_color_scale": 0,
+      "above_color_scale": 0,
+      "zero_components": 0,
+      "max_abs_eigenpair_residual": 5.570034451035655e-15
+    }
+  },
+  "display_projection": "+proj=laea +lat_0=38.90767910048543 +lon_0=-77.01222197281554 +datum=WGS84 +units=m +type=crs",
+  "display_geometry": "Saved city-limit tract portions minus saved Census mapped-water polygons for display only; statistical assignments unchanged.",
+  "sections_without_land_display_geometry": [],
+  "checks": [
+    "Exact node/geometry/eigenvector ID ordering",
+    "Counts and population match saved nodes",
+    "P rows and eigenvectors normalized",
+    "A=P diag(p)",
+    "A v=lambda v within 1e-9"
+  ],
+  "sources": [
+    {
+      "path": "outputs/multicity/walk_access_revision/washington_dc/nodes.csv",
+      "sha256": "8d24cf9c7aa648ad61fd0d49708c5f258b95126eb0abca965c980d21617b2ff3"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/washington_dc/with_transit/analysis_matrices.npz",
+      "sha256": "4c0a46037a638c9ec59f02abc9e717cdda453bcfab4087c7ffa12a8f2373f7b5"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/washington_dc/travel/manifest.json",
+      "sha256": "10a6eda133f8d3e14414fe2f35111f596738f2b66bc3362ca7b072ebdb588d34"
+    },
+    {
+      "path": "outputs/multicity/walk_access_revision/washington_dc/with_transit/manifest.json",
+      "sha256": "b5b83cd8b67822f5baeac9320a19db2300dfe48f24fd33e7ce7134d196d89c1b"
+    },
+    {
+      "path": "outputs/multicity/washington_dc/demographics/nodes.geojson",
+      "sha256": "c0cf2a2a99305baadd3bb9c8c7ccff5978896da1897cf0f572aa6327ea4dd6f7"
+    },
+    {
+      "path": "outputs/multicity/washington_dc/demographics/water.geojson",
+      "sha256": "37c59a96113751750e4046ede0f34b248b07ac51fa56f7b03455b7f57f6e04cf"
+    }
+  ],
+  "model_manifests": {
+    "travel": {
+      "model": "GTFS pattern graph with mean-headway waiting",
+      "input_fingerprint": {
+        "nodes_sha256": "9a5cbfaede7652c2dbdf22c151ac9f70b5c75d5967e856948fa805a5d54dbf56",
+        "parameters": {
+          "reference_date": "2026-10-20",
+          "window_start": "07:00:00",
+          "window_end": "10:00:00",
+          "walking_speed_kmh": 4.8,
+          "walking_detour": 1.3,
+          "bus_access_km": 1.0,
+          "rail_access_km": 3.0,
+          "transfer_walk_km": 0.4,
+          "entrance_seconds": 60.0,
+          "transfer_buffer_seconds": 60.0,
+          "dijkstra_batch_size": 16,
+          "access_policy": "uncapped",
+          "pedestrian_barrier_policy": "reject"
+        },
+        "feeds": [
+          "3687896118fc630eac70d3db28ab91a08fb6bb2c9b097a2c78c6bc56537f201d",
+          "b9d427b0f14b87c627a7196fd7c37c56165953e292f85e0ec591de23510df719"
+        ],
+        "land_sha256": null,
+        "water_sha256": "3d9693f3c560e63dd10d05e86e299b0cba284c392d18429b75e00538a44cf272",
+        "model_version": 4
+      },
+      "parameters": {
+        "reference_date": "2026-10-20",
+        "window_start": "07:00:00",
+        "window_end": "10:00:00",
+        "walking_speed_kmh": 4.8,
+        "walking_detour": 1.3,
+        "bus_access_km": 1.0,
+        "rail_access_km": 3.0,
+        "transfer_walk_km": 0.4,
+        "entrance_seconds": 60.0,
+        "transfer_buffer_seconds": 60.0,
+        "dijkstra_batch_size": 16,
+        "access_policy": "uncapped",
+        "pedestrian_barrier_policy": "reject"
+      },
+      "feeds": [
+        {
+          "path": "data/multicity/transit/wmata_bus.zip",
+          "sha256": "3687896118fc630eac70d3db28ab91a08fb6bb2c9b097a2c78c6bc56537f201d",
+          "service_date": "2026-10-20",
+          "patterns": 289,
+          "route_modes": [
+            "bus"
+          ],
+          "used_routes_by_mode": {
+            "bus": 126,
+            "rail": 0
+          },
+          "published_feed_info": [
+            {
+              "feed_publisher_name": "WMATA",
+              "feed_publisher_url": "http://www.wmata.com",
+              "feed_lang": "en",
+              "feed_start_date": "20260913",
+              "feed_end_date": "20270327",
+              "feed_version": "S1000251",
+              "feed_contact_email": "gtfs-support@wmata.com",
+              "feed_contact_url": "https://wmata.custhelp.com/app/home/"
+            }
+          ],
+          "agency_timezones": [
+            "America/New_York"
+          ],
+          "diagnostics": {
+            "scheduled_trip_samples": 2926
+          }
+        },
+        {
+          "path": "data/multicity/transit/wmata_rail.zip",
+          "sha256": "b9d427b0f14b87c627a7196fd7c37c56165953e292f85e0ec591de23510df719",
+          "service_date": "2026-10-20",
+          "patterns": 19,
+          "route_modes": [
+            "rail"
+          ],
+          "used_routes_by_mode": {
+            "bus": 0,
+            "rail": 6
+          },
+          "published_feed_info": [
+            {
+              "feed_publisher_name": "WMATA",
+              "feed_publisher_url": "http://www.wmata.com",
+              "feed_lang": "en",
+              "feed_start_date": "20261015",
+              "feed_end_date": "20261023"
+            }
+          ],
+          "agency_timezones": [
+            "America/New_York"
+          ],
+          "diagnostics": {
+            "scheduled_trip_samples": 384
+          }
+        }
+      ],
+      "nodes": 206,
+      "graph_nodes": 33463,
+      "graph_edges": 91368,
+      "service_patterns": 308,
+      "served_physical_stops": 7437,
+      "pedestrian_transfer_pairs": 20502,
+      "explicit_transfer_rules_applied": 0,
+      "transfer_rule_diagnostics": {},
+      "access_policy": "uncapped",
+      "pedestrian_barrier_policy": "reject",
+      "walking_access_interpretation": "No maximum walking distance for initial access or final egress; every accepted walking second is charged.",
+      "transfer_walking_interpretation": "Automatic inter-stop links use a 0.4km approximate walking radius and geometry checks; explicit GTFS transfer links and chained walks remain. This is not a total interchange-walk cap.",
+      "routing_diagnostics": {
+        "routing_algorithm": "batched temporary origins plus chunked min-plus egress",
+        "base_graph_nodes": 33447,
+        "base_graph_edges": 91368,
+        "maximum_temporary_access_edges": 87254,
+        "maximum_temporary_origins": 16,
+        "finite_journeys_with_access_beyond_legacy_radius": 1713,
+        "finite_journeys_with_egress_beyond_legacy_radius": 1879
+      },
+      "mode_array_definitions": {
+        "transit_seconds": "Minimum modeled walk-access + boarding wait + actual GTFS ride(s), dwell/transfers + walk-egress. At least one ride required; diagonal and absent candidates are infinity.",
+        "transit_access_seconds": "For uncapped output: selected initial walking time plus entrance_seconds, fully included in transit_seconds.",
+        "transit_egress_seconds": "For uncapped output: selected final walking time plus entrance_seconds exit buffer, fully included in transit_seconds.",
+        "transit_first_boarding_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+        "transit_last_alighting_stop_index": "For uncapped output: zero-based index into transit_stop_ids; -1 when no transit candidate or on the diagonal.",
+        "transit_access_barrier_flag": "For uncapped flag_only output: selected access chord fails supplied land/water screen; false under reject policy because such legs are excluded. False is not validation against streets or barriers outside supplied geometry.",
+        "transit_egress_barrier_flag": "Same as transit_access_barrier_flag, for selected egress chord.",
+        "transit_access_exceeds_legacy_radius": "For uncapped output: selected initial walking distance exceeds old mode-specific bus_access_km/rail_access_km radius. Exit/entrance buffer is excluded from this distance comparison.",
+        "transit_egress_exceeds_legacy_radius": "Same as transit_access_exceeds_legacy_radius, for final walking leg."
+      },
+      "common_service_date": true,
+      "nonlocal_pairs": 42230,
+      "transit_reachable_nonlocal_pairs": 42230,
+      "tracts_without_access_stops": 0,
+      "walk_land_check_available": false,
+      "walk_water_check_available": true,
+      "walk_barrier_check_available": true,
+      "barrier_clear_nonlocal_walk_pairs": 17016,
+      "limitations": [
+        "Expected-time graph, not exact departure-time or real-time routing; median rides and half mean headway are approximations.",
+        "Exact stop-sequence patterns are separate: splitting service patterns can overestimate waiting when several patterns serve the same journey.",
+        "Walking is great-circle distance times a detour factor, not a street/bridge/pedestrian-access route.",
+        "walk_seconds is the complete distance approximation, including potentially impossible pedestrian water crossings; use walk_barrier_checked_seconds for conservative barrier filtering.",
+        "Without supplied land/water geometry, pedestrian legs have not been checked for water barriers. Supplied water coverage is limited to downloaded counties.",
+        "When supplied, land-chord checks are conservative: they may reject genuine bridge or indirect land paths.",
+        "Pickup/drop-off types 1, 2 and 3 are unavailable to unrestricted riders in this model.",
+        "Interlining, timed transfers, schedule correlations, crowding, service reliability, and accessibility are not modeled.",
+        "GTFS minimum-transfer rules conservatively delay all onward transfers from affected arrival states; prohibitions disable all onward transfers there. This prevents walking via a third stop from bypassing a rule, but can overestimate journeys unaffected by the original rule.",
+        "Transit requires at least one actual GTFS ride edge; absent service stays infinite; no invented transit fallback."
+      ]
+    },
+    "analysis": {
+      "city_id": "washington_dc",
+      "city": "Washington, DC",
+      "node_scale": "populated city-limit tract portions",
+      "scenario": "with_transit",
+      "parameters": {
+        "beta_per_usd": 0.1,
+        "omega_usd_per_hour": 15.0,
+        "c0_usd": 1.25,
+        "standardized_transit_fare_usd": 3.0
+      },
+      "access_policy": "uncapped distance, barrier-screened access and egress; every walking leg charged",
+      "walking_transfers": "Automatic transfer links within 400m; explicit GTFS links, transfer restrictions and chained walks retained.",
+      "no_transit_proxy": true,
+      "diagnostics": {
+        "city_id": "washington_dc",
+        "city": "Washington, DC",
+        "scenario": "with_transit",
+        "node_count": 206,
+        "population": 689545,
+        "transit_selected_pairs": 34726,
+        "nonlocal_pairs": 42230,
+        "transit_selected_percent": 82.23064172389297,
+        "nodes_without_boarding_access": 0,
+        "old_nodes_without_boarding_access": 1,
+        "barrier_flagged_direct_walking_pairs": 1483,
+        "population_weighted_flagged_walking_mass_percent": 4.710311208132696,
+        "service_dates": [
+          "2026-10-20"
+        ],
+        "bus_routes": 126,
+        "rail_routes": 6,
+        "max_pssi_eigenpair_residual": 9.207391793442099e-14,
+        "transit_access_seconds_selected_median_minutes": 7.913042110402881,
+        "transit_access_seconds_selected_max_minutes": 35.297998974590236,
+        "transit_egress_seconds_selected_median_minutes": 7.849068101064565,
+        "transit_egress_seconds_selected_max_minutes": 35.94781543623363,
+        "transit_selected_pairs_beyond_old_access_radius": 1163,
+        "transit_selected_pairs_beyond_old_egress_radius": 1327,
+        "transit_selected_pairs_beyond_either_old_radius": 2406,
+        "nodes_without_boarding_access_reason": "No boarding stop passes the retained geometric water/land screen; no access distance cutoff remains."
+      },
+      "source_sha256": {
+        "outputs/multicity/walk_access_revision/washington_dc/nodes.csv": "8d24cf9c7aa648ad61fd0d49708c5f258b95126eb0abca965c980d21617b2ff3",
+        "outputs/multicity/walk_access_revision/washington_dc/travel/modes.npz": "2cf0c496d1ed3f6ecee74fd212d752fd0a6f49f652b4c817f9bc523933c9b29c",
+        "outputs/multicity/walk_access_revision/washington_dc/travel/manifest.json": "10a6eda133f8d3e14414fe2f35111f596738f2b66bc3362ca7b072ebdb588d34"
+      },
+      "nyc_scope": null,
+      "normalization": "Raw PSSI=lambda; normalized PSSI=(lambda-K)/(1-K). K=all city group residents/all city residents. Per-node right eigenvector sum 1; n*v mean 1. Distance Fryer is a separate geography-only model.",
+      "routes_api_calls": 0
+    }
+  },
+  "network_requests": 0,
+  "routes_api_calls": 0
+}
